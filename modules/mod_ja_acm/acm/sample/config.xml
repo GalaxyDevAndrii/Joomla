@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Sample Layout</title>
+    <description>This is a sample layout to demonstrate how to use the module</description>
+    <sampledata>
+        {"jatools-layout-sample":["default"],"sample[field1]":["Test Field 1"],"sample[field2]":["Test field 1 ((h3))description((/h3))"],"sample[multiple1]":["Multiple Field 1","Multiple Field 2"],"sample[multiple2]":["Multiple Field 1 description","Multiple Field 2 description"],"sample[multiple3]":["images/joomla_black.gif","images/joomla_black.gif"],"sample[multiple4]":["0","1"],"sample[feature-title]":["Feature 1","Feature 2"],"sample[feature-support]":["3","1"]}
+    </sampledata>
+
+    <fields name="sample">
+        <fieldset name="section1" label="SAMPLE_SETTING_LABEL" description="SAMPLE_SETTING_DESC">
+            <field name="field1" type="text" default="" label="SAMPLE_FIELD_1_LABEL" description="SAMPLE_FIELD_1_DESC" required="1" />
+
+            <field name="list" type="jalist" label="SAMPLE_FIELD_2_LABEL" description="SAMPLE_FIELD_2_DESC">
+                <item type="text" name="col1" default="" title="Col 1" />
+                <item type="list" name="col2" default="" title="Col 2">
+                    <option value="val1">Select 1</option>
+                    <option value="val2">Select 2</option>
+                    <option value="val3">Select 3</option>
+                </item>
+                <item type="checkbox" name="col32" default="" title="Col 3" />
+
+                <item type="media" name="col4" placeholder="Enter" default="" title="Col 4" />
+            </field>
+
+            <field name="table" type="jatable">
+                <item name="name" type="text" label="TABLE_NAME_LABEL" description="TABLE_NAME_DESC" />
+                <item name="class" type="text" label="TABLE_CLASS_LABEL" description="TABLE_CLASS_DESC" />
+                <item name="featured" type="checkbox" label="TABLE_FEATURED_LABEL" description="TABLE_FEATURED_DESC" />
+                <item name="test" type="radio" default="check1" label="TABLE_RADIO_TYPE_LABEL" description="TABLE_RADIO_TYPE_DESC" title="Col 31">
+                    <option value="check1">Check 1</option>
+                    <option value="check2">Check 2</option>
+                </item>
+            </field>
+        </fieldset>
+
+
+    </fields>
+</form>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addfieldpath="/administrator/components/com_rsform/models/fields">
+    <field
+		name="formId"
+		type="forms"
+		nobutton="true"
+		class="advancedSelect"
+		label="COM_RSFORM_FILTER_FORMS_LABEL"
+		onchange="this.form.submit();"
+    />
+
+    <fields name="import">
+        <field
+                name="skipHeaders"
+                type="checkbox"
+                label="COM_RSFORM_SKIP_HEADERS"
+                checked="true"
+        />
+
+        <field
+                name="delimiter"
+                type="text"
+                default=","
+                label="COM_RSFORM_IMPORT_DELIMITER"
+        />
+
+        <field
+                name="enclosure"
+                type="text"
+                default="&quot;"
+                label="COM_RSFORM_IMPORT_ENCLOSURE"
+        />
+
+        <field
+                name="file"
+                type="file"
+                label="COM_RSFORM_IMPORT_FILE"
+                onchange="enableImportUpload();"
+        />
+
+    </fields>
+
+    <fields name="filter">
+        <field
+                name="search"
+                type="text"
+                label="COM_RSFORM_FILTER_SEARCH_LABEL"
+                description="COM_RSFORM_SEARCH_FILTER_PLACEHOLDER"
+                hint="JSEARCH_FILTER"
+        />
+
+        <field
+                name="language"
+                type="lang"
+                label="JGRID_HEADING_LANGUAGE"
+                onchange="this.form.submit();"
+        />
+
+        <field
+                name="dateFrom"
+                type="calendar"
+                showtime="true"
+                todaybutton="true"
+                hint="RSFP_FROM"
+                format="%Y-%m-%d %H:%M:%S"
+				filter="USER_UTC"
+            />
+
+        <field
+                name="dateTo"
+                type="calendar"
+                showtime="true"
+                todaybutton="true"
+                hint="RSFP_TO"
+                format="%Y-%m-%d %H:%M:%S"
+				filter="USER_UTC"
+        />
+    </fields>
+
+    <fields name="list">
+        <field
+                name="fullordering"
+                type="submissionordering"
+                label="JGLOBAL_SORT_BY"
+                onchange="this.form.submit();"
+        >
+            <option value="">JGLOBAL_SORT_BY</option>
+        </field>
+
+        <field
+                name="limit"
+                type="limitbox"
+                label="JGLOBAL_LIST_LIMIT"
+                default="25"
+                onchange="this.form.submit();"
+        />
+    </fields>
+</form>

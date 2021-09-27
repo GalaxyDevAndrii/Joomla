@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fields name="typelist-theme" addfieldpath="/plugins/system/t4/admin/field">
+    <fieldset name="group_brand_colors" icon="palette" class="has-icon" label="T4_BRAND_COLOR_GROUP" description="T4_BRAND_COLOR_GROUP_DESC"  type="legend" subgroup="1">
+      <!-- Brand color -->
+      <field type="spacer" name="brandcolor" label="T4_THEME_BRAND_COLOR_GROUP" class="t4-spacer brand-spacer" />
+        <field name="color_primary" class="inline col-l" data-variable="--color-primary" type="t4brand" control="advance" default="#007bff" label="T4_PRIMARY_COLOR_LABEL" description="T4_PRIMARY_COLOR_DESC" />
+        <field name="color_secondary" class="inline col-r" data-variable="--color-secondary" type="t4brand" control="advance" default="#6c757d" label="T4_SECONDARY_COLOR_LABEL" description="T4_SECONDARY_COLOR_DESC" />
+        <field name="color_success" class="inline col-l" data-variable="--color-success" type="t4brand" control="advance" default="#28a745" label="T4_SUCCESS_COLOR_LABEL" description="T4_SUCCESS_COLOR_DESC" />
+        <field name="color_info" class="inline col-r" data-variable="--color-info" type="t4brand" control="advance" default="#17a2b8" label="T4_INFO_COLOR_LABEL" description="T4_INFO_COLOR_DESC" />
+        <field name="color_warning" class="inline col-l" data-variable="--color-warning" type="t4brand" control="advance" default="#ffc107" label="T4_WARNING_COLOR_LABEL" description="T4_WARNING_COLOR_DESC" />
+        <field name="color_danger" class="inline col-r" data-variable="--color-danger" type="t4brand" control="advance" default="#dc3545" label="T4_DANGER_COLOR_LABEL" description="T4_DANGER_COLOR_DESC" />
+        <field name="color_light" class="inline col-l" data-variable="--color-light" type="t4brand" control="advance" default="#f8f9fa" label="T4_LIGHT_COLOR_LABEL" description="T4_LIGHT_COLOR_DESC" />
+        <field name="color_dark" class="inline col-r" data-variable="--color-dark" type="t4brand" control="advance" default="#343a40" label="T4_DARK_COLOR_LABEL" description="T4_DARK_COLOR_DESC" />
+        <field name="color_white" class="inline col-l" data-variable="--color-white" type="t4brand" control="advance" default="#ffffff" label="T4_WHITE_COLOR_LABEL" description="T4_WHITE_COLOR_DESC" />
+        <field name="color_black" class="inline col-r" data-variable="--color-black" type="t4brand" control="advance" default="#000000" label="T4_BLACK_COLOR_LABEL" description="T4_BLACK_COLOR_DESC" />
+
+        <!-- Base color -->
+        <field type="spacer" name="pagecolor" label="T4_BASE_COLOR_GROUP_LABEL" class="t4-spacer page-spacer" />
+        <field name="body_bg_color" data-variable="--body-bg-color" class="inline col-r" type="t4brand" default="#fff" label="T4_BG_COLOR_LABEL" description="T4_BG_COLOR_DESC" />
+        <field name="body_text_color" data-variable="--body-text-color" class="inline col-l" type="t4brand" default="#212529" label="T4_TEXT_COLOR_LABEL" description="T4_TEXT_COLOR_DESC" />
+        <field name="body_link_color" data-variable="--body-link-color" class="inline col-r" type="t4brand" default="#007bff" label="T4_LINK_COLOR_LABEL" description="T4_LINK_COLOR_DESC" />
+        <field name="body_link_hover_color" data-variable="--body-link-hover-color" class="inline col-l" type="t4brand" default="#0056b3" label="T4_LINK_HOVER_COLOR_LABEL" description="T4_LINK_HOVER_COLOR_DESC" />
+
+        <!-- Main menu -->
+        <field type="spacer" name="mainnav" label="T4_MAINNAV_COLOR_GROUP_LABEL" class="t4-spacer mainnav-spacer" />
+        <field name="mainnav_text_color" data-variable="--mainnav-text-color" class="inline col-l" type="t4brand" default="#212529" label="T4_TEXT_COLOR_LABEL" description="T4_TEXT_COLOR_DESC" />
+        <field name="mainnav_link_color" data-variable="--mainnav-link-color" class="inline col-r" type="t4brand" default="#212529" label="T4_LINK_COLOR_LABEL" description="T4_LINK_COLOR_DESC" />
+        <field name="mainnav_link_hover_color" data-variable="--mainnav-link-hover-color" class="inline col-l" type="t4brand" default="#007bff" label="T4_LINK_HOVER_COLOR_LABEL" description="T4_LINK_HOVER_COLOR_DESC" />
+        <field name="mainnav_link_active_color" data-variable="--mainnav-link-active-color" class="inline col-r" type="t4brand" default="#007bff" label="T4_LINK_ACTIVE_COLOR_LABEL" description="T4_LINK_ACTIVE_COLOR_DESC" />
+
+        <!-- Footer color -->
+        <field type="spacer" name="footercolor" label="T4_FOOTER_COLOR_GROUP_LABEL" class="t4-spacer footer-spacer" />
+        <field name="footer_bg_color" data-variable="--footer-bg-color" class="inline col-l" type="t4brand" default="#212529" label="T4_BG_COLOR_LABEL" description="T4_BG_COLOR_DESC" />
+        <field name="footer_text_color" data-variable="--footer-text-color" class="inline col-r" type="t4brand" default="#6c757d" label="T4_TEXT_COLOR_LABEL" description="T4_TEXT_COLOR_DESC" />
+        <field name="footer_link_color" data-variable="--footer-link-color" class="inline col-l" type="t4brand" default="#6c757d" label="T4_LINK_COLOR_LABEL" description="T4_LINK_COLOR_DESC" />
+        <field name="footer_link_hover_color" data-variable="--footer-link-hover-color" class="inline col-r" type="t4brand" default="#fff" label="T4_LINK_HOVER_COLOR_LABEL" description="T4_LINK_HOVER_COLOR_DESC" />
+
+    </fieldset>
+    <fieldset name="group_palette" icon="swatchbook" class="has-icon" label="T4_PALETTE_GROUP" description="T4_PALETTE_GROUP_DESC"  type="legend" subgroup="1">
+     <field name="styles_palettes" class="color_pattern_group" class_field="col-12" default="" type="palettes" icon="swatchbook" group="theme" label="T4_COLOR_PATTERN_GROUP" description="T4_COLOR_PATTERN_DESC" >
+        <color name="background_color" title="T4_LAYOUT_PALETTES_BACKGROUND_COLOR" value="#FFFFFF" class="bg_color col-left" />
+        <color name="heading_color" title="T4_LAYOUT_PALETTES_HEADING_COLOR"  value="#444" class="heading_color  col-right" />
+        <color name="heading_hover_color" title="T4_LAYOUT_PALETTES_HEADING_HOVER_COLOR"  value="#1a61ab" class="heading_hover_color col-left" />
+        <color name="text_color" title="T4_LAYOUT_PALETTES_TEXT_COLOR" value="#444" class="text_color  col-right" />
+        <color name="link_color" title="T4_LAYOUT_PALETTES_LINK_COLOR" value="#444" class="link_color  col-left" />
+        <color name="link_hover_color" title="T4_LAYOUT_PALETTES_LINK_HOVER_COLOR" value="#1a61ab" class="link_hover_color  col-right" />
+      </field>
+    </fieldset>
+  </fields>
+</form>

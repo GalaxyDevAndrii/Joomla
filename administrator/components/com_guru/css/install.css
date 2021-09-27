@@ -1,0 +1,75 @@
+body{
+	background-color:#F5FFFA !important;
+}
+
+.install-content{
+	margin-left:auto;
+	margin-right:auto;
+	width:60%;
+}
+
+.install-header{
+	background-color:#0099FF;
+	float:left;
+	width:100%;
+	border:2px solid #0099FF;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.install-header-left{
+	float:left;
+	margin-left:10px;
+	font-size: 40px;
+    line-height: 85px;
+	width:45%;
+}
+
+.install-header-right{
+	float:right;
+	margin-right:10px;
+	margin-top:5px;
+	width:50%;
+	text-align: right;
+}
+
+.install-body{
+	background-color:#FFFFFF;
+	float:left;
+	width:100%;
+	border:2px solid #0099FF;
+	border-radius: 0px 0px 5px 5px;
+	padding:10px 0px;
+}
+
+.install-body > ul li{
+	border-bottom: 1px solid #cccccc;
+    line-height: 30px;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.install-loading{
+	float: right;
+    height: 20px;
+    text-align: right;
+}
+
+.install-loading .progress{
+	width:150px;
+	margin-right:5px;
+}
+
+.install-step-label{
+	font-family: helvetica;
+    font-size: 15px;
+}
+
+.install-checked{
+	width:35px;
+	float:right;
+}
+
+.install-redirect-button{
+	width:100%;
+	text-align:right;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+<fields name="attribs">
+    <fieldset name="extra-fields" label="TPL_GROUP_EXTRA_FIELDS_LABEL" description="" group="extrafields">
+			<field name="price" type="text" label="TPL_PRICE" description="TPL_PRICE_DESC" />
+			<field name="price-off" type="text" label="TPL_PRICE_OFF" description="TPL_PRICE_OFF_DESC" />
+			<field name="students" type="text" label="TPL_STUDENTS" description="TPL_STUDENTS_DESC" />
+			<field name="time" type="text" label="TPL_DURATIONS" description="TPL_DURATIONS_DESC" />
+			<field name="level" type="text" label="TPL_LEVELS" description="TPL_LEVELS_DESC" />
+			<field name="link-course" type="text" label="TPL_LINK_COURSE" description="TPL_LINK_COURSE_DESC" />
+
+			<field name="type-article" type="hidden" default="view-course" label="TPL_MODEL_INFO_LABEL" />
+			<!-- MODEL INFO -->
+			<field name="course-title" type="text" label="TPL_COURSE_CONTENT" description="TPL_COURSE_CONTENT_DESC"/>
+
+	    <field
+				name="course-list"
+				type="subform"
+				label="TPL_COURSE_OPTIONS"
+				description="TPL_COURSE_OPTIONS_DESC"
+				layout="joomla.form.field.subform.repeatable-table"
+				icon="list"
+				multiple="true"
+				class="no-row"
+				>
+				<form hidden="true" name="list-info-course" repeat="true">
+					<field
+						name="course_title"
+						type="text"
+						label="TPL_COURSE_TITLE_LABEL"
+						description="TPL_COURSE_TITLE_DESC"
+					/>
+
+					<field
+						name="course_desc"
+						type="textarea"
+						label="TPL_COURSE_DESCRIPTIONS_LABEL"
+						description="TPL_COURSE_DESCRIPTIONS_DESC"
+						filter="raw"
+						rows="10"
+						cols="5"
+					/>				
+				</form>
+			</field>
+
+			<field
+				name="course-requirements"
+				type="subform"
+				label="TPL_COURSE_REQUIREMENTS"
+				description="TPL_COURSE_REQUIREMENTS_DESC"
+				layout="joomla.form.field.subform.repeatable-table"
+				icon="list"
+				multiple="true"
+				class="no-row"
+				>
+				<form hidden="true" name="list-requirements-course" repeat="true">
+					<field
+						name="requirements_title"
+						type="text"
+						label="TPL_COURSE_TITLE_LABEL"
+						description="TPL_COURSE_TITLE_DESC"
+					/>				
+				</form>
+			</field>
+    </fieldset>
+</fields>
+</form>

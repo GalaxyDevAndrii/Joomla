@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fields name="params" addfieldpath="/plugins/system/t4/admin/field">
+    <fieldset name="themeConfig">
+      <field name="tplhelper" type="tplhelper" />
+      <field name="stylePreview" type="CustomStylePreview" class="custom-style-preview" default="" label="TPL_T4_PREVIEW" description="TPL_T4_PREVIEW_DESC" />
+      <!-- Template Info -->
+      <field type="legend" icon="info-circle" class="t4-detail" label="T4_GROUP_OVERVIEW_LABEL" description="T4_GROUP_DETAIL_DESC" panel-heading="T4_GROUP_OVERVIEW_LABEL" expend="1" />
+      <field name="tempDetail" type="tempdetail" class="detail_info" label="TPL_T4_TEMPLATE_OVERVIEW_LABEL" description="TPL_T4_TEMPLATE_DETAIL_DESC" />
+      <!-- Site Settings -->
+      <field type="legend" icon="cog" class="t4-site-settings" label="TPL_T4_SITE_SETTINGS_LABEL" description="TPL_T4_SITE_SETTINGS_DESC" panel-heading="TPL_T4_SITE_SETTINGS_DESC" expend="1" />
+      <field name="typelist-site" type="typelist" class="" default="" label="T4_SITE" />
+      <!-- NAVIGATION -->
+      <field name="group-navigation" type="legend" icon="bars" class="t4-navigation" label="T4_GROUP_NAVIGATION_LABEL" description="T4_GROUP_NAVIGATION_DESC" panel-heading="T4_GROUP_NAVIGATION_DESC" expend="1" />
+      <field name="typelist-navigation" type="typelist" class="" default="" label="T4_NAVIGATION" />
+      <!-- Theme Group -->
+      <field name="groupt-theme" type="legend" class="t4-group-theme" default="" icon="palette" label="T4_GROUP_THEME_COLOR" panel-heading="T4_GROUP_THEME_COLOR_DESC" expend="1" />
+      <field name="typelist-theme" type="typelist" class="" default="" label="T4_THEME_SELECT_THEME" />
+      <!-- Layout Pane -->
+      <field name="groupt-layout" type="legend" class="t4-layout-builder" default="" icon="columns" label="T4_GROUP_LAYOUTS_SETTINGS" panel-heading="T4_GROUP_LAYOUTS_SETTINGS" expend="1" />
+      <field name="group-mainlayout" class="has-icon" type="legend" subgroup="1" icon="columns" label="T4_LAYOUT_GROUP_LABEL" />
+      <field name="typelist-layout" type="typelist" class="" default="" label="T4_LAYOUTS_SELECT_LAYOUT" />
+      <field name="group-sublayout" class="has-icon" type="legend" subgroup="1" icon="columns" label="T4_SUBLAYOUT_GROUP_LABEL" />
+      <field name="sub-layout" type="t4layouts" class="t4-draft-preview" label="Sub Layout" />
+      <!-- Global settings -->
+      <field name="group-system" type="legend" icon="cogs" label="T4_ADVANCED_GROUP_LABEL" class="advance t4-advanced" description="T4_GROUP_SYSTEM_DESC" panel-heading="T4_GROUP_SYSTEM_DESC" />
+      <field name="optimization" class="optimization_group has-icon" type="legend" subgroup="1" icon="compress-arrows-alt" label="T4_OPTIMIZATION_GROUP_LABEL" description="T4_OPTIMIZATION_GROUP_DESC" />
+      <field name="system_optimizecss" type="t4radio" default="0" label="T4_OPTIMIZATION_CSS_LABEL" description="T4_OPTIMIZATION_CSS_DESC" value="1" subgroup="1" group="optimizecss" />
+      <field name="system_optimizecss_exclude" type="textarea" default="" label="T4_OPTIMIZATION_CSS_EXCLUDE_LABEL" description="T4_OPTIMIZATION_CSS_EXCLUDE_DESC" class="checkbox-group optimizecss" />
+      <field name="system_optimizejs" class="" type="t4radio" default="0" label="T4_OPTIMIZATION_JS_LABEL" description="T4_OPTIMIZATION_JS_DESC" subgroup="1" group="optimizejs" />
+      <field name="system_optimizejs_exclude" type="textarea" default="" label="T4_OPTIMIZATION_JS_EXCLUDE_LABEL" description="T4_OPTIMIZATION_JS_EXCLUDE_DESC" class="checkbox-group optimizejs" />
+      <field name="custom_code" class="customcode_group has-icon" type="legend" subgroup="1" icon="code" label="T4_CUSTOM_CODE_GROUP" description="T4_CUSTOM_CODE_DESC" />
+      <field name="system_advancedCodeAfterHead" class="checkbox-group code" type="textarea" default="" label="T4_AFTER_HEAD_LABEL" description="T4_AFTER_HEAD_DESC" rows="10" cols="80" filter="raw" />
+      <field name="system_advancedCodeBeforeHead" class="checkbox-group code" type="textarea" default="" label="T4_BEFORE_HEAD_LABEL" description="T4_BEFORE_HEAD_DESC" rows="10" cols="80" filter="raw" />
+      <field name="system_advancedCodeAfterBody" class="checkbox-group code" type="textarea" default="" label="T4_AFTER_BODY_LABEL" description="T4_AFTER_BODY_DESC" rows="10" cols="80" filter="raw" />
+      <field name="system_advancedCodeBeforeBody" class="checkbox-group code" type="textarea" default="" label="T4_BEFORE_BODY_LABEL" description="T4_BEFORE_BODY_DESC" rows="10" cols="80" filter="raw" />
+      <!-- Addons group -->
+      <field name="addons_group" class="addons_group has-icon" type="legend" subgroup="1" icon="plug" label="T4_ADVANCED_ADDONS_GROUP_LABEL" description="T4_ADVANCED_ADDONS_GROUP_DESC" />
+      <field name="system_addons" class="" type="addons" />
+      <!-- menu asignment group -->
+      <field type="legend" icon="ballot-check" label="COM_TEMPLATES_MENUS_ASSIGNMENT" panel-heading="COM_TEMPLATES_MENUS_ASSIGNMENT" class="t4-assignment" description="" />
+      <!-- Tools Pane -->
+      <field name="tools_advanced" class="tools_group has-icon t4-tools" type="legend" icon="tools" label="T4_TOOLS_GROUP_LABEL" description="T4_TOOLS_GROUP_DESC" panel-heading="T4_TOOLS_GROUP_LABEL" />
+      <field name="advanced_tools" class="" type="toolbackup" />
+    </fieldset>
+  </fields>
+</form>

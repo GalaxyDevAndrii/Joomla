@@ -1,0 +1,115 @@
+// ------------------------------------
+// T4 Utilities & Mixins
+// ------------------------------------
+
+//
+// Insert Font Awesome Icons
+// Default is Angle Right [http://fortawesome.github.io/Font-Awesome/icon/angle-right/]
+@mixin icon($icon: "\f105") {
+  content: $icon;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+}
+
+//
+// Insert Typography Separator
+// Default is En Dash [https://www.typewolf.com/cheatsheet]
+@mixin separator($sep: "–") {
+  content: $sep;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+}
+
+//
+// Vertical Align Anything
+// Note: In some case, the Container need Height to working properly
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+// Social list
+@mixin socials-list($icon-height: 32px, $icon-width: 32px, $icon-bg: transparent, $icon-color: $white) {
+  margin: 0;
+  list-style: none;
+  line-height: 1;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    padding: 0 $spacer/6;
+
+    a {
+      display: block;
+      opacity: 0.8;
+
+      &:hover, &:focus, &:active {
+        opacity: 1;
+        text-decoration: none;
+      }
+    }
+
+    span {
+      display: block;
+      height: $icon-height;
+      line-height: $icon-height;
+      text-align: center;
+      width: $icon-width;
+
+      @if $icon-bg != transparent {
+        background-color: $icon-bg;
+        border-radius: 3px;
+        color: $icon-color;
+        font-size: $icon-width - 6px;
+        height: $icon-height + 5px;
+        line-height: $icon-height + 5px;
+        width: $icon-height + 5px;
+      }
+    }
+  }
+}
+
+
+//
+// MISC.
+// --------------------------------------------------
+.star {
+  color: $yellow;
+}
+
+.red {
+  color: $red;
+}
+
+// Wrap Element
+.wrap {
+  width: auto;
+  clear: both;
+}
+
+// Center
+.center,
+.table td.center,
+.table th.center {
+  text-align: center;
+}
+
+// Hidden elements
+.element-invisible {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+}
+

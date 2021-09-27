@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Courses category layout">
+		<message>Courses category layout</message>
+    </layout>
+    <fields name="params" addfieldpath="/components/com_guru/models/fields">
+		<fieldset name="basic" label="COM_MENUS_BASIC_FIELDSET_LABEL">	
+			<field name="cid" type="gurucategory" default="" label="Select category" description="Select a category"/>	
+			<!--<field name="display" type="gurulist" default="" label="Select layout" description="Select layout"/>-->
+		</fieldset>
+	</fields>	
+</metadata>

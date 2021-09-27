@@ -1,0 +1,48 @@
+<section class="fullscreen-popup-container resend-results">
+    <div class="fp-content-row">
+        <div class="fp-content-cell">
+            <div class="fp-content">
+                <div class="fp-content-step send-error">
+                    <h3 translate="{{summary.resendResultsToWebhooksDialog.resultsSendErrorTitleKey}}"></h3>
+                    <div class="note" ng-class="{ shake: summary.resendResultsToWebhooksDialog.resendingFailed }">
+                        <p>
+                            <span class="material-icons incorrect-color">info</span>
+                            <span>{{ '[try to submit again key]' | translate }}</span>
+                        </p>
+                        <p>
+                            <span class="material-icons incorrect-color">info</span>
+                            <span>{{ '[contanct with author key]' | translate }}</span>
+                        </p>
+                        <p>
+                            <span class="material-icons incorrect-color">info</span>
+                            <span>{{ '[general-message-key]' | translate }}</span>
+                            <span class="error-message">{{ '[error-message-key]' | translate }}</span>
+                        </p>
+                    </div>
+                    <div class="result-buttons">
+                        <button class="button block cancel default" ng-click="summary.resendResultsToWebhooksDialog.hideDialog()" ng-class="{ disabled: summary.resendResultsToWebhooksDialog.isResendingResults }"  ng-disabled="summary.resendResultsToWebhooksDialog.isResendingResults">
+                            <i class="material-icons">keyboard_backspace</i>
+                            <span>{{ '[back]' | translate }}</span>
+                        </button>
+                        <button href="#" class="button block primary autofocus submit" ng-click="summary.resendResultsToWebhooksDialog.resendResults()" ng-disabled="summary.resendResultsToWebhooksDialog.isResendingResults"  ng-class="{ progress: summary.resendResultsToWebhooksDialog.isResendingResults }">
+                            <span class="text-wrapper" ng-show="!summary.resendResultsToWebhooksDialog.isResendingResults">
+                                    {{ '[resend-results-key]' | translate }}
+                            </span>
+                            <div ng-show="summary.resendResultsToWebhooksDialog.isResendingResults">
+                                <span class="operation-progress white"></span>
+                                <span>&nbsp;</span>
+                            </div>
+                        </button>
+                        <div class="link-container" ng-show="summary.resendResultsToWebhooksDialog.retriesExceeded">
+                            <a class="link" ng-click="summary.resendResultsToWebhooksDialog.skipResultsSending()">{{ summary.resendResultsToWebhooksDialog.skipSendinResultsText }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay-close-button" ng-click="summary.resendResultsToWebhooksDialog.hideDialog()">
+                <span class="overlay-close-button-icon material-icons">clear</span>
+                <div class="overlay-close-button-title">esc</div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<field name="language" type="lang" nodefault="1" description="COM_RSFORM_EMAIL_LANGUAGE_SWITCH_DESC" label="COM_RSFORM_EMAIL_LANGUAGE_SWITCH" default="en-GB" onchange="Joomla.submitbutton('emails.changeLanguage')" />
+	<fieldset name="sender" label="RSFP_EMAILS_LEGEND_SENDER">
+		<field type="placeholder" class="rs_75" name="from" label="RSFP_EMAILS_FROM" hint="RSFP_EMAILS_FROM_PLACEHOLDER" data-delimiter=" " data-placeholders="display" data-filter-type="include" data-filter="value,global" required="true" />
+		<field type="placeholder" class="rs_75" name="fromname" label="RSFP_EMAILS_FROM_NAME" hint="RSFP_EMAILS_FROM_NAME_PLACEHOLDER" data-delimiter=" " data-placeholders="display" labelclass="rsfp-translate-icon" />
+	</fieldset>
+	<fieldset name="recipient" label="RSFP_EMAILS_LEGEND_RECIPIENT">
+		<field type="placeholder" class="rs_75" name="to" label="RSFP_EMAILS_TO" hint="RSFP_EMAILS_TO_PLACEHOLDER" data-delimiter="," data-placeholders="display" data-filter-type="include" data-filter="value,global" required="true" />
+		<field type="placeholder" class="rs_75" name="replyto" label="RSFP_EMAILS_REPLY_TO" hint="RSFP_EMAILS_REPLY_TO_PLACEHOLDER" data-delimiter="," data-placeholders="display" data-filter-type="include" data-filter="value,global" />
+		<field type="placeholder" class="rs_75" name="replytoname" label="RSFP_EMAILS_REPLY_TO_NAME" hint="RSFP_EMAILS_REPLY_TO_NAME_PLACEHOLDER" data-delimiter=" " data-placeholders="display" labelclass="rsfp-translate-icon" />
+		<field type="placeholder" class="rs_75" name="cc" label="RSFP_EMAILS_CC" hint="RSFP_EMAILS_CC_PLACEHOLDER" data-delimiter="," data-placeholders="display" data-filter-type="include" data-filter="value,global" />
+		<field type="placeholder" class="rs_75" name="bcc" label="RSFP_EMAILS_BCC" hint="RSFP_EMAILS_BCC_PLACEHOLDER" data-delimiter="," data-placeholders="display" data-filter-type="include" data-filter="value,global" />
+	</fieldset>
+	<fieldset name="contents" label="RSFP_EMAILS_LEGEND_CONTENTS">
+		<field type="placeholder" class="rs_75" name="subject" label="RSFP_EMAILS_SUBJECT" hint="RSFP_EMAILS_SUBJECT_PLACEHOLDER" data-delimiter=" " data-placeholders="display" required="true" labelclass="rsfp-translate-icon" />
+		<field name="mode" type="radio" class="btn-group btn-group-yesno" label="RSFP_EMAILS_MODE">
+			<option value="0">COM_RSFORM_MODE_TEXT</option>
+			<option value="1">COM_RSFORM_MODE_HTML</option>
+		</field>
+		<field name="message_1" type="editor" showon="mode:1" label="RSFP_EMAILS_TEXT" labelclass="rsfp-translate-icon" />
+		<field name="message_0" type="textarea" showon="mode:0" label="RSFP_EMAILS_TEXT" labelclass="rsfp-translate-icon" />
+		<field name="type" type="hidden" />
+		<field name="id" type="hidden" />
+		<field name="formId" type="hidden" />
+	</fieldset>
+</form>

@@ -1,0 +1,32 @@
+<div class="error-page-container">
+    <main-background class="main-background">
+        <div class="main-background-image"></div>
+        <div class="main-background-overlay"></div>
+    </main-background>
+    <header class="app-header">
+        <img class="main-logo" ng-src="{{ xApiError.logoUrl }}">
+        <span class="vertical-align-helper"></span>
+    </header>
+    <div class="error-container" ng-init="scrollToTop()" entire-height>
+        <div class="error-content-container xapi-error">
+            <div class="error-title-container">
+                {{ '[tracking and tracing error]' | translate }}
+            </div>
+            <div class="error-message-container">
+                {{ xApiError.allowToContinue ? '[tracking and tracing error hint]' : '[tracking and tracing error hint without continue]' | translate }}
+            </div>
+            <div class="error-button-container">
+                <button ng-if="xApiError.allowToContinue" ng-click="xApiError.continue()" class="button default">
+                    <span class="text-wrapper">
+                        {{ '[tracking and tracing continue anyway]' | translate }}
+                    </span>
+                </button>
+                <button ng-click="xApiError.restartCourse()" class="button primary">
+                    <span class="text-wrapper">
+                        {{ '[tracking and tracing restart course]' | translate }}
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

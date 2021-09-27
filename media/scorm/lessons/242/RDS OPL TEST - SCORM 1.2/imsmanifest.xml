@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="EG79f89649-c196-4330-8417-6698ff64e114" version="1.1" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata />
+  <organizations default="easygenerator">
+    <organization identifier="easygenerator">
+      <title>RDS OPL course</title>
+      <item identifier="eg1" identifierref="REFSCO1" isvisible="true">
+        <title>RDS OPL course</title>
+      </item>
+      <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>1.2</schemaversion>
+        <adlcp:location>metadata.xml</adlcp:location>
+      </metadata>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="REFSCO1" type="webcontent" href="index.html" adlcp:scormtype="sco">
+      <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>1.2</schemaversion>
+        <adlcp:location>metadata.xml</adlcp:location>
+      </metadata>
+      <file href="metadata.xml" />
+      <dependency identifierref="resources" />
+    </resource>
+    <resource identifier="resources" type="webcontent" adlcp:scormtype="asset">
+          <file href="adlcp_rootv1p2.xsd" />
+          <file href="asset-manifest.json" />
+          <file href="content%2F4ab0f17e231f48a0be536eca69aa257b%2F6ae458f0e0994b01a1a5807437f9343f%2Fc8af74ea9ffe4b2eb0be358eac4d1489.html" />
+          <file href="content%2F4ab0f17e231f48a0be536eca69aa257b%2F6ae458f0e0994b01a1a5807437f9343f%2Fd26e57018c0449acbe06b8c5f0a4bc5b.html" />
+          <file href="content%2F4ab0f17e231f48a0be536eca69aa257b%2F6ae458f0e0994b01a1a5807437f9343f%2Fe5d0baa73962467bb2584a9216741345.html" />
+          <file href="content%2F4ab0f17e231f48a0be536eca69aa257b%2F897dd5adf3f148a4b9ab7795133355fe%2F65a28168d45a4603bbac209e1b7f77b3.html" />
+          <file href="content%2F4ab0f17e231f48a0be536eca69aa257b%2F897dd5adf3f148a4b9ab7795133355fe%2F71169892a4824c42864a6159981aeb14.html" />
+          <file href="content%2F4ab0f17e231f48a0be536eca69aa257b%2F897dd5adf3f148a4b9ab7795133355fe%2Fc43e1cf052a147ada5232e20555befc3.html" />
+          <file href="content%2F4ab0f17e231f48a0be536eca69aa257b%2Fc2be42b1f1ce4d58bb4e5a815101ef76%2F29cd1c1d5ce44b148ece222bfdd7b510.html" />
+          <file href="content%2F4ab0f17e231f48a0be536eca69aa257b%2Fc2be42b1f1ce4d58bb4e5a815101ef76%2F5837ddad3e1d4a60ab879e8842a11329.html" />
+          <file href="content%2F4ab0f17e231f48a0be536eca69aa257b%2Fc2be42b1f1ce4d58bb4e5a815101ef76%2Fc08920b4a69e44f3ad27ac6b94f01162.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fda30ef38e90846d38bfd38ce907dbcbd%2F207d9265c54b4a049d45d7d75d0384fc.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fda30ef38e90846d38bfd38ce907dbcbd%2F20f5e43477b84df79bf712e2ec392bb8.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fda30ef38e90846d38bfd38ce907dbcbd%2F5f1e7cae66634e3496fec6ee015df434.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fefaa001237a54a759a0f2c1cdb37b9b0%2F0865ad5c80c54de9a616409a387280c5.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fefaa001237a54a759a0f2c1cdb37b9b0%2F09756143175b42f0a46be1048e75aba2.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fefaa001237a54a759a0f2c1cdb37b9b0%2F0e1742eb11ef4a51bc84198684fa2c2e.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fefaa001237a54a759a0f2c1cdb37b9b0%2F1544c44bcd6341d8b63a477f43ab39fc.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fefaa001237a54a759a0f2c1cdb37b9b0%2F1c663c93febd4fdda0e1b0739776c5c7.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fefaa001237a54a759a0f2c1cdb37b9b0%2F3c092659f9f641f9bfc2f418fc3db3bf.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fefaa001237a54a759a0f2c1cdb37b9b0%2F43ca1b5966824d498208ae9035f07833.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fefaa001237a54a759a0f2c1cdb37b9b0%2F65e8fb5e4f774505ad303ef1f63d2bfa.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fefaa001237a54a759a0f2c1cdb37b9b0%2F6d78279a28314e70ba552436ece63768.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fefaa001237a54a759a0f2c1cdb37b9b0%2F71d2e4eb256047f6abc0aa1ea714ac75.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fefaa001237a54a759a0f2c1cdb37b9b0%2F7433d7f4fc824efd86bfaea3796c7517.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fefaa001237a54a759a0f2c1cdb37b9b0%2F8d51dfcbe28e414c868e7dee5e908797.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fefaa001237a54a759a0f2c1cdb37b9b0%2F9233981a377b45d994118b93f444f916.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fefaa001237a54a759a0f2c1cdb37b9b0%2Fb403595cb4c54e8489f96b3b7e055374.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fefaa001237a54a759a0f2c1cdb37b9b0%2Fe4dd9ca32be5435fb21abaeea9e1ae35.html" />
+          <file href="content%2F890b0853b11848dc8ea4460b21406210%2Fefaa001237a54a759a0f2c1cdb37b9b0%2Feae9fd40145a4b0eaa371503a47a4ac8.html" />
+          <file href="content%2Fdata.js" />
+          <file href="content%2Fintroduction%2F75d56f73e7934515af803f4b0e5261ea.html" />
+          <file href="customisations.json" />
+          <file href="fonts%2FOpenSans-Bold.woff" />
+          <file href="fonts%2FOpenSans-Bold.woff2" />
+          <file href="fonts%2FOpenSans-BoldItalic.woff" />
+          <file href="fonts%2FOpenSans-BoldItalic.woff2" />
+          <file href="fonts%2FOpenSans-Italic.woff" />
+          <file href="fonts%2FOpenSans-Italic.woff2" />
+          <file href="fonts%2FOpenSans-Regular.woff" />
+          <file href="fonts%2FOpenSans-Regular.woff2" />
+          <file href="fonts%2FPTSerif-Bold.woff" />
+          <file href="fonts%2FPTSerif-Bold.woff2" />
+          <file href="fonts%2FPTSerif-BoldItalic.woff" />
+          <file href="fonts%2FPTSerif-BoldItalic.woff2" />
+          <file href="fonts%2FPTSerif-Italic.woff" />
+          <file href="fonts%2FPTSerif-Italic.woff2" />
+          <file href="fonts%2FPTSerif-Regular.woff" />
+          <file href="fonts%2FPTSerif-Regular.woff2" />
+          <file href="fonts%2Ffonts.css" />
+          <file href="fonts%2Fiowanoldst-bt-400.ttf" />
+          <file href="fonts%2Fqanelas-soft-400.ttf" />
+          <file href="ims_xml.xsd" />
+          <file href="imscp_rootv1p1p2.xsd" />
+          <file href="imsmd_rootv1p2p1.xsd" />
+          <file href="includedModules%2Flms.js" />
+          <file href="index.html" />
+          <file href="lang%2Faf.json" />
+          <file href="lang%2Far.json" />
+          <file href="lang%2Fbg.json" />
+          <file href="lang%2Fbn.json" />
+          <file href="lang%2Fcz.json" />
+          <file href="lang%2Fda.json" />
+          <file href="lang%2Fde.json" />
+          <file href="lang%2Fel.json" />
+          <file href="lang%2Fen.json" />
+          <file href="lang%2Fes.json" />
+          <file href="lang%2Ffi%20%28experiment%29.json" />
+          <file href="lang%2Ffi.json" />
+          <file href="lang%2Ffr.json" />
+          <file href="lang%2Fhr.json" />
+          <file href="lang%2Fhu.json" />
+          <file href="lang%2Fid.json" />
+          <file href="lang%2Fit.json" />
+          <file href="lang%2Fja.json" />
+          <file href="lang%2Flt.json" />
+          <file href="lang%2Flv.json" />
+          <file href="lang%2Fms.json" />
+          <file href="lang%2Fnb-no.json" />
+          <file href="lang%2Fnl-inf.json" />
+          <file href="lang%2Fnl.json" />
+          <file href="lang%2Fnn-no.json" />
+          <file href="lang%2Fpl.json" />
+          <file href="lang%2Fpt.json" />
+          <file href="lang%2Fro.json" />
+          <file href="lang%2Fru.json" />
+          <file href="lang%2Fsk.json" />
+          <file href="lang%2Fsl.json" />
+          <file href="lang%2Fsv.json" />
+          <file href="lang%2Fth.json" />
+          <file href="lang%2Fuk.json" />
+          <file href="lang%2Fvi.json" />
+          <file href="lang%2Fzh-hans.json" />
+          <file href="lang%2Fzh-hant.json" />
+          <file href="manifest.json" />
+          <file href="media%2F31de1231-ebf2-44f7-9f71-b732da78c09b.jpg" />
+          <file href="media%2F50681ed0-9f05-4eb2-a050-b5c3cd8effd0.jpg" />
+          <file href="media%2F71592910-f212-4d11-a6fe-249c52379492.png" />
+          <file href="media%2F72e554f2-6c91-494e-9476-0549bd6cab92.png" />
+          <file href="media%2Fd24f981d-0274-4ebf-b35e-cd5014d91aea.jpg" />
+          <file href="precache-manifest.003f555f7861da3507dd545eb23dcb93.js" />
+          <file href="preview%2Fimages%2Fpreview.jpg" />
+          <file href="preview%2Fthumbnail.png" />
+          <file href="publishSettings.js" />
+          <file href="service-worker.js" />
+          <file href="settings.js" />
+          <file href="static%2Fcss%2F6.48a5797b.chunk.css" />
+          <file href="static%2Fcss%2F6.48a5797b.chunk.css.map" />
+          <file href="static%2Fcss%2Fmain.afacd726.chunk.css" />
+          <file href="static%2Fcss%2Fmain.afacd726.chunk.css.map" />
+          <file href="static%2Fjs%2F0.c7ce3622.chunk.js" />
+          <file href="static%2Fjs%2F0.c7ce3622.chunk.js.map" />
+          <file href="static%2Fjs%2F1.9b63c7e6.chunk.js" />
+          <file href="static%2Fjs%2F1.9b63c7e6.chunk.js.map" />
+          <file href="static%2Fjs%2F10.531e78a8.chunk.js" />
+          <file href="static%2Fjs%2F10.531e78a8.chunk.js.map" />
+          <file href="static%2Fjs%2F11.252c7215.chunk.js" />
+          <file href="static%2Fjs%2F11.252c7215.chunk.js.map" />
+          <file href="static%2Fjs%2F12.557f7e6a.chunk.js" />
+          <file href="static%2Fjs%2F12.557f7e6a.chunk.js.map" />
+          <file href="static%2Fjs%2F13.ffe95860.chunk.js" />
+          <file href="static%2Fjs%2F13.ffe95860.chunk.js.map" />
+          <file href="static%2Fjs%2F14.4f03a377.chunk.js" />
+          <file href="static%2Fjs%2F14.4f03a377.chunk.js.map" />
+          <file href="static%2Fjs%2F2.df8e4026.chunk.js" />
+          <file href="static%2Fjs%2F2.df8e4026.chunk.js.LICENSE" />
+          <file href="static%2Fjs%2F2.df8e4026.chunk.js.map" />
+          <file href="static%2Fjs%2F3.65466e05.chunk.js" />
+          <file href="static%2Fjs%2F3.65466e05.chunk.js.map" />
+          <file href="static%2Fjs%2F6.187bd558.chunk.js" />
+          <file href="static%2Fjs%2F6.187bd558.chunk.js.LICENSE" />
+          <file href="static%2Fjs%2F6.187bd558.chunk.js.map" />
+          <file href="static%2Fjs%2F7.66a4ce16.chunk.js" />
+          <file href="static%2Fjs%2F7.66a4ce16.chunk.js.map" />
+          <file href="static%2Fjs%2F8.43eac550.chunk.js" />
+          <file href="static%2Fjs%2F8.43eac550.chunk.js.map" />
+          <file href="static%2Fjs%2F9.017a60b4.chunk.js" />
+          <file href="static%2Fjs%2F9.017a60b4.chunk.js.map" />
+          <file href="static%2Fjs%2Fmain.50541aee.chunk.js" />
+          <file href="static%2Fjs%2Fmain.50541aee.chunk.js.map" />
+          <file href="static%2Fjs%2Fruntime-main.5db06b6e.js" />
+          <file href="static%2Fjs%2Fruntime-main.5db06b6e.js.map" />
+          <file href="static%2Fmedia%2Fcustom-icons.5b39c38c.woff" />
+          <file href="static%2Fmedia%2Fcustom-icons.b4043ee2.woff2" />
+          <file href="static%2Fmedia%2Ffontawesome-webfont.674f50d2.eot" />
+          <file href="static%2Fmedia%2Ffontawesome-webfont.912ec66d.svg" />
+          <file href="static%2Fmedia%2Ffontawesome-webfont.af7ae505.woff2" />
+          <file href="static%2Fmedia%2Ffontawesome-webfont.b06871f2.ttf" />
+          <file href="static%2Fmedia%2Ffontawesome-webfont.fee66e71.woff" />
+          <file href="themeSettings.js" />
+    </resource>
+  </resources>
+</manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Guru Teacher Quizzes">
+		<message>Guru Teacher Quizzes layout</message>
+    </layout>
+    <state>
+		<name>Guru Teacher Quizzes</name>
+        <description>Guru Teacher Quizzes layout</description>
+    </state>
+</metadata>

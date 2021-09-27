@@ -1,0 +1,293 @@
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    Bootstrap Overwrite
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*-- Grid Overwrite --*/
+.guru-content .container,
+.guru-content .navbar-static-top .container,
+.guru-content .navbar-fixed-top .container,
+.guru-content .navbar-fixed-bottom .container {
+    width: 100%;
+}
+.guru-content .span12 {
+    width: 100%;
+	float:left;
+}
+.guru-content .span11{
+    width: 91%;
+	float:left;
+}
+.guru-content .span10{
+    width: 83%;
+	float:left;
+}
+.guru-content .span9{
+    width: 74.4681%;
+	float:left;
+}
+.guru-content .span8{
+    width: 66%;
+	float:left;
+}
+.guru-content .span7{
+    width: 58%;
+	float:left;
+}
+.guru-content .span6{
+    width: 50% !important;
+	float:left;
+}
+.guru-content .span5{
+    width: 41%;
+	float:left;
+}
+.guru-content .span4 {
+    width: 33%;
+	float:left;
+}
+.guru-content .span3 {
+    width: 25%;
+	float:left;
+}
+.guru-content .span2{
+    width: 16%;
+	float:left;
+}
+.guru-content .span1{
+    width: 8.3%;
+	float:left;
+}
+
+
+/* responsive override
+=================================================================*/
+
+/* Portrait tablet to landscape and desktop
+-----------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 979px){
+    .guru-content .span12 { /* one collumn */
+        width: 100%;
+    }
+    .guru-content .span6 { /* two collumn */
+        width: 50% !important;
+    }
+    .guru-content .span4 { /* three collumn */
+        width: 33%;
+    }
+    .guru-content .span3 { /* four collumn */
+        width: 50%;
+    }
+}
+
+/* Landscape phone to portrait tablet
+----------------------------------------------------------------*/
+@media (max-width: 767px){
+    .guru-content .span12 { /* one collumn */
+        width: 100%;
+    }
+    .guru-content .span6 { /* two collumn */
+        width: 100% !important;
+    }
+    .guru-content .span4 { /* three collumn */
+        width: 100% !important;
+    }
+    .guru-content .span3 { /* four collumn */
+        width: 100%;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px){
+    .guru-content [class*="span"]{
+        width: 100%;
+    }
+}
+
+/* modal layout
+==============================*/
+.g_modal_cell.span12{
+    width: 100% !important;
+}
+
+/* Buttons
+---------------------------------------------------------------*/
+.btn.btn-link{
+    padding: 0;
+    background: none;
+    border: 0 none;
+}
+.guru-content .btn-default, 
+.guru-content .btn {
+    background-image: none !important;
+    border-radius: 4px !important;
+    color: #FFFFFF !important;
+    line-height: 20px !important;
+    margin: 5px 0;
+    text-shadow: none !important;
+    transition: all 0.15s ease 0s;
+    box-shadow: none;
+}
+
+
+
+.guru-content .btn, 
+.guru-content .btn-default {
+    background-color: #7F8C8D !important;
+    border-color: #7F8C8D;
+}
+
+.btn-disabled, .btn-disabled:hover{
+	/*background-color:#CCCCCC !important;*/
+	opacity:0.50 !important;
+}
+
+.guru-content .btn:hover, 
+.guru-content .btn-default:hover {
+    background-color: #707D7E;
+}
+
+
+.guru-content .btn-primary, 
+.guru-content .btn.btn-primary {
+    background-color: #3498DB !important;
+    border-color: #3498DB;
+}
+
+
+
+.guru-content .btn-primary:hover,
+.guru-content .btn.btn-primary:hover {
+
+    background-color: #2489CC !important;
+
+}
+
+
+
+.guru-content .btn-info,
+.guru-content .btn.btn-info {
+
+    background-color: #6FB3E0 !important;
+
+    border-color: #6FB3E0;
+
+}
+
+
+
+.guru-content .btn-info:hover,
+.guru-content .btn.btn-info:hover {
+
+    background-color: #4F99C6 !important;
+
+}
+
+
+
+.guru-content .btn-success,
+.guru-content .btn.btn-success {
+
+    background-color: #87B87F !important;
+
+    border-color: #87B87F;
+
+}
+
+
+
+.guru-content .btn-success:hover,
+.guru-content .btn.btn-success:hover {
+
+    background-color: #629B58 !important;
+
+}
+
+
+
+.guru-content .btn-warning {
+
+    background-color: #FFB752 !important;
+
+    border-color: #FFB752;
+
+}
+
+
+
+.guru-content .btn-warning:hover,
+.guru-content .btn.btn-warning:hover{
+
+    background-color: #E59729 !important;
+
+}
+
+
+
+.guru-content .btn-danger,
+.guru-content .btn.btn-danger {
+    background-color: #D15B47 !important;
+    border-color: #D15B47;
+}
+
+
+
+.guru-content .btn-danger:hover,
+.guru-content .btn.btn-danger:hover {
+
+    background-color: #B74635 !important;
+
+}
+
+
+
+.guru-content .btn-inverse,
+.guru-content .btn.btn-inverse {
+	background-color: #555555 !important;
+    border-color: #555555;
+}
+
+
+
+.guru-content .btn-inverse:hover,
+.guru-content .btn.btn-inverse:hover {
+
+    background-color: #303030 !important;
+
+}
+
+
+
+/*fixing and exceptions*/
+
+#filter-bar .btn{
+
+    margin: 0 2px !important;
+
+    padding: 2px 12px !important;
+
+}
+
+
+
+.form-search .btn{
+
+    margin: 0 4px;
+
+}
+.guru-content .input-group-btn, .input-group .form-control{
+	display:inline;
+}
+.guru-content .g_search input[type="text"]{
+	display:inline;
+}
+.guru-content  .input-group {
+	display:inline;
+}
+
+.modal-header .close{
+	margin-right: -27px !important;
+    margin-top: -20px !important;
+}
+
+input[type="radio"], input[type="checkbox"]{
+	margin:0px !important;
+}

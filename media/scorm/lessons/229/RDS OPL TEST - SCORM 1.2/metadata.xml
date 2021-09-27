@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+  <general>
+    <title>
+        <langstring xml:lang="en-US">RDS OPL course</langstring>
+    </title>
+    <catalogentry>
+      <catalog>-</catalog>
+      <entry>
+        <langstring xml:lang="x-none">-</langstring>
+      </entry>
+    </catalogentry>
+    <language>en-US</language>
+    <description>
+      <langstring xml:lang="en-US">-</langstring>
+    </description>
+    <keyword>
+      <langstring xml:lang="en-US">-</langstring>
+    </keyword>
+    <coverage>
+      <langstring xml:lang="en-US">-</langstring>
+    </coverage>
+    <structure>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">Collection</langstring>
+      </value>
+    </structure>
+    <aggregationlevel>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">1</langstring>
+      </value>
+    </aggregationlevel>
+  </general>
+  <lifecycle>
+    <version>
+      <langstring xml:lang="x-none">1.0</langstring>
+    </version>
+    <status>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">Draft</langstring>
+      </value>
+    </status>
+    <contribute>
+      <role>
+        <source>
+          <langstring xml:lang="x-none">LOMv1.0</langstring>
+        </source>
+        <value>
+          <langstring xml:lang="x-none">Content Provider</langstring>
+        </value>
+      </role>
+      <centity>
+        <vcard>-</vcard>
+      </centity>
+    </contribute>
+  </lifecycle>
+  <metametadata>
+    <catalogentry>
+      <catalog>-</catalog>
+      <entry>
+        <langstring xml:lang="x-none">-</langstring>
+      </entry>
+    </catalogentry>
+    <contribute>
+      <role>
+        <source>
+          <langstring xml:lang="x-none">LOMv1.0</langstring>
+        </source>
+        <value>
+          <langstring xml:lang="x-none">Creator</langstring>
+        </value>
+      </role>
+      <centity>
+        <vcard>-</vcard>
+      </centity>
+    </contribute>
+    <metadatascheme>-</metadatascheme>
+    <language>en</language>
+  </metametadata>
+  <technical>
+    <format>text/xml</format>
+    <size>0</size>
+    <location type="TEXT">-</location>
+    <requirement>
+      <type>
+        <source>
+          <langstring xml:lang="x-none">LOMv1.0</langstring>
+        </source>
+        <value>
+          <langstring xml:lang="x-none">Browser</langstring>
+        </value>
+      </type>
+      <name>
+        <source>
+          <langstring xml:lang="x-none">LOMv1.0</langstring>
+        </source>
+        <value>
+          <langstring xml:lang="x-none">Any</langstring>
+        </value>
+      </name>
+      <minimumversion>0</minimumversion>
+      <maximumversion>0</maximumversion>
+    </requirement>
+    <installationremarks>
+      <langstring xml:lang="en-US">-</langstring>
+    </installationremarks>
+    <otherplatformrequirements>
+      <langstring xml:lang="en-US">-</langstring>
+    </otherplatformrequirements>
+  </technical>
+  <educational>
+    <interactivitytype>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">Undefined</langstring>
+      </value>
+    </interactivitytype>
+    <learningresourcetype>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">Exercise</langstring>
+      </value>
+    </learningresourcetype>
+    <interactivitylevel>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">medium</langstring>
+      </value>
+    </interactivitylevel>
+    <semanticdensity>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">medium</langstring>
+      </value>
+    </semanticdensity>
+    <intendedenduserrole>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">Teacher</langstring>
+      </value>
+    </intendedenduserrole>
+    <context>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">Primary Education</langstring>
+      </value>
+    </context>
+    <typicalagerange>
+      <langstring xml:lang="x-none">-</langstring>
+    </typicalagerange>
+    <difficulty>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">medium</langstring>
+      </value>
+    </difficulty>
+    <description>
+      <langstring xml:lang="en-US">-</langstring>
+    </description>
+    <language>en</language>
+  </educational>
+  <rights>
+    <cost>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">no</langstring>
+      </value>
+    </cost>
+    <copyrightandotherrestrictions>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">no</langstring>
+      </value>
+    </copyrightandotherrestrictions>
+    <description>
+      <langstring xml:lang="en-US">-</langstring>
+    </description>
+  </rights>
+  <relation>
+    <kind>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">IsBasedOn</langstring>
+      </value>
+    </kind>
+    <resource>
+      <description>
+        <langstring xml:lang="en-US">-</langstring>
+      </description>
+      <catalogentry>
+        <catalog>-</catalog>
+        <entry>
+          <langstring xml:lang="x-none">-</langstring>
+        </entry>
+      </catalogentry>
+    </resource>
+  </relation>
+  <annotation>
+    <person>
+      <vcard>-</vcard>
+    </person>
+    <date>
+      <datetime>2021-07-02</datetime>
+      <description>
+        <langstring xml:lang="en-US">-</langstring>
+      </description>
+    </date>
+    <description>
+      <langstring xml:lang="en-US">-</langstring>
+    </description>
+  </annotation>
+  <classification>
+    <purpose>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">Educational Objective</langstring>
+      </value>
+    </purpose>
+    <description>
+      <langstring xml:lang="x-none">Courseprogress</langstring>
+    </description>
+    <keyword>
+      <langstring xml:lang="x-none">-</langstring>
+    </keyword>
+  </classification>
+</lom>

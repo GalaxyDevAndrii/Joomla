@@ -1,0 +1,882 @@
+// SIDEBAR
+// ----------------------------------
+.t4-sidebar {
+  background-color: darken($main-color,4%);
+  border-right: 1px solid $border-color;
+  height: 100%;
+  font-family: $main-font;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: $commands-panel-height;
+  overflow: hidden;
+  z-index: 100;
+
+  @media screen and (max-width: $sm) {
+    width: 100% !important;
+  }
+
+  @media screen and (min-width: $sm) {
+    position: fixed;
+  }
+
+  .t4-pn-views-container.t4-layout-builder,
+  .t4-pn-views-container.t4-navigation {
+    @media screen and (min-width: $md) {
+      width: $view-panel-width + $view-panel-container-width + 100px;
+    }
+  }
+
+  .t4-pn-views-container.t4-detail,
+  .t4-pn-views-container.t4-advanced {
+    @media screen and (min-width: $md) {
+    }
+  }
+
+  .t4-pn-views-container.t4-assignment {
+    right: $base-padding*2;
+    width: auto;
+  }
+
+  //
+  // Sub header
+  .sub-head {
+    background-color: $gray-100;
+    padding: $base-padding*2 $base-padding*3;
+  }
+
+  // Panel
+  // -----------------------------
+  .panel {
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid $border-color;
+  }
+
+  // Panel heading
+  .panel-heading {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: $gray-600;
+    letter-spacing: 0.5px;
+    padding: 12px 24px;
+    position: relative;
+    transition: all 0.25s ease-in;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $gray-100;
+    }
+
+    h5 {
+      font-weight: 500;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  // Preset chooser
+  .preset-chooser {
+    border-bottom: 1px solid $border-color;
+    margin-bottom: $base-margin;
+    position: relative;
+    padding: 0 $base-padding $base-padding*2;
+    z-index: 100;
+    @include clearfix();
+
+    label {
+      float: left;
+      line-height: $base-height*3.5;
+      margin-right: $base-margin;
+      width: auto;
+      display: none;
+    }
+
+    .typelist-control {
+      float: left;
+      margin-right: $base-margin;
+      width: 130px;
+
+      ul.chzn-results li {
+        border-bottom: 1px solid $border-color;
+
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .preset-content {
+    position: relative;
+    padding: 0 0 $base-padding;
+    transition: $btn-trans;
+
+    &.editting,
+    &:hover {
+      border-color: $blue;
+    }
+  }
+
+  // Preset actions
+  .top-actions {
+    position: absolute;
+    top: 0;
+    left: $base-padding*18;
+    text-align: right;
+    @include clearfix();
+
+    .t4-btn {
+      background-color: transparent;
+      box-shadow: none;
+      height: $base-height*3.5;
+      display: block;
+      float: left;
+      overflow: hidden;
+      margin-left: $base-margin/2;
+      padding: 0;
+      position: relative;
+      text-align: center;
+      line-height: $base-height*3.5;
+      width: $base-width*3.5;
+
+      &:before {
+        background-color: rgba(0,0,0,0.075);
+        border-radius: 50%;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        bottom: 0;
+        transition: $btn-trans;
+      }
+
+      &:after {
+        background-color: rgba($black, 0.8);
+        border-radius: 3px;
+        color: $white;
+        content: attr(data-tooltip);
+        display: inline-block;
+        font-size: $font-size-xs;
+        line-height: 1;
+        opacity: 0;
+        padding: $base-padding/1.5 $base-padding;
+        position: absolute;
+        top: $base-height*5;
+        left: 50%;
+        white-space: nowrap;
+        transform: translate(-50%, 0);
+        transition: $btn-trans;
+      }
+
+      &:hover {
+        overflow: visible;
+
+        &:before {
+          opacity: 1;
+        }
+
+        &:after {
+          opacity: 1;
+          top: $base-height*4.5;
+        }
+      }
+
+      i {
+        color: $gray-600;
+      }
+
+      &.btn-success {
+        background-color: $green;
+
+        i {
+          color: $white;
+        }
+      }
+    }
+
+    // Special button
+    .btn-save {
+      padding-left: $base-padding*1.5;
+      padding-right: $base-padding*1.5;
+      width: auto;
+      
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .clone-layout {
+    background-color: $white;
+    border-bottom: 1px solid $border-color;
+    padding: $base-padding*2 $base-padding;
+
+    .form-action {
+      margin-top: $base-margin;
+      text-align: right;
+    }
+  }
+
+  // Site settings
+  .t4-site-settings,
+  .t4-navigation,
+  .t4-group-theme,
+  .t4-layout-builder {
+    .t4-block-header {
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .sub-group-direct {
+      background-color: transparent;
+      border-top: 0;
+      padding-top: 0;
+
+      > .sub-group-inner {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .preset-chooser {
+        margin-bottom: -1px;
+      }
+    }
+
+    .form-fields .sub-group {
+      padding: 0 $base-padding;
+
+      &:first-child {
+
+        &.sub-group-open {
+          border-top: 0;
+        }
+      }
+
+      &.sub-group-open {
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+        padding: 0 $base-padding;
+      }
+    }
+  }
+
+  // Navigation builder pane
+  .t4-navigation {
+    .preset-chooser {
+      .typelist-control {
+        width: $base-margin*25;
+      }
+
+      .top-actions {
+        left: $base-margin*27;
+      }
+    }
+  }
+
+  // Group theme
+  .t4-group-theme {
+    
+  }
+
+  // Layout settings pane
+  .t4-layout-builder {
+    .sub-group-inner {
+      padding: 0;
+    }
+
+    .preset-chooser {
+      border-bottom: 0;
+      margin-bottom: 0;
+
+      .typelist-control {
+        width: $base-margin*25;
+      }
+
+      .top-actions {      
+        left: $base-margin*27;
+      }
+    }
+
+    .form-fields {
+      .sub-group.sub-group-open {
+        padding: $base-padding*2 $base-padding 0;
+      }
+    }
+
+    .t4-position-layout {
+      padding: 0 $base-padding;
+
+      .t4-group-toggle {
+        margin: 0;
+      }
+    }
+  }
+
+  // Panel body
+  .panel-body {
+    padding: 0 $base-padding*3;
+  }
+}
+
+
+//
+// Pane view
+.t4-pn-views {
+  border-right: 1px solid $border-color;
+  padding: 0 $base-padding/2 $base-width;
+  height: 100%;
+  position: relative;
+  width: $view-panel-width;
+
+  @media screen and (min-height: 750px) {
+    padding-top: $base-width*2;
+  }
+
+  .t4-sidebar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .t4-sidebar-action {
+    position: relative;
+    transition: all 0.25s;
+
+    &:after {
+      background-color: rgba($black, 0.075);
+      content: "";
+      display: block;
+      height: 1px;
+      left: -$base-padding/2;
+      right: -$base-padding/2;
+      bottom: 0;
+      position: absolute;
+
+      @media screen and (min-height: 750px) {
+        display: none;
+      }
+    }
+
+    &.t4-tools {
+      @media screen and (min-height: 750px) {
+        padding-top: $base-margin;
+
+        &:before {
+          background-color: rgba($black, 0.075);
+          content: "";
+          display: block;
+          height: 1px;
+          left: -$base-padding/2;
+          right: -$base-padding/2;
+          top: 0;
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  .t4-switch-theme {
+    background-color: #fafafa;
+    border-top: 1px solid $border-color;
+    bottom: 0;
+    color: $font-color;
+    padding: $base-padding 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        padding: $base-padding;
+
+        label {
+          margin-bottom: 0;
+        }
+
+        span {
+          color: lighten($font-color, 10%);
+          display: block;
+          margin-top: $base-margin/2;
+        }
+
+        &:last-child {
+          @media screen and (max-height: 800px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  // Fix for J4
+  .control-group {
+    margin-bottom: 0;
+
+    .control-label {
+      float: none;
+      width: auto;
+    }
+  }
+
+  div[id*="-desc"] {
+    display: none;
+  }
+}
+
+
+// Reset joomla! default style
+.form-horizontal .t4-sidebar-nav .control-group {
+  margin: 0;
+}
+
+.form-horizontal .t4-sidebar-nav .control-label {
+  float: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.t4-sidebar-nav .legend {
+  border: 1px solid transparent;
+  color: $gray-900;
+  display: block;
+  font-size: $font-size-xs;
+  line-height: 1.3;
+  margin: 0;
+  margin-left: -$base-padding/2;
+  margin-right: -$base-padding/2;
+  padding: $base-padding*2 $base-padding;
+  opacity: .7;
+  text-align: center;
+  transition: $btn-trans;
+
+  @media screen and (min-height: 750px) {
+    padding: $base-padding;
+    margin: 0 0 $base-margin;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+.t4-sidebar-nav .active .legend {
+  background-color: $main-color;
+  color: $blue;
+  opacity: 1;
+
+  @media screen and (min-height: 750px) {
+    border-radius: 8px;
+    border: 1px solid $border-color;    
+  }
+}
+
+.t4-sidebar-nav .legend > span {
+  display: none;
+  font-size: 18px;
+  margin-bottom: $base-width;
+
+  @media screen and (min-height: 750px) {
+    display: block;
+  }
+}
+
+.t4-sidebar-nav .item-content {
+  font-family: $alt-font;
+  font-weight: 500;
+
+  .item-desc {
+    display: none;
+  }
+}
+
+//
+// T4 Views Container
+.t4-pn-views-container {
+  background: darken($main-color,4%);
+  position: absolute;
+  left: $view-panel-width;
+  top: $commands-panel-height;
+  height: calc(100% - 56px);
+  overflow-y: auto;
+  right: 0;
+
+  @media screen and (min-width: $sm) {
+    right: auto;
+    width: $view-panel-container-width + $base-width*2;
+  }
+}
+
+// Pane header
+.t4-pn-views-container .t4-block-header {
+  border-bottom: 1px solid $border-color;
+  margin-bottom: -1px;
+  padding: $base-padding*2;
+
+  .t4-input[type="checkbox"] {
+    vertical-align: middle;
+  }
+}
+
+// Override popover
+.t4-pane .t4-block-header,
+.t4-pane .t4-group-toggle,
+.t4-pane .preset-chooser {
+  position: relative;
+
+  // Popover
+  .popover {
+    background-color: $green;
+    border-radius: 3px;
+    border: 0;
+    color: $white;
+    position: absolute;
+    left: 0 !important;
+    right: auto !important;
+    transform: translateX(-40%);
+    white-space: nowrap;
+    min-width: $base-width*21;
+    text-align: center;
+    width: auto;
+
+    .arrow {
+      margin-left: 0;
+      left: auto;
+      right: $base-margin*1.5;
+      border-bottom-color: $green;
+      border-top-width: 7px;
+      top: -14px;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.t4-pane .preset-chooser {
+  .popover .arrow {
+    left: 72px;
+    right: auto;
+  }
+}
+
+.t4-pn-views-container .t4-block-header h4 {
+  color: $font-color;
+  display: inline-block;
+  font-size: $font-size;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.t4-pn-views-container.t4-advanced .t4-block-header h4:after {
+  background-color: $green;
+  border-radius: 3px;
+  content: "Global";
+  color: $white;
+  display: inline-block;
+  font-size: $font-size-xxs;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  padding: 4px $base-padding/2 2px;
+  position: absolute;
+  top: -6px;
+  right: -48px;
+}
+
+.t4-pn-views-container.t4-advanced .t4-block-header .t4-input[type="checkbox"] {
+  &:before {
+    content: "\f30d";
+    color: $gray-400;
+    font-family: $icon-font;
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 13px;
+    text-align: center;
+  }
+
+  &:checked:before {
+    content: "";
+  }
+}
+
+
+//
+// Custom colors
+// -----------------------------------
+.group_custom_colors {
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+
+  .control-group {
+    float: left;
+    padding: 0 $base-padding/2;
+    width: 50%;
+
+    &.field-spacer {
+      float: none;
+      clear: both;
+      overflow: hidden;
+      width: 100%;
+
+      .control-helper {
+        display: none;
+      }
+    }
+
+    .control-label label {
+      padding-left: 0;
+    }
+
+    &:nth-child(2n+1) {
+      .minicolors .minicolors-panel {
+        right: auto;
+        left: 0;
+      }
+    }
+  }
+}
+
+
+//
+// Addons block
+// -----------------------------------
+.addons-list {
+  list-style: none;
+  margin: 0 0 $base-margin*2;
+  padding: 0;
+
+  li {
+    background-color: rgba($black, 0.045);
+    border: 1px solid rgba($white, 0);
+    border-radius: 5px;
+    margin-bottom: $base-margin/2;
+    padding: $base-padding;
+    transition: $btn-trans;
+    @include clearfix();
+
+    label {
+      display: inline-block;
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+
+    input {
+      float: right;
+    }
+
+    &.addon-local {
+      background-color: transparent;
+      border: 1px solid rgba($black, 0.055);
+
+      &:hover {
+        border-color: $blue;
+
+        .t4-btn {
+          opacity: 1;
+        }
+      }
+    }
+
+    &.editting {
+      .addons-form {
+        border-radius: 0;
+        border: 0;
+        padding: 0;
+
+        &:before {
+          display: none;
+        }
+      }
+
+      .t4-btn.btn-delete, .t4-btn.btn-edit {
+        opacity: 0;
+      }
+    }
+
+    .btn-edit, .btn-delete {
+      background-color: transparent;
+      opacity: 0;
+      vertical-align: middle;
+      @include btn-icon(12px, $gray-500, $primary, 16px, 16px, 4px);
+
+      i {
+        vertical-align: top;
+      }
+    }
+  }
+}
+
+.add-more-addons {
+  margin: 0 0 $base-margin;
+  text-align: center;
+
+  .t4-btn {
+    margin: 0 $base-margin/4;
+
+    &.active {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+}
+
+.addons-form-edit, .addons-form {
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  clear: both;
+  margin-top: $spacer;
+  padding: $base-padding*2;
+  position: relative;
+
+  &:before, &:after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid $border-color;
+    content: "";
+    display: block;
+    margin-left: -4px;
+    position: absolute;
+    height: 0;
+    top: -9px;
+    left: 50%;
+    width: 0;
+  }
+
+  &:after {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid $white;
+    top: -7px;
+    margin-left: -2px;
+    left: 50%;
+  }
+
+  &.addons-js:before {
+    left: 200px;
+  }
+
+  &.addons-js:after {
+    left: 202px;
+  }
+
+  textarea {
+    height: auto;
+  }
+
+  .addon-actions {
+    text-align: center;
+  }
+}
+
+//
+// Tools block
+// -----------------------------------
+.tool-export,
+.tool-import,
+.tool-css {
+  background-color: rgba($black, .025);
+  border: 1px dashed $border-color;
+  border-radius: 3px;
+  margin-bottom: $base-margin;
+  padding: $base-padding $base-padding $base-padding*1.5;
+
+  h4 {
+    margin: 0 0 $base-margin/2;
+    font-size: $font-size-xs;
+    font-weight: 600;
+  }
+
+  .description {
+    color: $gray-600;
+    font-size: $font-size-xs;
+  }
+
+  div.chzn-container {
+    width: 50% !important;
+  }
+
+  .t4-btn {
+    display: inline-block;
+    vertical-align: middle;
+
+    &:hover, &:focus, &:active {
+    }
+  }
+
+  .btn-primary {
+    background-color: $blue;
+
+    &:hover, &:focus, &:active {
+      background-color: darken($blue, .1);
+    }
+  }
+
+  .checked-list {
+    list-style: none;
+    margin: $base-margin 0 $base-margin*2;
+    padding: 0 0 0 $base-padding*2;
+
+    li {
+      padding: $base-padding/2 0;
+
+      input {
+        margin: 0 $base-margin/2 0 0;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.tool-import {
+  label {
+    background-color: $green;
+    border-radius: $input-border-radius;
+    display: inline-block;
+    color: $white;
+    height: $base-height*3.5;
+    line-height: $base-height*3.5;
+    margin-bottom: 0;
+    padding: 0 $base-padding*2;
+    transition: $btn-trans;
+
+    i {
+      margin-right: $base-margin/2;
+    }
+
+    &:hover {
+      background-color: darken($green, 3%);
+      color: $white;
+    }
+  }
+
+  #tool-import-file {
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+}

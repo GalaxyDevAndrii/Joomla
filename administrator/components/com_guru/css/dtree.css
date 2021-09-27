@@ -1,0 +1,88 @@
+.mainwrap table {
+	/*width:100%;*/
+	text-align:top;
+}
+
+.dtree {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666;
+	white-space: nowrap;
+	text-align:left;
+}
+
+.dtree img {
+	border: 0px;
+	vertical-align: middle;
+}
+
+.dtree a {
+	color: #333;
+	text-decoration: none;
+}
+
+.dtree a.node,.dtree a.nodeSel {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+	color:#000000;
+}
+
+
+.dtree a.node:hover,.dtree a.nodeSel:hover {
+	/*color: #333;
+	text-decoration: underline;*/
+	text-decoration:none;
+}
+
+
+
+.dtree a.nodeSel {
+	background-color: #c0d2ec;
+}
+
+
+
+.calendar {
+	border:none;
+	vertical-align:bottom;
+}
+
+.navtreewrap {
+ border-width:1px; border-color:#D5D5D5; border-style:solid;
+}
+
+
+div.header{
+	font-weight:normal !important;
+	color:#000000 !important;
+	font-size:25px !important;
+	line-height:73px !important;
+	padding-left:180px !important;
+}
+
+.icon-48-generic {
+	background-image:url(../images/guru_logo.png) !important;
+	padding-left:180px !important;
+}
+
+div.pagetitle h2 {
+    color: black !important;
+    font-size: 25px !important;
+    font-weight: lighter !important;
+    line-height: 72px !important;
+}
+
+.zone_description{
+	background-color: #F9F9F9;
+    border: 1px solid #D5D5D5;
+    border-collapse: collapse;
+    height: 40px;
+	font-size: 14px;
+	margin-bottom:5px;
+	border-radius:4px;
+}
+
+.guru_video{
+	font-size:14px;
+	font-weight:bold;
+}

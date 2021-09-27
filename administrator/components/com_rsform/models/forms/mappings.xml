@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="connection">
+        <field name="method" type="list" label="RSFP_FORM_MAPPINGS_METHOD">
+            <option value="0">RSFP_FORM_MAPPINGS_METHOD_INSERT</option>
+            <option value="3">RSFP_FORM_MAPPINGS_METHOD_REPLACE</option>
+            <option value="1">RSFP_FORM_MAPPINGS_METHOD_UPDATE</option>
+            <option value="2">RSFP_FORM_MAPPINGS_METHOD_DELETE</option>
+        </field>
+        <field name="connection" type="list" label="RSFP_FORM_MAPPINGS_CONNECTION" default="0">
+            <option value="0">RSFP_FORM_MAPPINGS_CONNECTION_LOCAL</option>
+            <option value="1">RSFP_FORM_MAPPINGS_CONNECTION_REMOTE</option>
+        </field>
+        <field name="host" type="text" label="RSFP_FORM_MAPPINGS_HOST" showon="connection:1" />
+        <field name="port" type="text" label="RSFP_FORM_MAPPINGS_PORT" showon="connection:1" default="3306" />
+        <field name="driver" type="databaseconnection" supported="mysql,mysqli,pgsql,postgresql,sqlite" label="RSFP_FORM_MAPPINGS_DRIVER" showon="connection:1" default="mysqli" />
+        <field name="username" type="text" label="RSFP_FORM_MAPPINGS_USERNAME" showon="connection:1" />
+        <field name="password" type="password" label="RSFP_FORM_MAPPINGS_PASSWORD" showon="connection:1" />
+        <field name="database" type="text" label="RSFP_FORM_MAPPINGS_DATABASE" showon="connection:1" />
+    </fieldset>
+    <fieldset name="misc">
+        <field name="table" type="list" label="RSFP_FORM_MAPPINGS_TABLE" disabled="true" onchange="mappingColumns(this.value)">
+            <option value="">RSFP_FORM_MAPPINGS_SELECT_TABLE</option>
+        </field>
+    </fieldset>
+</form>

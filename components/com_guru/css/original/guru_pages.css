@@ -1,0 +1,298 @@
+/* new course 
+===========================================*/
+#prog_description > div > label {
+    float: none;
+}
+#prog_day_req div > label {
+    float: none;
+}
+#prog_publishing .input-append input,
+div#guru-component .g_date_style input{
+    margin-right: 0 !important;
+}
+#prog_publishing .input-append button,
+div#guru-component .g_date_style button{
+    background: none repeat scroll 0 0 #3498DB !important;
+    border-radius: 0 3px 3px 0 !important;
+    margin-top: 0 !important;
+}
+#prog_publishing .input-append button:hover{
+    background: #2980b9 !important;
+}
+
+/* teachers modal
+==============================*/
+#after_menu_med_7, #after_menu_txt_5, #after_menu_med_15, #after_menu_med_1, #after_menu_txt_1, #after_menu_txt_6, #after_menu_txt_2, #after_menu_med_2, #after_menu_med_3, #after_menu_txt_7, #after_menu_med_9, #after_menu_med_10, #after_menu_med_4, #after_menu_txt_3, #after_menu_txt_8, #after_menu_med_11, #after_menu_med_5, #after_menu_txt_4, #after_menu_med_6, #after_menu_txt_9, #after_menu_med_12, #after_menu_med_13, #after_menu_txt_10, #after_menu_txt_11{
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 100%;
+	text-align: center;
+}
+#after_menu_med_7 > a, #after_menu_txt_5 > a, #after_menu_med_15 > a, #after_menu_med_1 > a, #after_menu_txt_1 > a, #after_menu_txt_6 > a, #after_menu_txt_2 > a, #after_menu_med_2 > a, #after_menu_med_3 > a, #after_menu_txt_7 > a, #after_menu_med_9 > a, #after_menu_med_10 > a, #after_menu_med_4 > a, #after_menu_txt_3 > a, #after_menu_txt_8 > a, #after_menu_med_11 > a, #after_menu_med_5 > a, #after_menu_txt_4 > a, #after_menu_med_6 > a, #after_menu_txt_9 > a, #after_menu_med_12 > a , #after_menu_med_13 > a, #after_menu_txt_10 > a, #after_menu_txt_11 > a{
+    background: -webkit-linear-gradient(#54ABF7, #459CE3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#54ABF7, #459CE3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#54ABF7, #459CE3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#54ABF7, #459CE3); /* Standard syntax */
+    color: #FFFFFF;
+    padding: 7px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 5px;
+	text-align: center;
+}
+#after_menu_med_8{
+	text-align: center;
+}
+div [id*="layout_img_"]{
+    margin-right: 5px;
+    margin-top: 10px;
+}
+#before_menu_txt_5,
+#before_menu_med_15,
+#before_menu_med_1,
+#before_menu_txt_1,
+#before_menu_txt_6,
+#before_menu_med_8,
+#before_menu_med_2,
+#before_menu_txt_2,
+#before_menu_med_3,
+#before_menu_txt_7,
+#before_menu_med_9,
+#before_menu_med_10,
+#before_menu_med_4,
+#before_menu_txt_3,
+#before_menu_txt_8,
+#before_menu_med_11,
+#before_menu_med_5,
+#before_menu_med_6,
+#before_menu_txt_4,
+#before_menu_txt_9,
+#before_menu_med_12,
+#before_menu_med_13,
+#before_menu_txt_10,
+#before_menu_med_14,
+#before_menu_txt_11{
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    margin-top: 20px;
+    padding: 7px 0;
+    text-align: center;
+}
+
+
+/* teacher list page 
+==========================================*/
+.guru-content #teacherList ul, #categorydetail ul, #categoryList ul{
+    padding-left: 20px;
+    min-height: 31px;
+}
+.guru-content #teacherList ul li, #categorydetail ul li, #categoryList ul li{
+    list-style: square;
+}
+
+
+
+/* login/registration page 
+==========================================*/
+.g_login_title{
+    background: #f5f5f5;
+    border-bottom: 1px solid #dddddd;
+    border-radius: 6px 6px 0 0;
+    padding: 15px;
+    font-weight: 100;
+    text-shadow: 1px 1px 0px #fff;
+}
+.login_cell_guru h2{
+    margin: 0;
+}
+form[name="register"] input[type="submit"]{
+    margin-top: 10px;
+}
+form[name="login"],
+form[name="register"]{
+    padding: 15px;
+}
+#g_registrationform #adminForm .g_row{
+    margin-bottom: 10px !important;
+}
+#g_registrationformauthor #adminForm .g_row{
+    margin-bottom: 10px !important;
+}
+#g_registrationformauthor #adminForm #show_twitter,
+#g_registrationformauthor #adminForm #show_facebook,
+#g_registrationformauthor #adminForm #show_blog,
+#g_registrationformauthor #adminForm #show_website{
+    margin-left: 10px !important;
+}
+
+
+
+/* --list styles 
+===================================================*/
+.course_view_tablecontents li,
+.course_view_price li,
+.course_view_exercises li,
+.teacher_info li{
+    border-bottom: 1px solid #F1F1F1;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 14px;
+}
+.chapter_title{
+    border-bottom: 1px solid #F1F1F1;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+
+/* certificate page
+---------------------*/
+
+.certificate_envelope .g_certificate_detail{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-radius: 4px;
+    box-shadow: 0 0 1px #666666;
+    height: 320px;
+    text-align: center;
+}
+.g_certificate_detail h3 {
+    margin-top: 145px;
+}
+.certificate_envelope  .g_cell{
+	padding: 0 15px;
+}
+.certificate_envelope  .g_cell .alert-info{
+	border-radius: 4px;
+	padding: 10px;
+}
+.certificate_envelope  .g_cell .alert-info b{
+	display: block;
+}
+/* email certificate
+----------------------*/
+#emailcertificate .guru_textbox {
+    width: 60%;
+}
+/* course pages 
+-----------------*/
+#g_quizzes_filters > div{
+	margin-bottom: 10px !important;
+}
+#g_quizzes_filters > div > 
+#mycourses .table_container .g_cell > div > div{
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+#mycourses .table_container .g_cell > div {
+    padding: 0;
+}
+#g_quizzes_filters > div.span7.g_hide_mobile > div > .g_cell.span4{
+    width: 33.33%;
+    padding-left: 6px;
+}
+/*#myquizzes td.g_hide_mobile, #myquizzes th.g_hide_mobile{
+    display: none;
+}*/
+/* --lession detail */
+#g_lesson_navs{
+    margin-bottom: 15px;
+}
+#g_lesson_navs > .g_lesson_nav_bar{
+    background: none repeat scroll 0 0 #74D2F2;
+    border-radius: 6px 6px 6px 6px;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+#g_lesson_navs a{
+    background: none repeat scroll 0 0 #444;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4) inset, 0 0 2px 1px rgba(255, 255, 255, 0.4);
+    display: inline-block;
+    margin-right: 4px;
+    padding: 4px;
+    transition: all 0.25s;
+}
+#g_lesson_navs a:hover{
+    background: none repeat scroll 0 0 #222;
+    box-shadow: 0 0 2px 0px rgba(255, 255, 255, 0.4), 0 0 2px 1px rgba(0, 0, 0, 0.9) inset;
+    cursor: pointer;
+}
+#g_lesson_navs a img{
+    height: auto;
+    padding: 2px;
+    width: 26px;
+}
+#g_jump_button_ref{
+    margin-top: 15px;
+}
+#g_jump_button_ref > div{
+    padding-bottom: 13px
+}
+#g_jump_button_ref > div:last-child{
+    padding-bottom: 0;
+}
+.g_cource_enrole_options > div{
+    margin-bottom: 6px;
+}
+.g_cource_enrole_options > div:last-child{
+    margin-bottom: 0;
+}
+/* quizes
+---------------------*/
+
+#g_teacher_fe input,
+#g_teacher_fe select,
+#g_teacher_quiz input,
+#g_teacher_quiz select{
+    /*width: 70% !important;*/
+}
+#g_teacher_fe  label.control-label,
+#g_teacher_quiz label.control-label{
+    width: 100% !important;
+}
+/* --my cart */
+.g_cart_item{
+    background: #eeeeee;
+    border-radius: 6px;
+}
+.g_cart_item > div{
+    padding: 10px;
+}
+.g_cart_item li{
+    margin-bottom: 10px;
+}
+.g_cart_item li select{
+    margin: 0;
+}
+.g_cart_item li:last-child{
+    margin-bottom: 0;
+}
+#g_cource-price{
+    width: 100%;
+    margin-bottom: 15px;
+}
+#g_cource-price td{
+    border: 1px solid #eee;
+}
+.g_hide_small_size{
+    display: none !important;
+}
+div#g_promo_code{
+    margin-bottom: 10px;
+}
+#g_myCart_payment .btn{
+    float: right;
+}
+.g_newline2{
+    margin-top: 50px;
+}
+/* coursedetail_row_guru */
+
+/* author add course */
+#g_authoraddcourse .row-fluid{
+    margin-bottom: 10px;
+}

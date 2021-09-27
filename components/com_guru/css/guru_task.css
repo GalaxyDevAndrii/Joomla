@@ -1,0 +1,48 @@
+.large_module_position{
+	font-size:30px;
+}
+
+.large_module_name{
+	font-size:70px;
+	line-height:70px;
+	padding-top:-50px;
+}
+
+.power_table{
+	width:100%;
+}
+
+.power_by{
+	font-family: Arial,Helvetica,sans-serif; 
+	font-size: 0.833em; 
+	color: rgb(153, 153, 153);
+}
+
+.power_link{
+	font-family: Arial,Helvetica,sans-serif; 
+	color: rgb(83, 136, 180); 
+	font-size: 0.833em;
+}
+
+tr, td {
+    border: none !important;
+}
+
+div.current{
+	min-height: 100px !important;
+}
+
+.joomlamessage{
+	border-bottom: 3px solid #84A7DB;
+    border-top: 3px solid #84A7DB;
+    color: #0055BB;
+    padding: 10px;
+}
+
+#pathway{
+	padding-bottom:10px !important;
+}
+.pathway{
+	padding-right: 23px!important;
+}
+

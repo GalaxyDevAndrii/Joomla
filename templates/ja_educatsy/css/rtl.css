@@ -1,0 +1,77 @@
+/**
+ *------------------------------------------------------------------------------
+ * @package       T4_Blank - Free Template for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2019 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt
+ *------------------------------------------------------------------------------
+**/
+.fa, .fab, .fal, .far, .fas {
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1); }
+
+html[dir="rtl"] .fa-angle-double-left:before {
+  content: "\f101"; }
+
+html[dir="rtl"] .fa-angle-left:before {
+  content: "\f105"; }
+
+html[dir="rtl"] .fa-angle-double-right:before {
+  content: "\f100"; }
+
+html[dir="rtl"] .fa-angle-right:before {
+  content: "\f104"; }
+
+.owl-stage-outer {
+  direction: ltr; }
+  .owl-stage-outer .owl-stage {
+    direction: rtl; }
+
+.finder #finder-filter-window .filter-branch {
+  float: right; }
+
+.finder #finder-filter-select-dates .filter-date {
+  float: right;
+  text-align: right; }
+
+.finder #finder-filter-select-dates .filter-date-operator {
+  margin-right: 0 !important; }
+
+#member-profile legend {
+  text-align: right; }
+
+#member-profile .control-group [class^="col-"], #member-profile .control-group [class*=" col-"] {
+  text-align: right; }
+
+#mailto-window .controls input {
+  text-align: right; }
+
+#mailto-window #consentbox .form-check-input {
+  float: right; }
+
+#member-profile .control-group .chzn-container .chzn-drop {
+  right: -9999px;
+  left: auto !important; }
+  #member-profile .control-group .chzn-container .chzn-drop .chzn-search {
+    position: static; }
+
+#member-profile .control-group .chzn-container.chzn-with-drop .chzn-drop {
+  right: 0; }
+
+.t4-masthead .ja-masthead .breadcrumb .divider:before {
+  content: "\f104"; }
+
+div.guru-module-search .uk-search-input,
+.acm-features.style-1 .features-mod .mod-search input,
+.acm-features.style-1 .features-mod .finder input {
+  background-position: right 30px center; }
+  @media (max-width: 767.98px) {
+    div.guru-module-search .uk-search-input,
+    .acm-features.style-1 .features-mod .mod-search input,
+    .acm-features.style-1 .features-mod .finder input {
+      background-position: right 15px center; } }
+
+.com_guru #guru-component .uk-panel-box .uk-panel-badge {
+  right: auto; }

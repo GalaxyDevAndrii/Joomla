@@ -1,0 +1,60 @@
+// ------------------------------------
+// FORMS
+// ------------------------------------
+
+// Extend style in base
+// --------------------
+@import "../../../plugins/system/t4/themes/base/scss/_forms";
+
+// 
+// Button
+// -----------------------------------
+.btn {
+
+	.icon {
+		margin-left: $spacer / 2;
+	}
+
+	// Resize button on mobile
+	@include media-breakpoint-down(xs) {
+		padding: ($btn-padding-y / 2) ($btn-padding-x / 2) ;
+	}
+}
+
+.btn-default {
+	border: 1px solid #F4F4F4;
+	color: #1D1D1D;
+}
+
+.btn-secondary {
+	color: $white;
+}
+
+// 
+// Textual form controls
+// -----------------------------------
+.form-control {
+
+}
+
+.control-label {  
+  .form-control-feedback {
+  }
+}
+
+// 
+// Input group
+// ---------------------------
+.input-group-addon {
+  > span {
+  }
+}
+
+
+// 
+// Btn Toolbar
+// --------------------------
+.btn-toolbar {
+  .btn-group + .btn-group {
+  }
+}

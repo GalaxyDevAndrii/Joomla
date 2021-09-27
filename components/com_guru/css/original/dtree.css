@@ -1,0 +1,50 @@
+.mainwrap table {
+	width:100%;
+	text-align:top;
+}
+
+.dtree {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666;
+	white-space: nowrap;
+	text-align:left;
+}
+
+.dtree img {
+	border: 0px;
+	vertical-align: middle;
+}
+
+.dtree a {
+	color: #333;
+	text-decoration: none;
+}
+
+.dtree a.node,.dtree a.nodeSel {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}
+
+.dtree a.node:hover,.dtree a.nodeSel:hover {
+	color: #333;
+	text-decoration: underline;
+}
+
+.dtree a.nodeSel {
+	background-color: #c0d2ec;
+}
+
+.calendar {
+	border:none;
+	vertical-align:bottom;
+}
+
+.navtreewrap {
+ border-width:1px; border-color:#D5D5D5; border-style:solid;
+}
+
+.progressbar_table{
+border:1px;
+border-color:#ff0000;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<title>Cta</title>
+	<sampledata></sampledata>
+	<fields name="parallax">
+	   <fieldset name="basic" label="CTA_BASIC_LABEL" description="CTA_BASIC_DESC" multiple="0">
+	      <field name="cta-bg" type="media" default="" label="CTA_BACKGROUND_LABEL" description="CTA_BACKGROUND_DESC" />
+	      <field name="cta-decor" type="media" default="" label="CTA_DECOR_LABEL" description="CTA_DECOR_DESC" />
+	      <field name="cta-title" type="text" default="" label="CTA_TITLE_LABEL" description="CTA_TITLE_DESC" />
+	      <field name="cta-desc" type="textarea" default="" label="CTA_DESCRIPTIONS_LABEL" description="CTA_DESCRIPTIONS_DESC" />
+	      <field name="btn-link" type="text" default="" label="CTA_LINK_LABEL" description="CTA_LINK_DESC" />
+	      <field name="btn-title" type="text" default="" label="CTA_TITLE_LABEL" description="CTA_TITLE_DESC" />
+	  </fieldset>
+  </fields>
+</form>
+
+
+

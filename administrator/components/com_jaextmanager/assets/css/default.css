@@ -1,0 +1,196 @@
+@CHARSET "UTF-8";
+
+.ja-compare-result {
+	min-height: 250px;
+}
+
+.ja-compare-result .Legends {
+  padding: 10px;
+  border: solid 1px #E7E7E7;
+}
+
+.ja-compare-result .Legends .Item {
+  margin: 2px 2px;
+}
+.ja-compare-result .Legends .FileState {
+  float: left;
+  margin-right: 10px;
+}
+
+.ja-compare-result .ModuleTitle {
+  font-weight: bold;
+  color: orange;
+  padding: 2px;
+  font-size: 15px;
+}
+
+.ja-compare-result .FileState {
+  width: 10px; height: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  float: left;
+  margin-right: 10px;
+}
+
+.ja-compare-result .Prefix {
+  font-weight: bold;
+  float: left;
+}
+
+.ja-compare-result .Options {
+  float: left;
+}
+
+.ja-compare-result .File {
+  font-style: italic;
+  float: left;
+}
+
+.ja-compare-result .Folder {
+  font-weight: bold;
+  float: left;
+}
+
+.ja-compare-result .BeRemove {
+  background-color: #000;
+}
+
+.ja-compare-result .BeOverwrite {
+  background-color: #f00;
+}
+
+.ja-compare-result .BeOverwritePlus {
+  background-color: #ff0;
+}
+
+.ja-compare-result .New {
+  background-color: #00f;
+}
+/*Rewrite message*/
+
+/**
+ * @copyright	Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+/* System Messages */
+#system-message {
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+#system-message > dt {
+	font-weight: bold;
+	display: none;
+}
+
+#system-message > dd {
+	margin: 0;
+	font-weight: bold;
+	text-indent: 30px;
+}
+
+#system-message > dd > ul {
+	color: #0055BB;
+	background-position: 4px top;
+	background-repeat: no-repeat;
+	margin-bottom: 10px;
+	list-style: none;
+	padding: 10px;
+	border-top: 3px solid #84A7DB;
+	border-bottom: 3px solid #84A7DB;
+}
+
+#system-message > dd > ul > li {
+	line-height: 1.5em;
+}
+
+/* System Standard Messages */
+#system-message > .message > ul {
+	background-color: #C3D2E5;
+	background-image: url(images/notice-info.png);
+}
+#system-message > .message > ul#jav-error{
+	margin-left:0px;
+}
+/* System Error Messages */
+#system-message > .error > ul,
+#system-message > .warning > ul,
+#system-message > .notice > ul {
+	color: #c00;
+}
+
+#system-message > .error > ul {
+	background-color: #E6C0C0;
+	background-image: url(images/notice-alert.png);
+	border-color: #DE7A7B;
+}
+
+/* System Warning Messages */
+#system-message > .warning > ul {
+	background-color: #E6C8A6;
+	background-image: url(images/notice-note.png);
+	border-color: #FFBB00;
+}
+
+/* System Notice Messages */
+#system-message > .notice > ul {
+	background-color: #EFE7B8;
+	background-image: url(images/notice-note.png);
+	border-color: #F0DC7E;
+}
+/*Style for submenu*/
+#submenu-box {
+    margin-bottom: 10px;
+}
+
+.submenu-box, div.m {
+	border: 1px solid #ccc;
+	padding: 0 8px;
+	background-color: #f4f4f4;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.submenu-box, #submenu-box div.m {
+	padding: 6px 8px;
+}
+
+#submenu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	line-height: 115%;
+	height:15px;
+}
+
+#submenu li {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+#submenu li a,
+#submenu span.nolink {
+	cursor: pointer;
+	padding: 0 15px;
+	border-right: 1px solid #ccc;
+	
+	font-weight: bold;
+	color: #808080;
+	line-height: 14px;
+	height: 12px;
+}
+
+#submenu span.nolink {
+	color: #999;
+}
+
+#submenu a:hover,
+#submenu a.active,
+#submenu span.nolink.active {
+	color: #146295;
+	background: #FFF;
+}

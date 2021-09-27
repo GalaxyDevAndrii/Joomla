@@ -1,0 +1,135 @@
+/**
+ *------------------------------------------------------------------------------
+ * @package       JA Educatsy - Joomla LMS template for education and online learning
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2020 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt
+ *------------------------------------------------------------------------------
+ */
+
+/*Global Style*/
+html {
+  font-size: 16px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  background: #fff;
+  color: #6f6f6f;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 1.743;
+  margin: 0;
+  min-height: 100vh;
+  padding: 32px 16px;
+  position: relative;
+}
+
+@media (max-height: 1200px) {
+  body {
+    justify-content: flex-start;
+    margin-top: 3%;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+/*Box wrap*/
+.outline {
+  border: 1px solid #f4f4f4;
+  border-radius: 4px;
+  background: #fff;
+  padding: 48px;
+  margin: 30px auto;
+  max-width: 100%;
+  width: 460px;
+}
+
+.outline h1 {
+  color: #333;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-align: center;
+  font-size: 36px;
+}
+
+.outline p.message {
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+
+/*Form Group*/
+.inputbox {
+  max-width: 100%;
+  font-weight: 400;
+}
+
+.input > p {
+  margin: 0 0 20px 0;
+}
+
+#form-login fieldset {
+  padding: 0;
+}
+
+.form-group label {
+  font-weight: 400;
+}
+
+#form-login-remember {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#form-login-remember input {
+  margin-right: 0.5rem;
+  height: auto;
+}
+
+#form-login .inputbox:focus {
+  
+}
+
+#form-login-remember label {
+  margin: 0;
+}
+
+#form-login #submit-buton .btn-primary {
+  
+}
+
+#form-login #submit-buton .btn-primary:hover {
+  
+}
+
+/*Mobile view*/
+@media (max-width: 767px) {
+  body {
+    display: block;
+  }
+
+  .outline h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+}

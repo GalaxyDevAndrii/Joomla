@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="params" label="COM_RSFORM_NEW_CALCULATION">
+		<field name="total" type="totalfields" label="COM_RSFORM_CALCULATION_TOTAL_FIELD" description="COM_RSFORM_CALCULATION_TOTAL_FIELD_DESC" required="true" class="validate" />
+		<field name="expression" type="placeholder" data-filter-type="include" data-filter="value" data-delimiter=" " data-placeholders="display" label="COM_RSFORM_CALCULATION_EXPRESSION" description="COM_RSFORM_CALCULATION_EXPRESSION_DESC" required="true" class="validate rs_75" />
+
+		<field name="id" type="hidden" />
+		<field name="formId" type="hidden" />
+		<field name="ordering" type="hidden" />
+	</fieldset>
+</form>

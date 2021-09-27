@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Features Intro Style 1</title>
+	<sampledata></sampledata>
+	<fields name="features-intro">
+		<fieldset name="basic" label="FEATURES_BASIC_LABEL" description="FEATURES_BASIC_DESC">
+			<field name="desc-features" type="textarea" default="" label="FEATURES_DESCRIPTION_LABEL" description="FEATURES_DESCRIPTION_DESC" required="1" />
+			<field name="img-features" type="media" default="" label="FEATURES_BACKGROUND_LABEL" description="FEATURES_BACKGROUND_DESC" required="1" />
+
+			<field name="btn-title" type="text" default="" label="FEATURES_BTN_TITLE_LABEL" description="FEATURES_BTN_TITLE_DESC"/>
+
+			<field name="btn-link" type="text" default="" label="FEATURES_BTN_LINK_LABEL" description="FEATURES_BTN_LINK_DESC"/>
+		</fieldset>
+  </fields>
+</form>

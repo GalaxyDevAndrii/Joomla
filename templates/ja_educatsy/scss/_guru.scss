@@ -1,0 +1,2037 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+body {
+  // Global Style typography
+  #guru-component .uk-form {
+    select,
+    textarea,
+    input:not([type]),
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"] {
+      border-radius: $input-border-radius;
+      height: $input-height;
+      padding: $input-padding-y $input-padding-x;
+
+      &:focus {
+        background: $white;
+        border-color: $input-focus-border-color;
+      }
+    }
+  }
+
+  .gru-media-form select,
+  .gru-media-form [type="text"],
+  #startpublish,
+  #endpublish,
+  #startpublish_img,
+  #endpublish_img {
+    height: $input-height!important;
+  }
+
+  .uk-form-row .wk-form-row {
+    .uk-form-controls {
+      width: auto;
+    }
+  }
+  
+
+  * + h1, * + h2, * + h3 {
+    margin-top: $spacer;
+    margin-bottom: ($spacer / 2);
+  }
+
+  * + h4, * + h5, * + h6 {
+    margin-top: ($spacer / 2);
+    margin-bottom: ($spacer / 2); 
+  }
+}
+
+.view-guruPrograms,
+.view-guruprograms {
+  div.ja-masthead .ja-masthead-detail {
+    width: 750px;
+  }
+
+  // Alert
+  #system-message-container {
+    @include media-breakpoint-up(xl) {
+      padding-right: $grid-gutter-width / 2;
+      max-width: 66.66667%;
+    }
+  }
+}
+
+.tab-content {
+  overflow: visible;
+  padding: 0;
+}
+
+.com_guru {
+  // Global Style
+  .gru-page-title {
+    margin-top: 0;
+    margin-bottom: $grid-gutter-width;
+    font-weight: 500;
+    font-size: $h2-font-size;
+
+    // Mobile view
+    @include media-breakpoint-down(sm) {
+      font-size: 30px;
+      margin-bottom: $grid-gutter-width / 2;
+    }
+  }
+
+  .gru-panel-teaser {
+    height: 264px;
+  }
+
+  .guru-powered {
+    text-align: left;
+    color: $body-color;
+  }
+
+  .teacher_links {
+    background: $gray-100;
+    margin-bottom: $grid-gutter-width;
+
+    // Mobile view
+    @include media-breakpoint-down(sm) {
+      margin-bottom: $grid-gutter-width / 2;
+    }
+
+    .teacher_links-item:hover {
+      background: darken($gray-100, 5%);
+    }
+
+    a {
+      color: $body-color;
+      font-weight: 600;
+
+      &:hover,&:focus,&:active {
+        color: $body-color;
+      }
+    }
+  }
+
+  .input-group {
+    .input-group-addon {
+      display: none;
+    }
+  }
+
+  // // Typography
+  // h1, .h1 {
+  //   font-size: $h1-font-size;
+  //   line-height: $h1-line-height;
+  //   font-weight: 700;
+  // }
+
+  // h2, .h2 {
+  //   font-size: $h2-font-size;
+  //   line-height: $h2-line-height;
+  //   font-weight: 300;
+  // }
+
+  // h3, .h3 {
+  //   font-size: $h3-font-size;
+  //   line-height: $h3-line-height;
+  //   font-weight: 500;
+  // }
+
+  // h4, .h4 {
+  //   font-size: $h4-font-size;
+  //   line-height: $h4-line-height;
+  //   font-weight: 500;
+  // }
+
+  // h5, .h5 {
+  //   font-size: $h5-font-size;
+  //   line-height: $h5-line-height;
+  //   font-weight: 400;
+  // }
+
+  // h6, .h6 {
+  //   font-size: $h6-font-size;
+  //   line-height: $h6-line-height;
+  //   font-weight: 400;
+  // }
+
+  .gru-page-subtitle {
+    font-size: $h3-font-size;
+    font-weight: 500;
+    line-height: $h3-line-height;
+  }
+
+  // Profiles
+  .gru-myprofile {
+    .wk-form-row {
+      + legend {
+        margin-top: $grid-gutter-width;
+      }
+    }
+  }
+
+  // Component
+  #guru-component {
+    // Badge
+    .uk-badge-notification {
+      padding: 8px 12px;
+      min-width: 0;
+      line-height: 1;
+      font-size: $h6-font-size;
+    }
+
+    // Spacer
+    .uk-margin-top {
+      margin-top: $grid-gutter-width / 2!important;
+
+      // Mobile view
+      @include media-breakpoint-down(sm) {
+        margin-top: $spacer!important;
+      }
+    }
+
+    .uk-margin-bottom {
+      margin-bottom: $grid-gutter-width!important;
+
+      // Mobile view
+      @include media-breakpoint-down(sm) {
+        margin-bottom: $spacer!important;
+      }
+    }
+
+    // Button
+    @each $color, $value in $theme-colors {
+      .uk-button-#{$color} {
+        border-radius: $btn-border-radius;
+        font-weight: $btn-font-weight;
+        @include button-variant($value, $value);
+      }
+    }
+
+    // Filter
+    .gru-filter-item {
+      display: flex;
+      margin-right: $spacer/3;
+      margin-bottom: $spacer/3;
+      font-size: $font-size-base;
+
+      .uk-button {
+        border-radius: $border-radius;
+        margin-left: -4px!important;
+        height: 64px;
+        padding: $spacer / 2 $grid-gutter-width;
+
+        // Mobile view
+        @include media-breakpoint-down(sm) {
+          padding: $spacer / 2 $grid-gutter-width / 2;
+        }
+      }
+
+      .form-control {
+        height: 64px!important;
+        padding: $spacer / 2 $spacer;
+        width: 400px !important;
+        max-width: 100%;
+
+        // Mobile view
+        @include media-breakpoint-down(sm) {
+          width: 80%!important;
+        }
+      }
+    }
+
+    // Table
+    .uk-table-striped {
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+
+      th,td {
+        padding: $grid-gutter-width / 2;
+
+        // Mobile view
+        @include media-breakpoint-down(sm){
+          padding: $spacer/3;
+        }
+      }
+
+      th {
+        color: $headings-color;
+      }
+
+      td {
+        >ul {
+          >li {
+            list-style: none;
+          }
+        }
+
+        > select {
+          // Mobile view
+          @include media-breakpoint-down(sm){
+            padding: $spacer/3;
+          }
+        }
+      }
+
+      tbody tr:nth-of-type(odd) {
+        background: $gray-100;
+      }
+
+      a {
+        color: $body-color;
+        font-weight: 500;
+
+        &:hover,&:focus,&:active {
+          color: $primary;
+        }
+      }
+
+      img {
+        border-radius: 0;
+      }
+    }
+
+    .accordion {
+      padding: 0;
+    }
+
+    // Box Content
+    .cat_list_wrap {
+      .uk-grid[data-uk-grid-margin] > div {
+        margin-bottom: $grid-gutter-width;
+
+        > div{
+          height: 100%;
+        }
+      }
+    }
+
+    .uk-panel-box {
+      background: $white;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+      color: $body-color;
+      padding: $grid-gutter-width;
+
+      // Mobile view
+      @include media-breakpoint-down(sm) {
+        padding: $grid-gutter-width / 2;
+      }
+
+      > .uk-panel-teaser {
+        border-radius: $border-radius $border-radius 0 0;
+        margin: (-$grid-gutter-width - 1px) (-$grid-gutter-width - 1px) $grid-gutter-width (-$grid-gutter-width - 1px);
+
+        // Mobile view
+        @include media-breakpoint-down(sm) {
+          margin: (-$grid-gutter-width/2 - 1px) (-$grid-gutter-width/2 - 1px) ($grid-gutter-width/2) (-$grid-gutter-width/2 - 1px);
+        }
+      }
+
+      // Badge
+      .uk-panel-badge {
+        background: $primary;
+        top: $grid-gutter-width / 2;
+        right: $grid-gutter-width / 2;
+      }
+
+      // Title
+      .uk-panel-title {
+        font-size: $h4-font-size;
+        font-weight: 500;
+        line-height: $h4-line-height;
+        margin-bottom: $spacer / 2;
+
+        a {
+          color: $headings-color;
+        }
+      }
+
+      &.uk-panel-header .uk-panel-title {
+        border-color: $border-color;
+      }
+
+      // Description
+      .description_guru {
+        color: $gray-500;
+      }
+
+      // Author
+      .author {
+        color: $gray-600;
+        font-size: $h6-font-size;
+        font-weight: 700;
+        margin-bottom: $spacer / 2;
+        text-transform: uppercase;
+
+        a {
+          color: $link-color;
+
+          &:hover,&:focus,&:active {
+            color: $link-hover-color;
+          }
+        }
+      }
+
+      // Student Info
+      .student-info {
+        color: $gray-600;
+        margin-top: $spacer;
+
+        .fa {
+          margin-right: 6px;
+          text-align: center;
+
+          &:before {
+            line-height: $spacer;
+          }
+        }
+      }
+
+      // Course Footer
+      .course-footer {
+        border-top: 1px solid $border-color;
+        bottom: 0;
+        position: absolute;
+        left: $grid-gutter-width;
+        right: $grid-gutter-width;
+        padding: $grid-gutter-width 0;
+
+        // Mobile view
+        @include media-breakpoint-down(sm) {
+          left: $grid-gutter-width / 2;
+          right: $grid-gutter-width / 2;
+          padding: $grid-gutter-width / 2 0;
+        }
+
+        // Price
+        .price {
+          color: $headings-color;
+          font-size: $h3-font-size;
+          font-weight: 500;
+          letter-spacing: -1px;
+        }
+
+        // Readmore
+        .readmore {
+          a {
+            border: 1px solid $border-color;
+            border-radius: $border-radius;
+            color: $headings-color;
+            font-weight: 600;
+            font-size: 16px;
+            padding: $spacer / 4 $spacer;
+
+            &:hover,&:focus,&:active {
+              border-color: $headings-color;
+            }
+          }
+        }
+      }
+    }
+
+    // Reset box
+    #guru_cart {
+      .uk-panel-box {
+        border: 0;
+        padding: 0;
+      }
+
+      #adminForm {
+        >.uk-panel {
+          // Mobile view
+          @include media-breakpoint-down(sm){
+            border: 2px solid $border-color;
+
+            table {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+
+    .uk-overlay-panel {
+      padding: $spacer $grid-gutter-width;
+
+      // Mobile view
+      @include media-breakpoint-down(sm) {
+        padding: $spacer $grid-gutter-width / 2;
+      }
+    }
+
+    // Category View
+    .gru-page-filters {
+      margin-bottom: $grid-gutter-width;
+
+      // Mobile view
+      @include media-breakpoint-down(sm) {
+        margin-bottom: $grid-gutter-width / 2;
+      }
+    }
+
+    #g_cath_detail_top {
+      > .uk-panel-box {
+        background: $gray-100;
+        margin-bottom: $grid-gutter-width;
+
+        // Mobile view
+        @include media-breakpoint-down(sm) {
+          margin-bottom: $grid-gutter-width / 2;
+        }
+      }
+
+      .uk-category-view {
+        padding-bottom: $grid-gutter-width * 3.5;
+        transition: 500ms all;
+        height: 100%;
+
+        // Mobile view
+        @include media-breakpoint-down(sm) {
+          padding-bottom: $grid-gutter-width * 2.5;
+        }
+
+        &:hover {
+          box-shadow: 0 0 36px rgba(0,0,0,0.1);
+          transform: translateY(-12px);
+          -webkit-transform: translateY(-12px);
+
+          // Mobile view
+          @include media-breakpoint-down(lg) {
+            transform: unset;
+              -webkit-transform: unset;
+              box-shadow: none;
+          }
+        }
+      }
+    }
+
+    // View Course Detail
+    .view-course-detail {
+      // Alert
+      .uk-alert {
+        border-radius: $border-radius;
+        padding: $spacer;
+        margin: $grid-gutter-width 0;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        a {
+          color: $body-color;
+        }
+
+        .uk-width-large-2-10 {
+          text-align: right;
+        }
+
+        // Icon
+        .uk-icon-bullhorn:before {
+          background: $success;
+          color: $white;
+          border-radius: 50%;
+          display: inline-block;
+          content: "\f0e7";
+          font-family: "Font Awesome 5 Free";
+          font-size: 11px;
+          line-height: $spacer;
+          margin-right: 5px;
+          text-align: center;
+          height: $spacer;
+          width: $spacer;
+        }
+
+        // Button
+        .uk-button {
+          border-radius: $border-radius;
+        }
+      }
+
+      // Nav Tab
+      .uk-tab {
+        > li {
+          margin: 0;
+
+          > a {
+            background: transparent;
+            border: 1px solid transparent;
+            border-radius: $border-radius $border-radius 0 0;
+            margin: 0 0 -1px 0;
+
+            &:hover {
+              margin: 0 0 -1px 0
+            }
+          }
+
+          &.uk-active {
+            > a {
+              border: 1px solid $border-color;
+              border-bottom-color: $white;
+            }
+          }
+        }
+      }
+      
+      // Course Sidebar
+      .course-sidebar {
+        border-radius: $border-radius;
+        border: 1px solid $border-color;
+        background: $white;
+        padding: $grid-gutter-width;
+        margin-top: -($grid-gutter-width * 11);
+        max-width: 396px;
+        position: sticky;
+        top: $grid-gutter-width;
+
+        // Tablet view
+        @include media-breakpoint-down(lg) {
+          position: static ;
+          top: 0;
+          margin: 0 0 $grid-gutter-width 0;
+          max-width: 100%;
+        }
+
+        // Mobile view
+        @include media-breakpoint-down(sm) {
+          padding: $grid-gutter-width / 2;
+          margin-bottom: 0;
+        }
+
+        // figure
+        figure figcaption {
+          text-align: left;
+          text-transform: none;
+        }
+
+        // Intro Course
+        .uk-cover-background {
+          border: 0;
+          border-radius: $border-radius $border-radius 0 0;
+          height: $grid-gutter-width * 6;
+          margin: (-$grid-gutter-width - 1px) (-$grid-gutter-width - 1px) 0 (-$grid-gutter-width - 1px);
+
+          // Mobile view
+          @include media-breakpoint-down(sm) {
+            margin: (-$grid-gutter-width/2 - 1px) (-$grid-gutter-width/2 - 1px) 0 (-$grid-gutter-width/2 - 1px);
+          }
+        }
+
+        .uk-overlay-panel {
+          background: transparent;
+          position: relative;
+          padding: 0;
+
+          .gru-cover-details {
+            color: $body-color;
+            text-shadow: none;
+          }
+
+          // Title
+          &.uk-overlay-top {
+            margin-top: $spacer;
+
+            .gru-cover-title {
+              color: $headings-color;
+              text-shadow: none;
+              font-size: $h4-font-size;
+              font-weight: 500;
+              line-height: $h4-line-height;
+            }
+          }
+
+          // Info
+          .uk-course-info {
+            font-size: $font-size-base;
+            font-weight: 400;
+          }
+
+          &.uk-overlay-bottom {
+            margin-top: $spacer;
+
+            .uk-course-info {
+              li {
+                margin-bottom: $grid-gutter-width / 2;
+                color: $headings-color;
+                letter-spacing: 0;
+
+                .uk-text-bold {
+                  font-weight: 400;
+                  opacity: 0.5;
+                }
+
+                .icon {
+                  margin-right: $spacer;
+                  width: 12px;
+                }
+              }
+            }
+
+            .uk-course-action {
+              font-size: $font-size-base;
+
+              >.icon{
+                background: $gray-900;
+                border-radius: 50%;
+                display: inline-block;
+                line-height: $spacer;
+                font-size: 11px;
+                text-align: center;
+                margin-right: $spacer / 4;
+                height: $spacer;
+                width: $spacer;
+              }
+
+            }
+
+            .gru-cover-purchase-btn {
+              margin-top: $grid-gutter-width;
+
+              // Mobile view
+              @include media-breakpoint-down(sm) {
+                margin-top: $grid-gutter-width / 2;
+              }
+
+              .btn {
+                height: auto;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+
+      // Course View
+      .guru-course-view {
+        margin-top: 0;
+
+        // Tab Content
+        .tab-content {
+          border: 1px solid $border-color;
+          border-radius: $border-radius;
+          padding: $grid-gutter-width;
+
+          .uk-button-primary {
+            border-radius: $border-radius;
+            font-weight: 600;
+            font-size: 13px;
+            padding: 2px 15px;
+          }
+
+          .guru-tab-title {
+            background: $gray-100;
+            color: $body-color;
+            padding: $spacer / 2 $spacer;
+            font-weight: 700;
+            font-size: $h6-font-size;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+          }
+
+          // Lessons wrap
+          .lessons_wrap {
+            .uk-grid > * {
+              padding: $grid-gutter-width / 2 0;
+            }
+
+            img {
+              border-radius: 0;
+            }
+
+            ul > li {
+              border-bottom: 1px dashed $border-color;
+
+              &:last-child {
+                border-bottom: 0;
+              }
+            }
+
+            .lesson_name {
+              padding-left: 0;
+
+              a {
+                color: $body-color;
+                font-weight: 500;
+              }
+            }
+          }
+
+          // Description
+          .course_view_description {
+            padding: 0;
+
+            img {
+              margin: 0;
+            }
+          }
+
+          .teacher_info {
+            padding: 0;
+            margin-top: $grid-gutter-width;
+          }
+        }
+      }
+    }
+
+    // Register
+    .gru-register .uk-form {
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+      padding: $grid-gutter-width * 2;
+
+      // Mobile view
+      @include media-breakpoint-down(sm) {
+        padding: $spacer;
+      }
+
+      legend {
+        color: $headings-color;
+        font-size: $h3-font-size;
+        font-weight: 600;
+
+        &:after {
+          margin-top: $spacer / 2;
+          border-color: $border-color;
+        }
+      }
+    }
+
+    // Teacher List
+    #teacherList {
+      .uk-grid {
+        // Tablet view
+        @include media-breakpoint-down(md) {
+          flex-wrap: wrap;
+
+          > div {
+            width: 100%!important;
+          }
+        }
+      }
+      .guru-teacher-box {
+        background: $white!important;
+        border: 1px solid $border-color!important;
+        padding-bottom: $grid-gutter-width * 2.5!important;
+
+        .uk-clearfix {
+          display: flex;
+          flex-direction: column;
+
+          // Name
+          .name_guru {
+            order: 2;
+
+            a {
+              h4 {
+                &:hover,&:focus,&:active {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+
+          // Image Intro
+          .image_guru {
+            order: 1;
+
+            .thumbnail {
+              border: 0;
+              padding: 0;
+              margin-bottom: $grid-gutter-width;
+              width: 100%;
+
+              // Mobile view
+              @include media-breakpoint-down(sm) {
+                margin-bottom: $grid-gutter-width / 2;
+              }
+
+              img {
+                width: 100%;
+              }
+            }
+          }
+
+          // Description
+          .description_guru {
+            order: 3;
+
+            .uk-button-primary {
+              margin-top: $spacer / 2;
+            }
+          }
+
+          // Teacher Footer
+          .guru-teacher-box-footer {
+            bottom: 0;
+            border-top: 1px solid $border-color;
+            color: $body-color;
+            padding: $grid-gutter-width / 2 0;
+            font-weight: 600;
+            left: $grid-gutter-width;
+            right: $grid-gutter-width;
+            width: auto;
+
+            // Mobile view
+            @include media-breakpoint-down(sm) {
+              left: $grid-gutter-width / 2;
+              right: $grid-gutter-width / 2;
+            }
+
+            i {
+              margin-right: $spacer / 4;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// MODULE GURU
+.guru-mod--courses-wrap {
+  .guru-mod--courses__item-title {
+    font-weight: 500;
+  }
+}
+
+// Courses Slide
+.category-action {
+  position: absolute;
+  text-align: right;
+  margin-top: -$grid-gutter-width * 2;
+  width: 100%;
+
+  a {
+    font-weight: 700;
+  }
+}
+
+.courses-grid{
+  .col-xl-4 {
+    margin-top: $grid-gutter-width;
+
+    // Mobile view
+    @include media-breakpoint-down(sm) {
+      margin-top: $grid-gutter-width / 2;
+    }
+  }
+
+  .guru-mod--courses__item.guru-mod--courses__item {
+    background: $white;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    padding: $grid-gutter-width!important;
+    padding-bottom: $grid-gutter-width * 3.5!important;
+    position: relative;
+    transition: 500ms all;
+    height: 100%;
+    margin-top: $grid-gutter-width;
+
+    // Mobile view
+    @include media-breakpoint-down(sm) {
+      padding: $grid-gutter-width / 2!important;
+      padding-bottom: $grid-gutter-width * 2!important;
+    }
+
+    &:hover {
+      box-shadow: 0 0 36px rgba(0,0,0,0.1);
+      transform: translateY(-12px);
+      -webkit-transform: translateY(-12px);
+
+      // Mobile view
+      @include media-breakpoint-down(lg) {
+        transform: unset;
+          -webkit-transform: unset;
+      }
+    }
+
+    // Thumb
+    .guru-mod--courses__item-thumb {
+      margin: (-$grid-gutter-width - 1px) (-$grid-gutter-width - 1px) $grid-gutter-width (-$grid-gutter-width - 1px);
+
+      // Mobile view
+      @include media-breakpoint-down(sm) {
+        margin: (-$grid-gutter-width/2 - 1px) (-$grid-gutter-width/2 - 1px) ($grid-gutter-width/2) (-$grid-gutter-width/2 - 1px);
+      }
+
+      img {
+        border-radius: $border-radius $border-radius 0 0;
+      }
+    }
+
+    // Category
+    .category-course {
+      text-transform: uppercase;
+      font-size: $h6-font-size;
+      font-weight: 600;
+      margin-bottom: $spacer / 2;
+    }
+
+    // Info
+    .guru-mod--courses__item-details {
+      margin-top: $spacer / 2;
+      font-size: $h5-font-size;
+
+      span {
+        display: flex;
+        flex-wrap: nowrap;
+
+        img {
+          border-radius: 50%;
+          margin-right: 10px;
+          height: 24px;
+          width: 24px;
+        }
+      }
+
+      a {
+        color: $gray-600;
+        font-weight: 400;
+
+        &:hover,&:focus,&:active {
+          color: $gray-900;
+        }
+      }
+    }
+
+    // Student info
+    .student-info {
+      
+    }
+
+    // Description
+    .guru-mod--courses__item-desc {
+      opacity: 0.6;
+
+      > p {
+        color: $body-color;
+        font-size: $font-size-base;
+        margin-bottom: $spacer;
+      }
+    }
+
+    // Footer
+    .guru-mod--footer {
+      align-items: center;
+      text-align: center;
+      border-top: 1px solid $border-color;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      left: $grid-gutter-width;
+      right: $grid-gutter-width;
+      padding: $grid-gutter-width 0;
+
+      // Mobile View
+      @include media-breakpoint-down(sm) {
+        padding: $grid-gutter-width / 2 0;
+        left: $grid-gutter-width / 2;
+        right: $grid-gutter-width / 2;
+      }
+
+      // Students
+      .student-info {
+        .fa {
+          margin-right: 5px;
+        }
+      }
+
+      // Readmore
+      .readmore-info {
+        // Hidden on Mobile
+        @include media-breakpoint-down(xs) {
+          display: none;
+        }
+        a {
+          border: 1px solid $border-color;
+          border-radius: $border-radius;
+          display: inline-block;
+          color: $headings-color;
+          font-weight: 600;
+          font-size: 16px;
+          padding: $spacer / 4 $spacer;
+
+          &:hover,&:focus,&:active {
+            border-color: $headings-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.guru-module-courses-horizontal {
+  // Thumb
+  .guru-mod--courses__item-thumb {
+    img {
+      width: 100%;
+    }
+  }
+
+  // Title
+  .guru-mod--courses__item-title {
+    color: $headings-color;
+    font-size: $h4-font-size;
+    line-height: $h4-line-height;
+    font-weight: 500;
+  }
+
+  // Meta
+  .guru-mod--courses__item-details {
+    font-size: 13px;
+  }
+
+  // Description
+  .guru-mod--courses__item-desc > p {
+    font-size: $font-size-base;
+  }
+}
+
+// List Category & Teacher
+#guru-component .gru-list-categories,
+#guru-component .gru-listofteachers {
+  .uk-grid {
+    > div {
+      margin-bottom: $grid-gutter-width;
+
+      // Mobile view
+      @include media-breakpoint-down(sm) {
+        margin-bottom: $spacer;
+      }
+    }
+  }
+
+  .uk-panel-box {
+    transition: 500ms all;
+
+    &:hover {
+      box-shadow: 0 0 36px rgba(0,0,0,0.1);
+      transform: translateY(-12px);
+      -webkit-transform: translateY(-12px);
+
+      // Mobile view
+      @include media-breakpoint-down(lg) {
+        transform: unset;
+        -webkit-transform: unset;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+#guru-component {
+  .gru-list-categories {
+    .description_guru {
+      display: flex;
+      flex-direction: column;
+
+      // Readmore
+      .uk-button {
+        color: $headings-color;
+        font-weight: 600;
+        font-size: $h5-font-size;
+        margin-top: 5px;
+        background: transparent;
+        padding: 0;
+        text-align: left;
+        margin-top: $spacer/2;
+      }
+    }
+  }
+
+  // Result Search
+  ul.uk-list {
+    li.guru-mod-search_item {
+      border: 1px solid $border-color;
+      padding: $spacer!important;
+      margin-bottom: $grid-gutter-width / 2;
+
+      // Mobile view
+      @include media-breakpoint-down(sm) {
+        margin-bottom: $spacer;
+      }
+
+      &:nth-child(n+2) {
+        border-top: 1px solid $border-color;
+      }
+
+      // Thumb
+      .guru-mod-search_item-thumb {
+        width: 30%;
+        float: left;
+        margin: 0 $grid-gutter-width $spacer/ 2 0;
+
+        // Mobile view 
+        @include media-breakpoint-down(sm){
+          width: 100%;
+          margin-right: 0;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      // Title
+      .guru-mod-search_item-title {
+        font-size: $h3-font-size;
+        font-weight: 500;
+        line-height: $h3-line-height;
+        color: $headings-color;
+        margin-bottom: $spacer;
+
+        // Mobile view
+        @include media-breakpoint-down(sm) {
+          font-size: $h4-font-size;
+          line-height: $h4-font-size;
+        }
+      }
+
+      .guru-mod-search_item-desc,
+      .guru-mod-search_item-details {
+        p, i, span{
+          font-size: $h5-font-size;
+        }
+      }
+
+      .guru-mod-search_item-desc p {
+        display: block;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .guru-mod-search_item-details {
+        i {
+          color: $gray-700;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}
+
+
+// Mobile course layout
+#adminForm {
+  #accordion {
+    .accordionItem {
+      .guru-accordion-title {
+        font-size: $h4-font-size;
+        padding: $spacer / 2 $spacer;
+      }
+
+      .guru-accordion-content {
+        .course_view_description {
+          img {
+            // Mobile view
+            @include media-breakpoint-down(sm){
+              margin: 0;
+            }
+          }
+        }
+
+        .uk-button {
+          padding: $spacer/3;
+        }
+
+        // Table teacher infor
+        .g_table_wrap {
+          table {
+            tr {
+              td, th {
+                padding: $spacer/3;
+                font-size: $h6-font-size;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Box search Course Category
+.cat_list_wrap {
+  .gru-filter-item {
+      .uk-margin-remove {
+        // Mobile view 
+        @include media-breakpoint-down(xs) {
+          width: 190px !important;
+        }
+      }
+  }
+
+  > .uk-grid {
+    >.uk-grid {
+      width: 100%;
+      float: left;
+    }
+  }
+}
+
+.gru-page-filters {
+  .gru-filter-item select {
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    min-width: 180px;
+    padding: 0 $spacer / 2!important;
+    min-height: 64px!important;
+    height: 64px!important;
+
+    // Mobile view
+    @include media-breakpoint-down(xs) {
+      max-width: 250px;
+    }
+  }
+}
+
+select[name="menu_bar"],
+.essays-filters select {
+  min-height: 34px!important;
+  height: 34px!important;
+  padding: 0 $spacer / 2!important;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+}
+
+// Login page
+.gru-login {
+    .uk-grid {
+        .uk-form {
+            .gru-login-box {
+                // Mobile view
+                @include media-breakpoint-down(xs) {
+                    margin-bottom: $spacer;
+                }
+            }
+        }
+        .uk-panel-box {
+            // Mobile view
+            @include media-breakpoint-down(xs) {
+                padding: $spacer !important;
+            }
+        }
+    }
+}
+
+// Teacher Layout
+.gru-authorlayout {
+  .teacher_courses_heading_guru {
+    // Mobile view
+    @include media-breakpoint-down(sm){
+      font-size: $h4-font-size;
+    }
+  }
+}
+
+#guru-component .uk-form-horizontal .uk-form-controls {
+  width: auto;
+
+  input {
+    max-width: 240px;
+  }
+}
+
+// Teacher List
+#guru-component {
+  #teacherList {
+    .uk-grid {
+      // Mobile view
+      @include media-breakpoint-between(xs,sm) {
+        flex-wrap: nowrap ;
+
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+
+      .uk-width-large-1-3 {
+        @include media-breakpoint-between(xs,sm){
+          margin-bottom: $spacer;
+        }
+      }
+    }
+
+    .image_guru {
+      margin: (-$grid-gutter-width - 1px) (-$grid-gutter-width - 1px) 0 (-$grid-gutter-width - 1px);
+
+      // Mobile view
+      @include media-breakpoint-down(sm) {
+        margin: (-$grid-gutter-width/2 - 1px) (-$grid-gutter-width/2 - 1px) 0 (-$grid-gutter-width/2 - 1px);
+      }
+
+      .thumbnail {
+        margin-right: 0;
+
+        img {
+          border-radius: $border-radius $border-radius 0 0;
+        }
+      }
+    }
+  }
+}
+
+// Profile setting
+.gru-register {
+  #adminForm {
+
+    // Tab content
+    #tab-content {
+      .uk-form-controls {
+        .input-small {
+          margin-left: $spacer/3;
+          width: auto;
+        }
+      }
+    }
+
+    .uk-margin-large-top {
+      .uk-form-controls {
+
+      }
+    }
+
+    // Button 
+    .uk-button {
+      // Mobile view
+      @include media-breakpoint-down(sm) {
+        margin-top: $spacer/4 !important;
+      }
+    }
+  }
+
+  .wk-form-row {
+    + legend {
+      margin-top: $grid-gutter-width;
+    }
+  }
+}
+
+// Global tab
+.com_guru{
+  #guru-component{
+    .uk-tab,
+    .uk-navbar-nav {
+      border: 0;
+
+      &:before {
+        display: none;
+      }
+
+      > li {
+        border-radius: $border-radius;
+        margin: 2px 4px 2px 0;
+        padding: 0;
+        text-align: center;
+        transition: 300ms all;
+
+        > a {
+          background: $gray-100;
+          border-radius: $border-radius;
+          border: 0;
+          color: $body-color;
+          font-size: $font-size-base;
+          font-weight: 600;
+          margin: 0 0 1px 0;
+          padding: $spacer / 2 $spacer !important;
+
+          i {
+            margin-right: 4px;
+          }
+
+          &:hover,&:focus,&:active {
+            color: $white;
+          }
+        }
+
+        &.uk-active {
+          > a {
+            color: $white;
+          }
+
+          // Tab responsive
+          &.uk-tab-responsive {
+            width: 100%;
+
+            >a {
+              text-align: left;
+            }
+
+            .uk-dropdown {
+              border: 1px solid $border-color;
+              margin: 0;
+              padding-bottom: 0;
+              padding-top: 0;
+              width: 100%;
+
+              li {
+                width: 100%;
+                text-align: left;
+
+                a {
+                  &:hover {
+                    background: $gray-600;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .uk-tab {
+      margin-bottom: 0;
+      margin-left: 0 !important;
+
+      >li {
+        width: auto;
+      }
+    }
+
+    .uk-navbar {
+      background: transparent;
+
+      .uk-navbar-nav {
+        margin-bottom: $spacer/2;
+
+        a {
+          line-height: 1.6;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+// Teacher Profile
+.gru-authorlayout {
+  // Author Info
+  .gru-author-wrap {
+    display: flex;
+
+    // Mobile view
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+
+    // Title
+    .gru-page-title {
+      margin-bottom: $spacer / 2;
+      font-weight: 300;
+    }
+
+    // Avatar
+    .gru-author-avatar {
+      .author-image.thumbnail {
+        border-radius: $border-radius;
+        margin-right: $grid-gutter-width;
+        margin-bottom: $grid-gutter-width;
+        width: 400px;
+        max-width: 400px;
+
+        // Tablet view
+        @include media-breakpoint-down(lg) {
+          width: 200px;
+          max-width: 200px;
+        }
+
+        // Mobile view
+        @include media-breakpoint-down(sm) {
+          margin-right: 0;
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    // Links
+    .teacher_links {
+      background: transparent;
+      display: flex;
+      flex-wrap: wrap;
+
+      .teacher_links-item {
+        border: 0;
+
+        &:hover,&:focus,&:active {
+          background: transparent;
+        } 
+
+        a {
+          background: $gray-100;
+          border-radius: $border-radius;
+          margin-right: 5px;
+          margin-bottom: 5px;
+
+          &:hover,&:focus,&:active {
+            background: darken($gray-100, 5%);
+          }
+        }
+      }
+    }
+
+    // More Info
+    .teacher_row_guru {
+      margin-top: $spacer;
+
+      .fa-envelope {
+        color: #FCB239;
+      }
+
+      .fa-globe {
+        color: #240e50;
+      }
+
+      .fa-pencil {
+        color: #1AC190;
+      }
+
+      .fa-facebook {
+        color: #4B69B1;
+      }
+    }
+  }
+}
+
+// Profile
+#guru-component {
+  .pagetitle-cartbutton {
+    a {
+      u {
+        text-decoration: none;
+        padding-left: $grid-gutter-width/2;
+      }
+    }
+
+    .uk-button {
+      position: relative;
+      padding: $spacer/3 $grid-gutter-width/2;
+
+      img {
+        display: none;
+      }
+
+      &:before {
+        color: $white;
+        content: "\f07a";
+        font-family: "Font Awesome 5 Free";
+        font-size: 18px;
+        left: $spacer/2;
+        position: absolute;
+        top: $spacer/3;
+      }
+    }
+  }
+}
+
+// My Cart
+#guru_cart {
+  #g_myCart_payment {
+    .guru-plugin-filter {
+      background: transparent;
+      padding: 0;
+      color: $body-color;
+
+      #processor {
+      margin-top: $spacer/4;
+      }
+    }
+  }
+
+  .uk-grid {
+    .uk-button {
+      background: $gray-100;
+      border-radius: $border-radius;
+      transition: 500ms all;
+
+      &:hover {
+        background: darken($gray-100, 3%);
+      }
+
+      &.uk-button-primary {
+        background: $success;
+
+        &:hover {
+          background: darken($success, 10%);
+        }
+      }
+    }
+
+    .uk-form {
+      label {
+        display: block;
+      }
+
+      .uk-form-width-small {
+        width: 100%;
+        margin-bottom: $spacer/3;
+        height: 44px;
+        padding: $spacer/3 $grid-gutter-width/2;
+      }
+    }
+
+    .guru_cart_total {
+      &.uk-text-bold {
+        height: $spacer * 2;
+        line-height: $spacer * 2;
+        background: $gray-100;
+        padding: 0 $grid-gutter-width/2;
+        margin-top: $spacer/6;
+        border-radius: $border-radius;
+      }
+    }
+  }
+
+  // Payment
+  #g_myCart_payment {
+    #processor,
+    .uk-button {
+      padding: $spacer/3 $grid-gutter-width/2;
+    }
+  }
+
+  #g_table_cart {
+    tr {
+      td {
+        #plan_id4 {
+          padding: $spacer/3 $grid-gutter-width/2;
+        }
+      }
+    }
+  }
+}
+
+#guru-component {
+  .uk-form {
+    // Button 
+    .uk-button,
+    .btn-primary {
+      padding: $spacer/3 $grid-gutter-width/2;
+    }
+  }
+
+  // Button Cart
+  .pagetitle-cartbutton {
+    .uk-float-left {
+      // Mobile view
+      @include media-breakpoint-down(xs) {
+        width: 100%;
+        text-align: left !important;
+      }
+
+      .uk-button {
+        // Mobile view
+        @include media-breakpoint-down(xs) {
+          margin-bottom: $spacer/2;
+        }
+      }
+    }
+  }
+}
+
+// Tabs (Course Layout)
+#guru-component .table-of-contents {
+  .guru-tabs {
+    .lessons_wrap {
+      .lesson_name {
+        // Mobile view
+        @include media-breakpoint-down(sm) {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  .uk-width-1-4 {
+    padding: 0 $spacer/3;
+  }
+}
+
+// Responsive table
+#guru-component {
+  .gru-myquizzes,
+  .gru-mycertificates,
+  .g_table_wrap {
+    // Mobile view
+    @include media-breakpoint-down(sm){
+      overflow: auto;
+    }
+
+    .uk-table {
+      tr {
+        td, th {
+          // Mobile view
+          @include media-breakpoint-down(sm){
+            font-size: $h6-font-size;
+            padding: $spacer/3;
+          }
+        }
+      }
+    }
+  }
+}
+
+.course_view_teacher {
+  #teacherdetail {
+    .description_guru {
+      //Mobile view
+      @include media-breakpoint-down(sm) {
+        margin: 0;
+      }
+
+      .uk-width-2-10,
+      .uk-width-8-10 {
+        //Mobile view
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+// Courser Author
+.gru-mycoursesauthor {
+  .uk-grid {
+    >.uk-width-1-1 {
+      // Mobile view
+      @include media-breakpoint-down(sm) {
+        width: 100% !important;
+
+        h2 {
+          margin-bottom: $grid-gutter-width !important;
+        }
+      }
+    }
+
+    .uk-visible-small {
+      .uk-button {
+        margin-bottom: $spacer / 3 !important;
+      }
+    }
+  }
+}
+
+// Commissions Teacher
+.gru-commissions {
+  .uk-form-label {
+    input {
+      margin-top: $spacer/3 !important;
+    }
+  }
+  .uk-form-controls {
+    display: flex;
+
+    .editlinktip {
+      margin-left: $spacer/2;
+    }
+
+    #paypal_email {
+      // Mobile view
+      @include media-breakpoint-down(sm){
+        max-width: 90% !important;
+      }
+    }
+  }
+}
+
+#g_mycoursesauthorcontent,
+#g_mystudentsauthor,
+.g_table_wrap,
+.gru-mymediaauthorcontent {
+  #limit {
+    width: 100px;
+    float: right;
+  }
+}
+
+.gru-mycoursesauthor {
+  +.uk-grid {
+    br {
+      display: none;
+    }
+  }
+}
+
+#guru-component {
+  .gru-mycoursesauthor,
+  .g_inline_child {
+    .gru-page-title {
+      margin-bottom: $spacer / 3 !important;
+    }
+
+    .uk-button-group {
+      // Mobile view
+      @include media-breakpoint-down(sm) {
+        display: flex;
+
+        .uk-button {
+          padding: $spacer/ 3 $spacer/2;
+          margin-right: $spacer/4;
+        }
+      }
+    }
+  }
+
+  .g_inline_child {
+    .uk-button-group {
+      .uk-button-dropdow {
+        text-align: left;
+        width: auto;
+      }
+    }
+  }
+}
+
+// Guru Search Result
+.uk-search-default {
+  .uk-search-icon {
+    border: 0;
+    border-radius: $border-radius;
+    color: $white;
+    margin-left: -4px!important;
+    height: 64px;
+    padding: $spacer / 2 $grid-gutter-width;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    // Mobile view
+    @include media-breakpoint-down(sm) {
+      padding: $spacer / 2 $grid-gutter-width / 2;
+    }
+
+    svg *{
+      stroke: $white;
+    }
+  }
+
+  .uk-search-input {
+    border: 1px solid $input-border-color;
+    border-radius: $border-radius;
+    height: 64px!important;
+    padding: $spacer / 2 $spacer;
+    width: 400px !important;
+    max-width: 100%;
+
+    &:focus {
+      border-color: $input-focus-border-color;
+      outline: none;
+    }
+
+    // Mobile view
+    @include media-breakpoint-down(sm) {
+      width: 80%!important;
+    }
+  }   
+}
+
+// Guru Teacher media
+#guru-component {
+  .essays-search {
+    .form-control {
+      // Tablet view
+      @include media-breakpoint-down(sm) {
+        width: 75%;
+      }
+    }
+
+    .uk-button {
+      height: 48px;
+      line-height: 48px;
+      vertical-align: top;
+    }
+
+    .wk-text-right {
+      // Tablet view
+      @include media-breakpoint-down(sm) {
+        text-align: left!important;
+        margin-top: 5px;
+        width: 100%;
+      }
+    }
+  }
+
+  .essays-filters {
+    select {
+      margin: 5px 0!important;
+    }
+  }
+
+  .inputbox.input-mini {
+    min-width: 50px;
+  }
+
+
+  #g_myquizzesauthorcontent {
+    // Mobile view
+    @include media-breakpoint-down(xs) {
+      overflow: auto;
+    }
+  }
+}
+
+// Mod Search
+div.guru-module-search {
+  #guru-search-form {
+    display: flex;
+    width: auto;
+
+    .uk-search-button {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      order: 2;
+      height: 64px;
+      line-height: 64px;
+      padding: 0 40px;
+
+      // Tablet view
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+  }
+
+  .uk-search-input {
+    background-image: url('../images/search.png');
+    background-position: 30px center;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    border-radius: $border-radius 0 0 $border-radius;
+    height: 64px;
+    padding: $grid-gutter-width / 2 $grid-gutter-width / 2 $grid-gutter-width / 2 $grid-gutter-width * 2;
+    max-width: 360px;
+
+    // Tablet view
+    @include media-breakpoint-down(sm) {
+      border-radius: $border-radius;
+      background-position: 15px center;
+      max-width: 100%;
+      padding-left: 45px;
+      width: 100%!important;
+    }
+  }
+}

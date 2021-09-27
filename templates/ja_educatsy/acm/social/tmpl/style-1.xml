@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Social Style 1</title>
+	<sampledata></sampledata>
+	<fields name="social-intro">
+		<fieldset name="section-social" label="SOCIAL_SECTION_LABEL" description="SOCIAL_SECTION_DESC" multiple="1">
+				<field name="font-icon" type="text" default="" label="SOCIAL_FONT_ICON_LABEL" description="SOCIAL_FONT_ICON_DESC" hint="fa fa-facebook"/>
+				<field name="title" type="text" default="" size="40" label="SOCIAL_TITLE_LABEL" description="SOCIAL_TITLE_DESC" />
+				<field name="link" type="text" default="" label="SOCIAL_LINK_LABEL" description="SOCIAL_LINK_DESC" rows="5" cols="40" required="1"/>
+		</fieldset>
+		
+  </fields>
+</form>

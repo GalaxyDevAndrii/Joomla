@@ -1,0 +1,32 @@
+<div class="error-page-container">
+    <main-background class="main-background">
+        <div class="main-background-image"></div>
+        <div class="main-background-overlay"></div>
+    </main-background>
+    <header class="app-header">
+        <img class="main-logo" ng-src="{{ noAccess.logoUrl }}">
+        <span class="vertical-align-helper"></span>
+    </header>
+    <div class="error-container" ng-init="scrollToTop()" entire-height>
+        <div class="error-content-container noaccess-error">
+            <secondary-background class="secondary-background">
+                <div class="secondary-background-image"></div>
+                <div class="secondary-background-overlay"></div>
+            </secondary-background>
+            <div class="noaccess-icon">
+                <span class="icon attention"></span>
+            </div>
+            <div class="error-message-container">
+                {{ '[the owner of the course has limited the access]' | translate }}
+            </div>            
+            <div class="error-button-container">
+                <button ng-click="noAccess.goToLogin()" class="button primary">
+                    <i class="icon home"></i>
+                    <span class="text-wrapper">
+                        {{ '[back to sign in]' | translate }}
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

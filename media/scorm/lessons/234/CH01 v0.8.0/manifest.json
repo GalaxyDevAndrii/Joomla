@@ -1,0 +1,2631 @@
+{
+  "name": "All in one",
+  "shortDescription":
+    "Quickly create any course you want, from scratch\n\nDetails:\nThe \"All in one\" template allows you to easily create a course from scratch. Drag and drop interactive question types to create engaging and meaningful learning. Use our live support chat to get help from our team.",
+  "thumbnail": "preview/thumbnail.png",
+  "previewImages": ["preview/images/preview.jpg"],
+  "settingsUrls": {
+    "configure": "settings/configure/configure.html"
+  },
+  "supports": ["branding", "fonts", "configuration-settings"],
+  "subTabSupports": {
+    "branding": ["logo", "backgrounds", "interfaceColors"]
+  },
+  "presets": [
+    {
+      "title": "default",
+      "settings": {
+        "branding": {
+          "logo": {
+            "url": "//cdn.easygenerator.com/logo-v2.png",
+            "allowToShowLogo": false
+          },
+          "alternativeLogo": {
+            "url": "//cdn.easygenerator.com/white-logo-v2.png"
+          },
+          "colors": [
+            {
+              "key": "main-color",
+              "value": "#ee673b"
+            },
+            {
+              "key": "cta-button-color",
+              "value": "#ee673b"
+            },
+            {
+              "key": "content-body-color",
+              "value": "#fff"
+            },
+            {
+              "key": "correct-color",
+              "value": "#279e7e"
+            },
+            {
+              "key": "incorrect-color",
+              "value": "#dd3943"
+            },
+            {
+              "key": "text-color",
+              "value": "#363E4E"
+            },
+            {
+              "key": "button-text-color",
+              "value": "#fff"
+            },
+            {
+              "key": "cover-bg-overlay-text-color",
+              "value": "#fff"
+            }
+          ],
+          "background": {
+            "header": {
+              "brightness": null,
+              "color": null,
+              "image": {
+                "url": "//cdn.easygenerator.com/images/14.jpg",
+                "option": "fullscreen"
+              },
+              "coverOverlay": {
+                "enabled": false,
+                "color": "#EC7111",
+                "opacity": 0.8
+              }
+            },
+            "body": {
+              "switchable": null,
+              "enabled": true,
+              "brightness": null,
+              "color": "#FFFFFF",
+              "texture": null
+            }
+          }
+        },
+        "fonts": [
+          {
+            "place": "custom",
+            "key": "main-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "secondary-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "Heading1",
+            "size": 32,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#363e4e",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading2",
+            "size": 26,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#363e4e",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading3",
+            "size": 22,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#363e4e",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading4",
+            "size": 20,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#363e4e",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Normal",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#363e4e",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Quote",
+            "size": 24,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#363e4e",
+            "fontWeight": "400",
+            "textDecoration": "none",
+            "fontStyle": "italic",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Highlighted",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#fff",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": "#F0754D",
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          },
+          {
+            "place": "custom",
+            "key": "links",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#F0754D",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          }
+        ]
+      }
+    },
+    {
+      "title": "orange",
+      "settings": {
+        "branding": {
+          "logo": {
+            "url": "//cdn.easygenerator.com/logo-v2.png",
+            "allowToShowLogo": false
+          },
+          "alternativeLogo": {
+            "url": "//cdn.easygenerator.com/white-logo-v2.png"
+          },
+          "colors": [
+            {
+              "key": "main-color",
+              "value": "#f15b0a"
+            },
+            {
+              "key": "cta-button-color",
+              "value": "#271100"
+            },
+            {
+              "key": "content-body-color",
+              "value": "#fff"
+            },
+            {
+              "key": "correct-color",
+              "value": "#779e00"
+            },
+            {
+              "key": "incorrect-color",
+              "value": "#f74a55"
+            },
+            {
+              "key": "text-color",
+              "value": "#191919"
+            },
+            {
+              "key": "button-text-color",
+              "value": "#fff"
+            },
+            {
+              "key": "cover-bg-overlay-text-color",
+              "value": "#fff"
+            }
+          ],
+          "background": {
+            "header": {
+              "brightness": null,
+              "color": null,
+              "image": {
+                "url": "//cdn.easygenerator.com/images/0.jpg",
+                "option": "fullscreen"
+              },
+              "coverOverlay": {
+                "enabled": true,
+                "color": "#EC7111",
+                "opacity": 0.8
+              }
+            },
+            "body": {
+              "switchable": null,
+              "enabled": true,
+              "brightness": null,
+              "color": "#FFFFFF",
+              "texture": null
+            }
+          }
+        },
+        "fonts": [
+          {
+            "place": "custom",
+            "key": "main-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "secondary-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "Heading1",
+            "size": 32,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading2",
+            "size": 26,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading3",
+            "size": 22,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading4",
+            "size": 20,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Normal",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#191919",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Quote",
+            "size": 24,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#191919",
+            "fontWeight": "400",
+            "textDecoration": "none",
+            "fontStyle": "italic",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Highlighted",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#fff",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": "#f6842c",
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          },
+          {
+            "place": "custom",
+            "key": "links",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#f6842c",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          }
+        ]
+      }
+    },
+    {
+      "title": "pink",
+      "settings": {
+        "branding": {
+          "logo": {
+            "url": "//cdn.easygenerator.com/logo-v2.png",
+            "allowToShowLogo": false
+          },
+          "alternativeLogo": {
+            "url": "//cdn.easygenerator.com/white-logo-v2.png"
+          },
+          "colors": [
+            {
+              "key": "main-color",
+              "value": "#c73d7f"
+            },
+            {
+              "key": "cta-button-color",
+              "value": "#6f1959"
+            },
+            {
+              "key": "content-body-color",
+              "value": "#fff"
+            },
+            {
+              "key": "correct-color",
+              "value": "#2d9c67"
+            },
+            {
+              "key": "incorrect-color",
+              "value": "#ff2426"
+            },
+            {
+              "key": "text-color",
+              "value": "#191919"
+            },
+            {
+              "key": "button-text-color",
+              "value": "#fff"
+            },
+            {
+              "key": "cover-bg-overlay-text-color",
+              "value": "#fff"
+            }
+          ],
+          "background": {
+            "header": {
+              "brightness": null,
+              "color": null,
+              "image": {
+                "url": "//cdn.easygenerator.com/images/15.jpg",
+                "option": "fullscreen"
+              },
+              "coverOverlay": {
+                "enabled": true,
+                "color": "#d05b93",
+                "opacity": 0.85
+              }
+            },
+            "body": {
+              "switchable": null,
+              "enabled": true,
+              "brightness": null,
+              "color": "#FFFFFF",
+              "texture": null
+            }
+          }
+        },
+        "fonts": [
+          {
+            "place": "custom",
+            "key": "main-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "secondary-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "Heading1",
+            "size": 32,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading2",
+            "size": 26,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading3",
+            "size": 22,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading4",
+            "size": 20,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Normal",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#191919",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Quote",
+            "size": 24,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#191919",
+            "fontWeight": "400",
+            "textDecoration": "none",
+            "fontStyle": "italic",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Highlighted",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#fff",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": "#d05b93",
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          },
+          {
+            "place": "custom",
+            "key": "links",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#d05b93",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          }
+        ]
+      }
+    },
+    {
+      "title": "grey",
+      "settings": {
+        "branding": {
+          "logo": {
+            "url": "//cdn.easygenerator.com/logo-v2.png",
+            "allowToShowLogo": false
+          },
+          "alternativeLogo": {
+            "url": "//cdn.easygenerator.com/white-logo-v2.png"
+          },
+          "colors": [
+            {
+              "key": "main-color",
+              "value": "#6f6f6f"
+            },
+            {
+              "key": "cta-button-color",
+              "value": "#6f6f6f"
+            },
+            {
+              "key": "content-body-color",
+              "value": "#fff"
+            },
+            {
+              "key": "correct-color",
+              "value": "#7f9e39"
+            },
+            {
+              "key": "incorrect-color",
+              "value": "#ff4753"
+            },
+            {
+              "key": "text-color",
+              "value": "#191919"
+            },
+            {
+              "key": "button-text-color",
+              "value": "#fff"
+            },
+            {
+              "key": "cover-bg-overlay-text-color",
+              "value": "#fff"
+            }
+          ],
+          "background": {
+            "header": {
+              "brightness": null,
+              "color": null,
+              "image": {
+                "url": "//cdn.easygenerator.com/images/17.jpg",
+                "option": "fullscreen"
+              },
+              "coverOverlay": {
+                "enabled": true,
+                "color": "#797979",
+                "opacity": 0.85
+              }
+            },
+            "body": {
+              "switchable": null,
+              "enabled": true,
+              "brightness": null,
+              "color": "#FFFFFF",
+              "texture": null
+            }
+          }
+        },
+        "fonts": [
+          {
+            "place": "custom",
+            "key": "main-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "secondary-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "Heading1",
+            "size": 32,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading2",
+            "size": 26,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading3",
+            "size": 22,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading4",
+            "size": 20,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Normal",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#191919",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Quote",
+            "size": 24,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#191919",
+            "fontWeight": "400",
+            "textDecoration": "none",
+            "fontStyle": "italic",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Highlighted",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#fff",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": "#797979",
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          },
+          {
+            "place": "custom",
+            "key": "links",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#797979",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          }
+        ]
+      }
+    },
+    {
+      "title": "white",
+      "settings": {
+        "branding": {
+          "logo": {
+            "url": "//cdn.easygenerator.com/logo-v2.png",
+            "allowToShowLogo": false
+          },
+          "alternativeLogo": {
+            "url": "//cdn.easygenerator.com/logo-v2.png"
+          },
+          "colors": [
+            {
+              "key": "main-color",
+              "value": "#f76700"
+            },
+            {
+              "key": "cta-button-color",
+              "value": "#f76700"
+            },
+            {
+              "key": "content-body-color",
+              "value": "#fff"
+            },
+            {
+              "key": "correct-color",
+              "value": "#70a111"
+            },
+            {
+              "key": "incorrect-color",
+              "value": "#ff2a38"
+            },
+            {
+              "key": "text-color",
+              "value": "#1c1d1d"
+            },
+            {
+              "key": "button-text-color",
+              "value": "#fff"
+            },
+            {
+              "key": "cover-bg-overlay-text-color",
+              "value": "#1c1d1d"
+            }
+          ],
+          "background": {
+            "header": {
+              "brightness": null,
+              "color": null,
+              "image": {
+                "url": "//cdn.easygenerator.com/images/16.jpg",
+                "option": "fullscreen"
+              },
+              "coverOverlay": {
+                "enabled": true,
+                "color": "#ffffff",
+                "opacity": 0.85
+              }
+            },
+            "body": {
+              "switchable": null,
+              "enabled": true,
+              "brightness": null,
+              "color": "#FFFFFF",
+              "texture": null
+            }
+          }
+        },
+        "fonts": [
+          {
+            "place": "custom",
+            "key": "main-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "secondary-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "Heading1",
+            "size": 32,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#1c1d1d",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading2",
+            "size": 26,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#1c1d1d",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading3",
+            "size": 22,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#1c1d1d",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading4",
+            "size": 20,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#1c1d1d",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Normal",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#1c1d1d",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Quote",
+            "size": 24,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#1c1d1d",
+            "fontWeight": "400",
+            "textDecoration": "none",
+            "fontStyle": "italic",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Highlighted",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#fff",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": "#ffa246",
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          },
+          {
+            "place": "custom",
+            "key": "links",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#ffa246",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          }
+        ]
+      }
+    },
+    {
+      "title": "gradient orange",
+      "settings": {
+        "branding": {
+          "logo": {
+            "url": "//cdn.easygenerator.com/logo-v2.png",
+            "allowToShowLogo": false
+          },
+          "alternativeLogo": {
+            "url": "//cdn.easygenerator.com/white-logo-v2.png"
+          },
+          "colors": [
+            {
+              "key": "main-color",
+              "value": "#d14f14"
+            },
+            {
+              "key": "cta-button-color",
+              "value": "#d14f14"
+            },
+            {
+              "key": "content-body-color",
+              "value": "#fff"
+            },
+            {
+              "key": "correct-color",
+              "value": "#419832"
+            },
+            {
+              "key": "incorrect-color",
+              "value": "#ff341b"
+            },
+            {
+              "key": "text-color",
+              "value": "#230e00"
+            },
+            {
+              "key": "button-text-color",
+              "value": "#fff"
+            },
+            {
+              "key": "cover-bg-overlay-text-color",
+              "value": "#fff"
+            }
+          ],
+          "background": {
+            "header": {
+              "brightness": null,
+              "color": null,
+              "image": {
+                "url": "//cdn.easygenerator.com/images/18.jpg",
+                "option": "fullscreen"
+              },
+              "coverOverlay": {
+                "enabled": false,
+                "color": "#e36716",
+                "opacity": 0
+              }
+            },
+            "body": {
+              "switchable": null,
+              "enabled": true,
+              "brightness": null,
+              "color": "#FFFFFF",
+              "texture": null
+            }
+          }
+        },
+        "fonts": [
+          {
+            "place": "custom",
+            "key": "main-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "secondary-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "Heading1",
+            "size": 32,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#230e00",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading2",
+            "size": 26,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#230e00",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading3",
+            "size": 22,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#230e00",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading4",
+            "size": 20,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#230e00",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Normal",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#230e00",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Quote",
+            "size": 24,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#230e00",
+            "fontWeight": "400",
+            "textDecoration": "none",
+            "fontStyle": "italic",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Highlighted",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#fff",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": "#e36716",
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          },
+          {
+            "place": "custom",
+            "key": "links",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#e36716",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          }
+        ]
+      }
+    },
+    {
+      "title": "dark green",
+      "settings": {
+        "branding": {
+          "logo": {
+            "url": "//cdn.easygenerator.com/logo-v2.png",
+            "allowToShowLogo": false
+          },
+          "alternativeLogo": {
+            "url": "//cdn.easygenerator.com/white-logo-v2.png"
+          },
+          "colors": [
+            {
+              "key": "main-color",
+              "value": "#488a81"
+            },
+            {
+              "key": "cta-button-color",
+              "value": "#488a81"
+            },
+            {
+              "key": "content-body-color",
+              "value": "#fff"
+            },
+            {
+              "key": "correct-color",
+              "value": "#55a45d"
+            },
+            {
+              "key": "incorrect-color",
+              "value": "#df1817"
+            },
+            {
+              "key": "text-color",
+              "value": "#191919"
+            },
+            {
+              "key": "button-text-color",
+              "value": "#fff"
+            },
+            {
+              "key": "cover-bg-overlay-text-color",
+              "value": "#fff"
+            }
+          ],
+          "background": {
+            "header": {
+              "brightness": null,
+              "color": null,
+              "image": {
+                "url": "//cdn.easygenerator.com/images/19.jpg",
+                "option": "fullscreen"
+              },
+              "coverOverlay": {
+                "enabled": false,
+                "color": "#55a499",
+                "opacity": 0
+              }
+            },
+            "body": {
+              "switchable": null,
+              "enabled": true,
+              "brightness": null,
+              "color": "#FFFFFF",
+              "texture": null
+            }
+          }
+        },
+        "fonts": [
+          {
+            "place": "custom",
+            "key": "main-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "secondary-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "Heading1",
+            "size": 32,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading2",
+            "size": 26,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading3",
+            "size": 22,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading4",
+            "size": 22,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Normal",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#191919",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Quote",
+            "size": 24,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#191919",
+            "fontWeight": "400",
+            "textDecoration": "none",
+            "fontStyle": "italic",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Highlighted",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#fff",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": "#55a499",
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          },
+          {
+            "place": "custom",
+            "key": "links",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#55a499",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          }
+        ]
+      }
+    },
+    {
+      "title": "red",
+      "settings": {
+        "branding": {
+          "logo": {
+            "url": "//cdn.easygenerator.com/logo-v2.png",
+            "allowToShowLogo": false
+          },
+          "alternativeLogo": {
+            "url": "//cdn.easygenerator.com/white-logo-v2.png"
+          },
+          "colors": [
+            {
+              "key": "main-color",
+              "value": "#c10c06"
+            },
+            {
+              "key": "cta-button-color",
+              "value": "#e70e07"
+            },
+            {
+              "key": "content-body-color",
+              "value": "#fff"
+            },
+            {
+              "key": "correct-color",
+              "value": "#5e9905"
+            },
+            {
+              "key": "incorrect-color",
+              "value": "#ff1d00"
+            },
+            {
+              "key": "text-color",
+              "value": "#191919"
+            },
+            {
+              "key": "button-text-color",
+              "value": "#fff"
+            },
+            {
+              "key": "cover-bg-overlay-text-color",
+              "value": "#fff"
+            }
+          ],
+          "background": {
+            "header": {
+              "brightness": null,
+              "color": null,
+              "image": {
+                "url": "//cdn.easygenerator.com/images/21.jpg",
+                "option": "fullscreen"
+              },
+              "coverOverlay": {
+                "enabled": false,
+                "color": "#EC7111",
+                "opacity": 0.8
+              }
+            },
+            "body": {
+              "switchable": null,
+              "enabled": true,
+              "brightness": null,
+              "color": "#FFFFFF",
+              "texture": null
+            }
+          }
+        },
+        "fonts": [
+          {
+            "place": "custom",
+            "key": "main-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "secondary-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "Heading1",
+            "size": 32,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading2",
+            "size": 26,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading3",
+            "size": 22,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading4",
+            "size": 20,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Normal",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#191919",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Quote",
+            "size": 24,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#191919",
+            "fontWeight": "400",
+            "textDecoration": "none",
+            "fontStyle": "italic",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Highlighted",
+            "size": 16,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#fff",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": "#c10c06",
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          },
+          {
+            "place": "custom",
+            "key": "links",
+            "size": 16,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#c10c06",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          }
+        ]
+      }
+    },
+    {
+      "title": "green",
+      "settings": {
+        "branding": {
+          "logo": {
+            "url": "//cdn.easygenerator.com/logo-v2.png",
+            "allowToShowLogo": false
+          },
+          "alternativeLogo": {
+            "url": "//cdn.easygenerator.com/white-logo-v2.png"
+          },
+          "colors": [
+            {
+              "key": "main-color",
+              "value": "#3ba443"
+            },
+            {
+              "key": "cta-button-color",
+              "value": "#259d80"
+            },
+            {
+              "key": "content-body-color",
+              "value": "#fff"
+            },
+            {
+              "key": "correct-color",
+              "value": "#3ba45e"
+            },
+            {
+              "key": "incorrect-color",
+              "value": "#c43219"
+            },
+            {
+              "key": "text-color",
+              "value": "#191919"
+            },
+            {
+              "key": "button-text-color",
+              "value": "#fff"
+            },
+            {
+              "key": "cover-bg-overlay-text-color",
+              "value": "#fff"
+            }
+          ],
+          "background": {
+            "header": {
+              "brightness": null,
+              "color": null,
+              "image": {
+                "url": "//cdn.easygenerator.com/images/22.jpg",
+                "option": "fullscreen"
+              },
+              "coverOverlay": {
+                "enabled": false,
+                "color": "#EC7111",
+                "opacity": 0.8
+              }
+            },
+            "body": {
+              "switchable": null,
+              "enabled": true,
+              "brightness": null,
+              "color": "#FFFFFF",
+              "texture": null
+            }
+          }
+        },
+        "fonts": [
+          {
+            "place": "custom",
+            "key": "main-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "secondary-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "Heading1",
+            "size": 32,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading2",
+            "size": 26,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading3",
+            "size": 22,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading4",
+            "size": 20,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Normal",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#191919",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Quote",
+            "size": 24,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#191919",
+            "fontWeight": "400",
+            "textDecoration": "none",
+            "fontStyle": "italic",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Highlighted",
+            "size": 16,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#fff",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": "#65c86d",
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          },
+          {
+            "place": "custom",
+            "key": "links",
+            "size": 16,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#65c86d",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          }
+        ]
+      }
+    },
+    {
+      "title": "violet",
+      "settings": {
+        "branding": {
+          "logo": {
+            "url": "//cdn.easygenerator.com/logo-v2.png",
+            "allowToShowLogo": false
+          },
+          "alternativeLogo": {
+            "url": "//cdn.easygenerator.com/white-logo-v2.png"
+          },
+          "colors": [
+            {
+              "key": "main-color",
+              "value": "#6831e4"
+            },
+            {
+              "key": "cta-button-color",
+              "value": "#6831e4"
+            },
+            {
+              "key": "content-body-color",
+              "value": "#fff"
+            },
+            {
+              "key": "correct-color",
+              "value": "#28a441"
+            },
+            {
+              "key": "incorrect-color",
+              "value": "#ff350b"
+            },
+            {
+              "key": "text-color",
+              "value": "#191919"
+            },
+            {
+              "key": "button-text-color",
+              "value": "#fff"
+            },
+            {
+              "key": "cover-bg-overlay-text-color",
+              "value": "#fff"
+            }
+          ],
+          "background": {
+            "header": {
+              "brightness": null,
+              "color": null,
+              "image": {
+                "url": "//cdn.easygenerator.com/images/23.jpg",
+                "option": "fullscreen"
+              },
+              "coverOverlay": {
+                "enabled": true,
+                "color": "#6831e4",
+                "opacity": 0.85
+              }
+            },
+            "body": {
+              "switchable": null,
+              "enabled": true,
+              "brightness": null,
+              "color": "#FFFFFF",
+              "texture": null
+            }
+          }
+        },
+        "fonts": [
+          {
+            "place": "custom",
+            "key": "main-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "secondary-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "Heading1",
+            "size": 32,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading2",
+            "size": 26,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading3",
+            "size": 22,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading4",
+            "size": 20,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Normal",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#191919",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Quote",
+            "size": 24,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#191919",
+            "fontWeight": "400",
+            "textDecoration": "none",
+            "fontStyle": "italic",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Highlighted",
+            "size": 16,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#fff",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": "#6831e4",
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          },
+          {
+            "place": "custom",
+            "key": "links",
+            "size": 16,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#6831e4",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          }
+        ]
+      }
+    },
+    {
+      "title": "gradient blue",
+      "settings": {
+        "branding": {
+          "logo": {
+            "url": "//cdn.easygenerator.com/logo-v2.png",
+            "allowToShowLogo": false
+          },
+          "alternativeLogo": {
+            "url": "//cdn.easygenerator.com/white-logo-v2.png"
+          },
+          "colors": [
+            {
+              "key": "main-color",
+              "value": "#0637f6"
+            },
+            {
+              "key": "cta-button-color",
+              "value": "#0637f6"
+            },
+            {
+              "key": "content-body-color",
+              "value": "#fff"
+            },
+            {
+              "key": "correct-color",
+              "value": "#48a737"
+            },
+            {
+              "key": "incorrect-color",
+              "value": "#f62532"
+            },
+            {
+              "key": "text-color",
+              "value": "#00061e"
+            },
+            {
+              "key": "button-text-color",
+              "value": "#fff"
+            },
+            {
+              "key": "cover-bg-overlay-text-color",
+              "value": "#fff"
+            }
+          ],
+          "background": {
+            "header": {
+              "brightness": null,
+              "color": null,
+              "image": {
+                "url": "//cdn.easygenerator.com/images/24.jpg",
+                "option": "fullscreen"
+              },
+              "coverOverlay": {
+                "enabled": false,
+                "color": "#6831e4",
+                "opacity": 0.8
+              }
+            },
+            "body": {
+              "switchable": null,
+              "enabled": true,
+              "brightness": null,
+              "color": "#f6f8fc",
+              "texture": null
+            }
+          }
+        },
+        "fonts": [
+          {
+            "place": "custom",
+            "key": "main-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "secondary-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "Heading1",
+            "size": 32,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#00061e",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading2",
+            "size": 26,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#00061e",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading3",
+            "size": 22,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#00061e",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading4",
+            "size": 20,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#00061e",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Normal",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#00061e",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Quote",
+            "size": 24,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#00061e",
+            "fontWeight": "400",
+            "textDecoration": "none",
+            "fontStyle": "italic",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Highlighted",
+            "size": 16,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#fff",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": "#0637f6",
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          },
+          {
+            "place": "custom",
+            "key": "links",
+            "size": 16,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#0637f6",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          }
+        ]
+      }
+    },
+    {
+      "title": "pale purple",
+      "settings": {
+        "branding": {
+          "logo": {
+            "url": "//cdn.easygenerator.com/logo-v2.png",
+            "allowToShowLogo": false
+          },
+          "alternativeLogo": {
+            "url": "//cdn.easygenerator.com/white-logo-v2.png"
+          },
+          "colors": [
+            {
+              "key": "main-color",
+              "value": "#87628b"
+            },
+            {
+              "key": "cta-button-color",
+              "value": "#87628b"
+            },
+            {
+              "key": "content-body-color",
+              "value": "#fff"
+            },
+            {
+              "key": "correct-color",
+              "value": "#0ca36d"
+            },
+            {
+              "key": "incorrect-color",
+              "value": "#df1817"
+            },
+            {
+              "key": "text-color",
+              "value": "#191919"
+            },
+            {
+              "key": "button-text-color",
+              "value": "#fff"
+            },
+            {
+              "key": "cover-bg-overlay-text-color",
+              "value": "#fff"
+            }
+          ],
+          "background": {
+            "header": {
+              "brightness": null,
+              "color": null,
+              "image": {
+                "url": "//cdn.easygenerator.com/images/25.jpg",
+                "option": "fullscreen"
+              },
+              "coverOverlay": {
+                "enabled": false,
+                "color": "#6831e4",
+                "opacity": 0.8
+              }
+            },
+            "body": {
+              "switchable": null,
+              "enabled": true,
+              "brightness": null,
+              "color": "#FFFFFF",
+              "texture": null
+            }
+          }
+        },
+        "fonts": [
+          {
+            "place": "custom",
+            "key": "main-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "secondary-font",
+            "fontFamily": "Qanelas-Soft"
+          },
+          {
+            "place": "custom",
+            "key": "Heading1",
+            "size": 32,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading2",
+            "size": 26,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading3",
+            "size": 22,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Heading4",
+            "size": 20,
+            "fontFamily": "Qanelas-Soft",
+            "color": "#191919",
+            "fontWeight": "600",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isSecondarySelected": false,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Normal",
+            "size": 18,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#191919",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Quote",
+            "size": 24,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#191919",
+            "fontWeight": "400",
+            "textDecoration": "none",
+            "fontStyle": "italic",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "custom",
+            "key": "Highlighted",
+            "size": 16,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#fff",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": "#87628b",
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          },
+          {
+            "place": "custom",
+            "key": "links",
+            "size": 16,
+            "fontFamily": "IowanOldSt-BT",
+            "color": "#87628b",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": false,
+            "isSecondarySelected": true,
+            "isGeneralColorSelected": false
+          }
+        ]
+      }
+  }
+  ],
+  "defaultTemplateSettings": {
+    "languages": {
+      "selected": "en",
+      "customTranslations": {}
+    },
+    "saveProgressCrossDevice": {
+      "enabled": true
+    },
+    "loginViaSocialMedia": {
+      "enabled": true
+    },
+    "conductLearnerSatisfactionSurvey": {
+      "enabled": true
+    },
+    "allowUsersToDownloadCertificates": {
+      "enabled": false
+    },
+    "numberOfAttempts": {
+      "isLimited": false,
+      "attemptsLimit": 3
+    },
+    "answersFromPreviousAttempt": {
+      "selected": "reset"
+    },
+    "showContentPages": {
+      "enabled": true
+    },
+    "showAllQuestionAndContentItems": {
+      "selected": "seperatePages"
+    },
+    "submitAnswers": {
+      "selected": "afterEveryQuestion"
+    },
+    "showLearningHints": {
+      "enabled": true
+    },
+    "resultsTracking": {
+      "enabled": true
+    },
+    "allowUserToSkipTrackingAndTracing": {
+      "enabled": false
+    },
+    "allowScoringOfContentPages": {
+      "enabled": false
+    },
+    "masteryScore": {
+      "score": 100,
+      "isOverall": false
+    },
+    "timer": {
+      "enabled": false,
+      "time":{
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0
+      }
+    },
+    "questionPool": {
+      "enabled": false,
+      "subset": {
+        "type":"sameOnEveryAttempt",
+        "randomizeQuestionOrder": false 
+      },
+      "size": 10
+    },
+    "answerOptionsOrder": {
+      "selected": "setByAuthor"
+    },
+    "xApi": {
+      "selectedLrs": "default",
+      "lrs": {
+        "uri": "",
+        "credentials": {
+          "username": "",
+          "password": ""
+        },
+        "authenticationRequired": false
+      },
+      "allowedVerbs": [
+        "started",
+        "experienced",
+        "mastered",
+        "answered",
+        "passed",
+        "progressed",
+        "failed"
+      ]
+    }
+  },
+  "configuration": {
+    "languages": {
+      "configurable": true,
+      "locales": [
+        {
+          "code": "en",
+          "name": "English"
+        },
+        {
+          "code": "uk",
+          "name": "Ukrainian"
+        },
+        {
+          "code": "nl",
+          "name": "Dutch"
+        },
+        {
+          "code": "es",
+          "name": "Spanish"
+        },
+        {
+          "code": "de",
+          "name": "German"
+        },
+        {
+          "code": "ru",
+          "name": "Russian"
+        },
+        {
+          "code": "pl",
+          "name": "Polish"
+        },
+        {
+          "code": "fr",
+          "name": "French"
+        },
+        {
+          "code": "da",
+          "name": "Danish"
+        },
+        {
+          "code": "ar",
+          "name": "Arabic"
+        },
+        {
+          "code": "sv",
+          "name": "Swedish"
+        },
+        {
+          "code": "nn-no",
+          "name": "Norwegian (Nynorsk)"
+        },
+        {
+          "code": "nb-no",
+          "name": "Norwegian (Bokmål)"
+        },
+        {
+          "code": "pt",
+          "name": "Portuguese"
+        },
+        {
+          "code": "lv",
+          "name": "Latvian"
+        },
+        {
+          "code": "cz",
+          "name": "Czech"
+        },
+        {
+          "code": "sk",
+          "name": "Slovakian"
+        },
+        {
+          "code": "bg",
+          "name": "Bulgarian"
+        },
+        {
+          "code": "sl",
+          "name": "Slovenian"
+        },
+        {
+          "code": "hr",
+          "name": "Croatian"
+        },
+        {
+          "code": "it",
+          "name": "Italian"
+        },
+        {
+          "code": "af",
+          "name": "Afrikaans"
+        },
+        {
+          "code": "zh-hans",
+          "name": "Chinese (Simplified)"
+        },
+        {
+          "code": "zh-hant",
+          "name": "Chinese (Traditional)"
+        },
+        {
+          "code": "bn",
+          "name": "Bangla"
+        },
+        {
+          "code": "ja",
+          "name": "Japanese"
+        },
+        {
+          "code": "hu",
+          "name": "Hungarian"
+        },
+        {
+          "code": "fi",
+          "name": "Finnish"
+        },
+        {
+          "code": "ro",
+          "name": "Romanian"
+        },
+        {
+          "code": "vi",
+          "name": "Vietnamese"
+        },
+        {
+          "code": "ms",
+          "name": "Malaysian"
+        },
+        {
+          "code": "th",
+          "name": "Thai"
+        },
+        {
+          "code": "id",
+          "name": "Indonesian"
+        },
+        {
+          "code": "el",
+          "name": "Greek"
+        },
+        {
+          "code": "lt",
+          "name": "Lithuanian"
+        }
+      ]
+    },
+    "saveProgressCrossDevice": {
+      "configurable": true
+    },
+    "loginViaSocialMedia": {
+      "configurable": true
+    },
+    "conductLearnerSatisfactionSurvey": {
+      "configurable": true
+    },
+    "numberOfAttempts": {
+      "configurable": true
+    },
+    "answersFromPreviousAttempt": {
+      "configurable": true
+    },
+    "showContentPages": {
+      "configurable": true
+    },
+    "showAllQuestionAndContentItems": {
+      "configurable": true
+    },
+    "submitAnswers": {
+      "configurable": true
+    },
+    "showLearningHints": {
+      "configurable": true
+    },
+    "resultsTracking": {
+      "configurable": true
+    },
+    "allowUserToSkipTrackingAndTracing": {
+      "configurable": true
+    },
+    "allowScoringOfContentPages": {
+      "configurable": true
+    },
+    "xApi": {
+      "configurable": true
+    },
+    "masteryScore": {
+        "configurable": true
+    },
+    "timer": {
+      "configurable": true
+    },
+    "questionPool": {
+      "configurable": true
+    },
+    "answerOptionsOrder": {
+      "configurable": true
+    }
+  }
+}

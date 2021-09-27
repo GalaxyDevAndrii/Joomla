@@ -1,0 +1,404 @@
+@media (min-width: 1200px){
+    div.g_search{
+        /*width: 50%;*/
+    }
+    /* page spesific */
+    /*#myquizzes .g_hide_mobile{
+        display: none;
+    }*/
+	
+	.g_mobile{
+        display: none !important;
+    }
+}
+
+@media (min-width: 979px){
+    .g_mobile{
+        display: none !important;
+    }
+}
+
+/* tab and mobile
+====================================*/
+#guru_menubar_mobile, .g_mobile,
+div.g_mobile,
+div.g_mobile[class*="span"]{
+    display: none;
+}
+
+/* land scep tablet
+----------------------------------------------------*/
+/*@media (max-width: 767px)*/
+@media (min-width: 768px) and (max-width: 979px){
+    /*common*/
+    *{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        outline: none !important;
+    }
+    /*iframe{*/
+        /*width: 70%;*/
+    /*}*/
+	body{
+		-moz-hyphens: auto !important;
+		word-wrap: normal !important;
+	}
+    /*layout & grid*/
+    div.g_row div.g_cell{
+        margin-bottom: 20px !important;
+    }
+    /*exceptions*/
+    .lessons_wrap ul li.g_row div.g_cell{
+        margin-bottom: 0 !important;
+    }
+    #guru-component > div > .g_cell> div, 
+    .g_sect > div> .g_cell> div{
+        /*padding: 0 !important;*/
+    }
+    body.modal #guru-component > div > .g_cell> div, 
+    body.modal .g_sect > div> .g_cell> div{
+        padding: 10px !important;
+    }
+
+    /* presets
+    ---------------------------------*/
+    .g_hide_mobile{
+        display: none !important;
+    }
+	.g_hide_mobile_o{
+		display: block !important;
+	}
+	.g_mobile_o{
+        display: none !important;
+    }
+	.modal.g_modal{
+		width:90% !important;
+		margin-left:-45% !important;
+	}
+	
+    select.g_select{
+        margin: 0;
+    }
+
+    /*content spesific
+    --------------------------------*/
+    .g_search input.inputbox{
+        width: 100%;
+        border-radius: 6px;
+    }
+    /* page cover */
+    .guru-cover-image .title_guru h2{
+        font-size: 21px;
+        line-height: 25px;
+    }
+    
+    /*view specific
+    ----------------------------------*/
+    #guru_menubar{
+        display: none;
+    }
+    #guru_menubar_mobile, 
+    .g_mobile, div.g_mobile, 
+    div.g_mobile[class*="span"]{
+        display: block;
+    }
+    div.g_mobile .container-fluid{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* accordion
+    ---------------------------------*/
+    .g_accordion-group{
+        border: 1px solid #eee;
+        border-radius: 6px;
+        margin: 5px 0;
+    }
+    .g_accordion-group.ui-corner-all{
+        padding: 3px 10px;
+        cursor: pointer;
+    }
+    .g_accordion-group .g_cell{
+        padding-right: 10px;
+    }
+    .g_accordion-group li{
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        margin-bottom: 5px;
+        border-bottom: 1px solid #F1F1F1;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 14px;
+    }
+    .g_accordion-group.ui-corner-top{
+        border-radius: 6px 6px 0 0;
+        margin-bottom: 0 !important;
+        padding: 3px 10px;
+        cursor: pointer;
+    }
+    .g_accordion-group.g_content_active{
+        margin-top: 0 !important;
+        border-radius: 0 0 6px 6px;
+        border-top: 0 none;
+        background: #fafafa;
+    }
+    .g_accordion-group.g_content_active h4, 
+    .g_accordion-group h2,
+    .g_accordion-group h4{
+        padding: 0 12px;
+        margin: 0 !important;
+    }
+    .g_accordion-group div.span12 > div{
+        padding: 12px;
+    }
+
+    /* page spesific
+    ----------------------*/
+    /*members*/
+    /*--cource page */
+    div#g_quizzes_filters > div.g_cell:last-child{
+        float: none;
+    }
+    /* my cart */
+    div#g_promo_code input{
+        width: 60%;
+    }
+    div#g_promo_code button{
+        width: 40%;
+    }
+    /*login/registration*/
+    .g_offset{
+        display: none !important;
+    }
+    #g_registrationform .form-horizontal .control-label{
+        text-align: left;
+    }
+}
+
+/* poetrat tablet
+-------------------------------------------------*/
+@media (max-width: 767px){
+    /*common*/
+    *{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        outline: none !important;
+    }
+	/*html{
+		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
+	}*/
+	body{
+		-moz-hyphens: auto !important;
+		word-wrap: normal !important;
+	}
+    /*layout & grid*/
+    div.g_row div.g_cell{
+        margin-bottom: 20px !important;
+    }
+    /*exceptions*/
+    .lessons_wrap ul li.g_row div.g_cell{
+        margin-bottom: 0 !important;
+    }
+    #guru-component > div > .g_cell> div, .g_sect > div> .g_cell> div{
+        /*padding: 0 !important;*/
+    }
+
+    /* presets
+    ---------------------------------*/
+    .g_hide_mobile{
+        display: none !important;
+    }
+	.g_hide_mobile_o{
+		display: none !important;
+	}
+    select.g_select{
+        margin: 0;
+    }
+
+    /*content spesific
+    --------------------------------*/
+    .g_search input.inputbox{
+        width: 100%;
+        border-radius: 6px;
+    }
+    /* page cover */
+    div.guru-cover-image{
+        margin-bottom: 0 !important;
+    }
+    .guru-cover-image .title_guru h2{
+        font-size: 21px;
+        line-height: 25px;
+    }
+    div.guru-cover-image .guru-cover-details{
+        height: 35px;
+        overflow: hidden;
+        padding: 10px;
+        transition: all 0.25s ease 0s;
+    }
+    div.guru-cover-image:hover .guru-cover-details{
+        padding: 15px;
+        height: 100%;
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0.9);
+    }
+
+    /*view specific*/
+    #guru_menubar{
+        display: none;
+    }
+    #guru_menubar_mobile, .g_mobile, div.g_mobile, div.g_mobile[class*="span"]{
+        display: block;
+    }
+    div.g_mobile .container-fluid{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* accordion
+    ---------------------------------*/
+    .g_accordion-group{
+        border: 1px solid #eee;
+        border-radius: 6px;
+        margin: 5px 0;
+    }
+    .g_accordion-group.ui-corner-all{
+        padding: 3px 10px;
+        cursor: pointer;
+    }
+    .g_accordion-group .g_cell{
+        padding-right: 10px;
+    }
+    .g_accordion-group li{
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        margin-bottom: 5px;
+        border-bottom: 1px solid #F1F1F1;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 14px;
+    }
+    .g_accordion-group.ui-corner-top{
+        border-radius: 6px 6px 0 0;
+        margin-bottom: 0 !important;
+        padding: 3px 10px;
+        cursor: pointer;
+    }
+    .g_accordion-group.g_content_active{
+        margin-top: 0 !important;
+        border-radius: 0 0 6px 6px;
+        border-top: 0 none;
+        background: #fafafa;
+    }
+    .g_accordion-group.g_content_active h4, 
+    .g_accordion-group.g_content_active p{
+        padding: 0 12px;
+    }
+
+    /* modal
+    -------------------------*/
+    .modal.g_modal{
+        left: 50px;
+        margin: 0;
+        padding-top: 20px;
+        position: fixed;
+        right: 50px;
+        top: 10%;
+        width: auto;
+		
+		min-height: 400px;
+    }
+
+
+    /* page spesific
+    ----------------------*/
+    /*members*/
+
+    /* my cart */
+    div#g_promo_code input{
+        width: 60%;
+    }
+    div#g_promo_code button{
+        width: 40%;
+    }
+    /*login/registration*/
+    .g_offset{
+        display: none !important;
+    }
+    #g_registrationform .form-horizontal .control-label{
+        text-align: left;
+    }
+
+}
+
+/* mobile or small
+==========================================================*/
+@media (max-width: 480px){
+    *{
+        -webkit-box-sizing: border-box !important;
+        -moz-box-sizing: border-box !important;
+        box-sizing: border-box !important;
+        outline: none !important;
+    }
+	html{
+		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+	body{
+		-moz-hyphens: auto !important;
+		word-wrap: normal !important;
+	}
+    div#g_promo_code input{
+        display: block;
+        width: 100%;
+        border-radius: 4px 4px 0 0;
+        float: none;
+    }
+    div#g_promo_code button{
+        border-radius: 0 0 4px 4px;
+        display: block;
+        width: 100%;
+        border-top: 0 none;
+        float: none;
+    }
+    /* content spesific
+    ------------------------------------------------*/
+    /* page cover */
+    .guru-cover-image .title_guru h2{
+        font-size: 21px;
+        line-height: 25px;
+    }
+    /* my certicifate */
+    div.g_mobile_certificate_view > div{
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        font-family: Arial;
+        min-height: 470px;
+        position: relative;
+    }
+    div.g_mobile_certificate_view > div > div {
+        position: absolute;
+        top: 35%;
+    }
+
+    /* modal view  -------------------------*/
+    .modal.g_modal{
+        margin: 0;
+        padding-top: 20px;
+        position: fixed;
+        right: 15px;
+        left: 15px;
+        top: 10%;
+        width: auto;
+		
+		max-height: 400px;
+    }
+    /*accordion table-----------------------*/
+    .lessons_wrap ul li.g_row div.g_cell.lesson_name{
+        width: 64%;
+    }
+    .lessons_wrap ul li.g_row div.g_cell.viewed{
+        width: 18%;
+    }
+    .lessons_wrap ul li.g_row div.g_cell.level{
+        width: 18%;
+    }
+
+}

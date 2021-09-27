@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Testimonial Style 1</title>
+	<sampledata></sampledata>
+	<fields name="testimonial-intro">
+		<fieldset name="section-features" label="TESTIMONIAL_SECTION_LABEL" description="TESTIMONIAL_SECTION_DESC">
+			<field name="data" type="jalist" >
+				<item name="avatar" type="media" default="" label="TESTIMONIAL_AVATAR_LABEL" description="TESTIMONIAL_AVATAR_DESC" rows="5" cols="40" />
+				<item name="desc" type="textarea" default="" label="TESTIMONIAL_LABEL_LABEL" description="TESTIMONIAL_LABEL_DESC" rows="5" cols="40" />
+				<item name="author" type="text" default="" size="40" label="TESTIMONIAL_AUTHOR_LABEL" description="TESTIMONIAL_AUTHOR_DESC" required="1" />
+			</field>
+
+		</fieldset>
+		
+  </fields>
+</form>

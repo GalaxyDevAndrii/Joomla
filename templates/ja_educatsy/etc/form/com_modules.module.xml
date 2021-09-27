@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="custom-field" label="Extra Field" description="">
+			<field name="title-style" type="list" default="1" label="TPL_MOD_TITLE_STYLE_LABEL" description="TPL_MOD_TITLE_STYLE_DESC">
+				<option value="1">Style 1</option>
+				<option value="2">Style 2</option>
+			</field>
+
+			<field name="sub-heading" type="textarea" default="" label="TPL_SUB_HEADING_LABEL" description="TPL_SUB_HEADING_DESC" filter="RAW" />
+
+			<field name="sub-color" type="list" default="normal" label="TPL_SUB_COLOR_LABEL" description="TPL_SUB_COLOR_DESC">
+				<option value="normal">Default</option>
+				<option value="white">White</option>
+			</field>
+
+			<field name="sub-align" type="list" default="center" label="TPL_SUB_ALIGN_LABEL" description="TPL_SUB_ALIGN_DESC">
+				<option value="left">Left</option>
+				<option value="center">Center</option>
+			</field>
+
+			<field name="title-space" type="list" default="large" label="TPL_TITLE_SPACE_LABEL" description="TPL_TITLE_SPACE_DESC">
+				<option value="normal">Normal</option>
+				<option value="large">Large</option>
+			</field>
+    </fieldset>
+  </fields>
+</form>

@@ -1,0 +1,161 @@
+@function v($var) {
+  @return var(--#{$var});
+}
+
+:root {
+  // Base color variables
+  --body-font-family:     __body_font_family;
+  --body-font-size:       __body_font_size;
+  --body-font-weight:     __body_font_weight;
+  --body-font-style:      __body_font_style;
+  --body-line-height:     __body_line_height;
+  --body-letter-spacing:  __letter_spacing;
+
+  --myColor: #c00;
+
+  --t4-font-family:     __body_font_family;
+  --t4-font-size:       __body_font_size;
+  --t4-font-weight:     __body_font_weight;
+  --t4-font-style:      __body_font_style;
+  --t4-line-height:     __body_line_height;
+  --t4-letter-spacing:  __letter_spacing;
+
+
+  // Heading font variables
+  --heading-font-family:    __heading_font_family;
+  --heading-font-weight:    __heading_font_weight;
+  --heading-font-style:     __heading_font_style;
+  --heading-line-height:    __heading_line_height;
+  --heading-letter-spacing: __heading_letter_spacing;
+
+  // Heading font size variables
+  --h1-font-size: __h1_font_size;
+  --h2-font-size: __h2_font_size;
+  --h3-font-size: __h3_font_size;
+  --h4-font-size: __h4_font_size;
+  --h5-font-size: __h5_font_size;
+  --h6-font-size: __h6_font_size;
+
+  @each $bp, $value in $grid-breakpoints {
+    --breakpoint-#{$bp}: __bp_#{$bp};
+  }
+}
+
+
+/* for megamenu animation duration */
+.t4-megamenu.animate .dropdown.animating > .dropdown-menu {
+  transition-duration: __animation_duration;
+}
+
+
+// GLOBAL SETTINGS
+html {
+  font-size: var(--body-font-size);
+}
+
+body {
+  background-color: var(--body-bg-color);
+  color: var(--body-text-color);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  font-style: var(--body-font-style);
+  line-height: var(--body-line-height);
+  letter-spacing: var(--body-letter-spacing);
+}
+
+.t4-content {
+  background-color: var(--body-bg-color);
+  background-image: url(__body_bg_img);
+  background-repeat: __body_bg_img_repeat;
+  background-position: __body_bg_img_position;
+  background-size: __body_bg_img_size;
+  background-attachment: __body_bg_img_attachment;
+}
+
+a {
+  color: var(--body-link-color);
+}
+
+a:hover, a:focus, a:active {
+  color: var(--body-link-hover-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  font-style:  var(--heading-font-style);
+  line-height: var(--heading-line-height);
+  letter-spacing: var(--heading-letter-spacing);
+}
+
+h1, .h1 {
+  font-size: var(--h1-font-size);
+}
+
+h2, .h2 {
+  font-size: var(--h2-font-size);
+}
+
+h3, .h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4, .h4 {
+  font-size: var(--h4-font-size);
+}
+
+h5, .h5 {
+  font-size: var(--h5-font-size);
+}
+
+h6, .h6 {
+  font-size: var(--h6-font-size);
+} 
+
+
+/* COLORS
+--------------------------------------- */
+/* Backgrounds Colors */
+@each $color, $value in $theme-colors {
+  .bg-#{$color} {
+    background-color: var(--color-#{$color});
+  }
+}
+
+/* Buttons Colors */
+@each $color, $value in $theme-colors {
+  .btn.btn-#{$color} {
+    background-color: var(--color-#{$color});
+    border-color: var(--color-#{$color});
+  }
+
+
+  .btn.btn-#{$color}:hover {
+    opacity: 0.85;
+  }
+
+  .btn.btn-outline-#{$color} {
+    border-color: var(--color-#{$color});
+    color: var(--color-#{$color});
+  }
+
+  .btn.btn-outline-#{$color}:hover {
+    background-color: var(--color-#{$color});
+    color: color-contrast($value);
+  }
+}
+
+/* Text Colors */
+@each $color, $value in $theme-colors {
+  .text-#{$color} {
+    color: var(--color-#{$color});
+  }
+}
+
+/* Badage Colors */
+@each $color, $value in $theme-colors {
+  .badge-#{$color} {
+    background-color: var(--color-#{$color});
+  }
+}

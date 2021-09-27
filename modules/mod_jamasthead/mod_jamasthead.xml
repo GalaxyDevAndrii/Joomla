@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.1" client="site" method="upgrade">
+	<name>JA Masthead</name>
+	<author>JoomlArt.com</author>
+	<creationDate>Jul 2018</creationDate>
+	<copyright>J.O.O.M Solutions Co., Ltd.</copyright>
+	<license>GNU/GPL V2 for PHP files. Read Terms of Service for details.
+	</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.0.5</version>
+	<updateservers>
+    <server type="extension">http://update.joomlart.com/service/tracking/j16/mod_jamasthead.xml</server>
+	</updateservers>
+	<description>
+		<![CDATA[
+		<div align="left">		
+			<h2>JA Masthead Module for Joomla 2.5 & 3.x</h2>
+			<p>JA Masthead Module is used to Masthead title like the JoomlArt Masthead. With this module, the Masshead can be configured to be in any pages with different titles, descriptions as well as background images and background video. For video background, it supports local video with types: .mp4, ogg, webm.</p>
+		</div>
+		]]>
+	</description>
+	<files>
+		<filename module="mod_jamasthead">mod_jamasthead.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+        <folder>layouts</folder>
+		<folder>tmpl</folder>
+		<folder>asset</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_jamasthead.ini</language>
+	</languages>
+	<config>
+		<fields 
+			name="params" 
+			addfieldpath="/modules/mod_jamasthead/asset/elements">
+			<fieldset 
+				name="basic" >
+				<field name="default-title" 
+					type="text" 
+					default="" 
+					size="45"
+					filter="raw" 
+					label="DEFAULT_TITLE" 
+					description="DEFAULT_TITLE_DESC" />
+
+				<field name="default-description" 
+					type="textarea" 
+					cols="60"
+					rows="4" 
+					default="" 
+					filter="raw" 
+					label="DEFAULT_DESCRIPTION"
+					description="DEFAULT_DESCRIPTION_DESC" />
+                    
+                <field name="config_menu_item" type="spacer" hr="false" label="CONFIG_MENU_ITEM" description="CONFIG_MENU_ITEM_DESC" />
+                <field name="menuitem_config"
+                    type="jaitems"
+                    class="ja-config-menuitem"
+                    label="JA_SMastheadD_CONDITIONS"
+                    description="JA_SMasthead_CONDITIONS_DESC">
+                    
+                    <item name="item_id"
+                        type="menuitem"
+                        default=""
+                        multiple="multiple"
+                        label="MENU_ITEM_ID"
+                        description="MUNU_ITEM_ID_DESC" />
+                    <item name="title"
+                        type="text"
+                        defaule=""
+                        size="40"
+                        label="MENU_ITEM_TITLE"
+                        description="MENU_ITEM_TITLE_DESC" />
+                     <item name="description"
+                        type="textarea"
+                        default=""
+                        cols="20"
+                        label="MENU_ITEM_DESCRIPTION"
+                        description="MENU_ITEM_DESCRIPTION_DESC" />
+    
+                    <item name="background"
+                        type="media"
+                        deafault=""
+                        label="MENU_ITEM_BACKGROUND"
+                        description="MENU_ITEM_BACKGROUND_DESC" />
+                </field>
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field type="japanel" path="/modules/mod_jamasthead/asset/elements/" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,553 @@
+/**
+ * Base on Sidebar Transitions from https://tympanus.net/Development/SidebarTransitions/
+ */
+
+*,
+*:after,
+*::before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+.t4-wrapper,
+.t4-wrapper-inner,
+.t4-content {
+  height: 100%;
+}
+
+.noscroll {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.t4-content {
+  background: #fff;
+  overflow-y: scroll;
+}
+
+.t4-content,
+.t4-content-inner {
+  position: relative;
+}
+
+.t4-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.t4-wrapper-inner {
+  position: relative;
+  left: 0;
+  z-index: 99;
+  height: 100%;
+  perspective: 1000px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.t4-wrapper-inner::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background: rgba(0,0,0,0.2);
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+.t4-offcanvas-open .t4-wrapper-inner::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.t4-offcanvas {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 300px;
+  z-index: 100;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    content: '';
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
+}
+
+.t4-offcanvas-open .t4-offcanvas::after {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+/* Hide before setting up */
+.t4-offcanvas {
+  display: none;
+}
+
+
+/* Fix for IOS scroll */
+.t4-content, .t4-off-canvas-body {
+  -webkit-overflow-scrolling: touch;
+}
+
+.t4-offcanvas-open .t4-content, .modal-open .t4-content {
+  -webkit-overflow-scrolling: auto;
+}
+
+//
+// OFF-CANVAS EFFECTS
+// -------------------------------------
+/* Individual effects */
+/* Effect 1: Slide in on top */
+.oc-effect-1.t4-offcanvas {
+  visibility: visible;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.oc-effect-1.t4-offcanvas-open .oc-effect-1.t4-offcanvas {
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.oc-effect-1.t4-offcanvas::after {
+  display: none;
+}
+
+/* Effect 2: Reveal */
+.oc-effect-2.t4-offcanvas-open .t4-wrapper-inner {
+  -webkit-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0);
+}
+
+.oc-effect-2.t4-offcanvas {
+  z-index: 1;
+}
+
+.oc-effect-2.t4-offcanvas-open .oc-effect-2.t4-offcanvas {
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.oc-effect-2.t4-offcanvas::after {
+  display: none;
+}
+
+/* Effect 3: Push */
+.oc-effect-3.t4-offcanvas-open .t4-wrapper-inner {
+  -webkit-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0);
+}
+
+.oc-effect-3.t4-offcanvas {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.oc-effect-3.t4-offcanvas-open .oc-effect-3.t4-offcanvas {
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.oc-effect-3.t4-offcanvas::after {
+  display: none;
+}
+
+/* Effect 4: Slide along */
+.oc-effect-4.t4-offcanvas-open .t4-wrapper-inner {
+  -webkit-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0);
+}
+
+.oc-effect-4.t4-offcanvas {
+  z-index: 1;
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+}
+
+.oc-effect-4.t4-offcanvas-open .oc-effect-4.t4-offcanvas {
+  visibility: visible;
+  transition: transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.oc-effect-4.t4-offcanvas::after {
+  display: none;
+}
+
+/* Effect 5: Reverse slide out */
+.oc-effect-5.t4-offcanvas-open .t4-wrapper-inner {
+  -webkit-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0);
+}
+
+.oc-effect-5.t4-offcanvas {
+  z-index: 1;
+  -webkit-transform: translate3d(50%, 0, 0);
+  transform: translate3d(50%, 0, 0);
+}
+
+.oc-effect-5.t4-offcanvas-open .oc-effect-5.t4-offcanvas {
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* Effect 6: Rotate pusher */
+.oc-effect-6.t4-wrapper {
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+}
+
+.oc-effect-6 .t4-wrapper-inner {
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.oc-effect-6.t4-offcanvas-open .t4-wrapper-inner {
+  -webkit-transform: translate3d(300px, 0, 0) rotateY(-15deg);
+  transform: translate3d(300px, 0, 0) rotateY(-15deg);
+  pointer-events: none;
+}
+
+.oc-effect-6.t4-offcanvas {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.oc-effect-6.t4-offcanvas-open .oc-effect-6.t4-offcanvas {
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transform: translate3d(-100%, 0, 0) rotateY(15deg);
+  transform: translate3d(-100%, 0, 0) rotateY(15deg);
+}
+
+.oc-effect-6.t4-offcanvas::after {
+  display: none;
+}
+
+/* Effect 7: 3D rotate in */
+.oc-effect-7.t4-wrapper {
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+  -webkit-perspective-origin: 0% 50%;
+  perspective-origin: 0% 50%;
+}
+
+.oc-effect-7 .t4-wrapper-inner {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.oc-effect-7.t4-offcanvas-open .t4-wrapper-inner {
+  -webkit-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0);
+}
+
+.oc-effect-7.t4-offcanvas {
+  -webkit-transform: translate3d(-100%, 0, 0) rotateY(-90deg);
+  transform: translate3d(-100%, 0, 0) rotateY(-90deg);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  z-index: 0;
+}
+
+.oc-effect-7.t4-offcanvas-open .oc-effect-7.t4-offcanvas {
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transform: translate3d(-100%, 0, 0) rotateY(0deg);
+  transform: translate3d(-100%, 0, 0) rotateY(0deg);
+}
+
+/* Effect 8: 3D rotate out */
+.oc-effect-8.t4-wrapper {
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+  -webkit-perspective-origin: 0% 50%;
+  perspective-origin: 0% 50%;
+}
+
+.oc-effect-8 .t4-wrapper-inner {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.oc-effect-8.t4-offcanvas-open .t4-wrapper-inner {
+  -webkit-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0);
+}
+
+.oc-effect-8.t4-offcanvas {
+  -webkit-transform: translate3d(-100%, 0, 0) rotateY(90deg);
+  transform: translate3d(-100%, 0, 0) rotateY(90deg);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.oc-effect-8.t4-offcanvas-open .oc-effect-8.t4-offcanvas {
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transform: translate3d(-100%, 0, 0) rotateY(0deg);
+  transform: translate3d(-100%, 0, 0) rotateY(0deg);
+}
+
+.oc-effect-8.t4-offcanvas::after {
+  display: none;
+}
+
+/* Effect 9: Scale down pusher */
+.oc-effect-9.t4-wrapper {
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+}
+
+.oc-effect-9 .t4-wrapper-inner {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.oc-effect-9.t4-offcanvas-open .t4-wrapper-inner {
+  -webkit-transform: translate3d(0, 0, -300px);
+  transform: translate3d(0, 0, -300px);
+}
+
+.oc-effect-9.t4-offcanvas {
+  opacity: 1;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.oc-effect-9.t4-offcanvas-open .oc-effect-9.t4-offcanvas {
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.oc-effect-9.t4-offcanvas::after {
+  display: none;
+}
+
+/* Effect 10: Scale up */
+.oc-effect-10.t4-wrapper {
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+  -webkit-perspective-origin: 0% 50%;
+  perspective-origin: 0% 50%;
+}
+
+.oc-effect-10.t4-offcanvas-open .t4-wrapper-inner {
+  -webkit-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0);
+}
+
+.oc-effect-10.t4-offcanvas {
+  z-index: 1;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, -300px);
+  transform: translate3d(0, 0, -300px);
+}
+
+.oc-effect-10.t4-offcanvas-open .oc-effect-10.t4-offcanvas {
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* Effect 11: Scale and rotate pusher */
+.oc-effect-11.t4-wrapper {
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+}
+
+.oc-effect-11 .t4-wrapper-inner {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.oc-effect-11.t4-offcanvas-open .t4-wrapper-inner {
+  -webkit-transform: translate3d(100px, 0, -600px) rotateY(-20deg);
+  transform: translate3d(100px, 0, -600px) rotateY(-20deg);
+}
+
+.oc-effect-11.t4-offcanvas {
+  opacity: 1;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.oc-effect-11.t4-offcanvas-open .oc-effect-11.t4-offcanvas {
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.oc-effect-11.t4-offcanvas::after {
+  display: none;
+}
+
+/* Effect 12: Open door */
+.oc-effect-12.t4-wrapper {
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+}
+
+.oc-effect-12 .t4-wrapper-inner {
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.oc-effect-12.t4-offcanvas-open .t4-wrapper-inner {
+  -webkit-transform: rotateY(-10deg);
+  transform: rotateY(-10deg);
+}
+
+.oc-effect-12.t4-offcanvas {
+  opacity: 1;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.oc-effect-12.t4-offcanvas-open .oc-effect-12.t4-offcanvas {
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.oc-effect-12.t4-offcanvas::after {
+  display: none;
+}
+
+/* Effect 13: Fall down */
+.oc-effect-13.t4-wrapper {
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+  -webkit-perspective-origin: 0% 50%;
+  perspective-origin: 0% 50%;
+}
+
+.oc-effect-13.t4-offcanvas-open .t4-wrapper-inner {
+  -webkit-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0);
+}
+
+.oc-effect-13.t4-offcanvas {
+  z-index: 1;
+  opacity: 1;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+.oc-effect-13.t4-offcanvas-open .oc-effect-13.t4-offcanvas {
+  visibility: visible;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition-speed: 0.2s;
+  transition-speed: 0.2s;
+}
+
+/* Effect 14: Delayed 3D rotate */
+.oc-effect-14.t4-wrapper {
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+  -webkit-perspective-origin: 0% 50%;
+  perspective-origin: 0% 50%;
+}
+
+.oc-effect-14 .t4-wrapper-inner {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.oc-effect-14.t4-offcanvas-open .t4-wrapper-inner {
+  -webkit-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0);
+}
+
+.oc-effect-14.t4-offcanvas {
+  -webkit-transform: translate3d(-100%, 0, 0) rotateY(90deg);
+  transform: translate3d(-100%, 0, 0) rotateY(90deg);
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  z-index: 0;
+}
+
+.oc-effect-14.t4-offcanvas-open .oc-effect-14.t4-offcanvas {
+  visibility: visible;
+  
+  transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+
+  transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+
+  transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+
+  transform: translate3d(-100%, 0, 0) rotateY(0deg);
+  -webkit-transform: translate3d(-100%, 0, 0) rotateY(0deg);
+}
+
+/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+.no-csstransforms3d .t4-wrapper-inner,
+.no-js .t4-wrapper-inner {
+  padding-left: 300px;
+}

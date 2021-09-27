@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="layout_options">
+		<field name="LoadFormLayoutFramework" type="radio" class="btn-group btn-group-yesno" label="RSFP_LOAD_LAYOUT_FRAMEWORK">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="FormLayoutFlow" type="list" label="RSFP_FORM_LAYOUT_FLOW" onchange="changeFormLayoutFlow();">
+			<option value="0">RSFP_FORM_FLOW_HORIZONTAL</option>
+			<option value="1">RSFP_FORM_FLOW_VERTICAL</option>
+		</field>
+		<field name="FormLayoutAutogenerate" type="radio" class="btn-group btn-group-yesno" label="RSFP_AUTOGENERATE_LAYOUT">
+			<option value="0" onchange="changeFormAutoGenerateLayout(this.value);">JNO</option>
+			<option value="1" onchange="changeFormAutoGenerateLayout(this.value);">JYES</option>
+		</field>
+	</fieldset>
+	<fieldset name="cssjs">
+		<field name="CSS" type="syntaxhighlight" rows="20" cols="75" label="RSFP_CSS" description="RSFP_CSS_DESC" class="rs_90" syntax="html" />
+		<field name="JS" type="syntaxhighlight" rows="20" cols="75" label="RSFP_JS" description="RSFP_JS_DESC" class="rs_90" syntax="html" />
+	</fieldset>
+	<fieldset name="form_info_basic">
+		<field name="Published" type="radio" class="btn-group btn-group-yesno" label="JPUBLISHED">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="Access" label="JFIELD_ACCESS_LABEL" type="accesslevel">
+			<option value="">RSFP_EVERYBODY</option>
+		</field>
+		<field name="FormTitle" type="text" label="RSFP_FORM_TITLE" labelclass="rsfp-translate-icon" size="70" />
+		<field name="ShowFormTitle" type="radio" class="btn-group btn-group-yesno" label="RSFP_SHOW_FORM_TITLE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="FormName" type="text" label="RSFP_FORM_NAME" size="70" />
+	</fieldset>
+	<fieldset name="form_info_advanced">
+		<field name="AjaxValidation" type="radio" class="btn-group btn-group-yesno" label="RSFP_AJAX_VALIDATION" description="RSFP_AJAX_VALIDATION_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="ScrollToError" type="radio" class="btn-group btn-group-yesno" label="RSFP_SCROLL_TO_ERROR">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="Required" type="text" label="RSFP_REQUIRED" size="70" />
+		<field name="ErrorMessage" type="richtext" button="RSFP_EDIT_ERROR_MESSAGE" label="RSFP_ERROR_MESSAGE" description="RSFP_ERROR_MESSAGE_DESC" labelclass="rsfp-translate-icon" />
+		<field name="RemoveCaptchaLogged" type="radio" class="btn-group btn-group-yesno" label="RSFP_REMOVE_CAPTCHA_FIELDS_FOR_LOGGED_USERS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	</fieldset>
+	<fieldset name="form_info_thankyou">
+		<field name="ShowThankyou" type="radio" class="btn-group btn-group-yesno" label="RSFP_SHOW_THANKYOU_MESSAGE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="ShowSystemMessage" type="radio" class="btn-group btn-group-yesno" label="RSFP_SHOW_SYSTEM_MESSAGE" showon="ShowThankyou:0">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="ThankYouMessagePopUp" type="radio" class="btn-group btn-group-yesno" label="RSFP_THANKYOU_MESSAGE_POPUP" showon="ShowThankyou:1">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="ScrollToThankYou" type="radio" class="btn-group btn-group-yesno" label="RSFP_SCROLL_TO_THANKYOU_MESSAGE" showon="ShowThankyou:1[AND]ThankYouMessagePopUp:0">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="ShowContinue" type="radio" class="btn-group btn-group-yesno" label="RSFP_SHOW_CONTINUE" showon="ShowThankyou:1">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="Thankyou" type="richtext" button="RSFP_EDIT_THANKYOU" label="RSFP_THANKYOU" description="RSFP_ERROR_MESSAGE_DESC" labelclass="rsfp-translate-icon" showon="ShowThankyou:1" />
+	</fieldset>
+	<fieldset name="form_info_submission">
+		<field name="ReturnUrl" type="text" label="RSFP_RETURN_URL" description="RSFP_RETURN_URL_DESC" labelclass="rsfp-translate-icon" size="70" />
+		<field name="Keepdata" type="radio" class="btn-group btn-group-yesno" label="RSFP_SAVE_TO_DATABASE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="KeepIP" type="radio" class="btn-group btn-group-yesno" label="RSFP_SAVE_IP_TO_DATABASE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="DeleteSubmissionsAfter" type="text" label="RSFP_DELETE_SUBMISSIONS_AFTER" description="RSFP_DELETE_SUBMISSIONS_AFTER_INSTRUCTIONS" size="70" />
+		<field name="ConfirmSubmission" type="radio" class="btn-group btn-group-yesno" label="RSFP_CONFIRM_SUBMISSION" description="RSFP_CONFIRM_SUBMISSION_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="ConfirmSubmissionUrl" type="text" label="RSFP_CONFIRM_SUBMISSION_URL" size="70" />
+		<field name="DisableSubmitButton" type="radio" class="btn-group btn-group-yesno" label="RSFP_DISABLE_SUBMIT_BUTTON">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="LimitSubmissions" type="text" label="COM_RSFORM_LIMIT_SUBMISSIONS" description="COM_RSFORM_LIMIT_SUBMISSIONS_DESC" size="70" />
+	</fieldset>
+	<fieldset name="form_info_misc">
+		<field name="MultipleSeparator" type="text" label="RSFP_MULTIPLE_SEPARATOR" description="RSFP_MULTIPLE_SEPARATOR_DESC" size="70" />
+		<field name="TextareaNewLines" type="radio" class="btn-group btn-group-yesno" label="RSFP_TEXTAREA_NEW_LINES" description="RSFP_TEXTAREA_NEW_LINES_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	</fieldset>
+	<fieldset name="form_attr_html">
+		<field name="CSSAction" type="text" label="RSFP_FORM_ACTION" description="RSFP_FORM_ACTION_DESC" size="70" />
+		<field name="CSSName" type="text" label="RSFP_FORM_CSS_NAME" description="RSFP_FORM_CSS_NAME_DESC" size="70" />
+		<field name="CSSAdditionalAttributes" type="text" label="RSFP_FORM_ADDITIONAL_ATTRIBUTES" description="RSFP_FORM_ADDITIONAL_ATTRIBUTES_DESC" size="70" />
+	</fieldset>
+	<fieldset name="form_attr_css">
+		<field name="CSSId" type="text" label="RSFP_FORM_CSS_ID" description="RSFP_FORM_CSS_ID_DESC" size="70" />
+		<field name="CSSClass" type="text" label="RSFP_FORM_CSS_CLASS" description="RSFP_FORM_CSS_CLASS_DESC" size="70" />
+	</fieldset>
+	<fieldset name="meta">
+		<field name="MetaDesc" type="textarea" label="RSFP_META_DESC" description="RSFP_META_DESC_DESC" labelclass="rsfp-translate-icon" rows="10" cols="75" />
+		<field name="MetaKeywords" type="textarea" label="RSFP_META_KEY" description="RSFP_META_KEY_DESC" labelclass="rsfp-translate-icon" rows="10" cols="75" />
+		<field name="MetaTitle" type="radio" class="btn-group btn-group-yesno" label="RSFP_META_TITLE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	</fieldset>
+	<fieldset name="user_email_sender">
+		<field type="placeholder" class="rs_75" name="UserEmailFrom" label="RSFP_EMAILS_FROM" hint="RSFP_EMAILS_FROM_PLACEHOLDER" data-delimiter=" " data-placeholders="display" data-filter-type="include" data-filter="value,global" required="true" />
+		<field type="placeholder" class="rs_75" name="UserEmailFromName" label="RSFP_EMAILS_FROM_NAME" hint="RSFP_EMAILS_FROM_NAME_PLACEHOLDER" data-delimiter=" " data-placeholders="display" labelclass="rsfp-translate-icon" required="true" />
+	</fieldset>
+	<fieldset name="user_email_recipient">
+		<field type="placeholder" class="rs_75" name="UserEmailTo" label="RSFP_EMAILS_TO" hint="RSFP_EMAILS_TO_PLACEHOLDER" data-delimiter="," data-placeholders="display" data-filter-type="include" data-filter="value,global" required="true" />
+		<field type="placeholder" class="rs_75" name="UserEmailReplyTo" label="RSFP_EMAILS_REPLY_TO" hint="RSFP_EMAILS_REPLY_TO_PLACEHOLDER" data-delimiter="," data-placeholders="display" data-filter-type="include" data-filter="value,global" />
+		<field type="placeholder" class="rs_75" name="UserEmailReplyToName" label="RSFP_EMAILS_REPLY_TO_NAME" hint="RSFP_EMAILS_REPLY_TO_NAME_PLACEHOLDER" data-delimiter=" " data-placeholders="display" labelclass="rsfp-translate-icon" />
+		<field type="placeholder" class="rs_75" name="UserEmailCC" label="RSFP_EMAILS_CC" hint="RSFP_EMAILS_CC_PLACEHOLDER" data-delimiter="," data-placeholders="display" data-filter-type="include" data-filter="value,global" />
+		<field type="placeholder" class="rs_75" name="UserEmailBCC" label="RSFP_EMAILS_BCC" hint="RSFP_EMAILS_BCC_PLACEHOLDER" data-delimiter="," data-placeholders="display" data-filter-type="include" data-filter="value,global" />
+	</fieldset>
+	<fieldset name="user_email_contents">
+		<field type="placeholder" class="rs_75" name="UserEmailSubject" label="RSFP_EMAILS_SUBJECT" hint="RSFP_EMAILS_SUBJECT_PLACEHOLDER" data-delimiter=" " data-placeholders="display" required="true" labelclass="rsfp-translate-icon" />
+		<field name="UserEmailText" type="richtext" button="RSFP_EMAILS_EDIT_TEXT" label="RSFP_EMAILS_TEXT" labelclass="rsfp-translate-icon" mode-toggler="UserEmailMode" />
+		<field name="UserEmailMode" type="radio" class="btn-group btn-group-yesno" label="RSFP_EMAILS_MODE">
+			<option value="0">COM_RSFORM_MODE_TEXT</option>
+			<option value="1">COM_RSFORM_MODE_HTML</option>
+		</field>
+	</fieldset>
+	<fieldset name="user_email_attachments">
+		<field name="UserEmailAttach" type="radio" class="btn-group btn-group-yesno" label="RSFP_EMAILS_ATTACH_FILE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field type="emailattachment" class="rs_75" name="UserEmailAttachFile" label="RSFP_EMAILS_ATTACH_FILE_LOCATION" showon="UserEmailAttach:1" />
+	</fieldset>
+	<fieldset name="admin_email_sender">
+		<field type="placeholder" class="rs_75" name="AdminEmailFrom" label="RSFP_EMAILS_FROM" hint="RSFP_EMAILS_FROM_PLACEHOLDER" data-delimiter=" " data-placeholders="display" data-filter-type="include" data-filter="value,global" required="true" />
+		<field type="placeholder" class="rs_75" name="AdminEmailFromName" label="RSFP_EMAILS_FROM_NAME" hint="RSFP_EMAILS_FROM_NAME_PLACEHOLDER" data-delimiter=" " data-placeholders="display" labelclass="rsfp-translate-icon" required="true" />
+	</fieldset>
+	<fieldset name="admin_email_recipient">
+		<field type="placeholder" class="rs_75" name="AdminEmailTo" label="RSFP_EMAILS_TO" hint="RSFP_EMAILS_TO_PLACEHOLDER" data-delimiter="," data-placeholders="display" data-filter-type="include" data-filter="value,global" required="true" />
+		<field type="placeholder" class="rs_75" name="AdminEmailReplyTo" label="RSFP_EMAILS_REPLY_TO" hint="RSFP_EMAILS_REPLY_TO_PLACEHOLDER" data-delimiter="," data-placeholders="display" data-filter-type="include" data-filter="value,global" />
+		<field type="placeholder" class="rs_75" name="AdminEmailReplyToName" label="RSFP_EMAILS_REPLY_TO_NAME" hint="RSFP_EMAILS_REPLY_TO_NAME_PLACEHOLDER" data-delimiter=" " data-placeholders="display" labelclass="rsfp-translate-icon" />
+		<field type="placeholder" class="rs_75" name="AdminEmailCC" label="RSFP_EMAILS_CC" hint="RSFP_EMAILS_CC_PLACEHOLDER" data-delimiter="," data-placeholders="display" data-filter-type="include" data-filter="value,global" />
+		<field type="placeholder" class="rs_75" name="AdminEmailBCC" label="RSFP_EMAILS_BCC" hint="RSFP_EMAILS_BCC_PLACEHOLDER" data-delimiter="," data-placeholders="display" data-filter-type="include" data-filter="value,global" />
+	</fieldset>
+	<fieldset name="admin_email_contents">
+		<field type="placeholder" class="rs_75" name="AdminEmailSubject" label="RSFP_EMAILS_SUBJECT" hint="RSFP_EMAILS_SUBJECT_PLACEHOLDER" data-delimiter=" " data-placeholders="display" required="true" labelclass="rsfp-translate-icon" />
+		<field name="AdminEmailText" type="richtext" button="RSFP_EMAILS_EDIT_TEXT" label="RSFP_EMAILS_TEXT" labelclass="rsfp-translate-icon" mode-toggler="AdminEmailMode" />
+		<field name="AdminEmailMode" type="radio" class="btn-group btn-group-yesno" label="RSFP_EMAILS_MODE">
+			<option value="0">COM_RSFORM_MODE_TEXT</option>
+			<option value="1">COM_RSFORM_MODE_HTML</option>
+		</field>
+	</fieldset>
+	<fieldset name="deletion_email_sender">
+		<field type="placeholder" class="rs_75" name="DeletionEmailFrom" label="RSFP_EMAILS_FROM" hint="RSFP_EMAILS_FROM_PLACEHOLDER" data-delimiter=" " data-placeholders="display" data-filter-type="include" data-filter="value,global" required="true" />
+		<field type="placeholder" class="rs_75" name="DeletionEmailFromName" label="RSFP_EMAILS_FROM_NAME" hint="RSFP_EMAILS_FROM_NAME_PLACEHOLDER" data-delimiter=" " data-placeholders="display" labelclass="rsfp-translate-icon" required="true" />
+	</fieldset>
+	<fieldset name="deletion_email_recipient">
+		<field type="placeholder" class="rs_75" name="DeletionEmailTo" label="RSFP_EMAILS_TO" hint="RSFP_EMAILS_TO_PLACEHOLDER" data-delimiter="," data-placeholders="display" data-filter-type="include" data-filter="value,global" required="true" />
+		<field type="placeholder" class="rs_75" name="DeletionEmailReplyTo" label="RSFP_EMAILS_REPLY_TO" hint="RSFP_EMAILS_REPLY_TO_PLACEHOLDER" data-delimiter="," data-placeholders="display" data-filter-type="include" data-filter="value,global" />
+		<field type="placeholder" class="rs_75" name="DeletionEmailReplyToName" label="RSFP_EMAILS_REPLY_TO_NAME" hint="RSFP_EMAILS_REPLY_TO_NAME_PLACEHOLDER" data-delimiter=" " data-placeholders="display" labelclass="rsfp-translate-icon" />
+		<field type="placeholder" class="rs_75" name="DeletionEmailCC" label="RSFP_EMAILS_CC" hint="RSFP_EMAILS_CC_PLACEHOLDER" data-delimiter="," data-placeholders="display" data-filter-type="include" data-filter="value,global" />
+		<field type="placeholder" class="rs_75" name="DeletionEmailBCC" label="RSFP_EMAILS_BCC" hint="RSFP_EMAILS_BCC_PLACEHOLDER" data-delimiter="," data-placeholders="display" data-filter-type="include" data-filter="value,global" />
+	</fieldset>
+	<fieldset name="deletion_email_contents">
+		<field type="placeholder" class="rs_75" name="DeletionEmailSubject" label="RSFP_EMAILS_SUBJECT" hint="RSFP_EMAILS_SUBJECT_PLACEHOLDER" data-delimiter=" " data-placeholders="display" required="true" labelclass="rsfp-translate-icon" />
+		<field name="DeletionEmailText" type="richtext" button="RSFP_EMAILS_EDIT_TEXT" label="RSFP_EMAILS_TEXT" labelclass="rsfp-translate-icon" mode-toggler="DeletionEmailMode" />
+		<field name="DeletionEmailMode" type="radio" class="btn-group btn-group-yesno" label="RSFP_EMAILS_MODE">
+			<option value="0">COM_RSFORM_MODE_TEXT</option>
+			<option value="1">COM_RSFORM_MODE_HTML</option>
+		</field>
+	</fieldset>
+	<fieldset name="scripts">
+		<field name="ScriptDisplay" type="syntaxhighlight" rows="20" cols="75" label="RSFP_SCRIPTS_DISPLAY" description="RSFP_SCRIPTS_DISPLAY_DESC" class="rs_90" syntax="php" />
+		<field name="ScriptProcess" type="syntaxhighlight" rows="20" cols="75" label="RSFP_SCRIPTS_PROCESS" description="RSFP_SCRIPTS_PROCESS_DESC" class="rs_90" syntax="php" />
+		<field name="ScriptProcess2" type="syntaxhighlight" rows="20" cols="75" label="RSFP_SCRIPTS_PROCESS2" description="RSFP_SCRIPTS_PROCESS2_DESC" class="rs_90" syntax="php" />
+	</fieldset>
+	<fieldset name="beforescripts">
+		<field name="ScriptBeforeDisplay" type="syntaxhighlight" rows="20" cols="75" label="RSFP_SCRIPTS_BEFORE_DISPLAY" description="RSFP_SCRIPTS_BEFORE_DISPLAY_DESC" class="rs_90" syntax="php" />
+		<field name="ScriptBeforeValidation" type="syntaxhighlight" rows="20" cols="75" label="RSFP_SCRIPTS_BEFORE_VALIDATION" description="RSFP_SCRIPTS_BEFORE_VALIDATION_DESC" class="rs_90" syntax="php" />
+	</fieldset>
+	<fieldset name="emailscripts">
+		<field name="UserEmailScript" type="syntaxhighlight" rows="20" cols="75" label="RSFP_USER_EMAIL_SCRIPT" description="RSFP_USER_EMAIL_SCRIPT_DESC" class="rs_90" syntax="php" />
+		<field name="AdminEmailScript" type="syntaxhighlight" rows="20" cols="75" label="RSFP_ADMIN_EMAIL_SCRIPT" description="RSFP_ADMIN_EMAIL_SCRIPT_DESC" class="rs_90" syntax="php" />
+		<field name="AdditionalEmailsScript" type="syntaxhighlight" rows="20" cols="75" label="RSFP_ADDITIONAL_EMAILS_SCRIPT" description="RSFP_ADDITIONAL_EMAILS_SCRIPT_DESC" class="rs_90" syntax="php" />
+	</fieldset>
+	<field name="Language" type="lang" nodefault="1" onchange="Joomla.submitbutton('forms.changeLanguage')" />
+	<field name="FormId" type="hidden" />
+</form>

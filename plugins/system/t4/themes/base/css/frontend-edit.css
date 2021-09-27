@@ -1,0 +1,172 @@
+/* IMPORT CUSTOM CSS FOR EDIT YOUR PROFILE PAGES ETC */
+@import '../../../../../../templates/ja_educatsy/local/css/sinister.css';
+
+
+
+
+.tip-wrap {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 0; }
+  .tip-wrap .tip-title {
+    padding: 0.25rem 0.5rem; }
+  .tip-wrap .tip-text {
+    padding: 0.5rem; }
+
+.nav-tabs a.nav-link {
+  display: block !important; }
+
+.btn-toolbar .btn {
+  background-color: #6c757d;
+  color: #fff; }
+  .btn-toolbar .btn:hover, .btn-toolbar .btn:focus, .btn-toolbar .btn:active {
+    background-color: #60686f;
+    color: #fff; }
+
+.label.label-default {
+  background-color: #e9ecef;
+  border-radius: 3px;
+  padding: 5px 10px; }
+
+.t4-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6; }
+
+.radio.btn-group {
+  padding-left: 0; }
+  .radio.btn-group input[type="radio"] {
+    display: none; }
+  .radio.btn-group > label {
+    background-color: #e9ecef;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-shadow: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    .radio.btn-group > label:first-of-type {
+      border-right: 0;
+      border-radius: 3px 0 0 3px;
+      margin-left: 0; }
+    .radio.btn-group > label:last-of-type {
+      border-left: 0;
+      border-radius: 0 3px 3px 0; }
+
+.collapse:not(.show) {
+  display: block !important;
+  height: 0;
+  overflow: hidden; }
+  
+.t4-megamenu.collapse:not(.show) {
+  overflow: visible;
+}
+.chzn-container {
+  min-width: 220px; }
+
+.field-calendar .btn.btn-secondary {
+  background-color: #adb5bd;
+  border-color: rgba(0, 0, 0, 0.1); }
+
+.edit.item-page .nav-tabs {
+  border-bottom: 1px solid #ced4da; }
+  .edit.item-page .nav-tabs li {
+    margin-bottom: -1px;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .edit.item-page .nav-tabs li a {
+      border: 0;
+      border-bottom: 1px solid #ced4da;
+      border-radius: 0;
+      color: #495057;
+      padding-left: 0;
+      padding-right: 0; }
+      .edit.item-page .nav-tabs li a.active {
+        background-color: transparent;
+        border-bottom-color: #007bff;
+        color: #007bff; }
+
+.edit.item-page fieldset {
+  background-color: #eff1f4;
+  padding: 2rem;
+  margin-bottom: 20px; }
+
+.edit.item-page #editor .control-group .controls {
+  margin-left: 0; }
+
+.edit.item-page #editor .control-group #jform_title {
+  border-radius: 0; }
+
+.edit.item-page #editor .js-editor-none textarea {
+  border: 1px solid #e9ecef;
+  padding: 10px; }
+
+.edit.item-page #editor .CodeMirror {
+  text-align: left; }
+
+.edit.item-page #editor .btn-toolbar {
+  padding-top: 0.5rem; }
+  .edit.item-page #editor .btn-toolbar .btn {
+    background-color: #ced4da;
+    color: #495057;
+    margin: 0.5rem; }
+    .edit.item-page #editor .btn-toolbar .btn:hover, .edit.item-page #editor .btn-toolbar .btn:focus, .edit.item-page #editor .btn-toolbar .btn:active {
+      background-color: #007bff;
+      color: #fff; }
+    .edit.item-page #editor .btn-toolbar .btn span {
+      opacity: 0.6; }
+
+.edit.item-page .btn-toolbar .btn {
+  border-radius: 5px; }
+
+.well {
+  background-color: #e9ecef;
+  border: 1px solid #dee2e6;
+  padding: 1rem; }
+
+#member-profile {
+  text-align: left; }
+
+fieldset legend {
+  border-bottom: 1px solid #dee2e6; }
+
+#modules-form {
+  text-align: left; }
+  #modules-form .btn-toolbar {
+    margin-bottom: 2rem; }
+  #modules-form #options .accordion {
+    padding: 0;
+    margin-bottom: 1rem; }
+  #modules-form #options .card-header {
+    margin-bottom: -1px;
+    padding: 0; }
+    #modules-form #options .card-header h2 {
+      margin: 0;
+      line-height: 1; }
+      #modules-form #options .card-header h2 .btn {
+        border: 0;
+        border-radius: 0;
+        color: #495057;
+        display: block;
+        padding: 1rem;
+        text-align: left;
+        width: 100%; }
+        #modules-form #options .card-header h2 .btn:hover, #modules-form #options .card-header h2 .btn:focus, #modules-form #options .card-header h2 .btn:active {
+          color: #007bff;
+          text-decoration: none; }
+
+#editor-xtd-buttons {
+  margin-top: 1rem; }
+  #editor-xtd-buttons .btn {
+    margin-right: 0.5rem; }
+
+#sbox-window {
+  padding: 20px; }
+  #sbox-window iframe {
+    height: 100%;
+    width: 100%; }
+

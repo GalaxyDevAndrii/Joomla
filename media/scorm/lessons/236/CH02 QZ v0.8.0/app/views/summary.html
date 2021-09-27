@@ -1,0 +1,112 @@
+<div class="summary" ng-init="scrollToTop()" summary-scroll-control block-body-scroll block-scrolling="{{summary.showResendResultsToWebhooksDialog}}">
+    <div class="summary-header">
+        <main-background class="main-background">
+            <div class="main-background-image"></div>
+            <div class="main-background-overlay"></div>
+        </main-background>
+        <div class="header-content-wrapper">
+            <div class="logo-wrapper">
+                <img class="main-logo" ng-src="{{ summary.logoUrl }}">
+            </div>
+            <div class="messages-wrapper">
+                <div class="call-to-action">{{ summary.callToActionText }}</div>
+                <div class="course-status" ng-class="{ passed: summary.reachMasteryScore }">
+                    <span ng-if="summary.reachMasteryScore">{{ '[course passed]' | translate }}</span>
+                    <span ng-if="!summary.reachMasteryScore">{{ '[course failed]' | translate }}</span>
+                </div>
+            </div>
+            <div class="summary-header-progress-wrapper">
+                <div class="score-lable">{{ '[submit your score]' | translate }}</div>
+                <div class="progress-control-container">
+                    <progress-control class="progress-control" progress="summary.progress" mastery-score="summary.masteryScore"></progress-control>
+                </div>
+                <div class="summary-buttons">
+                    <div class="summary-button-container" ng-if="!summary.singleAttempt && summary.progress !== 100" ng-class="{ show: !summary.reachMasteryScore && summary.canTryAgain }">
+                        <button class="summary-button button" ng-disabled="!summary.canTryAgain" ng-class="{ primary:!summary.reachMasteryScore, default:summary.reachMasteryScore, disabled: !summary.canTryAgain }" ng-click="summary.tryAgain()">
+                            <span class="text-wrapper">
+                                {{ '[try again]' | translate }}
+                            </span>
+                        </button>
+                        <div class="summary-retry-notification-container" ng-show="summary.attemptsLimited">
+                            <span class="summary-retry-notification" ng-show="!summary.canTryAgain">{{ '[attempts note limit acceeded]' | translate }}</span>
+                            <span class="summary-retry-notification" ng-show="summary.canTryAgain">
+                                {{ '[attempts remaining]' | translate }}&nbsp;{{ summary.availableAttemptCount }}
+                            </span>
+                            <i class="summary-retry-notification-icon"></i>
+                        </div>
+                    </div>
+                    <div class="summary-button-container" ng-class="{ show: summary.reachMasteryScore || summary.singleAttempt || !summary.canTryAgain }">
+                        <button class="summary-button button primary" ng-class="{ default: !summary.reachMasteryScore && !summary.singleAttempt && summary.canTryAgain, attempts: summary.attemptsLimited }" ng-click="summary.finish()">
+                            <span class="text-wrapper">{{ '[submit]' | translate }}</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="summary-content-wrapper">
+        <secondary-background class="secondary-background">
+                <div class="secondary-background-image"></div>
+                <div class="secondary-background-overlay"></div>
+        </secondary-background>
+        <div class="summary-scrolled-progress-wrapper">
+            <div class="progress-container">
+                <div class="score-lable">
+                    <span class="normal-resolution">{{ '[submit your score]' | translate }}</span>
+                    <span class="small-resolution">{{ '[small score label]' | translate }}</span>
+                </div>
+                <div class="progress-control-container">
+                    <progress-control class="progress-control" progress="summary.progress" mastery-score="summary.masteryScore"></progress-control>
+                </div>
+            </div>
+            <div class="summary-buttons">
+                <div class="summary-button-container" ng-if="!summary.singleAttempt && summary.progress !== 100" ng-class="{ show: !summary.reachMasteryScore && summary.canTryAgain }">
+                    <button class="summary-button button" ng-disabled="!summary.canTryAgain" ng-class="{ primary:!summary.reachMasteryScore, default:summary.reachMasteryScore, disabled: !summary.canTryAgain }" ng-click="summary.tryAgain()">
+                        <span class="text-wrapper">
+                            {{ '[try again]' | translate }}
+                        </span>
+                    </button>
+                    <div class="summary-retry-notification-container" ng-show="summary.attemptsLimited">
+                        <span class="summary-retry-notification" ng-show="!summary.canTryAgain">{{ '[attempts note limit acceeded]' | translate }}</span>
+                        <span class="summary-retry-notification" ng-show="summary.canTryAgain">
+                            {{ '[attempts remaining]' | translate }}&nbsp;{{ summary.availableAttemptCount }}
+                        </span>
+                        <i class="summary-retry-notification-icon"></i>
+                    </div>
+                </div>
+                <div class="summary-button-container" ng-class="{ show: summary.reachMasteryScore || summary.singleAttempt || !summary.canTryAgain }">
+                    <button class="summary-button button primary" ng-class="{ default: !summary.reachMasteryScore && !summary.singleAttempt && summary.canTryAgain, attempts: summary.attemptsLimited }" ng-click="summary.finish()">
+                        <span class="text-wrapper">{{ '[submit]' | translate }}</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="summary-questions" ng-if="summary.showQuestionResults">
+            <div class="summary-questions-container" ng-include="'app/views/summaryQuestionList.html'"></div>
+        </div>
+        <div class="feedback-wrapper" ng-class="{ 'extra-indent': !summary.showQuestionResults }">
+            <div class="hint-content-container" ng-class="{ loaded: !summary.isAfterwordLoading }">
+                <div ng-if="summary.isAfterwordLoading" class="loader-container image-loader-icon">
+                    <div class="color-ball red">&nbsp;</div>
+                    <div class="color-ball green">&nbsp;</div>
+                    <div class="color-ball blue">&nbsp;</div>
+                    <div class="color-ball yellow">&nbsp;</div>
+                </div>
+                <div class="hint-content" ng-if="!summary.isAfterwordLoading" ng-repeat="contentItem in summary.afterwordContent">
+                    <div ng-if="contentItem.children.length===0"  html-compile="contentItem.content" styled-content></div>
+                    <div class="expandable-block-wrapper" ng-if="contentItem.children.length!==0" ng-include="'app/views/expandableBlock.html'"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-to-top-button" ng-click="scrollToTop()">
+        <i class="arrow-wrapper material-icons">arrow_upward</i>
+    </div>
+</div>
+<div class="blockout" ng-class="{ active: summary.finished }"></div>
+<div class="request-loader-container" ng-show="summary.isSendingRequest">
+    <div class="request-loader-message-wrapper">
+        <span class="request-loader-text operation-progress">{{ '[tracking and tracing reporting progress]' | translate }}</span>
+    </div>
+</div>
+<div class="resend-results-dialog" ng-if="summary.showResendResultsToWebhooksDialog" ng-include="'app/views/modals/resendResults.html'"></div>

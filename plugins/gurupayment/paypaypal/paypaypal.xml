@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="1.7" group="gurupayment" method="upgrade">
+	<name>Payment Processor [PayPal]</name>
+	<author>iJoomla</author>
+	<creationDate>16 March 2011</creationDate>
+    <copyright>(C) 2010 iJoomla.com</copyright>
+	<license>GNU General Public License, version 2 http://www.ijoomla.com/licensing/</license>
+	<authorEmail>webmaster2@ijoomla.com</authorEmail>
+	<authorUrl>www.iJoomla.com</authorUrl>
+	<version>1.0.4</version>
+	<description>This is a paypal plugin for Guru. For more information visit guru.ijoomla.com</description>
+	<files>
+		<filename plugin="paypaypal">paypaypal.php</filename>
+		<filename>paypal1.gif</filename>
+		<filename>paypal2.gif</filename>
+		<filename>papaypal_log.txt</filename>
+		<filename>fields/ppcheck.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_gurupayment_paypaypal.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_gurupayment_paypaypal.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/plugins/gurupayment/fields">
+			<fieldset name="basic">				
+				<field name="paypaypal_label" size="50" type="text" default="PLG_PAYPAMENT_PAYPAL_PAYMENT" label="PLG_PAYPAMENT_PAYPAL_LABEL" description="PLG_PAYPAMENT_PAYPAL_PAYMENT_DESC" />
+				<field name="paypaypal_image" type="imagelist" directory="/plugins/gurupayment" hide_default="1" default="paypal1.gif" label="PLG_PAYPAMENT_PAYPAL_IMAGE" description="PARAMIMAGE" />
+				<field name="paypaypal_email" type="text" default="" label="PLG_PAYPAMENT_PAYPAL_ACCOUNT" />
+				<field name="paypaypal_lc" type="text" default="EN" label="PLG_PAYPAMENT_PAYPAL_LANGUAGE" description="" />
+				
+				<field name="paypaypal_currency" type="list" default="USD" label="PLG_PAYPAMENT_PAYPAL_CURRENCY" description="">
+					<option value="USD">U.S. Dollars (USD)</option>
+					<option value="EUR">Euros (EUR)</option>
+					<option value="GBP">Pounds Sterling (GBP)</option>
+					<option value="CAD">Canadian Dollars (CAD)</option>
+					<option value="JPY">Yen (JPY)</option>
+					<option value="AUD">Australian Dollars (AUD)</option>
+					<option value="NZD">New Zealand Dollars (NZD)</option>
+					<option value="CHF">Swiss Francs (CHF)</option>
+					<option value="HKD">Hong Kong Dollars (HKD)</option>
+					<option value="SGD">Singapore Dollars (SGD)</option>
+					<option value="SEK">Swedish Kronor (SEK)</option>
+					<option value="DKK">Danish Kroner (DKK)</option>
+					<option value="PLZ">Polish Zloty (PLZ)</option>
+					<option value="NOK">Norwegian Kroner (NOK)</option>
+					<option value="HUF">Hungarian Forint (HUF)</option>
+					<option value="CZK">Czech Koruna (CZK)</option>
+					<option value="BRL">Brazilian Real (BRL)</option>
+					<option value="MXN">Peso Mexicano (MXN)</option>
+					<option value="INR">Indian rupee (INR)</option>
+					<option value="ZAR">South African Rand (ZAR)</option>
+				</field>				
+				<field name="paypaypal_tax" type="text" default="0.00" label="PLG_PAYPAMENT_PAYPAL_TAX" />
+				<field name="paypaypal_ship" class="btn-group" type="radio" label="PLG_PAYPAMENT_PAYPAL_SHIPPING" description="" default="1" value='1'>
+					<option value="2">PLG_PAYPAMENT_PAYPAL_YES</option>
+					<option value="1">PLG_PAYPAMENT_PAYPAL_NO</option>
+				</field>
+				<field name="paypaypal_errorlog" class="btn-group" type="radio" default="0" label="PLG_PAYPAMENT_PAYPAL_DEBUG" description="PLG_PAYPAMENT_PAYPAL_DEBUG_DESC" value='0'>
+					<option value="1">PLG_PAYPAMENT_PAYPAL_YES</option>
+					<option value="0">PLG_PAYPAMENT_PAYPAL_NO</option>
+				</field>
+				<field name="paypaypal_sandbox" class="btn-group" type="radio" default="0" label="PLG_PAYPAMENT_PAYPAL_SANDBOX" description="PLG_PAYPAMENT_PAYPAL_SANDBOX_DESC">
+					<option value="1">PLG_PAYPAMENT_PAYPAL_YES</option>
+					<option value="0">PLG_PAYPAMENT_PAYPAL_NO</option>
+				</field>
+				<field name="paypaypal_print_ipn" class="btn-group" type="radio" default="0" label="PLG_PAYPAMENT_PAYPAL_IPN" description="PLG_PAYPAMENT_PAYPAL_IPN_DESC">
+					<option value="1">PLG_PAYPAMENT_PAYPAL_YES</option>
+					<option value="0">PLG_PAYPAMENT_PAYPAL_NO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

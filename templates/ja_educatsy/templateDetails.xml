@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0" type="template" method="upgrade" group="template" client="site">
+	<name>ja_educatsy</name>
+	<version>1.0.2</version>
+	<creationDate>May 12th, 2021</creationDate>
+	<author>JoomlArt</author>
+	<authorEmail>admin@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<description><![CDATA[
+		<div align="center">
+			<div class="alert alert-success" style="background-color:#DFF0D8;border-color:#D6E9C6;color: #468847;padding: 1px 0;">
+				
+				<h3><a href="//www.joomlart.com/joomla/templates/ja-educatsy">Joomla LMS template for education and online learning - JA Educatsy</a></h3>
+				
+				<h4><a href="//www.joomlart.com/joomla/templates/ja-educatsy" title="">Home</a> | <a href="//joomlart.com/demo/#ja-educatsy" title="">Demo</a> | <a href="//www.joomlart.com/documentation/joomla-templates/ja-educatsy" title="">Document</a> | <a href="//pm.joomlart.com/browse/JATCEDUCATSY" title="">Changelog</a></h4>
+
+				<p>JA Educats is a professional LMS Joomla template for education, online learning based on the most powerful Joomla LMS platform - Guru to easily create and manage online courses, teachers, students, certificates, exams, subscriptions, online payment, commissions and many more.</p>
+
+				<span style="color:#FF0000">Note: JA Educatsy requires T4 plugin to be installed and enabled.</span><p></p>
+				<p>Copyright 2004 - 2021 <a href='http://www.joomlart.com/' title='Visit Joomlart.com!'>JoomlArt.com</a>.</p>
+			</div>
+			<style>table.adminform{width: 100%;}</style>
+		</div>
+		]]></description>
+
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>error-t4.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateInfo.php</filename>
+		<folder>acm</folder>
+		<folder>css</folder>
+		<folder>etc</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>scss</folder>
+		<folder>params</folder>
+	</files>	
+	<positions>
+		<position>menu</position>
+		<position>off-canvas</position>
+		<position>search</position>
+		<position>banner</position>
+		<position>copyright</position>
+		<position>topbar</position>
+		<position>topbar-l</position>
+		<position>topbar-r</position>
+		<position>masthead</position>
+		<position>main-top-1</position>
+		<position>main-top-2</position>
+		<position>main-bottom-1</position>
+		<position>mega-1</position>
+		<position>mega-2</position>
+		<position>mega-3</position>
+		<position>mega-4</position>
+		<position>main-bottom-2</position>
+		<position>breadcrumbs</position>
+		<position>head-actions</position>
+		<position>hero</position>
+		<position>hero-search</position>
+		<position>container-tabs</position>
+		<position>sidebar-l</position>
+		<position>sidebar-r</position>
+		<position>section-1</position>
+		<position>section-2</position>
+		<position>section-3</position>
+		<position>section-4</position>
+		<position>section-5</position>
+		<position>section-6</position>
+		<position>section-7</position>
+		<position>section-8</position>
+		<position>section-9</position>
+		<position>section-10</position>
+		<position>section-11</position>
+		<position>bottom-a</position>
+		<position>bottom-b</position>
+		<position>bottom-c</position>
+		<position>bottom-d</position>
+		<position>footnav-1</position>
+		<position>footnav-2</position>
+		<position>footnav-3</position>
+		<position>footnav-4</position>
+		<position>footnav-5</position>
+		<position>footer</position>
+		<position>footer-logo</position>
+		<position>debug</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_ja_educatsy.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_ja_educatsy.sys.ini</language>
+	</languages>
+	<t4>
+		<basetheme>base</basetheme>
+	</t4>
+	<updateservers>
+    	<server type="extension" priority="1" name="JA Educatsy">http://update.joomlart.com/service/tracking/j31/ja_educatsy.xml</server>
+	</updateservers>
+</extension>

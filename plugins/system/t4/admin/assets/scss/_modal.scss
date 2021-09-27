@@ -1,0 +1,876 @@
+//
+// MODAL BOX
+// ----------------------------------
+.t4-modal-confirm-overlay,
+.t4-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.54);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1060;
+}
+
+.t4-modal-confirm-overlay {
+    z-index: 1990;
+}
+
+.t4-modal-open .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.54);
+    z-index: 1050;
+}
+
+#t4Modal {
+    border-radius: 0;
+    top: 0;
+
+    .modal-dialog {
+        transform: translate(0);
+        max-width: 40%;
+    }
+
+    .modal-content {
+        border: 0;
+    }
+}
+
+#t4-confirm {
+    max-width: 480px;
+    z-index: 2000;
+}
+
+//
+// Modal box
+.t4-modal,
+#t4Modal .modal-dialog {
+    background-color: $white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    font-family: $main-font;
+    font-size: $font-size-s;
+    padding: 0;
+    position: fixed;
+    left: 50%;
+    line-height: 1.5;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 640px;
+    z-index: 1100;
+}
+
+// Mega menu modal
+.t4-modal.t4-mega-item {
+    transform: translateX(-50%);
+    top: 10%;
+    bottom: 10%;
+
+    .t4-modal-inner {
+        height: calc(100% - 120px);
+        overflow-y: scroll;
+    }
+}
+
+//
+// Modal header
+.t4-modal .t4-modal-header,
+#t4Modal .modal-header {
+    border-radius: 3px 3px 0 0;
+    border-bottom: 1px solid $border-color;
+    box-shadow: 0 5px 10px -5px #e1e1e1;
+    line-height: 1;
+    min-height: $base-height*7;
+    padding: $base-padding*2.5 $base-padding*2;
+    position: relative;
+    top: auto;
+    left: auto;
+    height: auto;
+}
+
+.t4-modal.no-title .t4-modal-header {
+    display: none;
+}
+
+.t4-modal .t4-modal-header-title,
+#t4Modal .modal-header .modal-title {
+    color: $gray-800;
+    font-size: $font-size-xl;
+    font-weight: 400;
+    margin: 0;
+
+    i {
+        margin-right: $base-margin;
+    }
+}
+
+.t4-modal .action-t4-modal-confirm-close,
+.t4-modal .action-t4-modal-close,
+.t4-modal .t4-modal-block-close,
+.t4-fonts-manager .action-t4-modal-close {
+    border-radius: 50%;
+    color: $gray-500;
+    position: absolute;
+    top: $base-padding*1.5;
+    right: $base-margin*1.5;
+    height: $base-height*5;
+    text-align: center;
+    transition: $btn-trans;
+    width: $base-width*5;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $gray-100;
+        color: $gray-900;
+        cursor: pointer;
+    }
+
+    span {
+        font-size: $font-size-xl;
+        line-height: $base-height*5;
+    }
+}
+
+
+.t4-modal-content {
+    padding: $base-padding*2;
+
+    .chzn-container {
+        width: 100% !important;
+    }
+
+    .msg {
+        margin-bottom: 0;
+    }
+}
+
+.t4-modal.no-title {
+    .t4-modal-content {
+        padding-top: $base-padding*3;
+
+        .msg {
+            font-size: $font-size-l;
+        }
+    }
+}
+
+
+// Tab navigation
+.t4-modal .nav-tabs {
+    border-bottom: 1px solid $border-color;
+    margin-left: -$base-padding*2;
+    margin-right: -$base-padding*2;
+    padding-left: $base-padding;
+    padding-right: $base-padding;
+
+    li {
+        margin: 0 0 -1px;
+        padding-left: $base-padding;
+        padding-right: $base-padding;
+
+        a {
+            border: 0;
+            border-radius: 0;
+            color: $gray-600;
+            display: block;
+            font-weight: 500;
+            padding: $base-padding $base-padding $base-padding*1.5;
+            position: relative;
+            text-transform: uppercase;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background: transparent;
+                border: 0;
+            }
+
+            &:after {
+                content: "";
+                display: block;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+            }
+        }
+
+        &.active {
+            a {
+                color: $blue;
+
+                &:after {
+                    background-color: $blue;
+                }
+            }
+        }
+    }
+}
+
+
+//
+// Control group
+.t4-modal {
+    .control-group {
+        margin-bottom: $base-margin*1.5;
+    }
+
+    .tab-pane {
+        >.row {
+            margin-left: -15px;
+        }
+    }
+}
+
+//
+// Configure section
+div.config-section {
+    background-color: $gray-100;
+    padding: $base-padding;
+    text-align: center;
+
+    .col-inner {
+        border: 1px solid $border-color;
+        font-size: $font-size-xs;
+        padding: $base-padding;
+        text-align: left;
+
+        &:hover {
+            cursor: default;
+        }
+    }
+}
+
+.t4-layout-xresize,
+.t4-mega-xresize {
+    margin-bottom: $base-margin;
+    @include clearfix();
+
+    .t4-layout-col {
+        padding-left: $base-padding/2;
+        padding-right: $base-padding/2;
+        position: relative;
+    }
+
+    .ui-resizable-resizing {
+        cursor: ew-resize;
+
+        .col-inner:hover {
+            cursor: ew-resize;
+        }
+    }
+
+    .ui-resizable-handle {
+        background-color: $gray-100;
+        color: $gray-400;
+        display: block;
+        height: 34px;
+        padding-left: 1px;
+        position: absolute;
+        top: 1px;
+        right: 4px;
+        text-align: center;
+        width: 8px;
+
+        &:before {
+            font-family: $icon-font;
+            content: "\f142";
+            font-weight: 300;
+            line-height: 34px;
+        }
+
+        &:hover {
+            color: $gray-600;
+            cursor: e-resize;
+        }
+    }
+}
+
+.config-section.t4-row-container {
+    padding: 0 $base-padding $base-padding;
+
+    .t4-content {
+        padding: $base-padding;
+    }
+}
+
+.t4-admin-layout {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+    display: block;
+    list-style: none;
+    margin: 0 -8px $base-margin*1.5 -8px;
+    padding: $base-padding $base-padding 0;
+    position: relative;
+    text-align: left;
+    @include clearfix();
+
+    &:before {
+        background-color: #ddd;
+        content: "";
+        height: 1px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    li {
+        display: block;
+        float: left;
+        padding: 0 $base-padding 0 0;
+        position: relative;
+        text-align: center;
+
+        span {
+            border-bottom: 1px solid #ddd;
+            color: $gray-600;
+            display: block;
+            line-height: $base-height*4;
+            padding: 0 $base-padding;
+            text-transform: capitalize;
+            transition: $btn-trans;
+
+            &:hover {
+                color: $gray-800;
+                cursor: pointer;
+            }
+
+            &.active {
+                border-bottom: 1px solid $blue;
+                color: $blue;
+            }
+        }
+    }
+}
+
+// Layout action
+.t4-admin-layout-action {
+    padding: 0 0 $base-padding*1.5;
+    overflow: hidden;
+
+    .btn {
+        background: $white;
+        border-radius: $input-border-radius;
+        border: 0;
+        box-shadow: 0;
+        color: $gray-600;
+        display: inline-block;
+        height: $base-height*3.5;
+        line-height: $base-height*3.5;
+        margin-left: $spacer/4;
+        padding: 0 $base-padding*1.5;
+        transition: $btn-trans;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $blue;
+            color: $white;
+        }
+
+        i {
+            margin-right: $base-padding/2;
+        }
+    }
+}
+
+// Add column
+.t4-layout-column,
+.t4-mega-column {
+    float: left;
+}
+
+// Layout reset
+.t4-layout-reset {
+    border-radius: 0;
+    float: right;
+}
+
+// Must change class
+.t4-admin-layout-devices {
+    background-color: $white;
+    border-radius: $input-border-radius;
+    float: left;
+
+    button.btn {
+        background-color: transparent;
+        box-shadow: none;
+        border: 0;
+        height: $base-height*3.5;
+        line-height: $base-height*3.5;
+        margin: 0 !important;
+        min-width: $base-width*4;
+        padding: 0 10px;
+        outline: none;
+        transition: $btn-trans;
+
+        &:first-child {
+            border-radius: $input-border-radius;
+        }
+
+        &.btn:last-child {
+            border-radius: $input-border-radius;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: transparent;
+            border: 0;
+
+            i {
+                color: $blue;
+            }
+        }
+
+        i {
+            color: $gray-400;
+            font-size: $font-size-xs;
+            margin-right: 0;
+        }
+
+        &.active {
+            background: $blue;
+            border-radius: $input-border-radius;
+            box-shadow: $elevationZ2;
+
+            i {
+                color: $white;
+            }
+        }
+    }
+
+    span {
+        &.active {
+            background: $blue;
+            border-radius: $input-border-radius;
+            box-shadow: $elevationZ2;
+            color: $white;
+
+            i {
+                color: $white;
+            }
+        }
+    }
+}
+
+
+.t4-layout-ncolumns {
+    margin: 0 auto;
+    width: 180px;
+
+    .btn {
+        background-color: $white;
+        border: 1px solid $border-color;
+        border-radius: 0 !important;
+        box-shadow: none;
+        height: 30px;
+        line-height: 20px;
+        text-align: center;
+        width: 30px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $gray-200;
+        }
+    }
+
+    .selected,
+    .active {
+        background-color: $gray-200;
+    }
+}
+
+// Section style
+.container_setting {
+    .btn-group {
+        background-color: $gray-100;
+        border-radius: $input-border-radius;
+
+        .btn {
+            background: transparent;
+            border: 0;
+            border-radius: $input-border-radius;
+            box-shadow: none;
+            line-height: $base-height*3.5;
+            padding: 0 $base-padding*2;
+
+            &.active {
+                background: $blue;
+                box-shadow: $elevationZ2;
+                color: $white;
+            }
+
+            &:first-child,
+            &:last-child {
+                border-radius: $input-border-radius;
+            }
+        }
+    }
+}
+
+.link_color,
+.text_color,
+.link_hover_color,
+.background_color {
+    .minicolors-theme-bootstrap {
+        width: 100%;
+
+        .minicolors-input {
+            height: $base-height*4;
+            width: 100%;
+        }
+
+        .minicolors-swatch {
+            border-radius: 50%;
+            height: $base-height*3;
+            left: auto;
+            right: $base-padding/2;
+            width: $base-width*3;
+        }
+
+        .minicolors-panel {
+            right: 0;
+            left: auto !important;
+            height: 165px;
+            width: 185px;
+        }
+    }
+}
+
+// Extra class
+.extra_class {
+    overflow: hidden;
+    clear: both;
+
+    input[type="text"] {
+        width: 290px !important;
+    }
+}
+
+//
+// Edit color pattern
+// --------------------
+.config_pattern {
+    .control-group {
+        &.title {
+            float: none;
+            width: 100%;
+        }
+
+        float: left;
+        padding: 0 $base-padding;
+        width: 50%;
+    }
+}
+
+.pattern-preview {
+  box-shadow: $elevationZ1;
+  height: 100%;
+  padding: $base-padding*2;
+  text-align: middle;
+
+  h3 {
+    margin: 0 0 $base-margin;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+
+//
+// Menu item choice
+// ----------------
+.t4-choise-menu-item {
+
+    // Level 1
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+        li {
+            padding: $base-padding/1.5 0;
+
+            &.allitem {
+                border-bottom: 1px solid $border-color;
+
+                label {
+                    font-weight: 600;
+                }
+            }
+
+            label {
+                font-size: $font-size-xs;
+                margin-bottom: 0;
+            }
+
+            input {
+                margin: 0 $base-margin 0 0;
+                vertical-align: middle;
+            }
+
+            // Level 2
+            ul {
+                li {
+                    position: relative;
+
+                    input {
+                        margin-right: $base-margin*3.5;
+                    }
+
+                    &:before {
+                        border-left: 1px dotted $gray-500;
+                        content: "";
+                        display: block;
+                        top: 2px;
+                        bottom: 2px;
+                        left: $base-padding*4.5;
+                        position: absolute;
+                        width: 0;
+                    }
+                }
+
+                // Level 3
+                ul {
+                    li {
+                        input {
+                            margin-right: $base-margin*5.5;
+                        }
+
+                        &:before {
+                            left: 52px;
+                        }
+                    }
+
+                    // Level 4
+                    ul {
+                        li {
+                            input {
+                                margin-right: $base-margin*7.5;
+                            }
+
+                            &:before {
+                                left: 68px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//
+// MODAL FOOTER
+// --------------------------------------
+.t4-modal .t4-modal-footer {
+    border-top: 1px solid lighten($border-color, 3%);
+    padding: $base-padding*2;
+    text-align: right;
+}
+
+// Button
+.t4-modal .t4-modal-footer .btn {
+    background-color: transparent;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: none;
+    color: $gray-700;
+    font-size: .875rem;
+    font-weight: 500;
+    margin-left: $base-margin;
+    height: $base-height*4;
+    line-height: $base-height*4;
+    letter-spacing: .25px;
+    padding: 0 $base-padding*2;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $gray-200;
+    }
+
+    .fa {
+        margin-right: $base-margin/2;
+    }
+}
+
+.t4-modal .t4-modal-footer .btn-success,
+.t4-modal .t4-modal-footer .btn-primary {
+    background-color: $blue;
+    color: $white;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: darken($blue, 5%);
+        color: $white;
+    }
+}
+
+.t4-modal .t4-modal-footer .t4-edit-block-remove {
+    background-color: $gray-100;
+    float: left;
+}
+
+
+// FONT MANAGER MODAL
+// ------------------
+.t4-fonts-filter {
+    background-color: $white;
+    border-bottom: 1px solid $border-color;
+    padding: $base-padding $base-padding*2 0 $base-padding;
+    position: sticky;
+    left: 0;
+    top: 0;
+
+    // Search font
+    .font-filter {
+        border-radius: $input-border-radius;
+        float: right;
+        height: $base-height*4;
+        line-height: $base-height*4;
+        padding: 0 $base-padding*2;
+    }
+
+    ul.nav-tabs {
+        border: 0;
+        margin: $base-padding 0 0 0;
+
+        .nav-item {
+            margin-bottom: -1px;
+            padding: 0 $base-padding;
+
+            .nav-link {
+                background-color: transparent;
+                border: 0;
+                border-radius: 0;
+                color: $gray-600;
+                padding: $base-padding 0 $base-padding*1.5 0;
+                position: relative;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                }
+            }
+
+            &.active {
+                .nav-link {
+                    color: $blue;
+
+                    &:after {
+                        background-color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#t4Modal .tab-content {
+    padding: $base-padding*2;
+    overflow: hidden;
+}
+
+// SCSS editor
+#t4-scss-editor-variables,
+#t4-scss-editor-custom {
+    border: 1px solid $border-color;
+    min-height: 350px;
+    padding: $base-padding;
+    width: 100%;
+}
+
+//
+// Font list
+.t4-fonts-manager {
+
+    ul.base-fonts,
+    ul.jub-fonts {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        @include clearfix();
+
+        li {
+            display: block;
+            float: left;
+            width: 33%;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .jub-font[data-bash="1"]>div {
+        background-image: url(../../etc/googlefonts/thumbs/fonts01.jpeg);
+    }
+
+    .jub-font[data-bash="2"]>div {
+        background-image: url(../../etc/googlefonts/thumbs/fonts02.jpeg);
+    }
+
+    .jub-font[data-bash="3"]>div {
+        background-image: url(../../etc/googlefonts/thumbs/fonts03.jpeg);
+    }
+
+    .jub-font[data-bash="4"]>div {
+        background-image: url(../../etc/googlefonts/thumbs/fonts04.jpeg);
+    }
+
+    .jub-font[data-bash="5"]>div {
+        background-image: url(../../etc/googlefonts/thumbs/fonts05.jpeg);
+    }
+
+    .jub-font[data-bash="6"]>div {
+        background-image: url(../../etc/googlefonts/thumbs/fonts06.jpeg);
+    }
+
+    .jub-font[data-bash="7"]>div {
+        background-image: url(../../etc/googlefonts/thumbs/fonts07.jpeg);
+    }
+
+    .jub-font[data-bash="8"]>div {
+        background-image: url(../../etc/googlefonts/thumbs/fonts08.jpeg);
+    }
+
+    .jub-font[data-bash="9"]>div {
+        background-image: url(../../etc/googlefonts/thumbs/fonts09.jpeg);
+    }
+
+    .jub-font[data-bash="10"]>div {
+        background-image: url(../../etc/googlefonts/thumbs/fonts10.jpeg);
+    }
+}
+
+.imageModal_jform_t4layout_layout_media {
+    z-index: 10000;
+}
+
+// Popver
+body .popover {
+    z-index: 1101;
+}
+
+// block custom css modal 
+.t4-modal {
+    .t4-modal-footer {
+        .t4-settings-block-css {
+            float: left;
+            background-color: #4CAF50;
+        }
+    }
+
+}

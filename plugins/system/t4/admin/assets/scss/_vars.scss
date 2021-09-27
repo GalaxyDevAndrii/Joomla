@@ -1,0 +1,134 @@
+/*
+  New Pattern Color System
+  With this should be easier to overwrite colors
+  not only in SCSS but even CSS
+*/
+
+//
+// Gray Levels
+$white:             #fff;
+$gray-50:           #fafafa;
+$gray-100:          #f5f5f5;
+$gray-200:          #eee;
+$gray-300:          #e0e0e0;
+$gray-400:          #bdbdbd;
+$gray-500:          #9e9e9e;
+$gray-600:          #757575;
+$gray-700:          #616161;
+$gray-800:          #424242;
+$gray-900:          #212121;
+$black:             #000;
+
+
+//
+// Accents
+$blue:         #2196F3;
+$red:          #F44336;
+$yell:         #FFEB3B;
+$orange:       #FF9800;
+$green:        #4CAF50;
+$white:        #fff;
+
+
+// Light theme
+$primary:           $white;
+$secondary:         $gray-800;
+$tertiary:          $blue;
+$quaternary:        $blue;
+
+$main-color:        $primary;
+$font-color:        $secondary;
+$font-color-active: $blue;
+
+// Link Color
+$link-color:        $blue;
+$link-hover-color:  darken($link-color, 5%);
+
+// Font
+$main-font:           Roboto, Helvetica, sans-serif;
+$alt-font:            Roboto, Helvetica, sans-serif;
+$font-path:           '../fonts';
+
+// Icon font
+$icon-font:          'Font Awesome 5 Pro';
+
+
+// T4 Units
+$base-width:          8px;
+$base-height:         8px;
+$base-padding:        $base-width;
+$base-margin:         $base-width;
+
+// T4 Fonts
+$font-size-xxs:         0.6875rem;
+$font-size-xs:          0.75rem;
+$font-size-s:           0.875rem;
+$font-size:             1rem;
+$font-size-l:           1.125rem;
+$font-size-xl:          1.25rem;
+$font-size-xxl:         1.5rem;
+
+
+// Grid breakpoints
+// ----------------
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+
+// Form elements
+// ---------------
+// Text input
+$input-bg: rgba($gray-900, 0.08);
+$input-font-size: $font-size-xs;
+$input-height: $base-height*3;
+$input-padding: $base-padding;
+$input-border-radius: 25px;
+
+// Button
+$btn-bg:          rgba(0,0,0,0.1);
+$btn-hover-bg:    $gray-500;
+$btn-color:       $gray-600;
+$btn-hover-color: $white;
+$btn-height:      $base-height*3;
+$btn-padding:     $base-padding;
+
+// Label
+$label-font-size:   $font-size-xs;
+
+
+/* T4 Theme */
+$border-color:      rgba(#263238, 0.12);
+
+$commands-panel-height:       $base-width*7;
+$view-panel-width:            $base-width*11;
+$view-panel-container-width:  $view-panel-width*3;
+
+$elevationTrans: box-shadow 200ms ease-in-out;
+$btn-trans: all 200ms ease-in-out;
+
+
+/* Misc */
+$cardRadius:        $base-width;
+
+
+/* Elevation */
+/* https://material-components.github.io/material-components-web-catalog/#/component/elevation */
+
+/* box-shadow: $elevationZ*; */
+$elevationZ0: none;
+$elevationZ1: 0 2px 1px -1px rgba(0,0,0,.06), 0 1px 1px 0 rgba(0,0,0,.06), 0 1px 3px 0 rgba(0,0,0,.08);
+$elevationZ2: 0 3px 1px -2px rgba(0,0,0,.06), 0 2px 2px 0 rgba(0,0,0,.06), 0 1px 5px 0 rgba(0,0,0,.08);
+$elevationZ4: 0 2px 4px -1px rgba(0,0,0,.06), 0 4px 5px 0 rgba(0,0,0,.06), 0 1px 10px 0 rgba(0,0,0,.08);
+$elevationZ6: 0 3px 5px -1px rgba(0,0,0,.06), 0 6px 10px 0 rgba(0,0,0,.06), 0 1px 18px 0 rgba(0,0,0,.08);
+$elevationZ8: 0 5px 5px -3px rgba(0,0,0,.06), 0 8px 10px 1px rgba(0,0,0,.06), 0 3px 14px 2px rgba(0,0,0,.08);
+$elevationZ10: 0 6px 6px -3px rgba(0,0,0,.06), 0 10px 14px 1px rgba(0,0,0,.06), 0 4px 18px 3px rgba(0,0,0,.08);
+$elevationZ12: 0 7px 8px -4px rgba(0,0,0,.06), 0 12px 17px 2px rgba(0,0,0,.06), 0 5px 22px 4px rgba(0,0,0,.08);
+$elevationZ14: 0 7px 9px -4px rgba(0,0,0,.06), 0 14px 21px 2px rgba(0,0,0,.06), 0 5px 26px 4px rgba(0,0,0,.08);
+$elevationZ16: 0 8px 10px -5px rgba(0,0,0,.06), 0 16px 24px 2px rgba(0,0,0,.06), 0 6px 30px 5px rgba(0,0,0,.08);
+$elevationZ18: 0 9px 11px -5px rgba(0,0,0,.06), 0 18px 28px 2px rgba(0,0,0,.06), 0 7px 34px 6px rgba(0,0,0,.08);
+$elevationZ20: 0 10px 13px -6px rgba(0,0,0,.06), 0 20px 31px 3px rgba(0,0,0,.06), 0 8px 38px 7px rgba(0,0,0,.08);
+$elevationZ22: 0 10px 14px -6px rgba(0,0,0,.06), 0 22px 35px 3px rgba(0,0,0,.06), 0 8px 42px 7px rgba(0,0,0,.08);
+$elevationZ24: 0 11px 15px -7px rgba(0,0,0,.06), 0 24px 38px 3px rgba(0,0,0,.06), 0 9px 46px 8px rgba(0,0,0,.08);

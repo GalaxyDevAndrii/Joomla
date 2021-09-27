@@ -1,0 +1,190 @@
+body {
+	direction: rtl;
+}
+
+.guru-mod--courses__item-details > span {
+	margin-left: 8px;
+	margin-right: 0;
+	padding-left: 8px;
+	padding-right: 0;
+	border-left: 1px solid #eee;
+	border-right: none;
+}
+
+.gru-filter-item {
+	float: right;
+}
+
+.uk-panel-teaser .uk-overlay-panel {
+	text-align: right;
+}
+
+.gru-panel-teaser .uk-list > li {
+	padding-left: 10px;
+	padding-right: 0;
+}
+
+.gru-panel-teaser .uk-list > li:first-child {
+	padding-left: 10px;
+}
+
+.gru-panel-teaser .uk-list > li:last-child {
+	padding-left: 0;
+	border: none;
+}
+
+.uk-tab > li {
+	float: right !important;
+}
+
+.uk-table th {
+	text-align: right !important;
+}
+
+.teacher_links {
+	text-align: right;
+}
+
+.uk-table td {
+	text-align: right !important;
+}
+
+.teacher_links-item {
+	border-left: 1px solid rgba(0,0,0,.05);
+	border-right: none;
+}
+
+.teacher_links-item:last-child {
+	border: none;
+}
+
+.uk-float-left {
+	float: right !important;
+}
+
+.uk-float-right {
+	float: right !important;
+}
+
+.uk-navbar-nav>li {
+	float: right !important;
+}
+
+.uk-navbar-nav>li.logout-btn {
+	float: left !important;
+}
+
+.uk-text-right,
+div.uk-text-right {
+	text-align: left !important;
+}
+
+.uk-text-left,
+div.uk-text-left {
+	text-align: right !important;
+}
+
+.uk-form-horizontal .uk-form-label {
+	float: right !important;
+}
+
+.description_guru {
+	text-align: right !important;
+}
+
+.uk-margin-right,
+div.uk-margin-right,
+input.uk-margin-right {
+	margin-left: 15px !important;
+	margin-right: 0 !important;
+}
+
+.uk-button-group>.uk-button:first-child,
+.uk-button-group>div:first-child .uk-button {
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.uk-button-group>.uk-button:last-child,
+.uk-button-group>div:last-child .uk-button {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+}
+
+#essay-grade-0,
+#teacher-response-0 {
+	width: auto !important;
+}
+
+.lessons_wrap .subcat > ul {
+	padding-left: 0 !important;
+}
+
+.guru-lesson-nav {
+	left: 0;
+	right: auto;
+}
+
+.fontello-right-open:before {
+	content: '\e80c';
+}
+
+.fontello-left-open:before {
+	content: '\e80a';
+}
+
+.guru-lesson.shownav {
+	padding-right: 0;
+	padding-left: 300px;
+}
+
+.guru-lesson-header-l {
+	left: auto;
+	right: 15px;
+	text-align: right;
+}
+
+.guru-lesson-header-r {
+	right: auto;
+	left: 30px;
+}
+
+.guru-lesson.shownav .guru-lesson-header-r {
+	left: 260px;
+	right: auto;
+}
+
+.guru-lesson-footer-nav {
+	right: auto;
+	left: 15px;
+}
+
+.redactor_useredactor.redactor_editor{
+	direction: rtl;
+}
+
+.guru-module-search .uk-search .uk-search-icon {
+  	left: 0;
+	right: auto;
+}
+
+.guru-module-search .uk-search-input {
+    padding: 5px 10px 5px 0px;
+}
+
+@media (min-width: 769px) {
+	.guru-lesson.shownav .guru-lesson-header-r {
+		left: 304px;
+		right: auto;
+	}
+
+	.guru-lesson-header-r {
+		right: auto;
+		left: 4px;
+	}
+}
+

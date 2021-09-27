@@ -1,0 +1,961 @@
+{
+  "name": "Assessment",
+  "goal": "Test",
+  "shortDescription": "For an assessment in the form of a quiz or an exam\n\nDetails:\nThe learner will see all questions (or a selection) in a long list and can answer them. You have options in 'Configure step' to make the assessment behave the way you want.",
+  "thumbnail": "preview/thumbnail.png",
+  "previewImages": ["preview/images/preview.jpg"],
+  "settingsUrls": {
+    "configure": "settings/configure/configure.html"
+  },
+  "supports": ["branding", "fonts"],
+  "subTabSupports": {
+    "branding": ["logo", "backgrounds", "interfaceColors"]
+  },
+  "fonts": [
+    {
+      "fontFamily": "Material Icons",
+      "variants": ["400"],
+      "url": "./css/fonts.css",
+      "isLocal": true
+    },
+    {
+      "fontFamily": "Custom Icons",
+      "variants": ["400"],
+      "url": "./css/fonts.css",
+      "isLocal": true
+    },
+    {
+      "fontFamily": "Rabiohead",
+      "variants": ["400"],
+      "url": "./css/fonts.css",
+      "isLocal": true
+    }
+  ],
+  "presets": [
+    {
+      "title": "default",
+      "settings": {
+        "branding": {
+          "logo": {
+            "url": "//cdn.easygenerator.com/logo.png"
+          },
+          "colors": [
+            {
+              "key": "@text-color",
+              "value": "#42515f"
+            },
+            {
+              "key": "@main-color",
+              "value": "#43aaa3"
+            },
+            {
+              "key": "@secondary-color",
+              "value": "#2d9ec6"
+            },
+            {
+              "key": "@button-text-color",
+              "value": "#fff"
+            },
+            {
+              "key": "@correct-color",
+              "value": "#4caf50"
+            },
+            {
+              "key": "@incorrect-color",
+              "value": "#f16162"
+            }
+          ],
+          "background": {
+            "header": {
+              "brightness": 0,
+              "color": null,
+              "image": {
+                "url": "//cdn.easygenerator.com/images/5.jpg",
+                "option": "repeat"
+              }
+            },
+            "body": {
+              "switchable": true,
+              "enabled": true,
+              "brightness": 0,
+              "color": "#fff",
+              "texture": null
+            }
+          }
+        },
+        "fonts": [
+          {
+            "place": "google",
+            "key": "main-font",
+            "fontFamily": "Open Sans"
+          },
+          {
+            "place": "google",
+            "key": "Heading1",
+            "size": 24,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "700",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Heading2",
+            "size": 22,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "700",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Heading3",
+            "size": 20,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "700",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Normal",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Quote",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "italic",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Highlighted",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#fff",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": "#43aaa3",
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "links",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#43aaa3",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          }
+        ]
+      }
+    },
+    {
+      "title": "black",
+      "settings": {
+        "branding": {
+          "logo": {
+            "url": "//cdn.easygenerator.com/logo.png"
+          },
+          "colors": [
+            {
+              "key": "@text-color",
+              "value": "#d7d7d7"
+            },
+            {
+              "key": "@main-color",
+              "value": "#336577"
+            },
+            {
+              "key": "@secondary-color",
+              "value": "#33b3e2"
+            },
+            {
+              "key": "@button-text-color",
+              "value": "#fff"
+            },
+            {
+              "key": "@correct-color",
+              "value": "#4caf50"
+            },
+            {
+              "key": "@incorrect-color",
+              "value": "#f16162"
+            }
+          ],
+          "background": {
+            "header": {
+              "brightness": -0.4,
+              "color": null,
+              "image": {
+                "url": "//cdn.easygenerator.com/images/11.jpg",
+                "option": "repeat"
+              }
+            },
+            "body": {
+              "switchable": true,
+              "enabled": true,
+              "brightness": 0,
+              "color": null,
+              "texture": "//cdn.easygenerator.com/textures/5.png"
+            }
+          }
+        },
+        "fonts": [
+          {
+            "place": "google",
+            "key": "main-font",
+            "fontFamily": "Open Sans"
+          },
+          {
+            "place": "google",
+            "key": "Heading1",
+            "size": 24,
+            "fontFamily": "Open Sans",
+            "color": "#d7d7d7",
+            "fontWeight": "700",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Heading2",
+            "size": 22,
+            "fontFamily": "Open Sans",
+            "color": "#d7d7d7",
+            "fontWeight": "700",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Heading3",
+            "size": 20,
+            "fontFamily": "Open Sans",
+            "color": "#d7d7d7",
+            "fontWeight": "700",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Normal",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#d7d7d7",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Quote",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#d7d7d7",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "italic",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Highlighted",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#fff",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": "#336577",
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "links",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#336577",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          }
+        ]
+      }
+    },
+    {
+      "title": "cartoon",
+      "settings": {
+        "branding": {
+          "logo": {
+            "url": "//cdn.easygenerator.com/logo.png"
+          },
+          "colors": [
+            {
+              "key": "@text-color",
+              "value": "#42515f"
+            },
+            {
+              "key": "@main-color",
+              "value": "#2fa6d1"
+            },
+            {
+              "key": "@secondary-color",
+              "value": "#e9d20b"
+            },
+            {
+              "key": "@button-text-color",
+              "value": "#fff"
+            },
+            {
+              "key": "@correct-color",
+              "value": "#3fe471"
+            },
+            {
+              "key": "@incorrect-color",
+              "value": "#ff6047"
+            }
+          ],
+          "background": {
+            "header": {
+              "brightness": 0,
+              "color": null,
+              "image": {
+                "url": "//cdn.easygenerator.com/images/13.jpg",
+                "option": "repeat"
+              }
+            },
+            "body": {
+              "switchable": true,
+              "enabled": true,
+              "brightness": 0,
+              "color": null,
+              "texture": "//cdn.easygenerator.com/textures/3.png"
+            }
+          }
+        },
+        "fonts": [
+          {
+            "place": "google",
+            "key": "main-font",
+            "fontFamily": "Open Sans"
+          },
+          {
+            "place": "google",
+            "key": "Heading1",
+            "size": 24,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "700",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Heading2",
+            "size": 22,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "700",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Heading3",
+            "size": 20,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "700",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Normal",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Quote",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "italic",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Highlighted",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#fff",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": "#2fa6d1",
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "links",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#2fa6d1",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          }
+        ]
+      }
+    },
+    {
+      "title": "grey",
+      "settings": {
+        "branding": {
+          "logo": {
+            "url": "//cdn.easygenerator.com/logo.png"
+          },
+          "colors": [
+            {
+              "key": "@text-color",
+              "value": "#42515f"
+            },
+            {
+              "key": "@main-color",
+              "value": "#3b6998"
+            },
+            {
+              "key": "@secondary-color",
+              "value": "#7596b7"
+            },
+            {
+              "key": "@button-text-color",
+              "value": "#fff"
+            },
+            {
+              "key": "@correct-color",
+              "value": "#349b79"
+            },
+            {
+              "key": "@incorrect-color",
+              "value": "#d64869"
+            }
+          ],
+          "background": {
+            "header": {
+              "brightness": 0,
+              "color": null,
+              "image": {
+                "url": "//cdn.easygenerator.com/images/4.jpg",
+                "option": "repeat"
+              }
+            },
+            "body": {
+              "switchable": true,
+              "enabled": true,
+              "brightness": 0,
+              "color": null,
+              "texture": "//cdn.easygenerator.com/textures/16.png"
+            }
+          }
+        },
+        "fonts": [
+          {
+            "place": "google",
+            "key": "main-font",
+            "fontFamily": "Open Sans"
+          },
+          {
+            "place": "google",
+            "key": "Heading1",
+            "size": 24,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "700",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Heading2",
+            "size": 22,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "700",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Heading3",
+            "size": 20,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "700",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Normal",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Quote",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "italic",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Highlighted",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#fff",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": "#3b6998",
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "links",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#3b6998",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          }
+        ]
+      }
+    },
+    {
+      "title": "flat",
+      "settings": {
+        "branding": {
+          "logo": {
+            "url": "//cdn.easygenerator.com/logo.png"
+          },
+          "colors": [
+            {
+              "key": "@text-color",
+              "value": "#42515f"
+            },
+            {
+              "key": "@main-color",
+              "value": "#46a24a"
+            },
+            {
+              "key": "@secondary-color",
+              "value": "#aed580"
+            },
+            {
+              "key": "@button-text-color",
+              "value": "#fff"
+            },
+            {
+              "key": "@correct-color",
+              "value": "#4caf50"
+            },
+            {
+              "key": "@incorrect-color",
+              "value": "#f16162"
+            }
+          ],
+          "background": {
+            "header": {
+              "brightness": 0,
+              "color": null,
+              "image": {
+                "url": "//cdn.easygenerator.com/images/12.jpg",
+                "option": "repeat"
+              }
+            },
+            "body": {
+              "switchable": true,
+              "enabled": true,
+              "brightness": 0,
+              "color": null,
+              "texture": "//cdn.easygenerator.com/textures/2.png"
+            }
+          }
+        },
+        "fonts": [
+          {
+            "place": "google",
+            "key": "main-font",
+            "fontFamily": "Open Sans"
+          },
+          {
+            "place": "google",
+            "key": "Heading1",
+            "size": 24,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "700",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Heading2",
+            "size": 22,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "700",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Heading3",
+            "size": 20,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "700",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Normal",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Quote",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#42515f",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "italic",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "Highlighted",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#fff",
+            "fontWeight": "normal",
+            "textDecoration": "none",
+            "fontStyle": "normal",
+            "textBackgroundColor": "#46a24a",
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          },
+          {
+            "place": "google",
+            "key": "links",
+            "size": 18,
+            "fontFamily": "Open Sans",
+            "color": "#46a24a",
+            "fontWeight": "normal",
+            "textDecoration": "underline",
+            "fontStyle": "normal",
+            "textBackgroundColor": null,
+            "isGeneralSelected": true,
+            "isGeneralColorSelected": true
+          }
+        ]
+      }
+    }
+  ],
+  "languages": [
+    {
+      "code": "en",
+      "name": "English",
+      "url": "lang/en.json"
+    },
+    {
+      "code": "nl",
+      "name": "Dutch",
+      "url": "lang/nl.json"
+    },
+    {
+      "code": "ua",
+      "name": "Ukrainian",
+      "url": "lang/ua.json"
+    },
+    {
+      "code": "de",
+      "name": "German",
+      "url": "lang/de.json"
+    },
+    {
+      "code": "fr",
+      "name": "French",
+      "url": "lang/fr.json"
+    },
+    {
+      "code": "pt-br",
+      "name": "Portuguese - Brazil",
+      "url": "lang/pt-br.json"
+    },
+    {
+      "code": "ru",
+      "name": "Russian",
+      "url": "lang/ru.json"
+    },
+    {
+      "code": "es",
+      "name": "Spanish",
+      "url": "lang/es.json"
+    },
+    {
+      "code": "it",
+      "name": "Italian",
+      "url": "lang/it.json"
+    },
+    {
+      "code": "nb-no",
+      "name": "Norwegian (Bokmal)",
+      "url": "lang/nb-no.json"
+    },
+    {
+      "code": "nn-no",
+      "name": "Norwegian (Nynorsk)",
+      "url": "lang/nn-no.json"
+    },
+    {
+      "code": "zh-cn",
+      "name": "Chinese",
+      "url": "lang/zh-cn.json"
+    },
+    {
+      "code": "sv",
+      "name": "Swedish",
+      "url": "lang/sv.json"
+    },
+    {
+      "code": "ca",
+      "name": "Catalan",
+      "url": "lang/ca.json"
+    },
+    {
+      "code": "ar",
+      "name": "Arabic",
+      "url": "lang/ar.json"
+    },
+    {
+      "code": "cs",
+      "name": "Czech",
+      "url": "lang/cs.json"
+    },
+    {
+      "code": "fi",
+      "name": "Finnish",
+      "url": "lang/fi.json"
+    },
+    {
+      "code": "el",
+      "name": "Greek",
+      "url": "lang/el.json"
+    },
+    {
+      "code": "lv",
+      "name": "Latvian",
+      "url": "lang/lv.json"
+    },
+    {
+      "code": "hu",
+      "name": "Hungarian",
+      "url": "lang/hu.json"
+    },
+    {
+      "code": "kin",
+      "name": "Kinyarwanda",
+      "url": "lang/kin.json"
+    }
+  ],
+  "defaultTemplateSettings": {
+    "masteryScore": {
+      "score": 100
+    },
+    "xApi": {
+      "enabled": true,
+      "required": false,
+      "selectedLrs": "default",
+      "lrs": {
+        "uri": "",
+        "authenticationRequired": false,
+        "credentials": {
+          "username": "",
+          "password": ""
+        }
+      },
+      "allowedVerbs": [
+        "started",
+        "stopped",
+        "experienced",
+        "mastered",
+        "answered",
+        "passed",
+        "failed"
+      ]
+    },
+    "webhooks": {
+      "url": ""
+    },
+    "languages": {
+      "selected": "en",
+      "customTranslations": {}
+    },
+    "timer": {
+      "enabled": false,
+      "time": {
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0
+      }
+    },
+    "questionPool": {
+      "mode": "all",
+      "subsetSize": 10,
+      "randomizeOrder": true,
+      "randomizePerAttempt": false
+    },
+    "answers": {
+      "randomize": false
+    },
+    "attempt": {
+      "hasLimit": false,
+      "limit": 3
+    },
+    "assessmentMode": "quiz",
+    "showGivenAnswers": true,
+    "showQuestionResults": true,
+    "showUserNameOnResultsPage": true,
+    "showResultTracking": true,
+    "showAllowToSkipTracking": true,
+    "showTrackAndTraceSettings": true,
+    "showLanguageSettings": true
+  }
+}

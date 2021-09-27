@@ -1,0 +1,419 @@
+// Bootstrap functions
+@import "../vendors/bootstrap/scss/_functions";
+
+// Bootstrap variables
+@import "../vendors/bootstrap/scss/variables";
+
+// Bootstrap mixins
+@import "../vendors/bootstrap/scss/mixins";
+
+
+// Message
+// ----------------------------------
+.btn-close {
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: 0.25em 0.25em;
+  color: #000;
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+  border: 0;
+  border-radius: 0.25rem;
+  opacity: 0.5;
+
+  &:hover {
+    color: #000;
+    text-decoration: none;
+    opacity: 0.75;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    opacity: 1;
+  }
+}
+
+.alert {
+  .close {
+    @extend .btn-close;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    overflow: hidden;
+    text-indent: -999rem;
+  }
+}
+
+
+// FORM ELEMENTS
+// -----------------------------------------
+form.form-horizontal {
+  .control-group {
+
+    .control-label {
+      display: block;
+      float: left;
+      padding-right: 5px;
+      text-align: left;
+
+      label {
+        text-align: left;
+      }
+    }
+
+    .controls {
+      margin-left: 180px;
+    }
+  }
+}
+
+// Improve style for media upload
+// ----------------------------------
+.contentpane {
+  .row-fluid { @include make-row(); }
+
+  .span2  { @include make-col(2); }
+  .span3  { @include make-col(3); }
+  .span4  { @include make-col(4); }
+  .span5  { @include make-col(5); }
+  .span6  { @include make-col(6); }
+  .span7  { @include make-col(7); }
+  .span8  { @include make-col(8); }
+  .span9  { @include make-col(9); }
+  .span10 { @include make-col(10); }
+  .span11 { @include make-col(11); }
+  .span12 { @include make-col(12); }
+
+  .well {
+    background-color: $gray-100;
+    margin-bottom: $spacer;
+    padding: $spacer $spacer*2;
+    @extend .card;
+  }
+}
+
+#imageForm {
+  .well {
+    padding: $spacer $spacer*2;
+
+    #upbutton,
+    .button-cancel {
+      background-color: $white;
+      border: 1px solid $border-color;
+
+      &:hover, &:focus, &:active {
+        border-color: $primary;        
+      }
+    }
+
+    .row-fluid {
+      .span6:first-child {
+        padding-right: $spacer/2;
+      }
+
+      .span6:last-child {
+        padding-left: $spacer/2;
+      }
+
+      .control-group {
+        .controls {
+          margin-left: 160px;
+        }        
+      }
+    }
+  }
+}
+
+.input-append {
+  position: relative;
+  @include clearfix();
+
+  .media-preview {
+    background-color: $gray-200;
+    border: 1px solid $border-color;
+    border-radius: 3px 0 0 3px;
+    height: 36px;
+    float: left;
+    line-height: 36px;
+    text-align: center;
+    width: 36px;
+  }
+
+  input[type="text"] {
+    border: 0;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    width: auto !important;
+  }
+
+  .btn {
+    background-color: $gray-200;
+    border: 1px solid $border-color;
+    border-left: 0;
+    border-radius: 0 3px 3px 0;
+    display: block !important;
+    float: left;
+    height: 36px;
+    line-height: 25px;
+    text-align: center;
+
+    &.modal {
+      background-color: inherit;
+      bottom: auto;
+      border-left: 1px solid $border-color;
+      border-radius: 0;
+      position: relative;
+      left: auto;
+      top: auto;
+      margin: 0;
+      line-height: 23px;
+      width: auto;
+      z-index: 5;
+    }
+
+    &:hover, &:focus, &:active {
+      background-color: $red;
+      color: $white;
+
+      &.modal {
+        background-color: $primary;
+      }
+    }
+
+    span {
+      margin: 0;
+    }
+  }
+}
+
+// Upload form
+#uploadform.well {
+  padding: $spacer;
+
+  .control-group .controls {
+    margin-left: 160px;
+  }
+
+  #upload-file {
+    margin-bottom: $spacer;
+  }
+
+  #upload-submit {
+    margin-bottom: $spacer;
+  }
+}
+
+
+// Modal link
+// ----------------------------------
+a.modal {
+  color: $body-color;
+  position: relative;
+  display: inline-block;
+  height: auto;
+  vertical-align: middle;
+  width: auto;
+
+  &:hover, &:focus, &:active {
+    color: $link-hover-color;
+  }
+}
+
+span.star {
+  color: $red;
+  display: inline-block;
+}
+
+
+// Fix modal style
+// ----------------------------------
+.joomla-modal {
+  .modal-dialog {
+    margin: 0;
+    height: 100%;
+    max-width: 100%;
+    z-index: 3000;
+    width: 100%;
+
+    .modal-content {
+      border: 0;
+      border-radius: 0;
+      height: 100%;
+      width: 100%;
+      overflow: scroll;
+      height: 100%;
+    }
+  }
+}
+
+
+// Modal
+.contentpane {
+  padding: 0;
+
+  .item-page {
+    padding: $spacer*1.5;
+  }
+
+  .page-header {
+    padding-right: $spacer*6;
+
+    h2 {
+      font-size: $h4-font-size;
+    }
+  }
+}
+
+.container-popup {
+  padding: 0;
+
+  .hr-condensed {
+    border: 0;
+    margin: 10px 0;
+  }
+
+  .btn-group {
+    .btn {
+      background-color: $gray-200;
+      border-radius: 3px;
+      margin: 0 5px;
+
+      &:hover, &:focus, &:active {
+        background-color: $gray-400;
+      }
+    }
+  }
+}
+
+.sbox-content-iframe#sbox-content iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.thumbnails.thumbnails-media {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+
+  .thumbnail {
+    min-height: 70px;
+    height: auto;
+
+    > a {
+      display: block;
+      padding: 20px 10px 30px;
+      height: 100%;
+      position: relative;
+
+      .small {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 4px 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// Fix: tab hidden when click to the tab
+.nav.nav-tabs {
+  li {
+    a {
+      display: block !important;
+    }
+  }
+}
+
+.hasPopover,
+.hasTooltip {
+  display: inline-block !important;
+}
+
+// Init choosen dropdown
+// ----------------------------------
+.chzn-container {
+  min-width: 220px;
+}
+
+.input-append {
+  vertical-align: middle;
+}
+
+.input-prepend.input-append {
+  .media-preview.add-on {
+    height: 34px;
+    line-height: 34px;
+    padding: 0 6px;
+  }
+
+  .field-media-input {
+    max-width: 100px;
+  }
+}
+
+.control-group .controls select.inputbox {
+  width: auto;
+}
+
+.js-stools-field-filter {
+  select {
+    min-width: 250px !important;
+  }
+}
+
+// Fixed: The hidden captcha overlap the back-to-top button
+.grecaptcha-badge {
+  bottom: 70px !important;
+}
+
+// T4 Brands
+.t4-logo, .t4-logo-small {
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.t4-logo {
+  width: 182px;
+  height: 50px;
+  display: inline-block;
+}
+
+.t4-logo-small {
+  width: 60px;
+  height: 30px;
+}
+
+.t4-logo, .t4-logo-color {
+  background-image: url("//static.joomlart.com/images/ja-template/t4-framework/logo/t4-blue-logo-full.png");
+}
+
+.t4-logo-small, 
+.t4-logo-small.t4-logo-color {
+  background-image: url("//static.joomlart.com/images/ja-template/t4-framework/logo/t4-blue-short-logo.png");
+}
+
+.t4-logo-light {
+  background-image: url("//static.joomlart.com/images/ja-template/t4-framework/logo/t4-white-logo-full.png");
+}
+
+.t4-logo-small.t4-logo-light {
+  background-image: url("//static.joomlart.com/images/ja-template/t4-framework/logo/t4-white-short-logo.png");
+}
+
+.t4-logo-dark {
+  background-image: url("//static.joomlart.com/images/ja-template/t4-framework/logo/t4-dark-logo-full.png");
+}
+
+.t4-logo-small.t4-logo-dark {
+  background-image: url("//static.joomlart.com/images/ja-template/t4-framework/logo/t4-dark-short-logo.png");
+}

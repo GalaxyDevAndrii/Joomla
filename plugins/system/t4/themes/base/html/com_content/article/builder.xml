@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Page Builder" option="com_content_article_view_default_option">
+		<help
+			key = "page_builder"
+		/>
+		<message>
+			<![CDATA[tpl_t4_page_builder_desc]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request"
+			addfieldpath="/administrator/components/com_content/models/fields"
+			addfieldprefix="Joomla\Component\Content\Administrator\Field" >
+			<field 
+				name="id" 
+				type="modal_article"
+				label="COM_CONTENT_FIELD_SELECT_ARTICLE_LABEL"
+				required="true"
+				select="true"
+				new="true"
+				edit="true"
+				clear="true"
+			/>
+		</fieldset>
+	</fields>
+
+</metadata>

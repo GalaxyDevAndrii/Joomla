@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="profile">
+		<fieldset name="profile" label="T4_USER_GROUP">
+			<field name="user_avatar" type="media" default="" label="T4_USER_AVATAR_LABEL" description="T4_USER_AVATAR_DESC" />
+			<field name="user_jobtitle" type="input" default="" label="T4_USER_JOB_TITLE_LABEL" description="T4_USER_JOB_TITLE_DESC" />
+			<field name="aboutme" type="textarea" rows="10" default="" label="T4_USER_ABOUT_ME_LABEL" description="T4_USER_ABOUT_ME_DESC" />
+			<field name="user_social" type="subform" label="T4_USER_SOCIAL_LABEL" description="T4_USER_SOCIAL_DESC" layout="joomla.form.field.subform.repeatable-table" icon="list" multiple="true" class="no-row" default="{}">
+				<form hidden="true" name="user_social_list" repeat="true">
+					<field name="social_name" type="text" label="T4_USER_SOCIAL_NAME" description="T4_USER_SOCIAL_NAME_DESC" hint="Facebook" />
+					<field name="social_link" type="text" label="T4_USER_SOCIAL_LINK" description="T4_USER_SOCIAL_LINK_DESC" hint="https://facebook.com/joomlart" />
+					<field name="social_icon" type="text" label="T4_USER_SOCIAL_ICON" description="T4_USER_SOCIAL_ICON_DESC" hint="fa fa-home" />
+				</form>
+			</field>
+    </fieldset>
+  </fields>
+</form>

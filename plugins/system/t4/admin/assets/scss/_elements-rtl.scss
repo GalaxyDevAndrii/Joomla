@@ -1,0 +1,1684 @@
+// T4 Label
+// --------
+.t4-pane label,
+.t4-modal label {
+  color: $gray-500;
+  font-size: $font-size-xs;
+  font-weight: 400;
+  margin-bottom: $base-margin/2;
+  padding-left: $base-padding;
+  transition: $btn-trans;
+}
+
+.t4-pane .control-label label,
+.t4-modal .control-label label {
+  @extend label;
+  display: inline-block;
+  padding-right: $base-padding*1.5;
+}
+
+
+//
+// T4 Text box
+//------------
+.t4-pane .sub-group input[type="text"],
+.t4-modal-content input[type="text"] {
+  background-color: $input-bg;
+  border: 1px solid transparent;
+  border-radius: $input-border-radius;
+  color: $gray-900;
+  height: $base-height*3.5;
+  font-size: $input-font-size;
+  font-family: $main-font;
+  font-weight: 500;
+  line-height: $base-height*3.5;
+  padding: $input-padding $input-padding*1.5;
+  width: 100%;
+  transition: all 0.25s;
+
+  &:focus {
+    background-color: $white;
+    border-color: $border-color;
+  }
+}
+
+// Invalid
+.t4-pane input[type="text"].invalid {
+  background-color: lighten($red, 35%);
+  border: 1px solid darken($red, 10%);
+}
+
+
+.t4-pane input#typelist_theme_letter_spacing {
+  &:placeholder {
+    content: "2";
+    display: inline-block;
+  }
+}
+
+
+//
+// T4 Button
+//----------
+.t4-button,
+.t4-btn {
+  background-color: $btn-bg;
+  box-shadow: none;
+  border: 0;
+  color: $btn-color;
+  display: inline-block;
+  border-radius: $input-border-radius;
+  font-family: $main-font;
+  height: $base-height*3.5;
+  line-height: $base-height*3.5;
+  padding: 0 $base-padding*1.5;
+  transition: $btn-trans;
+
+  &:hover, &:focus, &:active {
+    background-color: $btn-hover-bg;
+    color: $btn-hover-color;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &.has-icon {
+    i {
+      margin-right: $base-margin/2;
+    }
+  }
+
+  i {
+    margin-left: $base-margin/2;
+  }
+}
+
+// Button primary
+.t4-btn.btn-primary {
+  background-color: $blue;
+  border: 0;
+
+  &:hover, &:focus, &:active {
+    background-color: darken($blue, 5%);
+  }
+}
+
+// Button success
+.t4-btn.btn-success {
+  background-color: $green;
+  border: 0;
+
+  &:hover, &:focus, &:active {
+    background-color: darken($green, 5%);
+  }
+}
+
+.t4-btn.btn-danger {
+  background-color: $red;
+  border: 0;
+
+  &:hover, &:focus, &:active {
+    background-color: darken($red, 5%);
+  }
+}
+
+// Button Sizes
+.btn-md {
+  font-size: 13px;
+  height: $base-height*4;
+  line-height: $base-height*4;
+  padding-left: $base-padding*2;
+  padding-right: $base-padding*2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  i {
+    margin-left: $base-margin;
+  }
+}
+
+.btn-icon {
+  padding-left: $base-padding*1.5;
+  padding-right: $base-padding*1.5;
+
+  i {
+    margin-right: 0;
+  }
+}
+
+//
+// T4 Color Watch
+//---------------
+.t4-pane .minicolors {
+  clear: both;
+  display: block;
+  position: relative;
+  padding: 0;
+
+  input {
+    background-color: $gray-200;
+    border-radius: $input-border-radius;
+    color: $gray-600;
+    height: $base-height*3.5;
+    line-height: $base-height*3.5;
+    padding: 0 $base-padding*4 0 $base-padding*1.5;
+    width: 100%;
+  }
+
+  .minicolors-swatch {
+    background: none;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+    right: 2px;
+    left: auto;
+    top: 2px;
+    bottom: 0;
+    height: $base-height*3;
+    transform: none;
+    width: $base-width*3;
+
+    span {
+      box-shadow: none;
+    }
+  }
+
+  .minicolors-panel {
+    border-radius: 2px;
+    box-shadow: none;
+    height: 164px;
+    right: 0;
+    left: auto;
+    top: 36px;
+    width: 204px;
+  }
+}
+
+//
+// T4 Checkbox radio
+// -----------------
+.t4-input[type="checkbox"],
+.t4-input[type="checkbox"][readonly] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  background: $gray-300;
+  border: 0;
+  border-radius: 15px;
+  height: 18px;
+  min-height: 18px;
+  padding-left: 0;
+  position: relative;
+  margin-top: 0;
+  outline: 0 !important;
+  transition: all 0.25s;
+  width: $base-width*4.5;
+
+  &:checked {
+    background-color: $blue;
+
+    &:before {
+      background-color: $white;
+      right: auto;
+      transform: translateX(20px);
+    }
+  }
+
+  &:before {
+    background-color: $white;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 14px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: .4s;
+    width: 14px;
+  }
+}
+
+.t4-modal input[type="number"] {
+  background-color: $gray-200;
+  border: 0;
+  border-radius: $input-border-radius;
+  height: $base-height*3.5;
+  padding: 0 $base-padding;
+}
+
+// Group toggle
+.t4-group-toggle {
+  clear: both;
+  display: block;
+  margin-top: $base-margin;
+
+  input {
+    float: right;
+  }
+
+  small, label {
+    display: inline-block;
+    margin-bottom: 0;
+    padding-left: 0;
+    vertical-align: middle;
+  }
+}
+
+//
+// T4 Media field
+// --------------
+.t4-pane .input-append,
+.field-media-wrapper .input-group-append {
+  background-color: $gray-200;
+  border-radius: 25px;
+  padding: 3px 100px 3px 3px;
+  margin-bottom: $base-margin*2;
+  position: relative;
+  white-space: normal;
+  width: 100%;
+
+  .add-on {
+    background: transparent;
+    border-radius: 0;
+    border: 0;
+    color: $gray-500;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: $base-padding*1.5;
+    top: $base-padding;
+    z-index: 20;
+  }
+
+  input.field-media-input[type="text"] {
+    background: $white;
+    height: $base-height*3.4;
+    line-height: $base-height*3.4;
+    margin-bottom: 0;
+    padding-left: 26px;
+    padding-right: $base-padding;
+    z-index: 10;
+  }
+
+  button.btn {
+    background-color: $blue;
+    border-radius: $input-border-radius !important;
+    border: 0;
+    box-shadow: none;
+    color: $white;
+    font-family: $main-font;
+    font-size: $font-size-xs;
+    font-weight: 500;
+    margin: 0 0 4px 4px;
+    padding: 5px 7px;
+    position: absolute;
+    text-transform: uppercase;
+
+    &:hover, &:focus, &:active {
+      background-color: darken($blue, 3%);
+      color: $white;
+    }
+
+    span {
+      font-size: 10px;
+      margin: 0;
+    }
+  }
+
+  // Select media
+  button.button-select {
+    padding-right: 10px;
+    padding-left: 10px;
+    top: 3px;
+    right: 34px;
+  }
+
+  // Clear field button
+  button.button-clear {
+    background-color: rgba(0,0,0,0.2);
+    top: 3px;
+    right: 3px;
+
+    &:hover, &:focus, &:active {
+      background-color: $red;
+    }
+
+    span:before {
+      font-family: $icon-font;
+      content: "\f00d";
+      font-weight: 300;
+    }
+  }
+}
+
+.field-media-wrapper {
+  margin-bottom: 0;
+}
+
+//
+// Text area field
+// --------------------
+.t4-pane textarea {
+  background: $gray-200;
+  border: 0;
+  border-radius: 5px;
+  color: $font-color;
+  font-size: $font-size-s;
+  height: 150px;
+  padding: $base-padding*2;
+  width: 100%;
+
+  &:focus, &:active {
+    border: 0;
+  }
+}
+
+//
+// T4 Select field
+// ---------------
+div.chzn-container {
+  width: 100% !important;
+
+  .chzn-single {
+    background-color: rgba($black, 0.075);
+    border-radius: 25px;
+    border: 0;
+    box-shadow: none;
+    color: $gray-900;
+    height: $base-width*3.5;
+    line-height: $base-width*3.5;
+    padding: 0 $base-padding*1.5;
+
+    span {
+      color: $gray-600;
+      font-family: $main-font;
+      font-size: $font-size-xs;
+    }
+
+    .search-choice-close {
+      top: $base-padding/2;
+
+      &:hover, &:focus {
+        color: $blue;
+      }
+
+      &:before {
+        font-family: $icon-font;
+        color: $gray-600;
+        content: "\f00d";
+        font-weight: 300;
+        font-size: $font-size-s;
+      }
+    }
+
+    div {
+      background: none;
+      border: 0;
+      left: $base-padding;
+    }
+
+    b:after {
+      border-top: 5px solid $gray-400;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      content: "";
+      display: block;
+      font-size: 18px;
+      height: 0;
+      position: absolute;
+      top: 12px;
+      left: $base-margin;
+      width: 0;
+    }
+  }
+
+  &.chzn-with-drop {
+    .chzn-single {
+      background-color: $white;
+      border-radius: 4px 4px 0 0;
+      border: 1px solid $border-color;
+      border-bottom: 0;
+
+      > div {
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .chzn-drop {
+    border: 1px solid $border-color;
+
+    .chzn-search input[type="text"]:focus {
+      border: 1px solid $blue;
+      height: $base-height*3.5;
+      padding: 0 $base-padding;
+    }
+  }
+
+  ul.chzn-results {
+    padding: 0 0 $base-padding/2;
+
+    li {
+      font-size: $font-size-xs;
+      padding: $base-padding/1.5 $base-padding*2;
+      line-height: 1.3;
+
+      &:hover,
+      &.highlighted {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+  }
+}
+
+//
+// Font Select
+// --------------------
+.t4-pane .t4-font-family,
+.t4-pane .t4-heading-font-family {
+  .controls {
+    padding-right: $base-padding*5;
+    position: relative;
+  }
+
+  button {
+    background-color: $gray-200;
+    border: 0;
+    border-radius: 50%;
+    color: $gray-500;
+    font-size: $font-size-l;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: $base-height*4;
+    line-height: 1;
+    transition: $btn-trans;
+    width: $base-width*4;
+
+    &:hover, &:focus, &:active {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+}
+
+
+//
+// Input type ranger
+// --------------------
+.t4-input[type=range] {
+  -webkit-appearance: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  z-index: 6;
+
+  &:focus, &:active {
+    border: 0;
+  }
+}
+
+.t4-input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  background: $blue;
+  background-image: none;
+  border: none;
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 12px;
+  outline: none;
+  width: 12px;
+}
+
+.t4-slider {
+  height: 18px;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+  width: 75%;
+  z-index: 2;
+
+  .slider-bg {
+    background: $gray-300;
+    border-radius: 3px;
+    border: 0;
+    position: absolute;
+    height: 3px;
+    top: 10px;
+    left: 0;
+    margin: 0 6px;
+    padding: 0;
+    overflow: hidden;
+    width: calc(100% - 12px);
+
+    .slider-bg-lower {
+      background-color: $blue;
+      border-radius: 3px 0 0 3px;
+      height: 3px;
+      position: relative;
+    }
+  }
+}
+
+.opacity .controls {
+  span {
+    display: inline-block;
+    float: right;
+    width: 24%;
+  }
+}
+
+
+//
+// Reset param button
+// --------------------
+.t4-param-reset {
+  color: $gray-500;
+  display: inline-block;
+  font-size: $font-size-xs;
+  line-height: 16px;
+  margin-left: $base-margin/2;
+  text-align: center;
+  transition: all 0.25s;
+  z-index: 100;
+
+  &:hover, &:active {
+    color: $gray-700;
+    cursor: pointer;
+  }
+}
+
+//
+// T4 Control help
+// --------------------
+.control-helper {
+  color: $gray-500;
+  font-size: $font-size-xs;
+  padding: $base-padding/2 $base-padding*2;
+
+  &:empty() {
+    display: none;
+  }
+
+  small {
+    background: #f0f0f0;
+    border-radius: 2px;
+    color: $gray-700;
+    display: inline-block;
+    line-height: 1;
+    margin: 0 3px 0 0;
+    padding: 1px 2px;
+  }
+}
+
+//
+// Spacer
+// --------------------
+.t4-pane div.field-spacer {
+  border-top: 1px solid $border-color;
+  padding-top: $base-padding/2;
+  text-transform: uppercase;
+
+  label {
+    color: $gray-500;
+    font-size: $font-size-xxs;
+    letter-spacing: 0.5px;
+  }
+}
+
+//
+// Special fields
+// --------------------
+.t4-modal .control-group.block {
+  #t4layoutcol_block_chzn {
+    width: 68% !important;
+  }
+
+  .t4-btn {
+    margin: 0 $base-margin/2;
+  }
+}
+
+//
+// Sub Group
+// --------------------
+.t4-pane .sub-group {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  padding: 0;
+
+  .sub-group-inner {
+    padding: 0 $base-padding;
+
+    .sub-group-inner {
+      padding: 0;
+    }
+  }
+
+  // Sub legend
+  .sub-legend {
+    .item-title {
+      color: $font-color;
+      font-size: $font-size-s;
+      font-weight: 500;
+
+      &:hover {
+        color: $blue;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Sub Group disabled
+.t4-pane .sub-group.disabled {
+  .sub-legend .item-title {
+    position: relative;
+
+    &:after {
+      border-radius: 50%;
+      content: "\f023";
+      display: inline-block;
+      height: 16px;
+      font-family: $icon-font;
+      font-weight: 300;
+      font-size: 9px;
+      line-height: 16px;
+      position: absolute;
+      top: -5px;
+      text-align: center;
+      right: -16px;
+      width: 16px;
+    }
+  }
+}
+
+//
+// Single group (Ex: Layout builder, Megamenu,...)
+// --------------------
+.t4-pane .sub-group-direct {
+  background-color: $white;
+  border-top: 1px solid $border-color;
+  padding-top: $base-padding*2;
+}
+
+// Control group
+.t4-pane .sub-group .control-group {
+  position: relative;
+  margin-bottom: $base-margin*1.5;
+
+  // Control label
+  .control-label {
+    float: none;
+    margin-bottom: 0;
+    padding: 0;
+    transition: all 0.25s;
+    width: 100%;
+  }
+
+  .controls {
+    margin-right: 0;
+  }
+
+  &.t4-checkbox {
+    .control-label {
+      display: inline-block;
+      width: auto;
+    }
+
+    .controls {
+      float: left;
+      padding-right: $base-padding*1.5;
+    }
+  }
+}
+
+.t4-pane .sub-group-params .control-group {
+  &:hover {
+    .control-label label {
+      color: $gray-900;
+    }
+  }
+
+  &.subgroup-toggle {
+    padding-left: $base-padding*1.5;
+  }
+}
+
+// Style for sub group in Brand colors pane
+.t4-pane .group_brand_colors .sub-group-params {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.t4-pane .group_brand_colors .sub-group-params .control-group {
+  flex-basis: 50%;
+
+  &:nth-child(2n) {
+    padding-left: $base-margin/2;
+  }
+
+  &:nth-child(2n+1) {
+    padding-right: $base-margin/2;
+
+    .minicolors .minicolors-panel {
+      left: 0;
+      right: auto;
+    }
+  }
+
+  input[type="text"] {
+    padding-right: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+div.sp-replacer {
+   border-radius:50%!important;
+   border:0;
+   box-shadow:0 0 0 1px rgba(71,42,42,0.1);
+   height:22px;
+   margin-right:12px;
+   width:22px
+}
+div.sp-replacer .sp-dd{
+  display: none;
+}
+.t4-pn-views-container.t4-megamenu {
+  .control-group.t4-checkbox {
+    .control-label {
+      display: inline-block;
+      float: none;
+
+      label {
+        padding-left: $base-padding*1.5;
+        margin-bottom: 0;
+      }
+    }
+
+    .controls {
+      float: left;
+
+      input {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+// 
+// Sub group open
+// --------------------
+.t4-pane .sub-group-open {
+  background-color: $white;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+
+  .sub-legend .item-title {
+    color: $blue;
+  }
+
+  .sub-legend.has-icon .fal {
+    color: $blue;
+  }
+
+  div.sub-legend-group .item-content:after {
+    content: "\f107";
+  }
+}
+
+
+//
+// Sub legend group icon
+// ---------------------
+.t4-pane .sub-group .sub-legend-group {
+  margin-bottom: 0;
+
+  > .control-label {
+    margin-bottom: 0;
+    padding: 0;
+    width: 100%;
+
+    .sub-legend {
+      padding-top: $base-padding*1.5;
+      padding-bottom: $base-padding*1.5;
+    }
+  }
+
+  .item-content {
+    position: relative;
+  }
+
+  // Arrow right
+  .item-content:after {
+    content: "\f105";
+    color: $font-color;
+    display: block;
+    font-size: $font-size-s;
+    font-family: $icon-font;
+    font-weight: 300;
+    position: absolute;
+    left: $base-padding*1.5;
+    top: 0;
+  }
+}
+
+// Special Sub legend group
+// ------------------------
+.sub-legend.has-icon {
+  padding-right: $base-padding*5;
+  position: relative;
+
+  .fa, .fal {
+    color: $font-color;
+    font-size: $font-size;
+    position: absolute;
+    right: $base-padding*1.5;
+    top: $base-padding*1.5;
+  }
+}
+
+//
+// Color palettes
+// ----------------------
+.t4-group-list-palettes{
+  .pattern-list{
+    display: block;
+    width: 60%;
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    float: right;
+  }
+  .t4-layout-pl-preview{
+     width: 40%;
+     float: left;
+     .pl-preview__input{
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 20px;
+      .control-group{
+        position: relative;
+      }
+      .control-group.col-left,
+      .control-group.col-right,
+      .control-group.col-l,
+      .control-group.col-r{
+        margin-bottom: 16px;
+        flex-basis: 50%;
+        .control-label{
+          position: absolute;
+          right: 30px;
+          top: 2px;
+          width: auto;
+        }
+        .control{
+          float: right;
+        }
+      }
+     }
+  }
+}
+.pattern {
+  margin-bottom: $base-margin;
+}
+
+.pattern-inner {
+  background-color: $gray-100;
+  border-radius: 5px;
+  padding: $base-padding/2;
+  transition: $btn-trans;
+
+  &:hover {
+    box-shadow: $elevationZ2;
+  }
+
+  .pattern-header {
+    padding: $base-padding/2 $base-padding;
+    @include clearfix();
+
+    h4 {
+      font-size: $font-size-xs;
+      margin: 0;
+      float: left;
+      text-transform: capitalize;
+    }
+
+    .pattern-actions-list {
+      float: right;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        float: left;
+
+        a {
+          color: $gray-500;
+          @include btn-icon(12px, $gray-500, $primary, 16px, 16px, 4px);
+        }
+      }
+    }
+  }
+
+  // List all color
+  .color-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include clearfix();
+
+    li {
+      float: left;
+      display: block;
+      height: $base-height*3.5;
+      padding: $base-padding/2;
+      transition: $btn-trans;
+      width: $base-width*3.5;
+
+      &:hover {
+      }
+
+      span {
+        box-shadow: 0 0 0 1px rgba($black, .15);
+        border-radius: 5px;
+        display: block;
+        height: $base-height*2.5;
+        width: $base-height*2.5;
+        position: relative;
+        overflow: hidden;
+        transition: $btn-trans;
+
+        &:before {
+          background-color: rgba($black, .8);
+          border-radius: 3px;
+          content: attr(data-title);
+          color: $white;
+          display: inline-block;
+          font-size: $font-size-xxs;
+          opacity: 0;
+          padding: $base-padding/4 $base-padding/2;
+          position: absolute;
+          top: -26px;
+          left: calc(100% - 24px);
+          transform: translateX(-25%);
+          text-transform: capitalize;
+          white-space: nowrap;
+        }
+
+        &:hover {
+          box-shadow: 0 0 0 1px rgba($black, .3);
+          position: relative;
+          overflow: visible;
+          z-index: 100;
+
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .config_pattern {
+    background-color: rgba($white, .7);
+    border: 1px dashed $border-color;
+    border-radius: 9px;
+    margin: $base-margin;
+    padding: $base-padding*1.5 $base-padding;
+
+    label {
+      margin-bottom: $base-margin;
+    }
+
+    .add_new_pattern {
+      margin-top: $base-margin*2;
+    }
+  }
+}
+
+.t4-select-color,
+.select-color-palette {
+  position: relative;
+
+  // Color preview
+  .color-preview {
+    position: relative;
+
+    .preview-icon {
+      border-radius: 50%;
+      display: block;
+      height: $base-height*2.5;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: $base-width*2.5;
+    }
+
+    input {
+      text-indent: $base-padding*2;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .toggle-icon {
+      position: absolute;
+      right: $base-padding*1.5;
+      top: 4px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  // List all colors
+  .choose-color-pattern {
+    background-color: $white;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    box-shadow: $elevationZ1;
+    padding: 0 $base-padding $base-padding;
+    position: absolute;
+    left: 0;
+    top: 36px;
+    width: 164px;
+    z-index: 100;
+
+    &:before, &:after {
+      border-bottom: 7px solid $border-color;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      content: "";
+      display: block;
+      height: 0;
+      position: absolute;
+      top: -7px;
+      left: 8px;
+      width: 0;
+    }
+
+    &:after {
+      border-bottom: 5px solid $white;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      top: -5px;
+      left: 10px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: block;
+        float: left;
+        position: relative;
+        overflow: hidden;
+
+        &.group-title {
+          color: $gray-400;
+          clear: both;
+          display: block;
+          float: none;
+          font-size: $font-size-xxs;
+          padding-top: $base-margin;
+          padding-left: 2px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          width: 100%;
+        }
+
+        &:hover {
+          overflow: visible;
+
+          .color-label {
+            opacity: 1;
+            top: 27px;
+          }
+        }
+      }
+    }
+
+    .preview-icon {
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 2px;
+      display: block;
+      height: $base-height*2.5;
+      margin: 2px;
+      width: $base-width*2.5;
+
+      &:hover {
+        border: 1px solid rgba(0,0,0,0.2);
+        cursor: pointer;
+      }
+    }
+
+    .t4-select-pattern.active {
+      .preview-icon:before {
+        content: "\f00c";
+        color: rgba($black, 0.4);
+        display: block;
+        font-family: $icon-font;
+        font-weight: 300;
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+
+    .color-label {
+      background-color: rgba(0,0,0,0.9);
+      border-radius: 3px;
+      color: $white;
+      font-size: $label-font-size;
+      opacity: 0;
+      line-height: 1;
+      padding: $base-padding/2 $base-padding;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transition: all 0.25s;
+      transform: translateX(-50%);
+      text-transform: capitalize;
+      white-space: nowrap;
+      z-index: 30;
+    }
+  }
+}
+
+// Fix hiden label on left pane
+.pane .t4-select-color .choose-color-pattern .color-label {
+  left: 0;
+  transform: none;
+}
+
+
+// Custom color list
+.custom-color-list {
+  .control-group {
+
+    &:hover {
+      .colors-actions {
+        opacity: 1;
+      }
+    }
+  }
+  .edit-label {
+    display:none;
+  }
+  .editting {
+    .control-label {
+      input[type="text"] {
+        background-color: $white;
+        border: 1px solid $blue;
+        border-radius: 3px;
+        height: $base-height*3;
+        margin-bottom: $base-margin;
+        padding-right: $base-padding*5;
+      }
+    }
+
+    .colors-actions {
+      display: none;
+      opacity: 0;
+    }
+
+    .edit-label {
+      display:block;
+      position: relative;
+    }
+
+    .edit-actions {
+      position: absolute;
+      right: 5px;
+      top: 3px;
+      z-index: 200;
+
+      span {
+        background-color: $white;
+        border-radius: 50%;
+        color: $white;
+        display: inline-block;
+        height: 16px;
+        line-height: 16px;
+        text-align: center;
+        transition: $btn-trans;
+        width: 16px;
+
+        &.color-save {
+          background-color: $green;
+
+          &:hover {
+            background-color: darken($green, 5%);
+          }
+        }
+
+        &.color-cancel {
+          background-color: $red;
+
+          &:hover {
+            background-color: darken($red, 5%);
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .control-label {
+    .colors-actions {
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0;
+      transition: $btn-trans;
+    }
+
+    .colors-actions-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+      }
+    }
+
+    label {
+      border: 1px solid transparent;
+      border-radius: 2px;
+      margin-left: $base-margin;
+      padding-left: $base-padding;
+
+      &:after {
+        font-family: $icon-font;
+        content: "\f044";
+        display: inline-block;
+        font-weight: 300;
+        font-size: 13px;
+        margin: 0 4px;
+        opacity: 0;
+      }
+    }
+
+    &.can-edit:hover {
+      label {
+        border: 1px dashed $gray-500;
+        cursor: text;
+
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+
+  }
+}
+
+.add-more-custom-colors {
+  padding-top: $base-margin;
+  text-align: center;
+}
+
+// Add more color
+.custom-colors-form {
+  background-color: rgba($black, 0.075);
+  border-radius: 5px;
+  margin: $base-margin*2 0 0;
+  padding: $base-padding $base-padding*1.5 $base-padding*2;
+
+  .custom-colors-actions {
+    padding-top: $base-margin;
+  }
+}
+
+// Color palette on Modal
+.t4-modal {
+  .pattern-list {
+    margin-left: -$base-padding/2;
+    margin-right: -$base-padding/2;
+  }
+
+  .pattern {
+    float: left;
+    margin-bottom: 0;
+    padding: $base-padding/2;
+    width: 33.3%;
+
+    .pattern-inner {
+      background-color: $white;
+      border: 1px solid $border-color;
+      min-height: 70px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &.active .pattern-inner {
+      border-color: $blue;
+
+      h4 {
+        color: $blue;
+        &:before {
+          display: inline-block;
+        }
+      }
+    }
+
+    .pattern-header h4 {
+      color: $gray-600;
+      font-size: $font-size-xs;
+      font-weight: 500;
+      margin-top: $base-margin/2;
+      line-height: 1;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+
+      &:before {
+        color: $blue;
+        content: "\f058";
+        display: none;
+        font-family: $icon-font;
+        font-size: $font-size-s;
+        font-weight: 300;
+        margin-right: $base-margin/2;
+        vertical-align: top;
+      }
+    }
+
+    p {
+      color: $gray-500;
+      margin: 0;
+      padding-left: $base-padding;
+      padding-right: $base-padding;
+    }
+  }
+}
+
+
+// T4 Message
+// ----------------------
+.t4-message-container {
+  bottom: $base-padding*2;
+  margin-bottom: $base-margin;
+  position: absolute;
+  left: $view-panel-width + $base-margin;
+  z-index: 2060;
+  width: $view-panel-container-width + 100px;
+
+  .alert {
+    background-color: $gray-800;
+    border: 0;
+    color: $white;
+    margin-bottom: 0;
+    padding: $base-padding*1.5 $base-padding*2;
+    padding-right: $base-padding*7;
+    position: relative;
+
+    .alert-heading {
+      color: $white;
+    }
+
+    &.alert-success {
+      background-color: $green;
+    }
+
+    &.alert-warning {
+      background-color: #F57C00;
+    }
+
+    &.alert-error {
+      background-color: #B71C1C;
+    }
+
+    .close {
+      color: $white;
+      position: absolute;
+      right: $base-padding;
+      opacity: 1;
+      padding: 0;
+      height: $base-height*4;
+      line-height: $base-height*4;
+      text-align: center;
+      width: $base-width*4;
+      top: 6px;
+
+      &:hover, &:focus, &:active {
+        background-color: rgba(0,0,0,0.2);
+      }
+    }
+  }
+}
+
+
+//
+// MEGAMENU
+// ----------------------
+.sub-group .select-menu-type {
+  @include clearfix();
+
+  label {
+    float: right;
+    margin: $base-margin 0 0 $base-margin;
+  }
+
+  div.chzn-container {
+    float: right;
+    width: 200px !important;
+  }
+}
+
+.t4-megamenu-builder {
+  padding-top: $base-padding*2;
+
+  // Item configure
+  .item-config {
+    border-radius: 0 0 5px 5px;
+    border: 1px solid $gray-200;
+    border-top: 0;
+    margin-bottom: $base-margin*2;
+    padding: $base-padding/2 0 $base-padding;
+    @include clearfix();
+
+    > div {
+      float: left;
+      padding: $base-padding/2 $base-padding;
+      width: 33.3%;
+
+      label {
+        color: $gray-600;
+        padding-left: $base-padding;
+      }
+    }
+
+    .t4-item-extra,
+    .t4-item-icon,
+    .t4-item-caption {
+      float: left;
+    }
+  }
+
+  // Navigation
+  .menu_items {
+    background-color: $gray-200;
+    border-radius: 5px 5px 0 0;
+    padding: 0 $base-padding;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      padding-top: $base-padding;
+      overflow: hidden;
+
+      li {
+        float: left;
+        margin-right: $base-margin/2;
+        padding-top: 0;
+        padding-bottom: $base-padding;
+        position: relative;
+
+        &:after {
+          border-bottom: 7px solid $white;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          content: "";
+          display: none;
+          position: absolute;
+          bottom: 0;
+          height: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+        }
+
+        a {
+          border-radius: $input-border-radius;
+          color: $gray-600;
+          display: block;
+          padding: $base-padding/2 $base-padding;
+          transition: $btn-trans;
+
+
+          &:hover, &:focus, &:active {
+            color: $blue;
+            text-decoration: none;
+          }
+        }
+
+        &.item-active {
+          a {
+            background-color: $blue;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .t4-megamenu {
+    background-color: $gray-100;
+    border-radius: 5px;
+    padding: $base-padding;
+  }
+
+  .t4-menu-items {
+    .enablemega {
+      margin-bottom: $base-margin;
+
+      label {
+        display: inline-block;
+      }
+
+      input {
+        float: left;
+      }
+    }
+
+    //
+    // Configure for Megamenu item
+    .item-mega-config {
+      margin-bottom: $base-margin*2;
+      @include clearfix();
+    }
+
+    .item-mega-width,
+    .mega-extra-class {
+      float: left;
+      width: 50%;
+    }
+
+    .item-mega-width {
+      padding-right: $base-padding;
+    }
+
+    .mega-extra-class {
+      padding-left: $base-padding;
+    }
+
+    .item-mega-align {
+      float: left;
+      margin-top: $base-margin;
+      width: 100%;
+      @include clearfix();
+
+      .btn-group {
+        background-color: $white;
+        border-radius: $input-border-radius;
+
+        > .btn {
+          background-color: transparent;
+          box-shadow: none;
+          border-radius: $input-border-radius;
+          border: 0;
+          color: $gray-500;
+          margin: 0;
+
+          &.active {
+            background-color: $blue;
+            box-shadow: $elevationZ2;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .t4-mega-section {
+    background-color: rgba(0, 0, 0, 0.03);
+    margin-bottom: $base-margin;
+    padding: $base-padding/2;
+    overflow: hidden;
+  }
+
+  .t4-meganeu-settings {
+    margin-bottom: $base-margin/2;
+  }
+
+  .t4-row-container {
+    padding: 0;
+
+    .t4-mega-col {
+      padding-left: $base-padding/2;
+      padding-right: $base-padding/2;
+    }
+  }
+
+  .t4-menu-add-row {
+    padding-top: $base-padding;
+    text-align: center;
+
+    a {
+      background-color: $white;
+      border-radius: $input-border-radius;
+      color: $gray-700;
+      display: inline-block;
+      padding: $base-padding/2 $base-padding*1.5;
+      text-shadow: none;
+      transition: $btn-trans;
+
+      &:hover, &:focus, &:active {
+        background-color: $blue;
+        color: $white;
+        text-decoration: none;
+      }
+
+      i {
+        box-shadow: none;
+        margin-left: $base-margin;
+      }
+    }
+  }
+}

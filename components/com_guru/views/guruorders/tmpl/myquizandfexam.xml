@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="My Quizzes/Final Exams">
+		<message>My Quizzes/Final Exams layout</message>
+    </layout>
+    <state>
+		<name>My Quizzes/Final Exams</name>
+        <description>My Quizzes/Final Exams layout</description>
+    </state>
+</metadata>

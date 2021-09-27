@@ -1,0 +1,12 @@
+<div class="ranking-text gu-unselectable">
+
+    <ranking-text class="answers" dragula='"{{ question.id }}"' dragula-model="question.answers">
+        <div class="answer-wrapper gu-draggable" ng-repeat="answer in question.answers">
+            <div class="answer" prevent-touch>
+                <div class="icon move"></div>
+                <div class="text">{{ answer.text }}</div>
+            </div>
+        </div>
+    </ranking-text>
+
+</div>

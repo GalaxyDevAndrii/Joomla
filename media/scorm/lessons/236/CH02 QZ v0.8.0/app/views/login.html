@@ -1,0 +1,63 @@
+<div class="login content-size" ng-init="scrollToTop()" entire-height>
+    <main-background class="main-background">        
+        <div class="main-background-image"></div>
+        <div class="main-background-overlay"></div>
+    </main-background>
+    <div class="login-overlay"></div>
+    <div class="login-container">        
+        <secondary-background class="secondary-background">
+            <div class="secondary-background-image"></div>
+            <div class="secondary-background-overlay"></div>
+        </secondary-background>
+        <div ng-if="login.allowToSkip" class="login-skip-button" login-leave="{method: 'skip', event: 'click'}">
+            <div class="login-skip-button-icon material-icons">clear</div>
+        </div>
+        <div ng-if="login.allowToSkip" class="login-skip-text-wrapper">
+            <span class="login-skip-text-arrow icon arrow-right"></span>
+            <span class="login-skip-text">{{ '[tracking and tracing skip step]' | translate }}</span>
+        </div>
+        <div class="login-wrapper">
+            <div class="login-header-container">
+                <span class="questions-count">{{ login.questionsLength }} {{ '[questions]' | translate }}</span>
+                <div class="course-title" course-title>{{ login.courseTitle }}</div>
+                <div class="login-tooltip-container">
+                    <div class="login-tooltip-container-arrow"></div>
+                    <div class="text">{{ '[tracking and tracing hint]' | translate }}</div>
+                    <div ng-if ="login.xAPIEnabled" class="text small">{{ '[tracking and tracing subhint]' | translate }}</div>
+                </div>
+            </div>
+            <div class="login-content">                
+                <div class="login-form-container" login-leave="{method: 'submit', event: 'keydown'}">
+                    <div class="login-input-container name">
+                        <input type="text" ng-model="login.username" ng-model-options="{ allowInvalid: true }" ng-class="{ 'error': !login.usernameIsValid() && login.usernameModified, 'empty': !login.username }" ng-blur="login.markUsernameAsModified()" class="login-input" formnovalidate />
+                        <i class="login-input-container-icon icon name"></i>
+                        <span class="login-input-container-hint">{{ '[login name field]' | translate }}</span>
+                        <span class="login-error-text" ng-style="{ visibility: !login.usernameIsValid() && login.usernameModified ? 'visible' : 'hidden' }">{{ '[tracking and tracing name is not valid]' | translate }}</span>
+                    </div>
+                    <div class="login-input-container email">
+                        <input type="email" ng-model="login.email" ng-model-options="{ allowInvalid: true }" ng-class="{ 'error': !login.emailIsValid() && login.emailModified, 'empty': !login.email }" ng-blur="login.markEmailAsModified()" class="login-input" formnovalidate />
+                        <i class="login-input-container-icon icon mail"></i>
+                        <span class="login-input-container-hint">{{ '[login email field]' | translate }}</span>
+                        <span class="login-error-text" ng-style="{ visibility: !login.emailIsValid() && login.emailModified ? 'visible' : 'hidden' }">{{ '[tracking and tracing email is not valid]' | translate }}</span>
+                    </div>
+                    <div class="login-form-submit-container">
+                        <button class="button primary" login-leave="{method: 'submit', event: 'click'}">
+                            <span class="wrapper">
+                                <span class="text">{{ '[confirm your name and email]' | translate }}</span>
+                                <span>*</span>
+                            </span>
+                        </button>
+                        <div ng-if ="login.allowToSkip" class="login-skip-link" login-leave="{method: 'skip', event: 'click'}">{{ '[tracking and tracing do not report]' | translate }}</div>
+                        <span class="login-description">{{ '[login explanation]' | translate }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loader-container hiden">
+        <div class="color-ball red">&nbsp;</div>
+        <div class="color-ball green">&nbsp;</div>
+        <div class="color-ball blue">&nbsp;</div>
+        <div class="color-ball yellow">&nbsp;</div>
+    </div>
+</div>

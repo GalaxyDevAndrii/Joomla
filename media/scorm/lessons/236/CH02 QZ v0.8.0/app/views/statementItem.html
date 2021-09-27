@@ -1,0 +1,18 @@
+<div class="answer statement-item" ng-class="statement.state.toString()">
+    <div class="title">{{ statement.text }}</div>
+    <div class="statement-buttons-container">
+        <button class="button statement-button true" ng-class="{ selected: statement.state === true }" ng-click="question.setTrueState(statement)">
+            <span class="text-wrapper">
+                {{ '[statement question true text]' | translate }}
+            </span>
+        </button>
+        <span class="statement-separator">            
+            {{ '[statement question or text]' | translate }}
+        </span>
+        <button class="button statement-button false" ng-class="{ selected: statement.state === false }" ng-click="question.setFalseState(statement)">
+            <span class="text-wrapper">
+                {{ '[statement question false text]' | translate }}
+            </span>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>Guru Search Courses</name>
+	<author>iJoomla</author>
+	<creationDate>April 22, 2019</creationDate>
+	<copyright>(C) 2010 iJoomla.com</copyright>
+	<license>GPL V2</license>
+	<authorUrl>www.ijoomla.com</authorUrl>
+	<authorEmail>webmaster2@ijoomla.com</authorEmail>
+	<version>1.0.3</version>
+	<description>This module search courses.</description>
+	
+	<languages>
+		<language tag="en-GB">en-GB.mod_guru_search.ini</language>
+	</languages>
+	<updateservers>
+    	<server type="extension">http://update.joomlart.com/service/tracking/j31/guru-search-module.xml</server>
+	</updateservers>
+	<files>
+		<filename module="mod_guru_search">mod_guru_search.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>createthumbs.php</filename>
+		<filename>mod_guru_search.css</filename>
+		<filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+        <folder>fields</folder>
+    </files>
+	
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_guru_search/fields">
+			<fieldset name="basic">
+				<field name="howManyC" type="text" class="input-mini" label="GURU_MODULE_HOW_MANY" size="10" description="" default="10" />
+				
+				<field name="sortby" type="list" label="GURU_MODULE_SORTBY" default="0">
+					<option value="0">GURU_MODULE_MOST_POPULAR</option>
+					<option value="1">GURU_MODULE_MOST_RECENT</option>
+					<option value="2">GURU_MODULE_RANDOM</option>
+				</field>
+
+				<field name="category" type="categories" label="GURU_MODULE_CATEGORY" default="0" />
+
+				<field name="showthumb" class="btn-group" type="radio" label="GURU_MODULE_THUMB" default="1">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="showamountstud" class="btn-group" type="radio" label="GURU_MODULE_AMOUNT_STUD" default="1">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="showdescription" class="btn-group" type="radio" label="GURU_MODULE_SHOWDESCRIPTION" default="1">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field name="desclength" type="text" class="input-mini" label="GURU_MODULE_DESC_LENGTH" size="10" description="" default="100" />
+				
+				<field name="desclengthtype" type="list" label="" default="0">
+					<option value="0">GURU_MODULE_WORDS</option>
+					<option value="1">GURU_MODULE_CHARACTER</option>
+				</field>
+				
+				<field name="teachername" class="btn-group" type="radio" label="GURU_MODULE_TEACHER_NAME" default="1">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>				
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

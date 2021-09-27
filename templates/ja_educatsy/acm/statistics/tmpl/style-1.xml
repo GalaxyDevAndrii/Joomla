@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<title>Statistics Style 1</title>
+	<sampledata><![CDATA[]]></sampledata>
+    <fields name="statistics">
+    	<fieldset name="basic" label="TESTIMONIAL_BASIC_LABEL" description="TESTIMONIAL_BASIC_DESC">
+				<field name="desc" type="textarea" default="" label="FEATURES_DESCRIPTIONS_LABEL" description="FEATURES_DESCRIPTIONS_DESC" cols="5" rows="5"></field>
+			</fieldset>
+
+			<fieldset name="statistics-box" label="STATISTICS_BOX_LABEL" description="STATISTICS_BOX_DESC">
+				<field name="data-style-1" type="jalist">
+					<item name="stats-count" type="text" default="" label="STATISTICS_COUNT_LABEL" description="STATISTICS_COUNT_DESC" required="1" />
+					<item name="stats-name" type="text" default="" label="STATISTICS_NAME_LABEL" description="STATISTICS_NAME_DESC" />
+				</field>
+			</fieldset>
+    </fields>
+</form>

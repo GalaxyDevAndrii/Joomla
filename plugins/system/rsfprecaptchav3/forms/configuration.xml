@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="params">
+
+		<field name="recaptchav3.sitekey" type="text" label="PLG_SYSTEM_RSFPRECAPTCHAV3_SITE_KEY" size="100" />
+		<field name="recaptchav3.secretkey" type="text" label="PLG_SYSTEM_RSFPRECAPTCHAV3_SECRET_KEY" size="100" />
+		<field name="recaptchav3.allpages" type="radio" class="btn-group btn-group-yesno" label="PLG_SYSTEM_RSFPRECAPTCHAV3_ALLPAGES" description="PLG_SYSTEM_RSFPRECAPTCHAV3_ALLPAGES_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="recaptchav3.threshold" type="number" min="0.0" max="1.0" step="0.1" label="PLG_SYSTEM_RSFPRECAPTCHAV3_THRESHOLD" description="PLG_SYSTEM_RSFPRECAPTCHAV3_THRESHOLD_DESC" size="100" />
+	</fieldset>
+</form>

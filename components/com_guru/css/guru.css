@@ -1,0 +1,622 @@
+.guru-list {
+	margin: 0;
+	padding-left: 15px !important;
+}
+
+.guru-list li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	list-style-type: disc;
+}
+
+.guru-list ul li {
+	list-style-type: circle;
+}
+
+.guru-list ul li:last-child {
+	padding-bottom: 0;
+}
+
+.guru-list > li {
+	border-bottom: 1px solid #eee;
+}
+
+.guru-list > li:last-child {
+	border: none;
+}
+
+.guru-powered {
+	margin-top: 20px;
+	text-align: center;
+	color: #999;
+}
+
+.guru-table-cart tr td {
+	vertical-align: middle;
+}
+
+.guru-payment-method select {
+	width: 100%;
+}
+
+/* uk-form fix */
+.guru-form-inline > * {
+	display: inline-block !important;
+}
+
+.gru-page-subtitle {
+  line-height: 30px; }
+
+.gru-heading {
+  margin-bottom: 25px; }
+
+.uk-button {
+  box-shadow: none;
+  text-shadow: none; }
+  .uk-form .uk-button {
+    border-radius: 4px; }
+
+.uk-button-primary,
+.uk-button-success,
+.uk-button-danger {
+  border: none; }
+  .uk-form .uk-button-primary, .uk-form
+  .uk-button-success, .uk-form
+  .uk-button-danger {
+    color: white; }
+
+.gru-login-box input[type="text"],
+.gru-login-box input[type="password"] {
+  width: 100%; }
+
+.gru-panel-teaser,
+.gru-courses .uk-panel-teaser,
+.gru-cover {
+	border: 1px solid #eee;
+}
+
+.gru-cover-purchase-btn {
+	text-align: right;
+}
+
+.gru-cover-purchase-btn .uk-button {
+	width: 100%;
+	border: none;
+}
+
+.guru-course-view {
+	margin-top: 15px;
+}
+
+.guru-course-view .tab-content {
+	margin: 0;
+	border: 1px solid #ddd;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.uk-panel-teaser .uk-overlay {
+	width: 100%;
+	text-align: center;
+}
+
+.uk-panel-teaser .uk-overlay-panel {
+	text-align: left;
+}
+
+.logout-btn{
+	float:right !important;
+}
+
+.uk-tab-grid {
+	margin-left: -5px !important;
+}
+
+.uk-tab > li > a {
+	padding-left: 8px !important;
+	padding-right: 8px !important;
+}
+
+.gru-course-box-details {
+	margin: 0;
+	padding: 4px 8px !important;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+}
+
+.gru-course-box-details > li {
+	margin-right: 5px;
+}
+
+.gru-course-box-details > li:last-child {
+	margin-right: 0;
+}
+
+.gru-panel-teaser {
+	position: relative;
+	height: 180px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.gru-category-teaser {
+	position: relative;
+	height: 300px;
+}
+
+.gru-category-teaser > .uk-overlay {
+	position: static;
+}
+
+.gru-category-teaser .uk-overlay-background,
+.gru-panel-teaser .uk-overlay-background,
+.gru-cover .uk-overlay-background {
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+}
+
+.gru-panel-teaser > a {
+	display: block;
+	height: 100%;
+}
+
+.uk-width-medium-1-1 .gru-panel-teaser {
+	height: 250px;
+}
+
+.gru-panel-teaser .uk-overlay {
+	position: static;
+}
+
+.gru-panel-teaser .uk-overlay-panel {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.gru-panel-teaser .uk-list > li {
+	padding-left: 6px;
+	padding-right: 10px;
+	border-right: 1px solid rgba(255,255,255,.4);
+}
+
+.gru-panel-teaser .uk-list > li:first-child {
+	padding-left: 0;
+}
+
+.gru-panel-teaser .uk-list > li:last-child {
+	padding-right: 0;
+	border-right: none;
+}
+
+.g_lesson_nav_bar {
+  padding-top: 10px;
+}
+
+.gru-plan-price{
+	width:70px !important;
+}
+
+.no-padding{
+	padding:0px !important;
+}
+
+.gru-nav-bar{
+	background-color: #212121;
+    border-radius: 5px;
+    margin: 0 !important;
+    padding: 5px !important;
+}
+
+.gru-nav-bar [class^="uk-width"] {
+	padding: 0px !important;
+}
+
+.gru-media-form-row {
+	margin-bottom: 15px !important;
+}
+
+.gru-media-form-row:last-child {
+	margin-bottom: 0 !important;
+}
+
+.gru-media-tooltip {
+	position: relative;
+	padding-right: 30px;
+}
+
+.gru-media-form #localfile_d {
+	width: 100%;
+}
+
+.qq-upload-list {
+	margin-top: 5px;
+	padding-left: 0 !important;
+}
+
+.gru-media-tab-content {
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-top: 0;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.gru-media-form select,
+.gru-media-form [type="text"] {
+	height: 30px !important;
+}
+
+.gru-media-tooltip span {
+	position: absolute;
+	top: 5px;
+	right: 0;
+}
+
+#guru-component ul {
+    /*list-style-type: none !important;*/
+    margin: 0;
+	clear:both;
+}
+
+.course_view_description {
+	padding: 20px;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.course_view_description p {
+	margin-bottom: 25px;
+}
+
+.course_view_description img {
+	margin: 20px;
+}
+
+.course_view_description li{
+	list-style:inside !important;
+}
+
+.gru-nav-bar img{
+	height:20px;
+}
+
+.g_certificate_view{
+    position: absolute !important;
+    top: 35%;
+    width: 100%;
+}
+
+.g_certificate_view > div{
+	padding: 0 60px !important;
+}
+
+.g_certificate_view p{
+	margin: 0 0 5px !important;
+	font-size: 18px;
+	line-height: 26px;
+	/*font-family: georgia;*/
+}
+
+.lessons_wrap li{
+	margin:0px !important;
+}
+
+.lessons_wrap{
+	margin-bottom:10px;
+}
+
+.lessons_wrap .subcat > ul {
+	padding-left: 0 !important;
+}
+
+@media (min-width: 960px) {
+	.lessons_wrap .subcat > ul {
+		padding-left: 30px !important;
+	}
+}
+
+.padding-left-10{
+	padding-left:10px !important;
+}
+
+.padding-right-10{
+	padding-right:10px !important;
+}
+
+.margin-2{
+	margin:2px !important;
+}
+
+.gru-page-filters{
+	float: left;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.gru-filter-item{
+	float:left;
+	margin-right:2px;
+}
+
+.gru-page-filters .form-control{
+	width:auto;
+	display: inline;
+}
+
+.gru-page-filters .item-right{
+	float:right;
+}
+
+.thumbnail.pull-left {
+    margin: 0 10px 10px 0;
+}
+
+.thumbnail.pull-right {
+    margin: 0 0 10px 10px;
+}
+
+#g_table_cart ul{
+	margin:0px;
+	padding:0px;
+}
+
+.gru-filter-item input[type="text"]{
+	height: 30px !important;
+    min-height: 30px;
+    padding: 0 5px;
+    width: auto !important;
+}
+
+.gru-filter-item button{
+	min-height:30px;
+	height:30px;
+}
+
+.gru-filter-item select{
+	min-height:30px !important;
+	height:30px !important;
+	padding:0px !important;
+}
+
+.gru-filter-item img{
+	border: 1px solid #ccc;
+    padding: 3px;
+	border-radius: 4px;
+}
+
+.gru-page-title{
+	margin-top:20px;
+}
+
+.pagetitle-cartbutton{
+	width:100%;
+	margin-top:10px;
+}
+
+.pagetitle-cartbutton > div{
+	width:50%;
+}
+
+#startpublish, #endpublish, #startpublish_img, #endpublish_img{
+	height:30px !important;
+}
+
+#startpublish, #endpublish{
+	width:160px !important;
+}
+
+.title_guru .gru-page-title {
+	margin-top: 5px;
+	color: white;
+	text-shadow: 0 0 2px black;
+}
+
+.uk-form .uk-subnav:last-child {
+	margin-top: 20px !important;
+}
+
+.inactive-lesson, .inactive-lesson:hover{
+	color:#999999;
+}
+
+.modal{
+	display:none;
+}
+
+.lesson-quizz-pending{
+	color:#F89406;
+	font-weight: bold;
+}
+
+.lesson-quizz-failed{
+	color:#C83F39;
+	font-weight: bold;
+}
+
+.lesson-quizz-passed{
+	color:#56AC56;
+	font-weight: bold;
+	word-wrap: normal;
+}
+
+@media (min-width: 960px) {
+	.window-mainbody .guru-media-grid > .uk-width-1-1 {
+		float: left;
+		width: 50%;
+	}
+
+	.window-mainbody .guru-media-grid > .uk-width-1-1:first-child {
+		margin-top: 0;
+	}
+}
+
+.hideTabs > .guru-accordion-title {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.guru-accordion-title {
+	margin-bottom: 5px;
+	padding: 5px;
+	background-color: #f5f5f5;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	cursor: pointer;
+}
+
+.guru-accordion-title:hover {
+	background-color: #eee;
+}
+
+.guru-accordion-content {
+	margin-top: -5px;
+	margin-bottom: 15px;
+	padding: 10px;
+	border: 1px solid #eee;
+	border-top: none;
+}
+
+.hideTabs .guru-accordion-content {
+	margin-bottom: 0;
+}
+
+
+/*  Guru cover  */
+.gru-cover {
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.gru-cover-title {
+	text-shadow: 0 1px 3px #000;
+}
+
+.gru-cover-details {
+	text-shadow: 0 0 1px #000;
+}
+
+.gru-cover-details i {
+	width: 20px;
+}
+
+.g_sect .uk-list a, .g_sect .uk-list a:hover, .g_sect .uk-list a:visited{
+	text-decoration:none !important;
+}
+
+.gru-cover .uk-overlay-panel {
+	position: static;
+}
+
+.gru-panel-teaser .uk-overlay,
+.gru-category-teaser .uk-overlay {
+	padding: 0;
+	height: 100%;
+}
+
+.gru-panel-teaser .uk-overlay {
+	top: 0;
+	position: absolute !important;
+}
+
+p:empty {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	/*.gru-cover {
+		height: auto !important;
+	}*/
+}
+
+@media (min-width: 768px) {
+	.gru-cover-purchase-btn .uk-button {
+		width: auto;
+	}
+
+	.gru-cover .uk-overlay-panel {
+		position: absolute;
+	}
+
+	.available_lesson i {
+		display: none;
+	}
+}
+
+.guru-accordion-content .description_guru .thumbnail{
+	height:auto !important;
+}
+
+.excel {
+    border-collapse: collapse;
+	margin:10px;
+}
+
+.excel th, .excel td {
+    border: 1px solid #dddddd;
+	color: #000000;
+}
+
+.sheet-btn{
+	margin:0px 5px !important;
+}
+
+a.openModal{
+	display: block;
+}
+.modal-backdrop.in, .modal-backdrop.show {
+	max-width: unset;
+}
+
+.loading-students-certificates{
+	text-align: center;
+}
+
+.loading-students-certificates img{
+	max-width: 20px;
+}
+
+
+.uk-progress {
+    box-sizing: border-box;
+    height: 20px;
+    margin-bottom: 15px;
+    background: #f7f7f7;
+	overflow: hidden;
+	line-height: 20px;
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,.07),inset 0 2px 2px rgba(0,0,0,.07);
+    border-radius: 4px;
+}
+
+.uk-progress-small {
+    height: 12px;
+}
+
+.uk-progress-mini, .uk-progress-small {
+    border-radius: 500px;
+}
+
+.uk-progress-bar {
+    width: 0;
+    height: 100%;
+    background: #009dd8;
+    background-image: none;
+	float: left;
+	-webkit-transition: width .6s ease;
+	transition: width .6s ease;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	background-image: -webkit-linear-gradient(top,#00b4f5,#008dc5);
+	background-image: linear-gradient(to bottom, #00b4f5, #008dc5);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,.2),inset 0 0 0 1px rgba(0,0,0,.1);
+	text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+}
+
+#columnchart_values > div > div{
+	margin: auto;
+}

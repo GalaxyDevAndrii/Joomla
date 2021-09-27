@@ -1,0 +1,15 @@
+<section class="hotspot">
+    <div class="hotspot-container">
+        <div class="hotspot-image-wrapper" background="{{ question.background }}" clickable-area click-handler="question.addMark">
+            <ul class="unstyled" ng-class="{{ question.marks.length }}">
+                <li class="pulsemark" ng-repeat="mark in question.marks" ng-class="{ 'multiple': question.isMultiple }"
+                    ng-style="{ 'left':  mark.x + 'px', 'top': mark.y + 'px' }" ng-click="question.removeMark(mark); question.isMultiple && $event.stopPropagation();">
+                    <div class="pin"></div>
+                    <div class="mark">
+                        <span class="impulse"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

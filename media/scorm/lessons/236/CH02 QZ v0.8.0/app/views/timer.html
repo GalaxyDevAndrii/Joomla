@@ -1,0 +1,7 @@
+<div class="timer">
+    <span class="time-part">{{ timeInSeconds | time: 'h' | leadingZeros: 2 }}</span>
+    <span>:</span>
+    <span class="time-part">{{ timeInSeconds | time: 'm' | leadingZeros: 2 }}</span>
+    <span>:</span>
+    <span class="time-part">{{ timeInSeconds | time: 's' | leadingZeros: 2 }}</span>
+</div>

@@ -1,0 +1,89 @@
+.fa-rsform::before, .icon-rsform::before {
+    content: "\f56c";
+}
+
+#rsfp-grid-contextmenu li a {
+    display: block;
+    text-decoration: none;
+}
+
+/* Bootstrap 2 imported visibility utility classes */
+
+.visible-phone {
+    display: none !important;
+}
+
+.visible-tablet {
+    display: none !important;
+}
+
+.hidden-desktop {
+    display: none !important;
+}
+
+.visible-desktop {
+    display: initial !important;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .hidden-desktop {
+        display: initial !important;
+    }
+    .visible-desktop {
+        display: none !important ;
+    }
+    .visible-tablet {
+        display: initial !important;
+    }
+    .hidden-tablet {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .hidden-desktop {
+        display: initial !important;
+    }
+    .visible-desktop {
+        display: none !important;
+    }
+    .visible-phone {
+        display: initial !important;
+    }
+    .hidden-phone {
+        display: none !important;
+    }
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.form-control.rs_75 {
+	display: inline-block !important;
+}
+
+textarea[readonly] {
+	cursor: not-allowed;
+	background-color: #eeeeee;
+}
+
+joomla-tab > ul {
+    flex-wrap: wrap;
+}
+
+.dashboard-button > a {
+    text-decoration: none;
+}
+
+#editModal .modal-body {
+    overflow-y: auto;
+}
+
+.conditionsSelect {
+    min-width: 225px;
+}

@@ -1,0 +1,69 @@
+<section class="text-matching" text-matching>
+    <tooltip>{{ '[text matching question hint]' | translate }}</tooltip>
+
+
+    <div class="text-matching-table-wrapper">
+        <div ng-repeat="source in question.sources" class="text-matching-table">
+            <div class="text-matching-row">
+                <div class="text-matching-column">
+                    <div class="text-matching-source-wrapper-outer">
+                        <div class="text-matching-source-wrapper-inner">
+                            <div class="text-matching-source">
+                                <div class="text-matching-source-text-wrapper">
+                                    <div class="text-matching-source-text">
+                                        {{ source.key }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-matching-column">
+                    <div class="placeholder" droppable accept-value="source.acceptValue" reject-value="source.rejectValue" accept="1" scope="question.id">
+                        <div class="placeholder-help-wrapper-outer">
+                            <div class="placeholder-help-wrapper-inner">
+                                <div class="placeholder-help">
+                                    <div class="placeholder-help-text-wrapper">
+                                        <div class="placeholder-help-text">
+                                            {{ '[text matching question drop here]' | translate }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-matching-target-wrapper-inner answered" draggable value="source.value" scope="question.id" ng-if="source.value">
+                            <div class="text-matching-target">
+                                <div class="text-matching-target-text-wrapper">
+                                    <i class="text-matching-target-text-icon icon dots"></i>
+                                    <div class="text-matching-target-text">
+                                        {{ source.value }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="text-matching-column empty"></div>
+                <div class="text-matching-column">
+                    <div class="text-matching-target-wrapper-outer" droppable accept-value="question.targets[$index].acceptValue" reject-value="question.targets[$index].rejectValue" scope="question.id" accept="1">
+                        <div class="text-matching-target-wrapper-inner" draggable value="question.targets[$index].value" scope="question.id" ng-if="question.targets[$index].value">
+                            <div class="text-matching-target">
+                                <div class="text-matching-target-text-wrapper">
+                                    <i class="text-matching-target-text-icon icon dots"></i>
+                                    <div class="text-matching-target-text">
+                                        {{ question.targets[$index].value }}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>

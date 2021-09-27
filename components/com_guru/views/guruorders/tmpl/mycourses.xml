@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="My courses">
+		<message>"My courses layout</message>
+    </layout>
+    <state>
+		<name>My courses</name>
+        <description>My courses layout</description>
+    </state>
+</metadata>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="My account">
+		<message>My account layout</message>
+    </layout>
+    <state>
+		<name>My account</name>
+        <description>My account layout</description>
+    </state>
+</metadata>

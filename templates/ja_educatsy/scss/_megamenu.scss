@@ -1,0 +1,175 @@
+// EXTEND STYLE IN BASE
+// --------------------
+@import "../../../plugins/system/t4/themes/base/scss/megamenu";
+
+.t4-megamenu {
+
+  // THE MEGAMENU
+  //--------------------------------------------
+  .navbar-nav {
+    > li {
+      > a,
+      > .nav-link {
+        color: $navbar-light-color;
+        padding: $grid-gutter-width / 2 $spacer;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 2;
+
+        // Tablet 
+        @include media-breakpoint-down(lg) {
+          padding: $grid-gutter-width / 2 $spacer / 2;
+        }
+
+        &:hover, &:focus, &:active {          
+          color: $navbar-light-hover-color;
+        }
+      }
+
+      // Parent focus
+      &.show {
+        > a, .nav-link {
+          color: $navbar-light-hover-color;
+        }
+      }
+
+      // Active item
+      &.active {
+        > a,
+        > .nav-link {
+        }
+      }
+
+      &:last-child {
+        > a,
+        > .nav-link {
+          border: 0;
+        }
+      }
+    }
+  }
+
+  // Dropdown menu
+  .dropdown-menu {
+    background: $dropdown-bg;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+    border-radius: 0;
+    border: 0;
+    min-width: $dropdown-min-width;
+    margin-top: 0;
+    padding: 0;
+
+    @include media-breakpoint-up(lg) {
+      background: $dropdown-bg;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+    }
+
+    .dropdown-menu-inner {
+      >ul {
+        padding: $spacer-xl/2;
+      }
+    }
+
+    li {
+      &:last-child {
+        border: 0;
+      }
+
+      > a,
+      > .nav-link,
+      .dropdown-item {
+        color: $navbar-light-color;
+        padding: $navbar-padding-y $navbar-padding-x;
+        white-space: normal;
+        font-size: $font-size-base;
+
+        &:hover, &:focus, &:active {
+          background-color: transparent;
+          color: $navbar-light-hover-color;
+        }
+      }
+
+      &.active {
+        > a {
+          color: $link-hover-color;
+        }
+      }
+    }
+  }
+
+  // Parent hover
+  .parent {
+  }
+
+  .dropdown-toggle {
+    &:after {
+      margin-top: $spacer/2;
+      float: right;
+    }
+  }
+
+  .dropdown {
+    &:hover {
+      > .dropdown-menu {
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .mega-col-nav {
+    padding: $spacer-xl/2;
+
+    // Col Title
+    .mega-col-title {
+      border-bottom: 1px solid $hr-border-color;
+      color: $headings-color;
+      font-size: $font-size-base;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: $spacer / 2;
+      margin-top: 0;
+      padding-bottom: $spacer / 4;
+
+      span {
+        border: 0;
+        padding-bottom: $spacer / 4;
+        margin-top: 0;
+        padding-top: 0;
+      }
+    }
+
+    .nav-item {
+      > a {
+        padding-left: 0;
+      }
+    }
+  }
+
+  // Mega caption
+  .mega-caption {
+    color: $gray-200;
+    bottom: 0;
+    font-size: 12px;
+    position: absolute;
+    white-space: nowrap;
+    left: 20px;
+    opacity: 0.8;
+  }
+
+
+  // Modules in Megamenu
+  // -------------------
+  .t4-module {
+    border-radius: 0;
+    border: 0;
+  }
+
+  .t4-module .module-inner {
+  }
+
+}

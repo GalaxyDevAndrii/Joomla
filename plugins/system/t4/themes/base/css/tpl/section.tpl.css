@@ -1,0 +1,20 @@
+#__id {
+	position: __webkit_sticky_position;
+	position: __sticky_position;
+	__sticky: 0;
+	z-index: __sticky_zindex;
+}
+
+#__id .bg-overlay {
+	opacity: __overlay_opacity;
+}
+
+#__id .bg-overlay-image {
+	background-image: url(__background_image);
+	background-repeat: __background_repeat;
+	background-size: __background_size;
+	background-position: __background_position;
+	background-attachment: __background_attachment;
+}
+
+

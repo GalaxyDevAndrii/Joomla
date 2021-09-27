@@ -1,0 +1,296 @@
+// FRONT-END EDIT
+// -----------------------------------
+
+// Bootstrap functions
+@import "../vendors/bootstrap/scss/_functions";
+
+// Bootstrap variables
+@import "../vendors/bootstrap/scss/variables";
+
+// Bootstrap mixins
+@import "../vendors/bootstrap/scss/mixins";
+
+
+// Tooltip
+.tip-wrap {
+  background-color: $white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  padding: 0;
+
+  .tip-title {
+    padding: $spacer/4 $spacer/2;
+  }
+
+  .tip-text {
+    padding: $spacer/2;
+  }
+}
+
+.nav-tabs a.nav-link {
+  display: block !important;
+}
+
+
+// Override default button
+.btn-toolbar {
+  .btn {
+    background-color: $secondary;
+    color: $white;
+    &:hover, &:focus, &:active {
+      background-color: darken($secondary, 5%);
+      color: $white;
+    }
+  }
+}
+
+.label {
+  &.label-default {
+    background-color: $gray-200;
+    border-radius: 3px;
+    padding: 5px 10px;
+  }
+}
+
+// PAGE STYLE
+// -----------------------------------
+.t4-header {
+  background-color: $gray-100;
+  border-bottom: 1px solid $border-color;
+}
+
+
+// EDIT ARTICLE
+// -----------------------------------
+// Radio button group
+.radio.btn-group {
+  padding-left: 0;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  > label {
+    background-color: $gray-200;
+    border: 1px solid rgba(0,0,0,0.1);
+    display: inline-block;
+    padding: $spacer/2 $spacer;
+    text-shadow: none;
+    user-select: none;
+
+    &:first-of-type {
+      border-right: 0;
+      border-radius: 3px 0 0 3px;
+      margin-left: 0;
+    }
+
+    &:last-of-type {
+      border-left: 0;
+      border-radius: 0 3px 3px 0;
+    }
+  }
+}
+
+// Fix conflict style
+.collapse:not(.show) {
+  display: block!important;
+  height: 0;
+  overflow: hidden;
+}
+
+.t4-megamenu.collapse:not(.show) {
+  overflow: visible;
+}
+
+// Dropdown
+.chzn-container {
+  min-width: 220px;
+}
+
+// Calendar
+.field-calendar {
+  .btn.btn-secondary {
+    background-color: $gray-500;
+    border-color: rgba(0,0,0,0.1);
+  }
+}
+
+
+.edit.item-page {
+  // Nav tabs
+  .nav-tabs {
+    border-bottom: 1px solid $gray-400;
+
+    li {
+      margin-bottom: -1px;
+      padding-left: $spacer;
+      padding-right: $spacer;
+
+      a {
+        border: 0;
+        border-bottom: 1px solid $gray-400;
+        border-radius: 0;
+        color: $gray-700;
+        padding-left: 0;
+        padding-right: 0;
+
+        &.active {
+          background-color: transparent;
+          border-bottom-color: $blue;
+          color: $blue;
+        }
+      }
+    }
+  }
+
+  fieldset {
+    background-color: darken($gray-100, 3%);
+    padding: $spacer*2;
+    margin-bottom: 20px;
+  }
+
+  #editor {
+    .control-group {
+      .controls {
+        margin-left: 0;
+      }
+
+      #jform_title {
+        border-radius: 0;
+      }
+    }
+
+    // Editor none
+    .js-editor-none {
+      textarea {
+        border: 1px solid $gray-200;
+        padding: 10px;
+      }
+    }
+
+    .CodeMirror {
+      text-align: left;
+    }
+
+    .btn-toolbar {
+      padding-top: $spacer/2;
+
+      .btn {
+        background-color: $gray-400;
+        color: $gray-700;
+        margin: $spacer/2;
+
+        &:hover, &:focus, &:active {
+          background-color: $blue;
+          color: $white;
+        }
+
+        span {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+
+  // Toolbar button
+  .btn-toolbar {
+    .btn {
+      border-radius: 3px;
+    }
+  }
+}
+
+
+// Compatible with Boostrap 3
+.well {
+  background-color: $gray-200;
+  border: 1px solid $border-color;
+  padding: $spacer;
+}
+
+
+// USER PROFILE
+// -----------------------------------
+#member-profile {
+  text-align: left;
+}
+
+// Edit profile
+// ------------
+.users-profile-core {
+}
+
+fieldset {
+  legend {
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+
+// EDIT MODULE
+// -----------------------------------
+#modules-form {
+  text-align: left;
+
+  .btn-toolbar {
+    margin-bottom: $spacer*2;
+  }
+
+  // Options
+  #options {
+    .accordion {
+      padding: 0;
+      margin-bottom: $spacer;
+    }
+
+    .card-header {
+      margin-bottom: -1px;
+      padding: 0;
+
+      h2 {
+        margin: 0;
+        line-height: 1;
+
+        .btn {
+          border: 0;
+          border-radius: 0;
+          color: $gray-700;
+          display: block;
+          padding: $spacer;
+          text-align: left;
+          width: 100%;
+
+          &:hover, &:focus, &:active {
+            color: $blue;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  #custom {
+
+  }
+}
+
+#editor-xtd-buttons {
+  margin-top: $spacer;
+
+  .btn {
+    margin-right: $spacer/2;
+  }
+}
+
+
+// Windows popup
+// -------------------------------------
+#sbox-window {
+  padding: 20px;
+  
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+}

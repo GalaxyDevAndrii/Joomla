@@ -1,0 +1,102 @@
+.guru-mod--courses {}
+
+
+.guru-mod--courses > ul {
+  margin-bottom: 0;
+}
+
+
+.guru-mod--courses__item {
+  margin-top: 0 !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px;
+}
+
+
+.guru-mod--courses__item:first-child {
+  padding-top: 0 !important;
+}
+
+
+.guru-mod--courses__item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+.guru-mod--courses__item-title {
+  font-weight: bold;
+}
+
+
+.guru-mod--courses__item-details {
+  margin-top: 8px;
+  font-size: 11px;
+  color: #5e5e5e;
+}
+
+
+.guru-mod--courses__item-details > span {
+  display: inline-block;
+  margin-right: 8px;
+  padding-right: 8px;
+  border-right: 1px solid #eee;
+}
+
+
+.guru-mod--courses__item-details > span:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border: none;
+}
+
+
+.guru-mod--courses__item-desc {}
+
+
+.guru-mod--courses__item-desc > p {
+  margin: 0;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #7D7D7D;
+}
+
+
+.guru-mod--courses__item-desc > p:empty {
+  margin-top: 0;
+}
+
+
+.guru-mod--courses__item-thumb {
+  display: block;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+
+.guru-mod--courses__item-thumb > img {
+  max-width: 100%;
+}
+
+.guru-module-courses-horizontal{
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+.guru-module-courses-item{
+  padding-bottom: 15px !important;
+  margin-bottom: 15px !important;
+}
+
+.mod-courses-teacher-thumb{
+  max-width: 25px;
+  margin-right: 5px;
+}
+
+#guru-module-courses ul{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}

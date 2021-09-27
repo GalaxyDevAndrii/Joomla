@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Guru Course Search" option="guru_course_search">
+		<help key = "guru_course_search" />
+		<message>
+			<![CDATA[Guru Course Search View]]>
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="basic" label="Option">
+			<field
+				name="guru_show_search_form"
+				type="radio"
+				label="Show Search Form"
+				description="Allow show search form on search view"
+				class="btn-group btn-group-yesno"
+				default="1"
+				>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

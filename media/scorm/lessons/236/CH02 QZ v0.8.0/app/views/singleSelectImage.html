@@ -1,0 +1,17 @@
+<div class="single-select-image" single-select-image>
+    <div class="single-select-image-list">
+        <div class="single-select-image-list-item" ng-repeat="answer in question.answers">
+            <a class="thumbnail-container" ng-click="question.checkAnswer(answer)" ng-class="{ checked: answer.checked }">
+                <span class="thumbnail-wrapper">
+                    <image-loader url="answer.image" width="250" height="200" scale-by-smaller-side="true"></image-loader>
+                    <i class="thumbnail-selected icon check-mark"></i>
+                </span>
+                <span class="preview-button-container">
+                    <span class="preview-button" ng-click="singleSelectImage.openPreviewImage(answer.image);$event.stopPropagation();">
+                        <i class="preview-button-icon icon search-plus"></i>
+                    </span>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>

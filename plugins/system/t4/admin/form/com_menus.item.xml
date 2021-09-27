@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="page-options">
+			<field name="page_heading_desc" type="textarea" class="heading-desc" label="TPL_PAGE_HEADING_DESC_LABEL" rows="5" description="TPL_PAGE_HEADING_DESC" />
+			<field name="page_heading_bg_color" type="color" class="bgcolor" label="TPL_PAGE_HEADING_BGCOLOR_LABEL" default="" description="TPL_PAGE_HEADING_BGCOLOR_DESC" />
+			<field name="page_heading_bg_img" type="media" class="bg-img" label="TPL_PAGE_HEADING_BG_IMG_LABEL" description="TPL_PAGE_HEADING_BG_IMG_DESC" />
+    </fieldset>
+  </fields>
+</form>

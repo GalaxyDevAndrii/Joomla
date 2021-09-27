@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Guru Teacher Commissions">
+		<message>Guru Teacher Commissions</message>
+    </layout>
+    <state>
+		<name>Guru Teacher Commissions</name>
+        <description>Guru Teacher Commissions</description>
+    </state>
+</metadata>

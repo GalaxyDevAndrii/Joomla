@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<title>Clients Style 1</title>
+	<sampledata></sampledata>
+    <fields name="clients">
+    	<fieldset name="clients-basic" label="CLIENTS_BASIC_LABEL" description="CLIENTS_BASIC_DESC">
+      <field name="columns" type="list" label="ACM_COLUMNS_LABEL" description="ACM_COLUMNS_DESC">
+				<option value="4">4</option>
+				<option value="6">6</option>
+				<option value="8">8</option>
+			</field>
+      
+      <field name="img-opacity" size="50"  type="text" default="30" label="CLIENTS_IMG_OPACITY_LABEL" description="CLIENTS_IMG_OPACITY_DESC"/>
+		</fieldset>
+
+    <fieldset name="client-items" label="CLIENT_ITEM_LABEL" description="CLIENT_ITEM_DESC">
+    	<field name="client-item" type="jalist" label="" description="">
+				<item name="client-logo" type="media" default="" label="CLIENT_ITEM_LOGO_LABEL" description="CLIENT_ITEM_LOGO_DESC" required="1" />
+				<item name="client-name" size="50"  type="text" default="" label="CLIENT_ITEM_NAME_LABEL" description="CLIENT_ITEM_NAME_DESC" />
+				<item name="client-link" size="50" type="text" default="" label="CLIENT_ITEM_LINK_LABEL" description="CLIENT_ITEM_LINK_DESC" />
+			</field>
+    </fieldset>
+
+    </fields>
+</form>

@@ -1,0 +1,77 @@
+.t4-section {
+  position: relative;
+}
+
+.t4-section .container {
+  position: static;
+}
+
+.t4-col {
+  position: relative;
+}
+
+.t4-preview {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  border: 1px dashed #ccc;
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  transition: all 0.25s;
+}
+
+.t4-preview:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px dashed #3574E7;
+}
+
+.t4-preview:hover > span {
+  background: #3574E7;
+  color: #fff;
+}
+
+.t4-preview > span {
+  background: #f0f0f0;
+  border-radius: 3px;
+  color: #666;
+  display: inline-block;
+  line-height: 1;
+  margin: 2px 0 0 2px;
+  padding: 5px;
+}
+
+/* Preview section */
+.t4-preview-section {
+  padding: 2px;
+  z-index: 1000;
+}
+
+.t4-preview-section > span {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: all 0.25s;
+}
+
+/* Preview content */
+.t4-preview-content {
+  min-height: 31px;
+  z-index: 1100;
+}
+
+/*.t4-preview-content:hover {
+  border-color: #8E24AA;
+}
+
+.t4-preview-content:hover > span {
+  background-color: #8E24AA;
+  color: #fff;
+}*/
+
+.t4-preview-content > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="t4layoutcol" addfieldpath="/plugins/system/t4/admin/field">
+		<fieldset name="general" label="T4_LAYOUT_TAB_GENERAL" description="T4_LAYOUT_SECTION_GENERAL_DESC">
+			<field name="type" class="t4-layout input-select" class_field="type col-12" type="t4list" functions="getColsType" default="" label="T4_COL_TYPE" group="general" description="T4_COL_TYPE_DESC" />
+			<field name="module" class="t4-layout input-select" class_field="module name_type col-12" functions="getModules" type="t4list" default="" group="general" label="T4_MODULE_TYPE" description="T4_MODULE_TYPE_DESC" />
+			<field name="positions" class="t4-layout input-select" class_field="positions name_type col-12" functions="getPositions" type="t4list" default=""  group="general" label="T4_POSITION_TYPE" description="T4_POSITION_TYPE_DESC" />
+			<field name="block" class="t4-layout input-select" class_field="block name_type col-12" functions="getBLocks" type="t4list" default="" group="general" label="T4_BLOCK_TYPE" description="T4_BLOCK_TYPE_DESC" hint='0px 0px 0px 0px' />
+			<field name="element" class="t4-layout input-select" class_field="element name_type col-12" functions="getElements" type="t4list" default="" group="general" label="T4_ELEMENT_TYPE" description="T4_ELEMENT_TYPE_DESC" hint='0px 0px 0px 0px' />
+			<field name="style" class="t4-layout input-select" class_field="style col-12" type="t4list" functions="getModuleStyle" default="" group="general" label="T4_MODULE_STYLE_NAME" description="T4_MODULE_STYLE_NAME_DESC" hint='extra class' />
+			<field name="extra_class" class="" class_field="col-12" type="t4text" default="" group="general" label="T4_LAYOUT_CUSTOM_CLASS" description="T4_LAYOUT_CUSTOM_CLASS_DESC" hint='extra class' />
+			<field name="extra_params" class="extra_params" class_field="element_type col-12" type="t4text" default="" group="general" label="T4_LAYOUT_CUSTOM_PARAMS" description="T4_LAYOUT_CUSTOM_PARAMS_DESC" hint='param1="value 1" param2="value 2"' />
+			<field name="name" class="" hideLabel="hidden" class_field="col-12" type="t4text" default="" group="general" label="T4_LAYOUT_NAME" description="T4_LAYOUT_NAME_DESC" />
+		</fieldset>
+		<fieldset name="editblock" label="T4_LAYOUT_TAB_EDITOR_BLOCK" description="T4_LAYOUT_EDITOR_BLOCK_DESC">
+			<field name="new-block" type="text" label="T4_BLOCK_NAME_EDITOR" class_field="t4-block-name col-12" class="new-block" hint="new block name" default="" description="T4_BLOCK_NAME_EDITOR_DESC" group="editblock"/>
+			<field name="edit_block" type="textarea" label="T4_BLOCK_EDITOR" class_field="t4-block-editor col-12" class="t4-block"  rows="10" cols="80" filter="raw" default="" description="T4_BLOCK_EDITOR_DESC" group="editblock"/>
+		</fieldset>
+	</fields>
+</form>

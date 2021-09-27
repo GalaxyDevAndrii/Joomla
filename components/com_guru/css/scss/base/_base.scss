@@ -1,0 +1,46 @@
+//
+// Guru @ 2015
+// Base
+//
+//////////////////////////////////////////
+
+// Page
+.gru-page {
+}
+
+.gru-page-title {
+}
+
+.gru-page-subtitle {
+	line-height: 30px;
+}
+
+// Heading
+.gru-heading {
+	margin-bottom: 25px;
+}
+
+// Utility
+.uk-grid-fix {
+	> div,
+	> li {
+	}
+}
+
+// Override
+.uk-button {
+	box-shadow: none;
+	text-shadow: none;
+	.uk-form & {
+		border-radius: 4px;
+	}
+}
+
+.uk-button-primary,
+.uk-button-success,
+.uk-button-danger {
+	border: none;
+	.uk-form & {
+		color: white;
+	}
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="custom-field" label="Extra fields" description="">
+      <field name="desc-category" type="textarea" default="" label="TPL_DESC_CATEGORY_LABEL" description="TPL_DESC_CATEGORY_DESC" />
+    </fieldset>
+  </fields>
+</form>

@@ -1,0 +1,48 @@
+//
+// Templates Assets
+// ---------------------------------------------
+
+// Global styles
+@import "global";
+
+// Core style
+@import "../../../plugins/system/t4/themes/base/scss/core";
+
+// All form elements style
+@import "forms";
+
+// Component styles
+@import "components";
+
+// Utilityies style
+@import "utilities";
+
+// Navigation styles
+@import "navigations";
+
+// Modules style
+@import "modules";
+
+// Joomla styles
+@import "joomla";
+
+// Typography
+@import "typo";
+
+// Megamenu
+@import "megamenu";
+
+//Offcanvas menu
+@import "offcanvas";
+
+// Template styles
+@import "styles";
+
+// ACM styles
+@import "acm";
+
+// ACM styles
+@import "guru";
+
+// Legacy style
+@import "../../../plugins/system/t4/themes/base/scss/legacy";

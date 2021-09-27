@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fields name="typelist-site" addfieldpath="/plugins/system/t4/admin/field">
+    <fieldset name="site-logo" icon="cubes" class="site_group has-icon" type="legend" subgroup="1" label="T4_GROUP_LOGO_LABEL" description="T4_GROUP_LOGO_DESC">
+      <field name="site_name" type="text" default="" label="TPL_T4_SITE_NAME_LABEL" description="TPL_T4_SITE_NAME_DESC" filter="string" />
+      <field name="site_slogan" type="text" default="" label="TPL_T4_SITE_SLOGAN_LABEL" description="TPL_T4_SITE_SLOGAN_DESC" filter="string" />
+      <field name="site_logo" type="media" class="t4-input-media" default="" label="TPL_T4_SITE_LOGO" description="TPL_T4_SITE_LOGO_DESC" />
+      <field name="site_logo_small" type="media" class="t4-input-media" default="" label="TPL_T4_SITE_LOGO_SMALL" description="TPL_T4_SITE_LOGO_SMALL_DESC" />
+    </fieldset>
+    <!-- Typography -->
+    <fieldset name="group_styles_font" class="body_group custom_font_group has-icon" type="legend" subgroup="1" label="T4_TYPOGRAPHY_LABEL" icon="font" description="T4_TYPOGRAPHY_DESC">
+      <field name="dont_use_google_font" type="t4radio" value="0" default="0" label="T4_GOOGLE_FONT_LABEL" description="T4_GOOGLE_FONT_DESC" />
+      <field name="body_font_family" class="body-google-font" type="googlefonts" default="PT Sans" label="T4_BODY_FONT_LABEL" description="T4_BODY_FONT_DESC" icon="car" />
+      <field name="body_font_weight" class="inline body-font-weight" type="fontweight" default="400" hint="400" label="T4_BODY_FONT_WEIGHT_LABEL" description="T4_BODY_FONT_WEIGHT_DESC">
+      </field>
+      <field name="body_font_size" class="font-size" type="text" default="16px" hint="16px" label="T4_BODY_FONT_SIZE_LABEL" description="T4_BODY_FONT_SIZE_DESC" />
+      <field name="body_line_height" class="inline" type="text" default="1.4" hint="1.4" label="T4_BODY_LINE_HEIGHT_LABEL" description="T4_LINE_HEIGHT_DESC" />
+      <field name="letter_spacing" class="inline" type="text" default="0px" hint="0px" label="T4_BODY_LETTER_SPACING_LABEL" description="T4_BODY_LETTER_SPACING_DESC" />
+    </fieldset>
+    <fieldset name="group_heading_settings" type="legend" subgroup="1" icon="heading" class="heading_configure_group has-icon" label="T4_HEADING_LABEL" description="T4_HEADING_DESC">
+      <field name="heading_font_family" class="heading-font-family" type="googlefonts" default="" icon="" label="T4_HEADING_FONT_FAMILY_LABEL" description="T4_HEADING_FONT_FAMILY_DESC" />
+      <field name="heading_font_weight" class="inline heading-font-weight" type="fontweight" default="400" hint="400" label="T4_HEADING_FONT_WEIGHT_LABEL" description="T4_HEADING_FONT_WEIGHT_DESC">
+      </field>
+      <field name="heading_line_height" class="inline" type="text" default="1.4" hint="1.4" label="T4_HEADING_LINE_HEIGHT_LABEL" description="T4_HEADING_LINE_HEIGHT_DESC" />
+      <field name="heading_letter_spacing" class="inline" type="text" default="0px" hint="0px" label="T4_HEADING_LETTER_SPACING_LABEL" description="T4_HEADING_LETTER_SPACING_DESC" />
+      <field type="spacer" name="headingFontSize" label="Heading Fontsize" />
+      <field name="h1_font_size" class="h1-font-size inline" type="text" default="40px" hint="40px" label="T4_H1_FONT_SIZE_LABEL" description="T4_H1_FONT_SIZE_DESC" />
+      <field name="h2_font_size" class="h2-font-size" type="text" default="32px" hint="32px" label="T4_H2_FONT_SIZE_LABEL" description="T4_H2_FONT_SIZE_DESC" />
+      <field name="h3_font_size" class="h3-font-size" type="text" default="28px" hint="28px" label="T4_H3_FONT_SIZE_LABEL" description="T4_H3_FONT_SIZE_DESC" />
+      <field name="h4_font_size" class="h4-font-size" type="text" default="24px" hint="24px" label="T4_H4_FONT_SIZE_LABEL" description="T4_H1_FONT_SIZE_DESC" />
+      <field name="h5_font_size" class="h5-font-size" type="text" default="20px" hint="20px" label="T4_H5_FONT_SIZE_LABEL" description="T4_H5_FONT_SIZE_DESC" />
+      <field name="h6_font_size" class="h6-font-size" type="text" default="16px" hint="16px" label="T4_H6_FONT_SIZE_LABEL" description="T4_H6_FONT_SIZE_DESC" />
+    </fieldset>
+    <!-- Page settings -->
+    <fieldset name="group_page_settings" type="legend" subgroup="1" class="has-icon page_group" icon="pager" label="T4_PAGE_CONFIGURE_LABEL" description="T4_PAGE_CONFIGURE_DESC">
+      <field name="body_bg_img" type="media" class="t4-input-media" default="" label="T4_BODY_BG_IMG_LABEL" description="T4_BODY_BG_IMG_DESC" />
+      <field name="body_bg_img_repeat" type="list" class="input-select" default="repeat" label="T4_BODY_BG_IMG_REPEAT_LABEL" description="T4_BODY_BG_IMG_REPEAT_DESC">
+        <option value="repeat">Repeat</option>
+        <option value="no-repeat">No Repeat</option>
+        <option value="repeat-x">Repeat Horizontally</option>
+        <option value="repeat-y">Repeat Vertically</option>
+        <option value="space">Space</option>
+        <option value="round">Round</option>
+        <option value="inherit">Inherit</option>
+      </field>
+      <field name="body_bg_img_size" type="list" class="input-select" default="" label="T4_BODY_BG_IMG_SIZE_LABEL" description="T4_BODY_BG_IMG_SIZE_DESC">
+        <option value="">Auto</option>
+        <option value="cover">Cover</option>
+        <option value="contain">Contain</option>
+        <option value="inherit">Inherit</option>
+      </field>
+      <field name="body_bg_img_attachment" type="list" class="input-select" default="scroll" label="T4_BODY_BG_IMG_ATTACHMENT_LABEL" description="T4_BODY_BG_IMG_ATTACHMENT_DESC">
+        <option value="scroll">Scroll</option>
+        <option value="fixed">Fixed</option>
+        <option value="inherit">Inherit</option>
+      </field>
+      <field name="body_bg_img_position" type="list" class="input-select" default="left top" label="T4_BODY_BG_IMG_POSITION_LABEL" description="T4_BODY_BG_IMG_POSITION_DESC">
+        <option value="left top">Left Top</option>
+        <option value="left center">Left Center</option>
+        <option value="left bottom">Left Bottom</option>
+        <option value="right top">Right Top</option>
+        <option value="right center">Right Center</option>
+        <option value="right bottom">Right Bottom</option>
+        <option value="center top">Center Top</option>
+        <option value="center center">Center Center</option>
+        <option value="center bottom">Center Bottom</option>
+      </field>
+    </fieldset>
+    <!-- Other Settings -->
+    <fieldset name="site-other" icon="cog" type="legend" subgroup="1" class="other_group has-icon" label="T4_OTHER_CONFIGURE_LABEL" description="T4_OTHER_CONFIGURE_DESC">
+      <field name="other_faviconFile" class="checkbox-group favicon" type="media" default="" label="T4_FAVICON_FILE_LABEL" description="T4_FAVICON_FILE_DESC" />
+      <field name="other_backToTop" class="" type="t4radio" default="0" label="T4_BACK_TO_TOP_LABEL" description="T4_BACK_TO_TOP_DESC" />
+    </fieldset>
+    <!-- author Settings -->
+    <fieldset name="site-author" icon="cog" type="legend" subgroup="1" class="author_group has-icon" label="T4_AUTHOR_CONFIGURE_LABEL" description="T4_AUTHOR_CONFIGURE_DESC">
+      <field name="author_position" type="list" class="input-select" default="after_title" label="T4_AUTHOR_SHOW_LABEL" description="T4_AUTHOR_SHOW_DESC">
+        <option value="">PLG_T4_AUTHOR_HIDE</option>
+        <option value="after_title">PLG_T4_AUTHOR_SHOW_AFTER_DISPLAY_TITLE</option>
+        <option value="before_content">PLG_T4_AUTHOR_SHOW_BEFORE_DISPLAY_CONTENT</option>
+        <option value="after_content">PLG_T4_AUTHOR_SHOW_AFTER_DISPLAY_CONTENT</option>
+      </field>
+    </fieldset>
+  </fields>
+</form>

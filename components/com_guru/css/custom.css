@@ -1,0 +1,1242 @@
+.guru-content .uk-tab,
+.guru-content .uk-switcher {
+    padding: 0 !important;
+}
+
+.guru-tabs {
+}
+
+.guru-tab-title {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #eee;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .guru-tab-title {
+        padding: 5px 15px;
+        background: #eee;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .lesson-quiz-status i {
+        display: none;
+    }
+}
+
+.guru-tab-title img {
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+.tip-title {
+    border: none !important;
+}
+
+.tip-text {
+    padding: 0 !important;
+}
+
+.uk-form-controls select,
+.uk-form-controls input,
+.uk-form-controls textarea,
+.uk-form-controls button {
+    display: inline-block;
+}
+
+.lessons_wrap ul > li {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+}
+
+.lessons_wrap ul > li:last-child {
+    border-bottom: none;
+}
+
+.uk-form .uk-button-primary, .uk-form .uk-button-success, .uk-form .uk-button-danger{
+    color: white;
+}
+
+.uk-subnav-pill{
+    background-color:#F4F6F7;
+}
+
+.guru-content.uk-subnav > *{
+    margin-bottom:10px;
+}
+
+.guru-cover-image{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    color: #f5f5f5;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.guru-course-details{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+    border: 0 none;
+    bottom: 0;
+    font-size: 16px;
+    line-height: 22px;
+    position: absolute;
+    text-shadow: 1px 1px #000000;
+    width: 100%;
+}
+
+.teacher_info{
+    padding:10px;
+}
+
+.guru-course-view > div{
+    margin:5px 0px 5px 0px;
+}
+
+.guru-course-view .uk-subnav-pill{
+    border-radius: 5px;
+}
+
+.nav {
+    padding: 0;
+}
+
+.tab-content {
+    overflow: auto;
+    padding: 10px;
+}
+
+.table-of-contents .uk-alert p {
+    padding-top: 2px;
+}
+
+.table-of-contents .uk-grid, .teacher_cell_guru .uk-grid{
+    margin-left:0px;
+}
+
+.table-of-contents .uk-grid > *,
+.teacher_cell_guru .uk-grid > *{
+    padding:7px 0px;
+}
+
+.table-of-contents .uk-alert .uk-grid > *,
+.teacher_cell_guru .uk-alert .uk-grid > * {
+    padding: 0;
+}
+
+.guru-content .uk-navbar-nav > li > a{
+    padding: 0px 10px;
+}
+
+.guru-content .uk-navbar-nav{
+    width:100%;
+}
+
+.pub_modal_frame {
+    height: 100%;
+    width: 100%;
+}
+
+.guru-teacher-box {
+    background-color: #F6F6F6 !important;
+    border: none !important;
+    padding-bottom: 40px !important;
+}
+
+.guru-teacher-box-footer {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color: #666;
+    border-top: 1px solid #ddd;
+    width: 100%;
+}
+
+.guru-teacher-box .thumbnail {
+    width: 85px;
+}
+
+/* Modal */
+.guru-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    outline: 0;
+    z-index:3000;
+}
+
+.guru-modal-header {
+    height: 50px;
+    padding-right: 50px;
+    background-color: #2C2F37;
+}
+
+.guru-modal-dialog {
+    position: relative;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    transform: translate(0px, 0px);
+    z-index:2000;
+}
+
+.guru-modal-dialog .close-window {
+    top: -39px;
+    right: 10px;
+}
+
+.guru-modal-content {
+    position: relative;
+    /*height: 100%;*/
+    height: calc(100% - 50px);
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.guru-modal-content iframe {
+    min-height: 300px;
+    border-radius: 6px;
+}
+
+@media (min-width: 769px) {
+    .guru-modal-content iframe {
+        min-height: 320px;
+    }
+}
+
+/* Guru layouts */
+.guru_layouts {
+    display: block;
+    margin: -2px;
+}
+
+.guru_layouts-item {
+    display: inline-block;
+    float: left;
+    width: 8.3%;
+    padding: 2px;
+}
+
+@media (max-width: 480px) {
+    .guru_layouts-item {
+        width: 16.6%;
+    }
+}
+
+.uk-form-horizontal .uk-form-controls{
+    margin-top: 5px;
+}
+
+.modal-lesson-content{
+    margin:5px 10px !important;
+    /*overflow-y:scroll;*/
+}
+
+.contentpane {
+    margin:10px;
+    background-color:#FFFFFF;
+    overflow-y:scroll !important;
+}
+
+.layout-image{
+    padding:3px;
+}
+
+.modal1-body iframe{
+    width:100%;
+}
+
+.padding-none{
+    padding:0px !important;
+}
+
+.clearfix::after{
+    clear:both;
+}
+
+.modcontent.clearfix{
+    clear:none !important;
+}
+
+.guru-content .uk-navbar ol, .guru-content .uk-navbar ul{
+    padding: 0px !important;
+}
+
+.guru-lesson {
+    background: #FFFFFF;
+    font-size: 13px;
+    line-height: 18px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    outline: 0;
+    z-index: 2000000000;
+    display: flex;
+    flex-direction: column;
+}
+
+html.guru-lesson-video,
+html.guru-lesson-video body {
+    background: #000;
+    color: #FFF;
+    height: 100%;
+}
+
+html.guru-lesson-video body {
+    overflow: hidden;
+}
+
+html.guru-lesson-video #guru-component {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+html.guru-lesson-video .modal-lesson-content,
+html.guru-lesson-video #layout6,
+html.guru-lesson-video #layout6 > .uk-grid,
+html.guru-lesson-video #media_7,
+html.guru-lesson-video #media_7 > iframe,
+html.guru-lesson-video #media_7 > .guru-lesson-video-wrapper,
+html.guru-lesson-video #media_7 > .guru-lesson-video-wrapper > iframe, 
+html.guru-lesson-video .guru-lesson-video-blocked {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.guru-lesson-video-wrapper {
+    position: relative;
+}
+
+.guru-lesson-video-blocked {
+    background: #000;
+    color: #FFF;
+    display: none;
+    font-size: 14px;
+    position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    text-align: center;
+}
+
+.guru-lesson-video-blocked > div {
+    display: table;
+    width: 100%;
+        height: 100%;
+}
+
+.guru-lesson-video-blocked > div > div {
+    display: table-cell;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.guru-lesson-content {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.gru-lesson-content p {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    /*color: #333 !important;*/
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 25px !important;
+    /*color:#333333 !important;*/
+}
+
+.guru-lesson-loading {
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+}
+
+.guru-lesson-loading .guru-lesson-spinner {
+    border: 4px solid #FFF;
+    border-right-color: transparent;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    width: 50px;
+        height: 50px;
+    -webkit-animation: rotate 1s infinite linear;
+            animation: rotate 1s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+    0%    { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    100%  { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@keyframes rotate {
+    0%    { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    100%  { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+.guru-lesson-content-lr {
+    display: block;
+    width: 100%;
+        height: 100%;
+}
+
+.guru-lesson-content-lr:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.guru-lesson-content-l,
+.guru-lesson-content-r {
+    display: block;
+    float: left;
+    width: 50%;
+        height: 100%;
+}
+
+.guru-lesson-content-vquarter {
+    position: relative;
+    width: 100%;
+        height: 25%;
+}
+
+.guru-lesson-content-vhalf {
+    position: relative;
+    width: 100%;
+        height: 50%;
+}
+
+.guru-lesson-text {
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: left;
+    padding: 10px;
+}
+
+.guru-lesson-header,
+.guru-lesson-footer {
+    background: #000;
+}
+
+.guru-lesson-header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.guru-lesson-footer {
+    position: relative;
+    height: 60px;
+    border-top: 1px solid rgba(255,255,255,.05);
+}
+
+.guru-lesson-footer-nav {
+    position: absolute;
+        top: 14px;
+        right: 15px;
+}
+
+.guru-lesson-footer-prev,
+.guru-lesson-footer-next {
+    background: transparent;
+    border: 2px solid #4B4F5C;
+    border-radius: 4px;
+    color: #FFF;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    outline: none;
+    padding: 5px 10px;
+    transition: all 0.15s ease-out;
+}
+
+.guru-lesson-footer-prev:hover {
+    background-color: #4B4F5C;
+}
+
+.guru-lesson-footer-next {
+    border-color: #54B551;
+}
+
+.guru-lesson-footer-next:hover {
+    background-color: #54B551;
+}
+
+.guru-lesson-footer-prev[disabled],
+.guru-lesson-footer-next[disabled] {
+    background: #4B4F5C;
+    color: #626672;
+    cursor: default;
+}
+
+.guru-lesson-footer-prev i,
+.guru-lesson-footer-next i {
+    font-size: 12px;
+}
+
+.guru-lesson-nav {
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, .5) 0 0 10px 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+}
+
+.guru-lesson-footer-confirm{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.guru-lesson-footer-confirm-btn,
+.guru-lesson-footer-unconfirm-btn{
+    display: block;
+    margin: 7px auto;
+    color: #ffffff;
+    background-color: #222222;
+    border: 0px;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.guru-lesson-nav * {
+    box-sizing: border-box;
+}
+
+.guru-lesson-nav-tab {
+}
+
+.guru-lesson-nav-tab:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.guru-lesson-nav-tabitem {
+    display: block;
+    font-size: 18px;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    width: 33.3%;
+        height: 50px;
+}
+
+.guru-lesson-nav-tabitem,
+.guru-lesson-nav-tabitem:hover,
+.guru-lesson-nav-tabitem:focus {
+    background-color: #eee;
+    color: #888888;
+    text-decoration: none;
+}
+
+.guru-lesson-nav-tabitem.active,
+.guru-lesson-nav-tabitem.active:hover,
+.guru-lesson-nav-tabitem.active:focus {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+}
+
+.guru-lesson-nav-content {
+    position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    overflow-x: none;
+    overflow-y: auto;
+}
+
+.guru-lesson-nav-description {
+    display: none;
+    padding: 25px;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.guru-lesson-nav-description p {
+    margin-bottom: 25px;
+}
+
+.guru-lesson-nav-description img {
+    margin: 20px 0;
+}
+
+.guru-lesson-nav-comments {
+    display: none;
+}
+
+.guru-lesson-nav ul,
+.guru-lesson-nav li {
+    margin: 0;
+    padding: 0;
+}
+
+.guru-lesson-nav-list {
+    padding: 5px !important;
+    background-color: #f5f5f5;
+}
+
+.guru-lesson-nav-list > li {
+    margin-bottom: 5px;
+}
+
+.guru-lesson-nav-list > li:last-child {
+    margin-bottom: 0;
+}
+
+.guru-lesson-nav-module {
+    color: #000000;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.guru-lesson-nav-module a,
+.guru-lesson-nav-module a:hover,
+.guru-lesson-nav-module a:focus {
+    display: block;
+    color: inherit;
+    background: none;
+    text-decoration: none;
+    box-shadow: none !important;
+    padding: 15px;
+}
+
+.guru-lesson-nav-lesson,
+.guru-lesson-nav-lesson:hover {
+    background: #fff;
+    border-radius: 6px;
+    color: #888888;
+    cursor: default;
+    display: block;
+    padding: 10px 15px 10px 40px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.guru-lesson-nav-lesson > span {
+    display: inline-block;
+    margin-top: 3px;
+    padding-right: 3px;
+    background-color: rgba(0,0,0,.05);
+    border-radius: 4px;
+}
+
+.guru-lesson-nav-lesson > .guru-lesson-nav-check {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background-color: #ddd;
+}
+
+.guru-lesson-nav-accessible {
+    color: #000000;
+    cursor: pointer;
+}
+
+.guru-lesson-nav-accessible:hover {
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 0 0 2px #54B551;
+    -moz-box-box-shadow: 0 0 0 2px #54B551;
+    -webkit-box-box-shadow: 0 0 0 2px #54B551;
+}
+
+.guru-lesson-nav-current,
+.guru-lesson-nav-current:hover,
+.guru-lesson-nav-current:focus,
+.active-module {
+    background-color: #54B551;
+    color: #FFF;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.guru-lesson-nav-check {
+    display: block;
+    position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    width: 30px;
+}
+
+.guru-lesson-nav-accessible:hover .guru-lesson-nav-check-line {
+    background-color: #FFF;
+}
+
+.guru-lesson-nav-check-circle {
+    left: 8px;
+    line-height: 0;
+    position: absolute;
+        top: 50%;
+    width: 15px;
+        height: 15px;
+    transform: translateY(-50%);
+}
+
+.guru-lesson-nav-check i {
+    position: absolute;
+        top: -3px;
+        left: -2px;
+    color: #9f9f9f;
+}
+
+.guru-lesson-nav-current .guru-lesson-nav-check i {
+    color: white !important;
+}
+
+.guru-lesson-nav-current .guru-lesson-nav-check {
+    background-color: rgba(0,0,0,.1) !important;
+}
+
+.guru-lesson-nav-check i:before {
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    width: 16px;
+        height: 16px;
+}
+
+.guru-lesson-comment {
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.guru-lesson-comment:nth-child(2n) .guru-lesson-comment-wrap {
+    background-color: #F6F6F8;
+}
+
+.guru-lesson-comment-wrap {
+    display: table;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.guru-lesson-comment.my-message .guru-lesson-comment-wrap {
+    background-color: rgb(232, 244, 249);
+    border-color: rgb(184, 215, 228);
+}
+
+.guru-lesson-comment.my-message .guru-lesson-comment-wrap .guru-lesson-comment-name {
+    font-weight: bold;
+}
+
+.guru-lesson-comment-avatar {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.guru-lesson-comment-avatar span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    content: '';
+}
+
+.guru-lesson-comment-body {
+    display: table-cell;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.guru-lesson-comment-body textarea {
+    width: 100%;
+}
+
+.guru-lesson-comment-meta {
+    display: block;
+    margin-top: 5px;
+    color: #6B6C72;
+    font-size: 11px;
+}
+
+.guru-lesson-comment-meta a {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.guru-lesson-comment-time {
+    margin-right: 15px;
+}
+
+.guru-lesson-comments-form {
+    padding: 10px;
+    border-bottom: 1px solid #D8D8DE;
+    text-align: right;
+}
+
+.guru-lesson-comments-form textarea {
+    width: 80%;
+    height: 30px;
+    min-height: 30px;
+    display: inline-block;
+    margin-right: 2%;
+    resize: vertical;
+}
+
+.guru-lesson-comments-form button {
+    width: 18%;
+    vertical-align: top;
+}
+
+.guru-lesson-header-l {
+    position: absolute;
+        top: 15px;
+        left: 15px;
+}
+
+.guru-lesson-header-label {
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    /* ellipsis */
+    max-width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.guru-lesson-header-r {
+    position: absolute;
+        top: 15px;
+        right: -30px;
+    width: 100px;
+    background-color: #2C2F37;
+}
+
+@media (min-width: 769px) {
+    .guru-lesson-header-r {
+        right: 4px;
+        width: auto;
+        background-color: transparent;
+    }
+}
+
+.guru-lesson-header-r a {
+    color: #84848C !important;
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 2px;
+    text-decoration: none;
+}
+
+.guru-lesson-header-r a:hover {
+    color: #FFF !important;
+    text-decoration: none;
+}
+
+.guru-lesson-home i {
+    font-size: 20px;
+}
+
+.guru-lesson-togglenav i {
+    font-size: 18px;
+}
+
+.guru-lesson.shownav {
+    padding-right: 300px;
+}
+
+.guru-lesson.shownav .guru-lesson-nav {
+    display: block;
+    max-height: 100vh;
+}
+
+.guru-lesson.shownav .guru-lesson-header-r {
+    right: 260px;
+}
+
+@media (min-width: 769px) {
+    .guru-lesson.shownav .guru-lesson-header-r {
+        right: 304px;
+    }
+}
+
+.guru-lesson-back {
+    color: #84848C;
+}
+
+.guru-lesson-back:hover {
+    color: #FFFFFF;
+}
+
+.modal-lesson-content > .gru-nav-bar {
+    display: none;
+}
+
+.modal-lesson-content > #g_lesson_navs {
+    display: none;
+}
+
+.course-access-bar{
+    margin:15px 0px;
+}
+
+.guru-lesson-nav-module .guru-lesson-nav-lesson, .guru-lesson-nav-module .guru-lesson-nav-lesson:hover{
+    border:0px !important;
+}
+
+.guru-module-title{
+    font-size:20px;
+}
+
+.guru-module-center-title{
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+#g_jump_button_ref_1 input, #g_jump_button_ref_2 input{
+    float:left;
+    width:auto;
+    margin:14px 5px;
+}
+
+#grade-essays{
+    background-color: #FF6A00;
+    border-radius: 100%;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 2px 4px;
+}
+
+.essays-search, .essays-filters{
+    padding-top:10px !important;
+}
+
+.essays-search input{
+    display:inline !important;
+    width: 45% !important;
+}
+
+.essay-question-title{
+    background-color:#FFEFBF;
+    padding:5px;
+    width:100%;
+    float:left;
+    border-radius: 5px;
+    margin-bottom:5px;
+}
+
+.essay-question-response{
+    background-color:#73DCFF;
+    padding:5px;
+    width:100%;
+    float:left;
+    border-radius: 5px;
+}
+
+.essay-question-response p, .essay-question-title p{
+    margin:0px !important;
+}
+
+.essay-teacher-response{
+    width:100%;
+    height:100px;
+    margin-bottom:5px;
+}
+
+.essay-actions{
+    float:left;
+    width:100%;
+}
+
+.essay-actions div{
+    float:left;
+    width:50%;
+}
+
+.essay-save-action{
+    width:100%;
+}
+
+.pagination-limit{
+    float:left;
+    width:10%;
+}
+
+.pagination-pages{
+    float:left;
+    width:90%;
+}
+
+.pagination-pages .pagination{
+    margin:0px !important;
+    text-align:center;
+}
+
+.course-access-bar p{
+    margin:0px !important;
+}
+
+[id$="jwplayer_display_icon"] {
+    display: block !important;
+    height:50px !important;
+}
+
+[id$="jwplayer_display_iconBackground"] {
+    display: block !important;
+}
+
+video[id^="avID_"] {
+    height:40px !important;
+}
+
+div[id^="avID_"] {
+    height:35px !important;
+    max-width:100% !important;
+}
+
+div[id$="video_wrapper"] {
+    height:0px !important;
+}
+
+.redirect-lesson{
+    display: none;
+    text-align: center;
+}
+
+.redirect-lesson .guru-lesson-nav-check, .available-area-0{
+    display: none;
+}
+
+.redirect-lesson a, .redirect-lesson .guru-lesson-nav-check{
+    background-color: #54b551;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 15px 10px;
+}
+
+.redirect-lesson a:hover{
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.record-time-label{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.guru-lesson-footer-confirm i{
+    font-size: 20px;
+}
+
+.lesson-project-content{
+    width: 100%;
+}
+
+.lesson-project-content h2{
+    width: 100%;
+    text-align: center;
+}
+
+.lesson-project-image{
+    width: 100%;
+    text-align: center;
+}
+
+.lesson-project-image img{
+    max-height: 250px;
+    width: auto;
+}
+
+.lesson-project-description{
+    width: 60%;
+    text-align: left;
+    margin: 10px auto;
+    background-color: #F8F8F8;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.lesson-project-details{
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.lesson-project-details div{
+    display: inline-block;
+    font-size: 15px;
+}
+
+.lesson-project-details-label{
+    font-size: 16px !important;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.upload_media_16{
+    width: 100%;
+    text-align: center;
+}
+
+.uploaded_media_16{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.my-projects-download, .my-projects-download:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
+.gru-lesson-content video{
+    max-height: 100%;
+}
+
+@media (max-width: 768px) {
+    .guru-lesson-footer-confirm-btn,
+    .guru-lesson-footer-unconfirm-btn {
+        margin: 7px 0px 7px 7px;
+    }
+
+    .uk-accordion{
+        display: block !important;
+    }
+}
+
+.breadcrumb > li + li::before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+}
+
+.gdpr-cond-message{
+    color: #e4354f;
+    width: auto;
+    display: inline-block;
+}
+
+.no-attempts-left{
+    color: #f4691d;
+    font-size: 20px;
+}
+
+.contentpane.modal{
+    display: block !important;
+}
+
+.media-control[data-media-control].media-control-hide .media-control-layer[data-controls]{
+    bottom: 0px !important;
+    height: 30px !important;
+}
+
+.uk-text-bold.uk-text-center.media-name{
+    margin-top: 20px;
+}
+
+.author-image.thumbnail{
+    max-width: 150px;
+}
+
+.bottomright.g-recaptcha .grecaptcha-badge{
+    width: 256px;
+    height: 60px;
+    transition: right 0.3s ease 0s;
+    position: fixed;
+    bottom: 14px;
+    right: -186px;
+    box-shadow: gray 0px 0px 5px;
+    display: block !important;
+}
+
+.bottomright.g-recaptcha .grecaptcha-badge:hover{
+    right: 4px;
+}
+
+.bottomleft.g-recaptcha .grecaptcha-badge{
+    width: 256px;
+    height: 60px;
+    transition: left 0.3s ease 0s;
+    position: fixed;
+    bottom: 14px;
+    left: -186px;
+    box-shadow: gray 0px 0px 5px;
+    display: block !important;
+}
+
+.bottomleft.g-recaptcha .grecaptcha-badge:hover{
+    left: 4px;
+}
+
+.custom-label{
+    width: auto;
+    display: inline-block;
+    margin: 0px 15px 0px 5px;
+    vertical-align: middle;
+}
+
+.prot-select{
+    width: 80px;
+}
+
+#lesson-saved-timer{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.inline-block{
+    display: inline-block !important;
+}
+
+.guru-quiz__answer-media div[id^=avID],
+.guru-quiz__answer-media div[id^=avID] > div:first-child{
+    width: 100% !important;
+}

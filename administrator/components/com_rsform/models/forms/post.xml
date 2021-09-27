@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="params">
+		<field name="enabled" type="radio" class="btn-group btn-group-yesno" label="RSFP_POST_ENABLED">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="silent" type="radio" class="btn-group btn-group-yesno" label="RSFP_POST_SILENT" description="COM_RSFORM_POST_SILENT_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="method" type="list" label="RSFP_POST_METHOD">
+			<option value="0">RSFP_POST_METHOD_GET</option>
+			<option value="1">RSFP_POST_METHOD_POST</option>
+		</field>
+		<field name="url" type="text" label="RSFP_POST_URL" />
+	</fieldset>
+	<fieldset name="advanced">
+		<field name="fields" type="formpostfields" label="COM_RSFORM_POST_TO_LOCATION_CUSTOM_FIELDS" description="COM_RSFORM_POST_TO_LOCATION_CUSTOM_FIELDS_DESC" />
+		<field name="headers" type="formpostheaders" label="RSFP_POST_TO_LOCATION_HEADERS" description="COM_RSFORM_POST_TO_LOCATION_HEADERS_DESC" showon="silent:1" />
+	</fieldset>
+</form>

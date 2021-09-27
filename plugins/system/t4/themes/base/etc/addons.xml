@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addons>
+	<addon>
+		<name>awesome5</name>
+		<title>Font Awesome 5</title>
+		<type>css</type>
+		<assets>
+			<url>vendors/font-awesome5/css/all.min.css</url>
+		</assets>
+	</addon>	
+	<addon>
+		<name>awesome4</name>
+		<title>Font Awesome 4</title>
+		<type>css</type>
+		<assets>
+			<url>vendors/font-awesome/css/font-awesome.min.css</url>
+		</assets>
+	</addon>
+	<addon>
+		<name>icomoon</name>
+		<title>Icomoon</title>
+		<type>css</type>
+		<assets>
+			<url>vendors/icomoon/css/icomoon.css</url>
+		</assets>
+	</addon>
+</addons>
+

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html ng-app="configure">
+
+<head>
+    <title>Template configure settings</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/configure.css?v=1625059020152" rel="stylesheet" />
+    <script src="../api.js?v=1625059020152"></script>
+    <script src="js/vendor.min.js?v=1625059020152"></script>
+    <script src="js/configure.min.js?v=1625059020152"></script>
+</head>
+
+<body>
+    <div class="settings-container" ng-controller="ConfigureController">
+        <div class="settings-tabs-container" ng-hide="isError" tabs>
+            <ul class="settings-tabs-wrapper unstyled">
+                <li class="settings-tabs-item general" data-tab-link="general">General settings</li>
+                <li class="settings-tabs-item track-and-trace" data-tab-link="track-and-trace">Results Tracking</li>
+                <li class="settings-tabs-item languages" data-tab-link="languages"> Template language</li>
+            </ul>
+            <div class="settings-tab-container general" data-tab="general">
+                <div class="settings-section">
+                    <div class="section-content">
+                        <div class="settings-row assessment-mode">
+                            <div class="settings-column">
+                                <h1 class="section-header">General settings</h1>
+                                <div class="settings-column-row">
+                                    <div class="settings-caption">Choose between quiz and exam mode:</div>
+                                    <div class="settings-content">
+                                        <ul class="radio-selector small unstyled">
+                                            <li class="selector-item-container" ng-class="{ selected: assessmentMode.mode == assessmentMode.modes.quiz }">
+                                                <div class="selector-item-wrapper" ng-click="assessmentMode.mode = assessmentMode.modes.quiz">
+                                                    <div class="selector-item-btn"></div>
+                                                    <div class="selector-item-text">
+                                                        <span class="settings-option">Quiz</span>&nbsp;<span class="settings-option-hint">(learner CAN see hints)</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="selector-item-container" ng-class="{ selected: assessmentMode.mode == assessmentMode.modes.exam }">
+                                                <div class="selector-item-wrapper" ng-click="assessmentMode.mode = assessmentMode.modes.exam">
+                                                    <div class="selector-item-btn"></div>
+                                                    <div class="selector-item-text">
+                                                        <span class="settings-option">Exam</span>&nbsp;<span class="settings-option-hint">(learner CANNOT see hints)</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings-row">
+                            <div class="settings-column question-pool left">
+                                <h1 class="section-header">Questions and answer options:</h1>
+                                <div class="settings-column-row">
+                                    <div class="settings-caption">Question pool:</div>
+                                    <div class="settings-content">
+                                        <ul class="radio-selector small unstyled">
+                                            <li class="selector-item-container" ng-class="{ selected: questionPool.mode == questionPool.modes.all }">
+                                                <div class="selector-item-wrapper" ng-click="questionPool.mode = questionPool.modes.all">
+                                                    <div class="selector-item-btn"></div>
+                                                    <div class="selector-item-text">Show all questions</div>
+                                                </div>
+                                            </li>
+                                            <li class="selector-item-container" ng-class="{ selected: questionPool.mode == questionPool.modes.subset }">
+                                                <div class="selector-item-wrapper" ng-click="questionPool.mode = questionPool.modes.subset">
+                                                    <div class="selector-item-btn"></div>
+                                                    <div class="selector-item-text spinner-container">
+                                                        <span>Show a subset of</span>
+                                                        <div data-trigger="spinner" class="spinner" spinner spinner-value="questionPool.subsetSize">
+                                                            <a class="spinner-button spinner-down" data-spin="down" disable-drag-and-drop></a>
+                                                            <input autocomplete="off" type="text" maxlength="3" id="questionPool.subsetSize" class="content-text-input" data-rule="quantity" data-max="999" data-min="1" number ng-model="questionPool.subsetSize">
+                                                            <a class="spinner-button spinner-up" data-spin="up" disable-drag-and-drop></a>
+                                                            <div class="spiner-seperator"></div>
+                                                        </div>
+                                                        <span>random questions</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="settings-column-row">
+                                    <div class="settings-caption">Show answers from the previous attempt:</div>
+                                    <div class="settings-content">
+                                        <ul class="radio-selector small unstyled">
+                                            <li class="selector-item-container" ng-class="{ selected: showGivenAnswers.value == true }">
+                                                <div class="selector-item-wrapper" ng-click="showGivenAnswers.value = true">
+                                                    <div class="selector-item-btn"></div>
+                                                    <div class="selector-item-text">
+                                                        <span class="settings-option">Show</span>&nbsp;<span class="settings-option-hint">(learner will see how he answered in previous attempt)</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="selector-item-container" ng-class="{ selected: showGivenAnswers.value == false }">
+                                                <div class="selector-item-wrapper" ng-click="showGivenAnswers.value = false">
+                                                    <div class="selector-item-btn"></div>
+                                                    <div class="selector-item-text">
+                                                        <span class="settings-option">Reset</span>&nbsp;<span class="settings-option-hint">(learner will see empty answer options)</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="settings-column-row">
+                                    <span class="settings-caption">Question order:</span>
+                                    <div class="settings-content question-order">
+                                        <div ng-show="questionPool.mode == questionPool.modes.all">
+                                            <label class="checkbox" ng-class="{ checked: questionPool.randomizeOrder }">
+                                                <span class="checkbox-control">
+                                                    <input class="checkbox-control-input" type="checkbox" ng-model="questionPool.randomizeOrder">
+                                                    <span class="checkbox-control-input-checked"></span>
+                                                </span>
+                                                <span class="checkbox-label">Randomize question order</span>
+                                            </label>
+                                            <div class="second-level">
+                                                <label class="checkbox" ng-class="{ checked: questionPool.randomizePerAttempt && questionPool.randomizeOrder }">
+                                                    <span class="checkbox-control">
+                                                        <input class="checkbox-control-input" type="checkbox" ng-model="questionPool.randomizePerAttempt">
+                                                        <span class="checkbox-control-input-checked"></span>
+                                                    </span>
+                                                    <span class="checkbox-label">On every attempt</span>
+                                                </label>
+                                                <div class="disabled-feature-overlay" ng-hide="questionPool.randomizeOrder && !showGivenAnswers.value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="randomize-setting" ng-show="questionPool.mode == questionPool.modes.subset">
+                                            <label class="checkbox" ng-class="{ checked: questionPool.randomizePerAttempt }">
+                                                <span class="checkbox-control">
+                                                    <input class="checkbox-control-input" type="checkbox" ng-model="questionPool.randomizePerAttempt">
+                                                    <span class="checkbox-control-input-checked"></span>
+                                                </span>
+                                                <span class="checkbox-label">Randomize and show new subset after every attempt</span>
+                                            </label>
+                                            <div class="disabled-feature-overlay" ng-hide="!showGivenAnswers.value"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="settings-column-row">
+                                    <span class="settings-caption">Answer options order:</span>
+                                    <div class="question-order">
+                                        <label class="checkbox" ng-class="{ checked: answers.randomize }">
+                                            <span class="checkbox-control">
+                                                <input class="checkbox-control-input" type="checkbox" ng-model="answers.randomize">
+                                                <span class="checkbox-control-input-checked"></span>
+                                            </span>
+                                            <span class="checkbox-label">Randomize answer options</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings-column right">
+                                <h1 class="section-header">Difficulty:</h1>
+                                <div class="settings-column-row timer">
+                                    <div class="switching-option">
+                                        <span class="settings-caption option-title">Set time limit:</span>
+                                        <div class="switcher small">
+                                            <div class="switcher-text" ng-class="{ disabled: timer.enabled }">OFF</div>
+                                            <div class="switch-toggle-slider" switch-toggle toggle-value="timer.enabled">
+                                                <div class="switch-toggle-wrapper">
+                                                    <div class="switch-toggle-on"></div>
+                                                    <div class="switch-toogle-blob"></div>
+                                                    <div class="switch-toggle-off"></div>
+                                                </div>
+                                            </div>
+                                            <div class="switcher-text" ng-class="{ disabled: !timer.enabled }">ON</div>
+                                        </div>
+                                    </div>
+                                    <div class="spinners-container">
+                                        <div class="spinner-option">
+                                            <div class="option-title">Hours</div>
+                                            <div data-trigger="spinner" class="spinner" spinner spinner-value="timer.hours">
+                                                <a class="spinner-button spinner-down" data-spin="down" disable-drag-and-drop></a>
+                                                <input autocomplete="off" type="text" maxlength="2" id="timer.hours" class="content-text-input" data-rule="quantity" data-max="99" data-min="0" number ng-model="timer.hours">
+                                                <a class="spinner-button spinner-up" data-spin="up" disable-drag-and-drop></a>
+                                                <div class="spiner-seperator"></div>
+                                            </div>
+                                        </div>
+                                        <span class="time-separator">:</span>
+                                        <div class="spinner-option">
+                                            <div class="option-title">Minutes</div>
+                                            <div data-trigger="spinner" class="spinner" spinner spinner-value="timer.minutes">
+                                                <a class="spinner-button spinner-down" data-spin="down" disable-drag-and-drop></a>
+                                                <input autocomplete="off" type="text" maxlength="2" id="timer.minutes" class="content-text-input" data-rule="quantity" data-max="59" data-min="0" number ng-model="timer.minutes">
+                                                <a class="spinner-button spinner-up" data-spin="up" disable-drag-and-drop></a>
+                                                <div class="spiner-seperator"></div>
+                                            </div>
+                                        </div>
+                                        <span class="time-separator">:</span>
+                                        <div class="spinner-option">
+                                            <div class="option-title">Seconds</div>
+                                            <div data-trigger="spinner" class="spinner" spinner spinner-value="timer.seconds">
+                                                <a class="spinner-button spinner-down" data-spin="down" disable-drag-and-drop></a>
+                                                <input autocomplete="off" type="text" maxlength="2" id="timer.seconds" class="content-text-input" data-rule="quantity" data-max="59" data-min="0" number ng-model="timer.seconds">
+                                                <a class="spinner-button spinner-up" data-spin="up" disable-drag-and-drop></a>
+                                                <div class="spiner-seperator"></div>
+                                            </div>
+                                        </div>
+                                        <div class="disabled-feature-overlay" ng-hide="timer.enabled"></div>
+                                    </div>
+                                </div>
+                                <div class="settings-column-row attempts">
+                                    <div class="settings-caption">Number of attempts:</div>
+                                    <div class="settings-content">
+                                        <ul class="radio-selector small unstyled">
+                                            <li class="selector-item-container" ng-class="{ selected: !attempt.hasLimit }">
+                                                <div class="selector-item-wrapper" ng-click="attempt.hasLimit = false">
+                                                    <div class="selector-item-btn"></div>
+                                                    <div class="selector-item-text">Unlimited</div>
+                                                </div>
+                                            </li>
+                                            <li class="selector-item-container" ng-class="{ selected: attempt.hasLimit }">
+                                                <div class="selector-item-wrapper" ng-click="attempt.hasLimit = true">
+                                                    <div class="selector-item-btn"></div>
+                                                    <div class="selector-item-text spinner-container">
+                                                        <span>Limit number of attempts:</span>
+                                                        <div data-trigger="spinner" class="spinner" spinner spinner-value="attempt.limit">
+                                                            <a class="spinner-button spinner-down" data-spin="down" disable-drag-and-drop></a>
+                                                            <input autocomplete="off" type="text" maxlength="3" class="content-text-input" data-rule="quantity" data-max="100" data-min="1" number ng-model="attempt.limit">
+                                                            <a class="spinner-button spinner-up" data-spin="up" disable-drag-and-drop></a>
+                                                            <div class="spiner-seperator"></div>
+                                                        </div>
+                                                        <span>attempt (s)</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="settings-tab-container track-and-trace" data-tab="track-and-trace">
+                <div class="settings-section" ng-if="showTrackAndTraceSettings.value">
+                    <h1 class="section-header">Track and trace settings</h1>
+                    <div class="section-content">
+                        <div class="settings-row" ng-if="showResultTracking.value">
+                            <div class="settings-caption">
+                                <div>Results tracking:</div>
+                                <div class="settings-hint">(will not affect tracking and tracing in SCORM/LMS)</div>
+                            </div>
+                            <div class="settings-cell">
+                                <div class="switcher">
+                                    <div class="switcher-text" ng-class="{ disabled: trackingData.enableXAPI }">Disabled</div>
+                                    <div class="switch-toggle-slider" switch-toggle toggle-value="trackingData.enableXAPI">
+                                        <div class="switch-toggle-wrapper">
+                                            <div class="switch-toggle-on"></div>
+                                            <div class="switch-toogle-blob"></div>
+                                            <div class="switch-toggle-off"></div>
+                                        </div>
+                                    </div>
+                                    <div class="switcher-text" ng-class="{ disabled: !trackingData.enableXAPI }">Enabled</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings-row" ng-if="showAllowToSkipTracking.value">
+                            <div class="settings-caption">Allow user to skip tracking and tracing:</div>
+                            <div class="settings-cell">
+                                <div class="switcher">
+                                    <div class="switcher-text" ng-class="{ disabled: trackingData.allowToSkipTracking }">Forbid</div>
+                                    <div class="switch-toggle-slider" switch-toggle toggle-value="trackingData.allowToSkipTracking">
+                                        <div class="switch-toggle-wrapper">
+                                            <div class="switch-toggle-on"></div>
+                                            <div class="switch-toogle-blob"></div>
+                                            <div class="switch-toggle-off"></div>
+                                        </div>
+                                    </div>
+                                    <div class="switcher-text" ng-class="{ disabled: !trackingData.allowToSkipTracking }">Allow</div>
+                                </div>
+                            </div>
+                            <div class="disabled-feature-overlay" ng-hide="trackingData.enableXAPI"></div>
+                        </div>
+                    </div>
+                    <div class="advanced-settings">
+                        <div class="advanced-settings-title-container" ng-click="trackingData.toggleAdvancedSettings()">
+                            <div class="advanced-settings-title" ng-class="{ expanded: trackingData.advancedSettingsExpanded, collapsed: !trackingData.advancedSettingsExpanded }">Advanced settings</div>
+                        </div>
+                        <div class="template-selector-container" ng-show="trackingData.advancedSettingsExpanded">
+                            <div class="selector-items-container">
+                                <h2 class="selector-title">Report to:</h2>
+                                <ul class="radio-selector large unstyled">
+                                    <li class="selector-item-container" ng-click="option.select()" ng-class="{ selected: option.isSelected() }" ng-repeat="option in trackingData.reportsOptions">
+                                        <div class="selector-item-wrapper">
+                                            <div class="selector-item-text">{{option.text}}</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="disabled-feature-overlay" ng-hide="trackingData.enableXAPI"></div>
+                            </div>
+                            <div class="selector-preview-container lrs" ng-show="trackingData.reportsOptions[0].isSelected()">
+                                <div class="selector-items-container">
+                                    <h2 class="selector-title">Choose LRS <span>(Learning Record Store <a href="https://help.easygenerator.com/results-tracking/results-tracking-via-lrs" target="_blank">Learn more</a>)</span></h2>
+                                    <ul class="radio-selector large unstyled">
+                                        <li class="selector-item-container" ng-click="option.select()" ng-class="{ selected: option.isSelected() }" ng-repeat="option in trackingData.lrsOptions">
+                                            <div class="selector-item-wrapper">
+                                                <div class="selector-item-btn"></div>
+                                                <div class="selector-item-text">{{option.text}}</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="disabled-feature-overlay" ng-hide="trackingData.enableXAPI"></div>
+                                </div>
+                                <div class="selector-preview-container">
+                                    <h2 class="selector-title">Custom LRS settings</h2>
+                                    <div class="preview-row">
+                                        <label for="lrsUrl" class="preview-label">LRS URL</label>
+                                        <div class="preview-col">
+                                            <input autocomplete="off" class="preview-text-input" id="lrsUrl" type="text" ng-model="trackingData.lrsUrl" ng-disabled="!trackingData.customLrsEnabled()" />
+                                        </div>
+                                    </div>
+                                    <div class="preview-row small">
+                                        <div class="preview-col pull-right">
+                                            <label class="checkbox" ng-class="{ checked: trackingData.authenticationRequired }">
+                                                <span class="checkbox-control">
+                                                    <input class="checkbox-control-input" type="checkbox" ng-model="trackingData.authenticationRequired">
+                                                    <span class="checkbox-control-input-checked"></span>
+                                                </span>
+                                                <span class="checkbox-label">Authentication required</span>
+                                            </label>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="preview-row">
+                                        <label for="lapLogin" class="preview-label">LAP login</label>
+                                        <div class="preview-col">
+                                            <input autocomplete="off" class="preview-text-input" type="text" id="lapLogin" ng-model="trackingData.lapLogin" ng-disabled="!trackingData.credentialsEnabled()" />
+                                        </div>
+                                    </div>
+                                    <div class="preview-row">
+                                        <label for="lapPassword" class="preview-label">LAP password</label>
+                                        <div class="preview-col">
+                                            <input autocomplete="off" class="preview-text-input" type="text" id="lapPassword" ng-model="trackingData.lapPassword" ng-disabled="!trackingData.credentialsEnabled()" />
+                                        </div>
+                                    </div>
+                                    <div class="preview-row large">
+                                        <div class="statements-title">Use statements:</div>
+                                        <div class="statements-container">
+                                            <div class="switcher small">
+                                                <div class="switch-toggle-slider" switch-toggle toggle-value="trackingData.statements.started">
+                                                    <div class="switch-toggle-wrapper">
+                                                        <div class="switch-toggle-on"></div>
+                                                        <div class="switch-toogle-blob"></div>
+                                                        <div class="switch-toggle-off"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="switcher-text">Started</div>
+                                            </div>
+                                            <div class="switcher small">
+                                                <div class="switch-toggle-slider" switch-toggle toggle-value="trackingData.statements.stopped">
+                                                    <div class="switch-toggle-wrapper">
+                                                        <div class="switch-toggle-on"></div>
+                                                        <div class="switch-toogle-blob"></div>
+                                                        <div class="switch-toggle-off"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="switcher-text">Stopped</div>
+                                            </div>
+                                            <div class="switcher small">
+                                                <div class="switch-toggle-slider" switch-toggle toggle-value="trackingData.statements.passed">
+                                                    <div class="switch-toggle-wrapper">
+                                                        <div class="switch-toggle-on"></div>
+                                                        <div class="switch-toogle-blob"></div>
+                                                        <div class="switch-toggle-off"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="switcher-text">Passed</div>
+                                            </div>
+                                        </div>
+                                        <div class="statements-container">
+                                            <div class="switcher small">
+                                                <div class="switch-toggle-slider" switch-toggle toggle-value="trackingData.statements.answered">
+                                                    <div class="switch-toggle-wrapper">
+                                                        <div class="switch-toggle-on"></div>
+                                                        <div class="switch-toogle-blob"></div>
+                                                        <div class="switch-toggle-off"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="switcher-text">Answered</div>
+                                            </div>
+                                            <div class="switcher small">
+                                                <div class="switch-toggle-slider" switch-toggle toggle-value="trackingData.statements.mastered">
+                                                    <div class="switch-toggle-wrapper">
+                                                        <div class="switch-toggle-on"></div>
+                                                        <div class="switch-toogle-blob"></div>
+                                                        <div class="switch-toggle-off"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="switcher-text">Mastered</div>
+                                            </div>
+                                        </div>
+                                        <div class="statements-container">
+                                            <div class="switcher small">
+                                                <div class="switch-toggle-slider" switch-toggle toggle-value="trackingData.statements.experienced">
+                                                    <div class="switch-toggle-wrapper">
+                                                        <div class="switch-toggle-on"></div>
+                                                        <div class="switch-toogle-blob"></div>
+                                                        <div class="switch-toggle-off"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="switcher-text">Experienced</div>
+                                            </div>
+                                            <div class="switcher small">
+                                                <div class="switch-toggle-slider" switch-toggle toggle-value="trackingData.statements.failed">
+                                                    <div class="switch-toggle-wrapper">
+                                                        <div class="switch-toggle-on"></div>
+                                                        <div class="switch-toogle-blob"></div>
+                                                        <div class="switch-toggle-off"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="switcher-text">Failed</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="disabled-feature-overlay" ng-hide="trackingData.customLrsEnabled()"></div>
+                                </div>
+                            </div>
+                            <div class="selector-preview-container webhooks" ng-show="trackingData.reportsOptions[1].isSelected()">
+                                <h2 class="selector-title">Add a webhook endpoint: <a href="https://help.easygenerator.com/additional-features/webhooks" target="_blank">Learn more</a></h2>
+                                <div class="preview-row">
+                                    <label for="webhookUrl" class="preview-label">URL to be called</label>
+                                    <div class="preview-col">
+                                        <input class="preview-text-input" type="text" id="webhookUrl" autocomplete="off" ng-model="webhooks.url" />
+                                    </div>
+                                </div>
+                                <div class="button-wrapper">
+                                    <button class="unstyled button url-chech" ng-click="webhooks.checkUrl()" ng-disabled="!webhooks.url" ng-class="{ disabled: !webhooks.url, progress: webhooks.isChecking }">
+                                        <span class="operation-progress" ng-show="webhooks.isChecking"></span>
+                                        <span ng-show="!webhooks.isChecking">Check URL</span>
+                                    </button>
+                                    <span class="check-result-message error" ng-show="webhooks.checkStatus === webhooks.statuses.error">An error appears</span>
+                                    <span class="check-result-message success" ng-show="webhooks.checkStatus === webhooks.statuses.success">URL successfully reached</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings-section">
+                    <h1 class="section-header">Mastery score settings</h1>
+                    <div class="section-content">
+                        <div class="settings-row">
+                            <div class="settings-caption">
+                                <div>Mastery score:</div>
+                                <div class="settings-hint">(the score a learner needs to pass the course)</div>
+                            </div>
+                            <div class="settings-cell">
+                                <div data-trigger="spinner" class="spinner" spinner spinner-value="masteryScore.value">
+                                    <a class="spinner-button spinner-down" data-spin="down" disable-drag-and-drop></a>
+                                    <input autocomplete="off" type="text" maxlength="3" id="masteryScore.value" class="content-text-input" data-rule="quantity" data-max="100" data-min="0" number ng-model="masteryScore.value">
+                                    <a class="spinner-button spinner-up" data-spin="up" disable-drag-and-drop></a>
+                                    <div class="spiner-seperator"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="settings-tab-container languages" data-tab="languages">
+                <div class="settings-tab-wrapper" ng-if="!showLanguageSettings.value">
+                    <div class="tab-header-container">
+                        <img src="img/language.png?v=1625059020152">
+                        <div class="tab-header-wrapper">
+                            <h1 class="tab-header-title">Changes to language settings are not available</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings-tab-wrapper" ng-if="showLanguageSettings.value">
+                    <div class="tab-header-container">
+                        <img src="img/language.png?v=1625059020152">
+                        <div class="tab-header-wrapper">
+                            <h1 class="tab-header-title">Choose language for your course</h1>
+                            <div class="tab-header-content">
+                                <div class="select-language">
+                                    <dropdown options="languages.languagesList" value="languages.selectedLanguageCode" options-value="'code'" options-text="'name'"></dropdown>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content-container">
+                        <table class="choose-language-table">
+                            <thead>
+                                <tr>
+                                    <th class="choose-language-table-header-text">Default</th>
+                                    <th class="choose-language-table-header-text">Translation</th>
+                                </tr>
+                            </thead>
+                            <tbody class="choose-language-table-content">
+                                <tr class="choose-language-table-row" ng-repeat="key in languages.selectedLanguage.resources | keys">
+                                    <td class="choose-language-table-key">{{ key }}</td>
+                                    <td class="choose-language-table-text-wrapper">
+                                        <div class="input-wrapper">
+                                            <div class="choose-language-table-input-wrapper" ng-if="languages.selectedLanguage.isEditable">
+                                                <input autocomplete="off" type="text" class="choose-language-table-input" ng-model="languages.selectedLanguage.resources[key]" />
+                                                <span class="edit-icon"></span>
+                                            </div>
+                                            <span ng-if="!languages.selectedLanguage.isEditable">{{ languages.selectedLanguage.resources[key] }}</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="settings-tab-wrapper" ng-show="isError">Template settings are not initialized. Please reload the page and change the settings again. Contact support@easygenerator.com if problem persists.</div>
+    </div>
+</body>
+
+</html>

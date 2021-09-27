@@ -1,0 +1,161 @@
+/**
+ *------------------------------------------------------------------------------
+ * @package       JA Educatsy - Joomla LMS template for education and online learning
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2020 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt
+ *------------------------------------------------------------------------------
+ */
+
+/* MAIN STYLE
+---------------------*/
+html {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #585858;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  line-height: 1.743;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* OutLine */
+#outline {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#errorboxoutline {
+  background: #fff;
+  padding: 60px;
+  border-radius: 10px;
+  max-width: 100%;
+  width: 800px;
+}
+
+/* Eror Code */
+.error-code {
+  color: #1D1D1D;
+  display: inline-block;
+  font-size: 20rem;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+
+/* Message Error */
+.error-message {
+}
+
+/* Message Error */
+.error-message h2 {
+  color: #1D1D1D;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 5px;
+  margin-top: 0;
+  position: relative;
+}
+
+.error-message h2 span {
+  position: relative;
+  z-index: 3;
+}
+
+
+#errorboxbody p {
+  display: block;
+  margin: 0 0 30px;
+  z-index: 3;
+  position: relative;
+  opacity: 0.8;
+}
+
+/* Button Home */
+.button-home {
+  background: #1AC190;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  height: 48px;
+  line-height: 24px;
+  padding: 12px 40px;
+  text-decoration: none;
+}
+
+
+.button-home:hover,
+.button-home:focus,
+.button-home:active {
+  opacity: 0.8;
+}
+
+/*Mobile view*/
+@media (max-width: 767px){
+  .error {
+    padding: 48px 0;
+  }
+  /* OutLine */
+  #outline {
+  }
+
+  #errorboxoutline {
+    padding: 20px;
+  }
+
+  /* Eror Code */
+  .error-code {
+    font-size: 10rem;
+  }
+
+  /* Message Error */
+  .error-message {
+  }
+
+  /* Message Error */
+  .error-message h2 {
+    font-size: 1.5rem;
+  }
+}
+
+body #errorboxoutline {
+  background: #d7202a;
+}
+body #errorboxoutline .error-code,
+body #errorboxoutline .error-message h2,
+body #errorboxoutline #errorboxbody {
+  color: white;
+}
+
+
+body .button-home {
+  background-color: #d7202a !important;
+  border-color: #8c0000 !important;
+  border: 2px solid;
+}
+
+body .button-home:hover {
+  background-color: #8c0000 !important;
+  border-color: #8c0000 !important;
+}

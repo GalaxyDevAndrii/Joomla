@@ -1,0 +1,28 @@
+#layout-preview {
+  clear: both;
+  position: absolute;
+  padding: 30px;
+  max-height: 100%;
+  right: 0;
+  top: 0;
+  overflow: auto;
+  width: 50%;
+}
+
+#layout-preview .layout-preview {
+  background: #fdfdfd;
+  border: solid 1px #eee;
+  margin-left: 160px;
+}
+
+#layout-preview .no-container {
+  text-align: center;
+}
+
+#layout-preview .off > [data-role="container"] {
+  display: none;
+}
+
+#layout-preview .off.col {
+  display: none;
+}

@@ -1,0 +1,80 @@
+#ysize1 {
+	height:27px;
+	width:49px;
+	background-color:#CCCCCC;
+}
+
+#ysize2 {
+	height:31px;
+	width:56px;
+	background-color:#CCCCCC;
+}
+
+#ysize3 {
+	height:35px;
+	width:64px;
+	background-color:#CCCCCC;
+}
+
+#ysize4 {
+	height:42px;
+	width:75px;
+	background-color:#CCCCCC;
+}
+
+#ysize6 {
+	height:23px;
+	width:42px;
+	background-color:#CCCCCC;
+}
+
+#ysize5 {
+	height:19px;
+	width:35px;
+	background-color:#CCCCCC;
+}
+
+.yborder {
+	border-left:1px solid #FFFFFF;
+	border-top:1px solid #FFFFFF;
+	height:99%;
+}
+
+.centertext {
+	text-align: center;
+}
+
+.ycontainer {
+	height: 120px;
+	display: inline;
+}
+
+#ya1 {
+	width: 51px;
+	float: left;
+}
+
+#ya2 {
+	width: 58px;
+	float: left;
+}
+
+#ya3 {
+	width: 66px;
+	float: left;
+}
+
+#ya4 {
+	width:77px;
+	float:left;
+}
+
+#ya6 {
+	width:49px;
+	float:left;
+}
+
+#ya5 {
+	width:45px;
+	float:left;
+}

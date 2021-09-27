@@ -1,0 +1,136 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA ACM Module
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2018 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - GNU/GPL, http://www.gnu.org/licenses/gpl.html
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites: http://www.joomlart.com - http://www.joomlancers.com
+ * ------------------------------------------------------------------------
+ */
+table.jalist {
+}
+
+table.jatable th {
+}
+
+table.jatable td {
+}
+
+table.jatable .btn {
+}
+
+table.jatable tr.first .btn-delete-row {
+    display: none!important;
+}
+
+th .jatable-cell-container {
+    position: relative;
+    width: 100%;
+}
+
+.jatable-cell-container {
+    position: relative;
+    width: 100%;
+}
+
+.jatable th .actions {
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 0;
+}
+
+.joomla3 .jatable th .actions {
+    top: 3px;
+}
+
+.jatable th:hover .actions {
+    display: block;
+}
+
+.jatable th.first .btn-delete-col {
+    display: none;
+}
+
+
+.jatable-cell-tools.navbar {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    display: none;
+    border: 0;
+    background: #3f3f3f;
+    color: #aaa;
+    overflow: hidden;
+}
+
+.jatable-cell-tools.navbar:hover {
+    width: auto;
+    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.04);
+    overflow: visible;
+}
+
+.jatable-cell-tools.navbar .nav {
+    margin: 0;
+}
+
+.jatable td:hover .jatable-cell-tools,
+.jatable .jatable-cell-container.hover .jatable-cell-tools {
+    display: block;
+    cursor: pointer;
+}
+
+.jatable-cell-tools .dropdown > .dropdown-toggle {
+    height: 40px;
+    width: 80px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+}
+
+.jatable-cell-tools > ul.nav > .jatable-cell-type {
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-right: 1px solid #4f4f4f;
+}
+
+.jatable-cell-tools > ul.nav > .jatable-cell-type:hover,
+.jatable-cell-tools .dropdown > .dropdown-toggle:hover {
+    color: #fff;
+}
+
+.jatable-cell-text {
+    display: block;
+    padding: 5px;
+    height: 20px;
+    width: 95%;
+    border: none;
+    resize: none;
+    overflow: hidden;
+    min-height: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.jatable-cell-tools .dropdown ul.dropdown-menu {
+    color: #333;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.04);
+    padding: 0;
+}
+
+.jatable-cell-tools .dropdown ul.dropdown-menu li {
+    padding: 5px 10px;
+}
+
+.jatable-cell-tools .dropdown ul.dropdown-menu li:hover {
+    background: #eee;
+}

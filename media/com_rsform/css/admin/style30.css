@@ -1,0 +1,50 @@
+table > caption#captionTable {
+    display: none;
+}
+
+/* This is only used for the 'No matching results' alert */
+.alert.alert-info > .sr-only {
+    display: none;
+}
+
+.icon-rsform::before {
+    content: "\e239";
+}
+
+#rsfp-tabs textarea.form-control {
+    display: inline-block;
+    width: 400px;
+    height: 80px;
+}
+
+#rsfp-tabs input[type="text"].form-control {
+    display: inline-block;
+    width: 400px;
+}
+
+#rsform_directory_tab input[type="text"],
+#rsform_directory_tab select,
+#rsform_directory_tab textarea,
+#rsform_properties_tab input[type="text"],
+#rsform_properties_tab select,
+#rsform_properties_tab textarea {
+	width: 90%;
+}
+
+.rs_90 {
+	width: 90% !important;
+}
+
+#conditionsContainer input,
+#conditionsContainer select {
+	margin-bottom: 0;
+}
+
+.js-stools-field-filter select {
+	margin-bottom: 0;
+}
+
+.table-responsive {
+	display: block;
+	overflow-x: auto;
+}

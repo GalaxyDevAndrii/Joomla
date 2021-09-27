@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <field name="FormTitle" type="text" description="RSFP_WHATS_FORM_TITLE_DESC" label="RSFP_WHATS_FORM_TITLE" required="required" class="validate" />
+    <field name="FormLayoutName" type="formlayouts" default="responsive" description="RSFP_WHATS_FORM_LAYOUT_DESC" label="RSFP_WHATS_FORM_LAYOUT" />
+    <field name="AdminEmail" type="radio" class="btn-group btn-group-yesno" label="RSFP_WANT_ADMIN_EMAIL_RESULTS" default="1">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+    </field>
+    <field name="AdminEmailTo" type="email" description="RSFP_WHERE_EMAIL_RESULTS_DESC" label="RSFP_WHERE_EMAIL_RESULTS" showon="AdminEmail:1" />
+    <field name="UserEmail" type="radio" class="btn-group btn-group-yesno" description="RSFP_WANT_SUBMITTER_EMAIL_RESULTS_DESC" label="RSFP_WANT_SUBMITTER_EMAIL_RESULTS" default="1">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+    </field>
+    <field name="SubmissionAction" type="list" label="RSFP_WHAT_DO_YOU_WANT_SUBMISSION" default="thankyou">
+        <option value="refresh">RSFP_SUBMISSION_REFRESH_PAGE</option>
+        <option value="thankyou">RSFP_SUBMISSION_THANKYOU</option>
+        <option value="redirect">RSFP_SUBMISSION_REDIRECT_TO</option>
+    </field>
+    <field name="Thankyou" type="editor" description="RSFP_SUBMISSION_WHAT_THANKYOU_DESC" label="RSFP_SUBMISSION_WHAT_THANKYOU" showon="SubmissionAction:thankyou" />
+    <field name="ReturnUrl" type="text" description="RSFP_SUBMISSION_REDIRECT_WHERE_DESC" label="RSFP_SUBMISSION_REDIRECT_WHERE" showon="SubmissionAction:redirect" />
+    <field name="ScrollToThankYou" type="radio" class="btn-group btn-group-yesno" label="RSFP_WANT_SCROLL_TO_THANK_YOU_MESSAGE" default="0" showon="SubmissionAction:thankyou">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+    </field>
+    <field name="ThankYouMessagePopUp" type="radio" class="btn-group btn-group-yesno" label="RSFP_WANT_POPUP_THANK_YOU_MESSAGE" showon="ScrollToThankYou:0[AND]SubmissionAction:thankyou" default="0">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+    </field>
+    <field name="PredefinedForm" type="list" description="RSFP_NEW_FORM_STEP_3_DESC" label="RSFP_WHAT_PREDEFINED_FORM">
+        <option value="">RSFP_PREDEFINED_BLANK_FORM</option>
+        <option value="calculations">COM_RSFORM_PREDEFINED_CALCULATIONS_FORM</option>
+        <option value="simple">COM_RSFORM_PREDEFINED_SIMPLE_CONTACT_FORM</option>
+    </field>
+</form>

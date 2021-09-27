@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <field name="submissions" type="radio" default="1" class="btn-group btn-group-yesno" description="RSFP_BACKUP_SUBMISSIONS_DESC" label="RSFP_BACKUP_SUBMISSIONS">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+    </field>
+    <field name="name" type="input" default="backup-{domain}-{date}" label="RSFP_BACKUP_NAME_LABEL" description="RSFP_BACKUP_NAME_DESC"/>
+</form>

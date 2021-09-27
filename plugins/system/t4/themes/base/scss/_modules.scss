@@ -1,0 +1,591 @@
+// --------------------------------------------------
+// Module Styles
+// --------------------------------------------------
+
+// 
+// Genecric Module
+// --------------------------------------------------
+.t4-module {
+  padding: 0;
+  margin-top: $spacer-xl;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  // Module Inner
+  .module-inner {
+    padding: 0;
+  }
+}
+
+// Module Title
+// ------------
+.module-title {
+  font-size: $font-size-base;
+  font-weight: $font-weight-bold;
+  margin: 0;
+  padding: 0;
+
+  span {
+    display: inline-block;
+  }
+}
+
+// Module Content
+// --------------
+.module-ct,
+.moduletable {
+  @include clearfix();
+  ul:last-child,
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+// Module Lists
+// ------------
+// Mixin: Use for quickly apply List styles in Modules
+
+@mixin module-list($icon: "\f105") {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    a {
+      display: block;
+      padding: $spacer-xs;
+      padding-left: calc(#{$spacer} + 16px);
+      position: relative;
+
+      &:before {
+        @include icon($icon);
+        text-align: left;
+        position: absolute;
+        left: 0;
+      }
+
+      // Link States
+      &:hover, &:active, &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+  
+  h4 {
+    font-size: $font-size-base;
+    font-weight: normal;
+    margin: 0;
+  }
+
+}
+
+// Module Tags
+// ------------
+// Mixin: Use for quickly apply Tag styles in Modules
+
+@mixin module-tag($background: $gray-lighter, $color: $gray-darker) {
+  background: $background;
+  color: $color;
+  display: inline-block;
+  padding: $spacer-xs $spacer-sm;
+  @include border-radius($border-radius);
+}
+
+
+// 
+// Modules Prefixes
+// -----------------------------
+
+// Dark
+// -----
+.module-dark {
+  @extend .bg-dark;
+  color: rgba($white, $opacity-lv1);
+
+  .module-title {
+    color: $white;
+
+    span {
+      border-color: rgba($white,$opacity-lv1);
+    }
+  }
+
+} 
+
+.module.bg-primary,
+.module.bg-secondary,
+.module.bg-success,
+.module.bg-danger,
+.module.bg-warning,
+.module.bg-info,
+.module.bg-dark,
+// Cards
+.card.bg-primary,
+.card.bg-secondary,
+.card.bg-success,
+.card.bg-danger,
+.card.bg-warning,
+.card.bg-info,
+.card.bg-dark {
+  color: rgba($white,$opacity-lv1);
+
+  .module-title {
+    border: 0;
+    color: $white;
+    margin-bottom: 0;
+    padding: $spacer $spacer 0;
+
+    span {
+      border-color: rgba($white,$opacity-lv1);
+    }
+  }
+
+  .module-ct {
+    padding: $spacer;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+// Mod rounded
+// -----------
+.module.mod-rounded {
+  border-radius: 5px;
+
+  .mod-rounded {
+    border-radius: 0;
+  }
+}
+
+// Hilite
+// ----------
+.module-hilite {
+}
+
+// Card style
+// -----------
+.t4-card {
+  margin-bottom: $spacer;
+
+  .card-header {
+    font-size: $h5-font-size;
+    margin: 0;
+    padding: $spacer/2 $spacer;
+  }
+}
+
+// Shadow
+// ----------
+// Use to add Shadow to modules
+.mod-shadow {
+  box-shadow: $z-depth-1;
+
+  .mod-shadow {
+    box-shadow: none;
+  }
+}
+
+// Module outline
+.mod-border {
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: $spacer;
+
+  .mod-border {
+    border: 0;
+    padding: 0;
+  }
+}
+
+
+//
+// JOOMLA! MODULES
+// --------------------------------------------------
+
+// Generic Modulable
+// -----------------
+// Modules are used in Component Position
+.moduletable {
+  border: 1px solid $border-color;
+  padding: $card-spacer-x;
+  @include border-radius($border-radius);
+  margin: $spacer auto;
+
+  > h3 {
+    color: $body-color;
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+    margin: 0 0 $spacer 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+}
+
+
+// Menu
+// ----
+.t4-module,
+.t4-card,
+.moduletable,
+.module_menu {
+
+  .nav {
+  }
+  
+  .nav li {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav li .separator {
+    padding: $spacer-xs;
+    display: block;
+  }
+  
+  .nav li a {
+    display: block;
+    padding: $spacer-xs 0;
+    position: relative;
+
+    // Link States
+    &:hover, &:active, &:focus {
+      text-decoration: none;
+    }
+  }
+
+  // Active state
+  .nav > li.active > a {
+    font-weight: $font-weight-bold;
+  }
+
+  // Sub Menus
+  .nav li ul {
+
+    ul {
+      padding-left: $spacer;
+    }
+
+    &.small {
+      font-size: $font-size-base;
+    }
+
+    > li > a {
+      padding-left: $spacer;
+
+      // Adding icon
+      &:before {
+        @include icon($icon: "\f105");
+        position: absolute;
+        left: 2px;
+      }
+    }
+
+    > li.active > a {
+      color: $body-color;
+      font-weight: $font-weight-bold;
+    }
+
+  }
+}
+
+
+// Menus in Dark Modules
+.module.bg-primary,
+.module.bg-secondary,
+.module.bg-success,
+.module.bg-danger,
+.module.bg-warning,
+.module.bg-info,
+.module.bg-dark,
+// Cards
+.card.bg-primary,
+.card.bg-secondary,
+.card.bg-success,
+.card.bg-danger,
+.card.bg-warning,
+.card.bg-info,
+.card.bg-dark {
+  .nav li a {
+    color: rgba($white,$opacity-lv2);
+    // Link States
+    &:hover, &:active, &:focus {
+      color: #fff;
+    }
+  }
+}
+
+
+// Login Form
+// ----------
+#login-form {
+  margin-bottom: 0;
+
+  // Input Icons
+  .add-on {
+  }
+
+  .btn-primary {
+  }
+  
+  ul.unstyled {
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+    padding: 0;
+    list-style: none;
+  }
+
+  .mod-login__username,
+  .mod-login__password,
+  .mod-login__twofactor {
+    input {
+      max-width: none;
+
+      @include media-breakpoint-up (md) {
+        max-width: 240px;
+      }
+    }
+  }
+
+  .mod-login__twofactor {
+    position: relative;
+
+    .btn {
+      position: absolute;
+      right: $spacer/2;
+      bottom: 0;
+    }
+  }
+  
+  #form-login-password {
+  }
+  
+  #form-login-remember {
+    label {
+      font-weight: normal;
+    }
+  }
+
+}
+
+// Advertisement
+// -------------
+.bannergroup {
+}
+
+.banneritem {
+  a {
+    font-weight: bold;
+  }
+}
+
+.bannerfooter {
+  font-size: $font-size-sm;
+  padding-top: $spacer-sm;
+  text-align: right;
+}
+
+
+// Categories, Most Read,
+// Most Popular, Archieve, Tags...
+// -------------------------------
+.categories-module {
+  @include module-list($icon: "\f07b");
+
+  > li {
+    padding-top: $spacer/2;
+    padding-bottom: $spacer/2;
+
+    h4 {
+      font-size: $font-size-base;
+    }
+
+    a {
+      padding-left: calc(#{$spacer} + 8px);
+    }
+  }
+
+  a {
+    color: $body-color;
+
+    &:hover, &:focus, &:active {
+      color: $link-hover-color;
+    }
+  }
+}
+
+.category-module {
+  @include module-list($icon: "\f15c");
+
+  a {
+    color: var(--body-text-color);
+    
+    &:hover, &:focus, &:active {
+      color: var(--body-link-hover-color);
+    }
+  }
+}
+
+.mostread,
+.latestnews,
+.relateditems,
+.tagssimilar ul {
+  @include module-list;
+  li a {
+    padding-left: calc(#{$spacer} + 4px);
+  }
+}
+
+.archive-module {
+  @include module-list($icon: "\f0f6");
+}
+
+
+// News Feed
+// ----------
+.feed {
+  // Feed Title
+  h4 {
+    font-weight: 600;
+  }
+  // Feed list
+  .newsfeed {
+    margin-top: $spacer-lg;
+    padding: 0;
+
+    li {
+      list-style: none;
+      padding: $spacer 0;
+    }
+
+    .feed-link {
+      font-size: $font-size-base;
+      font-weight: $font-weight-bold;
+      margin: 0;
+    }
+
+    .feed-item-description {
+      margin-top: $spacer-sm;
+    }
+  }
+
+}
+
+
+// Syndication
+// -----------
+a.syndicate-module {
+  background: $orange;
+  color: $white;
+  padding: $spacer-sm;
+  display: inline-block;
+
+  img {
+    display: none;
+  }
+
+  &:before {
+    @include icon("\f143");
+    margin-right: 5px;
+  }
+  
+  // Link States
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+    background: darken($orange,5%);
+  }
+}
+
+
+// Latest Users 
+// ------------
+.latestusers {
+  margin: 0;
+  padding: 0;
+  li {
+    @include module-tag;
+  }
+}
+
+
+// Stats 
+// -----
+.stats-module {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0;
+
+  dt, dd {
+    border-bottom: 1px solid $border-color;
+    margin: 0 0 ($spacer / 2) 0;
+    padding-bottom: $spacer/2;
+  }
+
+  dt {
+    font-weight: 600;
+    flex-basis: 35%;
+  }
+
+  dd {
+    flex-basis: 65%;
+    padding-left: ($spacer/2);
+  }
+}
+
+
+// Popular Tags
+//-------------
+.tagspopular {
+  ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+
+  ul > li {
+    color: grays();
+    display: inline-block;
+    float: left;
+    margin: 0 5px 5px 0;
+    @include module-tag;
+  }
+
+  ul > li > a {
+    color: $gray-600;
+    line-height: 1;
+
+    // Links states
+    &:hover,
+    &:focus,
+    &:active {
+      color: $link-hover-color;
+      text-decoration: none;
+    }
+  }
+
+  .tag-count {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 2px;
+    font-size: $font-size-sm;
+    padding: 2px 3px;
+  }
+}
+
+
+
+// Breadcrums Module
+// -----------------
+.module-ct > ol.breadcrumb {
+  padding: $spacer-lg;
+  margin-left: 0;
+}

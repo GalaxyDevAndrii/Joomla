@@ -1,0 +1,91 @@
+{
+    "name": "core-joomla",
+    "assets": {
+        "jquery": {
+            "dependencies": [],
+            "js": [
+                "media/jui/js/jquery.min.js"
+            ]
+        },
+        "jquery-migrate": {
+            "dependencies": [
+                "jquery"
+            ],
+            "js": [
+                "media/jui/js/jquery-migrate.min.js"
+            ]
+        },
+        "jquery-noconflict": {
+            "dependencies": [
+                "jquery"
+            ],
+            "js": [
+                "media/jui/js/jquery-noconflict.js"
+            ]
+        },
+        "jquery.ui.core": {
+            "dependencies": [
+                "jquery"
+            ],
+            "js": [
+                "media/jui/js/jquery.ui.core.min.js"
+            ]
+        },
+        "jquery.autocomplete": {
+            "dependencies": [
+                "jquery"
+            ],
+            "js": [
+                "media/jui/js/jquery.autocomplete.min.js"
+            ]
+        },
+        "jquery.ui.sortable": {
+            "dependencies": [
+                "jquery.ui.core"
+            ],
+            "js": [
+                "media/jui/js/jquery.ui.sortable.min.js"
+            ]
+        },
+        "minicolors": {
+          "package": "@claviska/jquery-minicolors",
+          "name": "minicolors",
+          "version": "2.2.6",
+          "dependencies": [
+            "jquery"
+          ],
+          "js": [
+            "media/jui/js/jquery.minicolors.min.js"
+          ],
+          "css": [
+            "media/jui/css/jquery.minicolors.css"
+          ],
+          "attribute": {}
+        },
+        "bootstrap.css": {
+          "package": "bootstrap",
+          "name": "bootstrap.css",
+          "dependencies": [],
+          "js": [],
+          "css": [
+            "media/jui/css/bootstrap.min.css"
+          ],
+          "attribute": {}
+        },
+        "chosen": {
+          "package": "chosen-js",
+          "name": "chosen",
+          "version": "1.6.2",
+          "dependencies": [
+            "jquery"
+          ],
+          "js": [
+            "media/jui/js/chosen.jquery.min.js"
+          ],
+          "css": [
+            "media/jui/css/chosen.css"
+          ],
+          "attribute": {}
+        }
+    }
+}

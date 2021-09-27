@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addfieldpath="/administrator/components/com_rsform/models/fields">
+    <fieldset name="general">
+        <field name="status" type="directorystatus" label="RSFP_SUBM_DIR_STATUS" />
+        <field name="enablepdf" type="radio" class="btn-group btn-group-yesno" label="RSFP_SUBM_DIR_ENABLE_PDF_SUPPORT" default="0">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="filename" default="export.pdf" type="text" label="RSFP_SUBM_DIR_PDF_FILENAME" size="70" showon="enablepdf:1" />
+        <field name="enablecsv" type="radio" class="btn-group btn-group-yesno" label="RSFP_SUBM_DIR_ENABLE_CSV_SUPPORT" default="0">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="csvfilename" default="{alias}.csv" type="text" label="RSFP_SUBM_DIR_CSV_FILENAME" description="RSFP_SUBM_DIR_CSV_FILENAME_DESC" size="70" showon="enablecsv:1" />
+        <field name="HideEmptyValues" type="radio" class="btn-group btn-group-yesno" label="COM_RSFORM_DIRECTORY_HIDE_EMPTY_VALUES" default="0">
+            <option value="0" onchange="saveDirectorySetting('HideEmptyValues', 0);">JNO</option>
+            <option value="1" onchange="saveDirectorySetting('HideEmptyValues', 1);">JYES</option>
+        </field>
+        <field name="ShowGoogleMap" type="radio" class="btn-group btn-group-yesno" label="COM_RSFORM_DIRECTORY_SHOW_GOOGLE_MAP" default="0">
+            <option value="0" onchange="saveDirectorySetting('ShowGoogleMap', 0);">JNO</option>
+            <option value="1" onchange="saveDirectorySetting('ShowGoogleMap', 1);">JYES</option>
+        </field>
+    </fieldset>
+	<fieldset name="layout">
+		<field name="ViewLayoutAutogenerate" type="radio" class="btn-group btn-group-yesno" label="RSFP_AUTOGENERATE_LAYOUT" default="0">
+			<option value="0" onclick="changeDirectoryAutoGenerateLayout(this.value)">JNO</option>
+			<option value="1" onclick="changeDirectoryAutoGenerateLayout(this.value)">JYES</option>
+		</field>
+	</fieldset>
+    <fieldset name="permissions">
+        <field name="groups" type="usergrouplist" label="RSFP_SUBM_DIR_CAN_EDIT" multiple="multiple" class="advancedSelect">
+            <option value="own">RSFP_SUBM_DIR_EDIT_OWN_SUBMISSIONS</option>
+        </field>
+        <field name="DeletionGroups" type="usergrouplist" label="RSFP_SUBM_DIR_CAN_DELETE" multiple="multiple" class="advancedSelect">
+            <option value="own">RSFP_SUBM_DIR_DELETE_OWN_SUBMISSIONS</option>
+        </field>
+    </fieldset>
+	<fieldset name="cssjs">
+		<field name="CSS" type="syntaxhighlight" rows="20" cols="75" label="RSFP_CSS" description="RSFP_CSS_DESC" class="rs_90" syntax="html" />
+		<field name="JS" type="syntaxhighlight" rows="20" cols="75" label="RSFP_JS" description="RSFP_JS_DESC" class="rs_90" syntax="html" />
+	</fieldset>
+	<fieldset name="scripts">
+		<field name="ListScript" type="syntaxhighlight" rows="20" cols="75" label="RSFP_SUBM_DIR_SCRIPTS_LIST" description="RSFP_SUBM_DIR_SCRIPTS_LIST_DESC" class="rs_90" syntax="php" />
+		<field name="DetailsScript" type="syntaxhighlight" rows="20" cols="75" label="RSFP_SUBM_DIR_SCRIPTS_DETAILS" description="RSFP_SUBM_DIR_SCRIPTS_DETAILS_DESC" class="rs_90" syntax="php" />
+	</fieldset>
+	<fieldset name="emailscripts">
+		<field name="EmailsCreatedScript" type="syntaxhighlight" rows="20" cols="75" label="RSFP_SUBM_DIR_SCRIPTS_EMAIL_CREATED" description="RSFP_SUBM_DIR_SCRIPTS_EMAIL_CREATED_DESC" class="rs_90" syntax="php" />
+		<field name="EmailsScript" type="syntaxhighlight" rows="20" cols="75" label="RSFP_SUBM_DIR_SCRIPTS_EMAIL" description="RSFP_SUBM_DIR_SCRIPTS_EMAIL_DESC" class="rs_90" syntax="php" />
+	</fieldset>
+</form>

@@ -1,0 +1,154 @@
+<?xml version="1.0" standalone="no" ?>
+<manifest identifier="EGf821f97c-bb97-4735-934e-aee774422c5c" version="1.1.1"
+          xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+                                                      http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd">
+    <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>2004 4th Edition</schemaversion>
+    </metadata>
+
+    <organizations default="easygenerator">
+        <organization identifier="easygenerator">
+            <title>Pre-licensing Course (copy)</title>
+            <item identifier="eg1" identifierref="REFSCO1" isvisible="true">
+                <title>Pre-licensing Course (copy)</title>
+            </item>
+        </organization>
+    </organizations>
+    <resources>
+        <resource identifier="REFSCO1" type="webcontent" adlcp:scormType="sco" href="index.html">
+            <metadata>
+                <adlcp:location>metadata.xml</adlcp:location>
+            </metadata>
+            <dependency identifierref="resources" />
+        </resource>
+        <resource identifier="resources" type="webcontent" adlcp:scormType="asset">
+                <file href="adlcp_v1p3.xsd" />
+                <file href="asset-manifest.json" />
+                <file href="content%2F3292680987854f67b6676b7d0c85b847%2F666d20b0cea248cbbcd13014e4f02cb8%2F9a6a6a3aa4f44c33880d4d72aa971599.html" />
+                <file href="content%2F3292680987854f67b6676b7d0c85b847%2F666d20b0cea248cbbcd13014e4f02cb8%2Fd0de8e2196224905b5f6b447f2f4bd5d.html" />
+                <file href="content%2F3292680987854f67b6676b7d0c85b847%2Fc4c206b8e79f4f908532c41a28cc107f%2F67a3bd59e1cd41f5aa83e49cdd5e730f.html" />
+                <file href="content%2F3292680987854f67b6676b7d0c85b847%2Fe79afb4e202b4136959b3c5614d0a734%2F0c99181990cf48adb90f0fbf82f3478d.html" />
+                <file href="content%2Fdata.js" />
+                <file href="customisations.json" />
+                <file href="fonts%2FOpenSans-Bold.woff" />
+                <file href="fonts%2FOpenSans-Bold.woff2" />
+                <file href="fonts%2FOpenSans-BoldItalic.woff" />
+                <file href="fonts%2FOpenSans-BoldItalic.woff2" />
+                <file href="fonts%2FOpenSans-Italic.woff" />
+                <file href="fonts%2FOpenSans-Italic.woff2" />
+                <file href="fonts%2FOpenSans-Regular.woff" />
+                <file href="fonts%2FOpenSans-Regular.woff2" />
+                <file href="fonts%2FPTSerif-Bold.woff" />
+                <file href="fonts%2FPTSerif-Bold.woff2" />
+                <file href="fonts%2FPTSerif-BoldItalic.woff" />
+                <file href="fonts%2FPTSerif-BoldItalic.woff2" />
+                <file href="fonts%2FPTSerif-Italic.woff" />
+                <file href="fonts%2FPTSerif-Italic.woff2" />
+                <file href="fonts%2FPTSerif-Regular.woff" />
+                <file href="fonts%2FPTSerif-Regular.woff2" />
+                <file href="fonts%2Ffonts.css" />
+                <file href="fonts%2Fiowanoldst-bt-400.ttf" />
+                <file href="fonts%2Fqanelas-soft-400.ttf" />
+                <file href="imscp_v1p1.xsd" />
+                <file href="includedModules%2Flms.js" />
+                <file href="index.html" />
+                <file href="lang%2Faf.json" />
+                <file href="lang%2Far.json" />
+                <file href="lang%2Fbg.json" />
+                <file href="lang%2Fbn.json" />
+                <file href="lang%2Fcz.json" />
+                <file href="lang%2Fda.json" />
+                <file href="lang%2Fde.json" />
+                <file href="lang%2Fel.json" />
+                <file href="lang%2Fen.json" />
+                <file href="lang%2Fes.json" />
+                <file href="lang%2Ffi%20%28experiment%29.json" />
+                <file href="lang%2Ffi.json" />
+                <file href="lang%2Ffr.json" />
+                <file href="lang%2Fhr.json" />
+                <file href="lang%2Fhu.json" />
+                <file href="lang%2Fid.json" />
+                <file href="lang%2Fit.json" />
+                <file href="lang%2Fja.json" />
+                <file href="lang%2Flt.json" />
+                <file href="lang%2Flv.json" />
+                <file href="lang%2Fms.json" />
+                <file href="lang%2Fnb-no.json" />
+                <file href="lang%2Fnl-inf.json" />
+                <file href="lang%2Fnl.json" />
+                <file href="lang%2Fnn-no.json" />
+                <file href="lang%2Fpl.json" />
+                <file href="lang%2Fpt.json" />
+                <file href="lang%2Fro.json" />
+                <file href="lang%2Fru.json" />
+                <file href="lang%2Fsk.json" />
+                <file href="lang%2Fsl.json" />
+                <file href="lang%2Fsv.json" />
+                <file href="lang%2Fth.json" />
+                <file href="lang%2Fuk.json" />
+                <file href="lang%2Fvi.json" />
+                <file href="lang%2Fzh-hans.json" />
+                <file href="lang%2Fzh-hant.json" />
+                <file href="lomLoose.xsd" />
+                <file href="manifest.json" />
+                <file href="media%2F20dd5b2c-8262-4192-bc49-90269e2cbfd6.png" />
+                <file href="media%2F6fe79c9f-c713-4484-9a1b-24e7937aa4be.jpg" />
+                <file href="media%2Fd7761122-a5af-4096-82be-a5ae68569c15.png" />
+                <file href="media%2Fdb5f6b33-25b8-4d62-ab83-ffa2140a8bdf.jpg" />
+                <file href="precache-manifest.91af681629901d5a2f84c76d23fb8a41.js" />
+                <file href="preview%2Fimages%2Fpreview.jpg" />
+                <file href="preview%2Fthumbnail.png" />
+                <file href="publishSettings.js" />
+                <file href="service-worker.js" />
+                <file href="settings.js" />
+                <file href="static%2Fcss%2F6.48a5797b.chunk.css" />
+                <file href="static%2Fcss%2F6.48a5797b.chunk.css.map" />
+                <file href="static%2Fcss%2Fmain.21337cb3.chunk.css" />
+                <file href="static%2Fcss%2Fmain.21337cb3.chunk.css.map" />
+                <file href="static%2Fjs%2F0.2b9e430d.chunk.js" />
+                <file href="static%2Fjs%2F0.2b9e430d.chunk.js.map" />
+                <file href="static%2Fjs%2F1.cdc1650c.chunk.js" />
+                <file href="static%2Fjs%2F1.cdc1650c.chunk.js.map" />
+                <file href="static%2Fjs%2F10.64f0795c.chunk.js" />
+                <file href="static%2Fjs%2F10.64f0795c.chunk.js.map" />
+                <file href="static%2Fjs%2F11.4aac81d4.chunk.js" />
+                <file href="static%2Fjs%2F11.4aac81d4.chunk.js.map" />
+                <file href="static%2Fjs%2F12.f936ded1.chunk.js" />
+                <file href="static%2Fjs%2F12.f936ded1.chunk.js.map" />
+                <file href="static%2Fjs%2F13.21261cd8.chunk.js" />
+                <file href="static%2Fjs%2F13.21261cd8.chunk.js.map" />
+                <file href="static%2Fjs%2F14.4cdd6660.chunk.js" />
+                <file href="static%2Fjs%2F14.4cdd6660.chunk.js.map" />
+                <file href="static%2Fjs%2F2.4f390d6d.chunk.js" />
+                <file href="static%2Fjs%2F2.4f390d6d.chunk.js.LICENSE" />
+                <file href="static%2Fjs%2F2.4f390d6d.chunk.js.map" />
+                <file href="static%2Fjs%2F3.d2a381fe.chunk.js" />
+                <file href="static%2Fjs%2F3.d2a381fe.chunk.js.map" />
+                <file href="static%2Fjs%2F6.f688700d.chunk.js" />
+                <file href="static%2Fjs%2F6.f688700d.chunk.js.LICENSE" />
+                <file href="static%2Fjs%2F6.f688700d.chunk.js.map" />
+                <file href="static%2Fjs%2F7.7c356bf5.chunk.js" />
+                <file href="static%2Fjs%2F7.7c356bf5.chunk.js.map" />
+                <file href="static%2Fjs%2F8.dde5a994.chunk.js" />
+                <file href="static%2Fjs%2F8.dde5a994.chunk.js.map" />
+                <file href="static%2Fjs%2F9.c21add4b.chunk.js" />
+                <file href="static%2Fjs%2F9.c21add4b.chunk.js.map" />
+                <file href="static%2Fjs%2Fmain.28fbf944.chunk.js" />
+                <file href="static%2Fjs%2Fmain.28fbf944.chunk.js.map" />
+                <file href="static%2Fjs%2Fruntime-main.30d520c7.js" />
+                <file href="static%2Fjs%2Fruntime-main.30d520c7.js.map" />
+                <file href="static%2Fmedia%2Fcustom-icons.5f6ba2a1.woff" />
+                <file href="static%2Fmedia%2Fcustom-icons.8a226a88.woff2" />
+                <file href="static%2Fmedia%2Ffontawesome-webfont.674f50d2.eot" />
+                <file href="static%2Fmedia%2Ffontawesome-webfont.912ec66d.svg" />
+                <file href="static%2Fmedia%2Ffontawesome-webfont.af7ae505.woff2" />
+                <file href="static%2Fmedia%2Ffontawesome-webfont.b06871f2.ttf" />
+                <file href="static%2Fmedia%2Ffontawesome-webfont.fee66e71.woff" />
+                <file href="themeSettings.js" />
+        </resource>
+    </resources>
+</manifest>

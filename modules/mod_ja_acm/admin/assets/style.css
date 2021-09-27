@@ -1,0 +1,705 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA ACM Module
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2018 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - GNU/GPL, http://www.gnu.org/licenses/gpl.html
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites: http://www.joomlart.com - http://www.joomlancers.com
+ * ------------------------------------------------------------------------
+ */
+/* Clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+/* GENERAL STYLES
+/* ------------------------------------- */
+
+.acm-panel fieldset.panelform {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.ja-acm-admin {
+    background: #fff;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #555;
+    position: relative;
+}
+
+.ja-acm-admin.joomla3 {
+    border: 1px solid #eee;
+    padding: 2px;
+}
+
+.ja-acm-admin .fa-list:before {
+    content: "\31";
+}
+
+.tab-pane h3 {
+    position: relative;
+}
+
+/*
+/* Forms J 2.5
+*/
+fieldset.radio {
+    background: transparent !important;
+}
+
+.ja-acm-admin.joomla2 .button2-left,
+.ja-acm-admin.joomla2 .media-preview {
+    background: none !important;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.ja-acm-admin .blank,
+.ja-acm-admin .media-preview {
+}
+
+.ja-acm-admin.joomla2 .media-preview .hasTipPreview {
+    display: inline-block;
+    padding: 3px 10px !important;
+}
+
+.ja-acm-admin.joomla2 .blank > a {
+    border: 1px solid #ccc;
+    background: #f2f2f2;
+    color: #333;
+    height: auto;
+    padding: 3px 10px !important;
+}
+
+.ja-acm-admin.joomla2 .blank > a:hover {
+    border: 1px solid #039be5;
+    background: #039be5;
+    color: #fff !important;
+}
+
+.ja-acm-admin.joomla2 select {
+    border: 1px solid #ccc;
+    background: #fff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.btn-danger {
+}
+
+.ja-acm-admin label,
+.ja-acm-admin input,
+.ja-acm-admin button,
+.ja-acm-admin select,
+.ja-acm-admin textarea,
+.ja-acm-admin .chzn-container,
+.ja-acm-admin .chzn-single {
+    border-radius: 0 !important;
+    font-size: 14px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.ja-acm-admin.joomla2 .controls {
+    padding: 15px 20px !important;
+    overflow: auto;
+}
+
+.ja-acm-admin.joomla2 .radio input[type="radio"],
+.ja-acm-admin.joomla2 .checkbox input[type="checkbox"] {
+    margin: 7px 10px 5px 0;
+}
+
+/* 
+/* Layout
+*/
+
+/* ===== Top Header ===== */
+
+.jatools-header {
+    margin: 0 !important;
+    background: #29739d;
+}
+
+.jatools-subheader {
+    margin: 0 !important;
+    border-top: 1px solid #038ccf;
+    background: #039be5;
+}
+
+.jatools-header label,
+.jatools-subheader label {
+    color: #fff;
+}
+
+.ja-acm-admin .control-label {
+    display: block;
+    float: left;
+    width: 200px !important;
+    text-align: right !important;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.ja-acm-admin .jatools-header .control-label label {
+    padding: 25px 20px;
+}
+
+.ja-acm-admin .control-label label {
+    word-break: break-all;
+    font-weight: bold;
+    display: block;
+    margin: 0;
+}
+
+.ja-acm-admin .controls {
+    padding: 20px 0;
+}
+
+.ja-acm-admin .controls p {
+    background-color: #4988ac;
+    display: inline-block;
+    margin: 0;
+    padding: 10px 15px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 1px rgba(0,0,0,0.2);
+}
+
+.ja-acm-admin .select-btn {
+    margin-top: -4px;
+    margin-left: 10px;
+    padding: 10px 13px;
+    background-color: #669900;
+    border: none;
+    border-radius: 3px !important;
+    box-shadow: none;
+    font-size: 14px;
+    color: #ffffff;
+    text-shadow: 0 1px rgba(0,0,0,0.2);
+}
+
+.jatools-layout-config {
+}
+
+.jatools-layout-desc {
+    margin: 0;
+    padding: 10px 20px 10px 200px;
+    background: #25698f;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    color: #eeeeee;
+}
+
+
+/* ===== Form Group ===== */
+
+.jatools-group {
+    padding: 0;
+}
+
+.jatools-group .jatools-row {
+    position: relative;
+    width: auto;
+}
+
+.jatools-group .jatools-row:hover {
+    background: #fffeef;
+}
+
+.jatools-group.jatools-multiple .jatools-row::before {
+    display: block;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    color: #999;
+    content: "ADDED GROUP";
+    text-indent: 180px;
+    line-height: normal;
+    font-size: 10px;
+    padding: 6px 20px 5px;
+}
+
+.jatools-group.jatools-multiple .jatools-row:hover:before {
+    background: #666;
+    border-color: #666;
+    color: #fff;
+}
+
+.jatools-group.jatools-multiple .jatools-group-header + .jatools-row::before {
+    content: "DEFAULT GROUP";
+}
+
+.jatools-group.jatools-multiple.jatools-hoz .jatools-row::before,
+.jatools-group.jatools-multiple.jatools-hoz .jatools-row:hover:before,
+.jatools-group.jatools-multiple.jatools-hoz .jatools-group-header + .jatools-row::before {
+    display: none;
+}
+
+/* ===== Row Actions ===== */
+
+.jatools-row-actions {
+    padding: 10px 10px 10px 200px;
+}
+
+.jatools-row-actions .btn {
+    display: inline-block;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 0;
+    background: #f2f2f2;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 8px 14px;
+    line-height: normal;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ===== Added Row Btn ===== */
+
+.jatools-group .jatools-btn-add {
+}
+
+.jatools-group .jatools-btn-add:hover {
+    background: #0384c2;
+    color: #fff;
+    border-color: #0275ad;
+}
+
+/* ===== Delete Row Btn ===== */
+
+.jatools-group .jatools-btn-del {
+    display: none;
+}
+
+.jatools-row:hover .jatools-btn-del {
+    display: block;
+}
+
+.jatools-group .jatools-btn-del {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #f44336;
+    border-radius: 0;
+    border: 0;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    padding: 6px 20px;
+    line-height: normal;
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.jatools-group .jatools-btn-del:hover {
+    background: #cf392e;
+}
+
+/* ===== Control Group ===== */
+
+.jatools-group .control-group {
+    clear: both;
+    margin: 0 !important;
+    border-bottom: 1px solid #eee;
+}
+
+/* ===== Group Header ===== */
+
+.jatools-group-header {
+    background: #f2f2f2;
+    padding: 20px 20px 20px 200px;
+}
+
+.jatools-group-header .fieldset-title {
+    clear: both;
+    font-weight: bold;
+    color: #222;
+    background: transparent !important;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.jatools-group-header .fieldset-desc {
+    clear: both;
+    padding: 0;
+    margin: 5px 0 0;
+    color: #999;
+}
+
+/* ===== Control Label ===== */
+
+.jatools-group .jatools-row .control-label {
+    display: block;
+    width: 200px;
+    padding: 20px;
+    text-align: right;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.jatools-group .jatools-row .control-label label {
+    margin: 0;
+    font-weight: bold;
+    color: #555;
+}
+
+/* ===== Controls ===== */
+
+.jatools-group .jatools-row .controls {
+    display: block;
+    margin-left: 200px;
+    padding: 15px 20px;
+    border-left: 1px solid #eee;
+}
+
+.jatools-layout-config .jatools-group hr {
+    clear: both;
+    border: none;
+    margin: 20px 0;
+}
+
+/* ===== JAChecklist field ===== */
+
+.jachecklist ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.jachecklist ul li.jachecklist-item {
+    margin: 0 10px 0 0;
+    padding: 6px 16px;
+    float: left;
+    list-style: none;
+    cursor: pointer;
+    background: #ddd;
+    border-radius: 14px;
+}
+
+.jachecklist ul li.jachecklist-item:hover {
+    background: #ddd;
+}
+
+.jachecklist ul li.jachecklist-item.on {
+    background: #259b24;
+    color: #fff;
+}
+
+.jachecklist ul li.jachecklist-item.off {
+}
+
+/* ===== Advanced button & Form ===== */
+
+.icon-advanced:before {
+    content: "y";
+}
+
+.icon-32-advanced {
+    background-image: url(icon-32-advanced.png);
+}
+
+#acm-advanced-form,
+#acm-advanced-input {
+    width: 100%;
+    height: 100%;
+}
+
+/* ===== horizontal form ===== */
+
+.jatools-hoz td {
+    position: relative;
+}
+
+.jatools-hoz input[type="text"],
+.jatools-hoz input[type="textarea"] {
+    max-height: 16px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    margin: 0;
+    padding: 5px;
+}
+
+.jatools-hoz input[type="text"]:focus,
+.jatools-hoz input[type="textarea"]:focus {
+    right: auto;
+    max-height: 300px;
+    z-index: 1000;
+}
+
+.jatools-hoz td:last-child input[type="text"]:focus,
+.jatools-hoz td:last-child input[type="textarea"]:focus {
+    right: 20px;
+    left: auto;
+}
+
+/* fix for default joomla admin template, wilder the option panel */
+
+#module-form div.main-section {
+    width: 38%;
+}
+
+#module-form div.width-60 {
+    width: 40%;
+}
+
+#module-form div.options-section,
+#module-form div.width-40 {
+    width: 60%;
+}
+
+/* textarea auto height */
+
+textarea.autoheight {
+    resize: none;
+    min-height: 20px;
+    overflow: hidden;
+}
+
+/*
+/* TABLES
+/* ----------------------------- */
+
+.jaacm-list,
+.jaacm-table {
+    padding: 20px;
+}
+
+table.jalist,
+table.jatable {
+    font-size: 14px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #555;
+    border: 0;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+table.jalist th,
+table.jatable th {
+    border-width: 1px;
+    border-bottom-width: 3px;
+    padding: 10px;
+    border-style: solid;
+    border-color: #ddd;
+    background-color: #eee;
+    font-weight: bold;
+    vertical-align: center;
+    text-align: left;
+}
+
+table.jalist th label,
+table.jatable th label {
+    font-weight: bold;
+}
+
+table.jalist td,
+table.jatable td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ddd;
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 10px;
+    background-color: #fff;
+    vertical-align: center;
+}
+
+table.jalist .btn.action,
+table.jatable .btn.action {
+    border: 1px solid #ccc;
+    padding: 5px;
+    line-height: 1;
+    background: #fff;
+    background-image: none;
+    border-radius: 0;
+    text-shadow: none !important;
+    box-shadow: none;
+}
+
+table.jalist .btn:hover,
+table.jatable .btn:hover {
+    border: 1px solid #039be5;
+    background: #039be5;
+    color: #fff;
+}
+
+table.jalist textarea,
+table.jatable textarea {
+    width: 90%;
+}
+
+table.jalist th textarea,
+table.jatable th textarea,
+table.jalist th input,
+table.jatable th input {
+    width: 70%;
+}
+
+/* make full-screen config panel */
+/* full-screen toggle button */
+.toggle-fullscreen {
+    display: block;
+    height: 32px;
+    text-align: center;
+    width: 32px;
+    border: 1px solid #aaa;
+    background: #fff;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+
+.toggle-fullscreen:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+
+.toggle-fullscreen .fa {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.fa-compress,
+.icon-contract {
+  display: none !important;
+}
+
+.full-screen .fa-compress,
+.full-screen .icon-contract {
+  display: inline-block !important;
+}
+
+.full-screen .fa-expand,
+.full-screen .icon-expand {
+  display: none !important;
+}
+
+/* full-screen joomla 2 */
+body.full-screen #module-sliders .acm-panel .pane-slider {
+    height: auto !important;
+    overflow: visible !important;;
+}
+
+body.full-screen #module-sliders .acm-panel .pane-slider fieldset {
+    overflow: visible !important;
+}
+
+body.full-screen #module-sliders .acm-panel .pane-slider.pane-hide {
+    display: block !important;
+}
+
+body.full-screen .width-40 {
+    width: 100% !important;
+}
+
+body.full-screen .width-60 {
+    display: none !important;
+}
+
+/* full-screen Joomla 3 */
+body.full-screen .span9 {
+    width: 100% !important;
+    padding-bottom: 100px;
+}
+
+body.full-screen .span3 {
+    display: none !important;
+}
+
+/*RESET STYLE*/
+
+.ja-dialog {
+    -moz-box-shadow: 0 0 5px #555;
+    -webkit-box-shadow: 0 0 5px #555;
+    box-shadow: 0 0 5px #555;
+    border: medium none;
+    padding: 0;
+}
+
+.ja-dialog .ui-dialog-titlebar {
+    background: #29739d;
+    border-radius: 0;
+    border: medium none;
+    padding: 10px;
+}
+
+.ja-dialog .ui-dialog-titlebar .ui-dialog-title {
+    color: #fff;
+}
+
+.ja-dialog .ui-dialog-content {
+    padding: 20px;
+}
+
+.ja-dialog .ui-dialog-content .control-group {
+    background: none repeat scroll 0 0 #f5f5f5;
+    border-bottom: 1px solid #fff;
+    margin: 0;
+    padding: 15px 10px;
+}
+
+.ja-dialog .ui-dialog-content .control-group .control-label {
+    width: 30%;
+    padding: 0 0 0 5px;
+}
+
+.ja-dialog .ui-dialog-content .control-group .control-label label {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.ja-dialog .ui-dialog-content .control-group .controls {
+    margin: 0;
+}
+
+.ja-dialog .ui-dialog-buttonpane {
+    border: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.ja-dialog .ui-dialog-titlebar-close {
+    background: #fff !important;
+    right:2%;
+    border-radius: 2px;
+}
+
+.ja-dialog .ui-state-default,
+.ja-dialog .ui-widget-content .ui-state-default,
+.ja-dialog .ui-widget-header .ui-state-default {
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background: #669900;
+    padding: 5px;
+}
+
+/* override for jBox style */
+.jBox-Confirm .jBox-content #jatools-select-layout-form {
+    text-align: left;
+}
+.hide {
+	display:none;
+}

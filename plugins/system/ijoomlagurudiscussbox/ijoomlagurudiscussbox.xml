@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>Guru Kunena Comments Plugin</name>
+	<author>iJoomla</author>
+	<creationDate>14 December 2012</creationDate>
+	<license>GNU General Public License, version 2 http://www.ijoomla.com/licensing/</license>
+	<authorEmail>webmaster2@ijoomla.com</authorEmail>
+	<authorUrl>www.iJoomla.com</authorUrl>
+	<version>1.0</version>
+	<description>This plugin displays a comment box and posts inside a lesson. Please publish this plugin. Go to extensions->plugins, filter by "ijoomla" and press the publish icon.</description>
+	<files>
+		<filename plugin="ijoomlagurudiscussbox">ijoomlagurudiscussbox.php</filename>
+	</files>
+</extension>

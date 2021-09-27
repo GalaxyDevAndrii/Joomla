@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Guru Student Registration">
+		<message>Guru Student Registration</message>
+    </layout>
+    <state>
+		<name>Guru Student Registration</name>
+        <description>Guru Student Registration</description>
+    </state>
+</metadata>

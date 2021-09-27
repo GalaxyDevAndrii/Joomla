@@ -1,0 +1,620 @@
+// ------------------------------------
+// Ovveride of BS "type.scss".
+// Leave blank to use default styles
+// ------------------------------------
+
+//
+// Headings
+//
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+  }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin-top: $spacer;
+  margin-bottom: ($spacer / 2);
+
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: ($spacer / 2);
+  margin-bottom: ($spacer / 2); 
+
+  small,
+  .small {
+    font-size: 75%;
+  }
+}
+
+
+h1, .h1 {
+  line-height: $h1-line-height;
+  font-weight: 700;
+}
+
+h2, .h2 {
+  line-height: $h2-line-height;
+  font-weight: 300;
+}
+
+h3, .h3 {
+  line-height: $h3-line-height;
+  font-weight: 500;
+}
+
+h4, .h4 {
+  line-height: $h4-line-height;
+  font-weight: 500;
+}
+
+h5, .h5 {
+  line-height: $h5-line-height;
+  font-weight: 400;
+}
+
+h6, .h6 {
+  line-height: $h6-line-height;
+  font-weight: 400;
+}
+
+
+
+
+.lead {
+}
+
+// Type display classes
+.display-1 {
+}
+
+.display-2 {
+}
+
+.display-3 {
+}
+
+.display-4 {
+}
+
+.link-highlight {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-top: $spacer * 2;
+  font-weight: 600;
+}
+
+.link-white {
+  color: $white;
+}
+
+//
+// Horizontal rules
+//
+hr {
+}
+
+
+//
+// Emphasis
+//
+small,
+.small {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-normal;
+}
+
+mark,
+.mark {
+}
+
+//
+// Image
+//
+.img-rounded {
+  border-radius: 5px;
+}
+
+//
+// Extra button class
+//
+.btn-border {
+  border: 2px solid rgba($white, 0.2);
+}
+
+
+//
+// Lists
+//
+.list-unstyled {
+}
+
+
+.features-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &.cols-2 {
+    // Desktop view
+    @include media-breakpoint-up(sm) {
+      column-count: 2;
+    }
+  }
+
+  li {
+    color: $gray-800;
+    margin-bottom: $grid-gutter-width / 2;
+    position: relative;
+
+    // Mobile view
+    @include media-breakpoint-down(sm) {
+      margin-bottom: $grid-gutter-width / 4;
+    }
+
+    &:before {
+      content: "\f14a";
+      font-family: "Font Awesome 5 Free";
+      margin-right: 16px;
+
+      // Mobile view
+      @include media-breakpoint-down(sm) {
+        margin-right: 5px;
+      }
+    }
+
+  }
+}
+
+.time-table {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: $spacer / 2;
+    font-size: $h4-font-size;
+
+    + li {
+      margin-top: $spacer;
+    }
+  }
+}
+
+.contact-info {
+  a {
+    margin-top: $spacer * 2;
+    display: block;
+
+    // Mobile view
+    @include media-breakpoint-down(lg) {
+      font-size: $h3-font-size;
+    }
+  }
+
+
+  // Icon
+  .icon {
+    border-radius: 50%;
+    color: $white;
+    display: block;
+    font-size: $h3-font-size;
+    line-height: 60px;
+    margin: auto;
+    margin-bottom: $spacer;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    z-index: 2;
+
+    &:after {
+      border: 2px solid;
+      content: "";
+      position: absolute;
+      z-index: 0;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      display: block;
+      width: 60px;
+      height: 60px;
+      background: transparent;
+      border-radius: 50%;
+      animation: pulse-border 1500ms ease-out infinite;
+    }
+  }
+}
+
+
+// Inline turns list items into inline-block
+.list-inline {
+}
+
+.list-inline-item {
+}
+
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+// Alert message
+.alert-error {
+  @extend .alert-danger;
+}
+
+//
+// Misc
+//
+// Builds on `abbr`
+.initialism {
+}
+
+// Blockquotes
+.blockquote {
+}
+
+.blockquote-footer {
+}
+
+// Font weight
+.fw-thin      { font-weight: 300; }
+.fw-semi-bold { font-weight: 500; }
+.fw-bold      { font-weight: 600; }
+
+.fs-xs   { font-size: ($font-size-base * .725); }
+.fs-sm   { font-size: ($font-size-base * .875); }
+.fs-base  { font-size: $font-size-base; }
+.fs-lg    { font-size: ($font-size-base * 1.25); } 
+
+
+//
+// Feature list (Custom style for)
+// ------------------------------------
+.features-list {
+  > div {
+    margin-bottom: $spacer*2;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+
+  .item {
+    height: 100%;
+    margin-bottom: $spacer*2.5;
+
+    .icon {
+      display: inline-block;
+      border-radius: 50%;
+      height: 80px;
+      text-align: center;
+      width: 80px;
+
+      i {
+        color: $gray-500;
+        font-size: $font-size-base*2.5;
+        line-height: 80px;
+      }
+    }
+  }
+
+  .card {
+    background-color: rgba(0,0,0,0.02);
+    border: 1px solid lighten($border-color, 25%);
+    border-radius: 9px;
+    height: 100%;
+    padding: $spacer*3 $spacer*1.5;
+    transition: $transition-base;
+
+    &:hover {
+      box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+      border-color: $border-color;
+
+      .icon {
+        box-shadow: none;
+        color: $blue;
+      }
+    }
+  }
+
+  .icon {
+    background-color: rgba(0,0,0,0.075);
+    border-radius: 50%;
+    color: $gray-500;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 0 auto $spacer*2;
+    transition: $transition-base;
+    width: 100px;
+  }
+
+  .block-title {
+    font-size: $h5-font-size;
+    margin-bottom: $spacer;
+  }
+}
+
+// Icon Play
+// Play Icon Effect
+.play-icon {
+  a {
+    align-items: center;
+    border-radius: 50%;
+    color: $white;
+    display: flex;
+    font-size: 32px;
+    justify-content: center;
+    position: relative;
+    text-indent: 3px;
+    height: 142px;
+    width: 142px;
+
+    &:before {
+      border: 2px solid;
+      content: "";
+      position: absolute;
+      z-index: 0;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      display: block;
+      width: 142px;
+      height: 142px;
+      background: transparent;
+      border-radius: 50%;
+      animation: pulse-border 1500ms ease-out infinite;
+    }
+
+    &:hover {
+      color: $white;
+    }
+
+    // Mobile view
+    @include media-breakpoint-down(lg) {
+      height: 80px;
+      width: 80px;
+
+      &:before {
+        height: 80px;
+        width: 80px;
+      }
+    }
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.2);
+    opacity: 0;
+  }
+}
+//
+// Dark background
+// ----------------------
+.t4-section.sec-bg-dark {
+  // Feature list
+  .features-list {
+    .card {
+      background-color: rgba($black, .1);
+    }
+
+    .icon {
+      background-color: rgba($black, .15);
+    }
+
+    .item {
+      .icon {
+        i {
+          color: rgba($white, .4);
+        } 
+      }
+    }
+  }
+
+  .testimonial-block {
+    background-color: rgba($black, .1);
+
+    &:after {
+      background: rgba($white, .1);
+    }
+  }
+}
+
+//
+// Introduction
+// ------------
+.t4-introduction {
+  background-color: $gray-100;
+  padding-top: $spacer*5;
+  padding-bottom: $spacer*5;
+
+  h3 {
+    font-weight: 600;
+    margin-bottom: $spacer*2;
+  }
+
+  p {
+    margin-bottom: $spacer*2;
+  }
+}
+
+
+// T4 EXTRA CUSTOM TYPOGRAPHY
+// ----------------------------------------
+// Section heading
+.section-heading {
+  margin-bottom: $spacer*3;
+
+  @include media-breakpoint-up(sm) {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  h2 {
+    font-size: $h2-font-size;
+    font-weight: 600;
+
+    @include media-breakpoint-up(sm) {
+      font-size: $h1-font-size*1.1;
+    }
+  }
+
+  p {
+    font-size: $font-size-lg;
+  }
+}
+
+//
+// Testimonials block
+ul.testimonial-list {
+  list-style: none;
+  margin: 0;
+  padding: $spacer*3 0 0;
+  text-align: center;
+  @include clearfix();
+
+  li {
+    margin-bottom: $spacer*5;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.testimonial-block {
+  border-radius: $border-radius-lg;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.085);
+  padding: 0 $spacer*3 $spacer*2;
+  position: relative;
+
+  &:after {
+    background-color: $gray-400;
+    border-radius: 5px;
+    content: "";
+    display: block;
+    height: 4px;
+    position: absolute;
+    left: $spacer*3;
+    right: $spacer*3;
+    bottom: -2px;
+    transition: all 0.25s;
+  }
+
+  &:hover {
+    &:after {
+      background-color: $blue;
+    }
+  }
+
+  img {
+    max-width: $spacer*6;
+    margin-top: -$spacer*3;
+    margin-bottom: $spacer*1.5;
+
+    &.img-rounded {
+      border-radius: $border-radius-lg;
+    }
+
+    &.img-circle {
+      border-radius: 50%;
+    }
+  }
+
+  .author-name {
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.5px;
+    margin: 0 0 $spacer;
+    text-transform: uppercase;
+  }
+}
+
+
+//
+// Pre code
+pre {
+  background-color: $gray-100;
+  border-radius: 3px;
+  font-family: Consolas, monospace;
+  padding: $spacer/2 $spacer;
+}
+
+
+// Social list
+// ---------------------------------
+.social-list {
+  @include socials-list(32px, 32px);
+}
+
+.social-list-sm {
+  @include socials-list(20px, 20px, transparent, $white);
+}
+
+.social-list-lg {
+  @include socials-list(48px, 48px);
+}
+
+ 
+// ---------------------------------
+// CUSTOM STYLE FOR EXAMPLE PAGE
+// ---------------------------------
+.t4-typo-example {
+  padding: $spacer;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: $spacer;
+  border: 1px solid $border-color;
+
+  & + .t4-typo-example {
+    margin-top: $spacer;
+  }
+}
+
+// Accordion
+.accordion {
+  padding: $spacer/2;
+  
+  h2 {
+    margin: 0;
+    line-height: 1;
+
+    .btn {
+      padding: 0;
+    }
+  }
+}

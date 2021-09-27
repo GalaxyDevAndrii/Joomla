@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="My Cart">
+		<message>My Cart</message>
+    </layout>
+    <state>
+		<name>My Cart</name>
+        <description>My Cart</description>
+    </state>
+</metadata>

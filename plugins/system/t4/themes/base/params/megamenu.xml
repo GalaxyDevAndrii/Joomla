@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="megaRow" addfieldpath="/plugins/system/t4/admin/field">
+		<fieldset name="row" label="T4_LAYOUT_TAB_GENERAL" description="T4_LAYOUT_SECTION_GENERAL_DESC">
+			<!-- mega info -->
+			<field name="mega-cols" class="t4-layout" class_field="mega-cols col-12" type="t4section" default="" label="T4_COLS_NUMBER" group="row" description="T4_COLS_NUMBER_DESC" />
+		</fieldset>
+	</fields>
+	<fields name="megaCol" addfieldpath="/plugins/system/t4/admin/field">
+		<fieldset name="col" label="T4_LAYOUT_TAB_GENERAL" description="T4_LAYOUT_SECTION_GENERAL_DESC">
+			<!-- site info -->
+			<field name="title" class="" class_field="title col-12" type="t4text" default="" label="T4_COL_TITLE" group="col" description="T4_COL_TITLE_DESC" />
+			<field name="type" class="t4-layout" class_field="type col-12" functions="getItemType" type="t4list" default="" group="col" label="T4_COL_TYPE" description="T4_COL_TYPE_DESC" />
+			<field name="module" class="t4-layout" class_field="module name_type col-12" functions="getModules" type="t4list" default="" group="col" label="T4_MODULE_TYPE" description="T4_MODULE_TYPE_DESC" />
+			<field name="position" class="t4-layout" class_field="position name_type col-12" functions="getPositions" type="t4list" default=""  group="col" label="T4_POSITION_TYPE" description="T4_POSITION_TYPE_DESC" />
+			<field name="items" class="t4-layout" class_field="items name_type col-12"  type="t4text" default="" group="col" label="T4_MENU_ITEM_TYPE" description="T4_MENU_ITEM_DESC" hint='0px 0px 0px 0px' />
+			<field name="style" class="t4-layout" class_field="style  col-12" type="t4list" functions="getModuleStyle" default="" group="col" label="T4_MODULE_STYLE_NAME" description="T4_MODULE_STYLE_NAME_DESC" hint='extra class' />
+			<field name="name" class="" hideLabel="hidden" class_field="name col-12" type="t4text" default="" group="col" label="T4_LAYOUT_NAME" description="T4_LAYOUT_NAME_DESC" />
+		</fieldset>
+	</fields>
+</form>

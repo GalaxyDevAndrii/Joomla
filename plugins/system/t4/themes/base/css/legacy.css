@@ -1,0 +1,85 @@
+.input-append {
+  position: relative; }
+  .input-append::after {
+    display: block;
+    clear: both;
+    content: ""; }
+  .input-append .media-preview {
+    background-color: #e9ecef;
+    border: 1px solid #dee2e6;
+    border-radius: 3px 0 0 3px;
+    height: 36px;
+    float: left;
+    line-height: 36px;
+    text-align: center;
+    width: 36px; }
+  .input-append input[type="text"] {
+    border: 0;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    float: left;
+    height: 36px;
+    line-height: 36px; }
+  .input-append .btn {
+    background-color: #e9ecef;
+    border: 1px solid #dee2e6;
+    border-left: 0;
+    border-radius: 0 3px 3px 0;
+    display: block !important;
+    float: left;
+    height: 36px;
+    line-height: 25px;
+    text-align: center; }
+    .input-append .btn.modal {
+      border-left: 1px solid #dee2e6;
+      border-radius: 0;
+      position: relative;
+      width: auto; }
+    .input-append .btn:hover, .input-append .btn:focus, .input-append .btn:active {
+      background-color: #dc3545;
+      color: #fff; }
+      .input-append .btn:hover.modal, .input-append .btn:focus.modal, .input-append .btn:active.modal {
+        background-color: #007bff; }
+    .input-append .btn span {
+      margin: 0; }
+
+a.modal {
+  color: #212529;
+  position: relative;
+  display: inline-block;
+  height: auto;
+  vertical-align: middle;
+  width: auto; }
+  a.modal:hover, a.modal:focus, a.modal:active {
+    color: #0056b3; }
+
+span.star {
+  color: #dc3545;
+  display: inline-block; }
+
+.joomla-modal .modal-dialog {
+  margin: 0;
+  height: 100%;
+  max-width: 100%;
+  width: 100%; }
+  .joomla-modal .modal-dialog .modal-content {
+    border: 0;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    height: 100%; }
+
+.contentpane {
+  padding: 0; }
+
+.container-popup {
+  padding: 0; }
+  .container-popup .hr-condensed {
+    border: 0;
+    margin: 10px 0; }
+  .container-popup .btn-group .btn {
+    background-color: #e9ecef;
+    border-radius: 3px;
+    margin: 0 5px; }
+    .container-popup .btn-group .btn:hover, .container-popup .btn-group .btn:focus, .container-popup .btn-group .btn:active {
+      background-color: #ced4da; }

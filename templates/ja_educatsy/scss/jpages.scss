@@ -1,0 +1,356 @@
+@import "vars";
+
+* {
+  box-sizing: border-box;
+}
+
+body {  
+  font-family: 'Roboto', sans-serif;
+  color: $gray-700;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  font-weight: 500;
+}
+
+pre,
+code {
+  color: #e83e8c;
+  font-family: Consolas, monaco, monospace;
+}
+
+.alert {
+  background-color: $gray-200;
+  border: 1px solid rgba($black, 0.1);
+  border-radius: 5px;
+  margin-bottom: $spacer;
+  padding: $spacer/2;
+  position: relative;
+
+  .close {
+    border: 1px solid rgba($black, 0.1%);
+    border-radius: 3px;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: $spacer/2;
+    top: $spacer/2;
+    text-align: center;
+    width: 20px;
+
+    &:hover, &:focus, &:active {
+      cursor: pointer;
+    }
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  &.alert-warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+  }
+
+  &.alert-message {
+    background-color: #cce5ff;
+    border-color: #b8daff;
+    color: #004085;
+  }
+}
+
+// 
+// T4 ERROR PAGE
+// ------------------------
+.t4-error-page {
+  background-color: $gray-100;
+
+  h1 {
+    margin: 0 0 $spacer;
+    font-size: 1.333rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.733rem;
+    }
+  }
+
+  .t4-error-msg {
+    background-color: $white;
+    box-shadow: 0 3px 3px rgba(0,0,0, 0.075);
+    border-radius: 7px;
+    padding: $spacer*2;
+    margin: 0 $spacer;
+    min-height: 180px;
+    margin-top: calc(100vh / 2);
+    max-width: 576px;
+    position: relative;
+    text-align: center;
+    transform: translateY(-50%);
+
+    @media screen and (min-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: $spacer*8;
+      text-align: left;
+    }
+  }
+
+  img {
+    opacity: .1;
+    margin: 0 auto;
+    width: $spacer*5;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      left: $spacer*2;
+      top: $spacer*2.5;
+      margin: 0;
+    }
+  }
+
+  .error-message {
+    margin-top: 0;
+    margin-bottom: $spacer*2;
+  }
+
+  code {
+    background-color: #FEF3F8;
+    border-radius: 3px;
+    color: #e83e8c;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9333rem;
+    padding: 0 5px;
+  }
+
+  .cta-wrap {    
+    h3 {
+      color: $gray-600;
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin: 0 0 $spacer/2 0;
+      text-transform: uppercase;
+
+      @media screen and (min-width: 768px) {
+        display: inline-block;
+        margin: 0 $spacer/2 0 0;
+      }
+    }
+
+    a {
+      background: $gray-200;
+      border-radius: 25px;
+      color: $gray-700;
+      display: inline-block;
+      font-size: 0.8rem;
+      margin: 5px $spacer/4;
+      letter-spacing: 1px;
+      padding: $spacer/3 $spacer;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.25s ease-in;
+
+      &:hover, &:focus, &:active {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+  }
+}
+
+
+// OFFLINE PAGE
+// -------------------------------
+body.offline {
+  font-family: $font-family-base;
+  font-size: 15px;
+
+  input {    
+    font-family: $font-family-base;
+  }
+}
+
+.outline {
+  max-width: 480px;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(md) {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+  }  
+}
+
+.form-wrap {
+  background-color: $gray-100;
+  border: 1px solid $border-color;
+  box-shadow: 0 0 0 5px rgba($black, 0.02);
+  border-radius: 5px;
+  padding: $spacer*1.5;
+
+  img {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 34px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 0 $spacer/2;
+  }
+
+  .offline-message {
+    background-color: lighten($blue, 40%);
+    border-radius: 3px;
+    color: $blue;
+    padding: $spacer;
+  }
+
+  #form-login {
+    fieldset {
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    #form-login-username,
+    #form-login-password,
+    #form-login-secretkey {
+      margin: 0 0 $spacer;
+
+      label {
+        display: block;
+        margin-bottom: $spacer/2;
+      }
+
+      input {
+        background: $white;
+        border-radius: 3px;
+        border: 1px solid $gray-300;
+        display: block;
+        font-size: $font-size-base;
+        padding: 0 $spacer/2;
+        line-height: 32px;
+        max-width: none;
+        transition: all 0.25s;
+        width: 100%;
+
+        &:hover, &:focus {
+          border-color: $primary;
+        }
+      }
+    }
+
+    #submit-buton {
+      padding-top: $spacer;
+    }
+
+    input.button {
+      background-color: $gray-600;
+      box-shadow: none;
+      border-radius: 3px;
+      border: 0;
+      color: $white;
+      display: block;
+      font-size: $font-size-base;
+      padding: 12px 0;
+      letter-spacing: 0.5px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: all 0.25s;
+      width: 100%;
+
+      &:hover, &:focus, &:active {
+        background-color: $gray-700;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+// ERROR PAGE
+// -------------------------------
+body.error-page {
+  .error-page-wrap {
+    border: 1px solid $gray-200;
+    border-radius: 3px;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: $spacer*2;
+    transform: translateY(50%);
+  }
+
+  .error-info {
+    border-bottom: 1px solid $gray-200;
+    padding-bottom: $spacer;
+
+    h2 {
+      font-size: 1.467rem;
+      font-weight: 500;
+      margin: 0 0 $spacer/2;      
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .error-code {
+    font-size: 6rem;
+    float: left;
+    font-weight: 500;
+    display: block;
+    line-height: 1;
+    margin-right: $spacer;
+  }
+
+  .error-other-info {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        padding-left: $spacer;
+
+        &:before {
+          background-color: $gray-500;
+          border-radius: 50%;
+          content: "";
+          display: inline-block;
+          height: 7px;
+          margin-right: 8px;
+          width: 7px;
+        }
+      }
+    }
+
+    .page-redirect {
+      padding-top: $spacer*2;
+
+      a {
+        border: 2px solid $gray-200;
+        color: $gray-800;
+        border-radius: 25px;
+        padding: $spacer/2 $spacer*1.5;
+        text-decoration: none;
+        transition: all 0.25s;
+
+        &:hover, &:focus, &:active {
+          border-color: $blue;
+          color: $blue;
+        }
+      }
+    }
+  }
+}

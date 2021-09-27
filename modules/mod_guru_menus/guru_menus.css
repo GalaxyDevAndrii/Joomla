@@ -1,0 +1,68 @@
+.guru-mod--menu {
+}
+
+.guru-mod--menu__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.guru-mod--menu__list li {
+	list-style-type: none;
+}
+
+.guru-mod--menu__item {
+	position: relative;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.guru-mod--menu__item:last-child {
+	margin-bottom: 0;
+}
+
+.guru-mod--menu__item i {
+	min-width: 18px;
+}
+
+.guru-mod--menu__item > a {
+	display: block;
+	padding: 4px 8px;
+	border-radius: 4px;
+	background-color: rgba(0,0,0,.02);
+}
+
+.module-list-courses a {
+	display: block;
+	padding: 4px 8px;
+	border-radius: 4px;
+}
+
+.guru-mod--menu__item > a:hover,
+.guru-mod--menu__item > a:focus,
+.module-list-courses a:hover,
+.module-list-courses a:focus {
+	background-color: rgba(0,0,0,.1);
+}
+
+.guru-mod--menu__item a,
+.guru-mod--menu__item a:hover,
+.guru-mod--menu__item a:focus {
+	text-decoration: none;
+}
+
+.guru-mod--menu__dropdown > li {
+	margin-bottom: 4px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.guru-mod--menu__dropdown > li:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+.module-list-courses li{
+	margin:3px 0px;
+}

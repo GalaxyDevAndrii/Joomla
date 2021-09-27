@@ -1,0 +1,1238 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA Educatsy Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2018 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+ */
+/**
+ *------------------------------------------------------------------------------
+ * @package       T4_Blank - Free Template for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2019 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt
+ *------------------------------------------------------------------------------
+**/
+body #guru-component .uk-form select,
+body #guru-component .uk-form textarea,
+body #guru-component .uk-form input:not([type]),
+body #guru-component .uk-form input[type="text"],
+body #guru-component .uk-form input[type="password"],
+body #guru-component .uk-form input[type="datetime"],
+body #guru-component .uk-form input[type="datetime-local"],
+body #guru-component .uk-form input[type="date"],
+body #guru-component .uk-form input[type="month"],
+body #guru-component .uk-form input[type="time"],
+body #guru-component .uk-form input[type="week"],
+body #guru-component .uk-form input[type="number"],
+body #guru-component .uk-form input[type="email"],
+body #guru-component .uk-form input[type="url"],
+body #guru-component .uk-form input[type="search"],
+body #guru-component .uk-form input[type="tel"],
+body #guru-component .uk-form input[type="color"] {
+  border-radius: 4px;
+  height: calc(2.9rem + 2px);
+  padding: 1rem 1rem; }
+  body #guru-component .uk-form select:focus,
+  body #guru-component .uk-form textarea:focus,
+  body #guru-component .uk-form input:not([type]):focus,
+  body #guru-component .uk-form input[type="text"]:focus,
+  body #guru-component .uk-form input[type="password"]:focus,
+  body #guru-component .uk-form input[type="datetime"]:focus,
+  body #guru-component .uk-form input[type="datetime-local"]:focus,
+  body #guru-component .uk-form input[type="date"]:focus,
+  body #guru-component .uk-form input[type="month"]:focus,
+  body #guru-component .uk-form input[type="time"]:focus,
+  body #guru-component .uk-form input[type="week"]:focus,
+  body #guru-component .uk-form input[type="number"]:focus,
+  body #guru-component .uk-form input[type="email"]:focus,
+  body #guru-component .uk-form input[type="url"]:focus,
+  body #guru-component .uk-form input[type="search"]:focus,
+  body #guru-component .uk-form input[type="tel"]:focus,
+  body #guru-component .uk-form input[type="color"]:focus {
+    background: #fff;
+    border-color: #333; }
+
+body a, body #guru-component .uk-link {
+  color: #007bff; }
+  body a:hover, body a:focus, body a:active, body #guru-component .uk-link:hover, body #guru-component .uk-link:focus, body #guru-component .uk-link:active {
+    color: #0056b3;
+    text-decoration: none; }
+
+.view-guruprograms div.ja-masthead .ja-masthead-detail,
+.view-guruPrograms div.ja-masthead .ja-masthead-detail {
+  width: 750px; }
+  .view-guruprograms div.ja-masthead .ja-masthead-detail .ja-masthead-title,
+  .view-guruPrograms div.ja-masthead .ja-masthead-detail .ja-masthead-title {
+    margin-bottom: 36px; }
+
+.com_guru .gru-page-title {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-weight: 500;
+  font-size: 36px; }
+  @media (max-width: 767.98px) {
+    .com_guru .gru-page-title {
+      font-size: 30px; } }
+
+.com_guru .gru-panel-teaser {
+  height: 264px; }
+
+.com_guru .guru-powered {
+  text-align: left;
+  color: #333; }
+
+.com_guru .teacher_links {
+  background: #212529;
+  margin-bottom: 36px; }
+  .com_guru .teacher_links .teacher_links-item:hover {
+    background: #919191; }
+  .com_guru .teacher_links a {
+    color: #333;
+    font-weight: 600; }
+    .com_guru .teacher_links a .fa {
+      color: #2196F3; }
+
+.com_guru .gru-filter-item input[type="text"] {
+  height: calc(2.9rem + 2px) !important;
+  padding: 1rem 1rem; }
+
+.com_guru #guru-component .uk-badge-notification {
+  padding: 8px 12px;
+  min-width: 0;
+  line-height: 1;
+  font-size: 12px; }
+
+.com_guru #guru-component .uk-margin-top {
+  margin-top: 36px !important; }
+  @media (max-width: 767.98px) {
+    .com_guru #guru-component .uk-margin-top {
+      margin-top: 1.25rem !important; } }
+
+.com_guru #guru-component .uk-margin-bottom {
+  margin-bottom: 36px !important; }
+  @media (max-width: 767.98px) {
+    .com_guru #guru-component .uk-margin-bottom {
+      margin-bottom: 1.25rem !important; } }
+
+.com_guru #guru-component .uk-button-primary {
+  color: #fff;
+  background-color: #2196F3;
+  border-color: #2196F3; }
+  .com_guru #guru-component .uk-button-primary:hover {
+    color: #fff;
+    background-color: #0c83e2;
+    border-color: #0c7cd5; }
+  .com_guru #guru-component .uk-button-primary:focus, .com_guru #guru-component .uk-button-primary.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(66, 166, 245, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(66, 166, 245, 0.5); }
+  .com_guru #guru-component .uk-button-primary.disabled, .com_guru #guru-component .uk-button-primary:disabled {
+    color: #fff;
+    background-color: #2196F3;
+    border-color: #2196F3; }
+  .com_guru #guru-component .uk-button-primary:not(:disabled):not(.disabled):active, .com_guru #guru-component .uk-button-primary:not(:disabled):not(.disabled).active,
+  .show > .com_guru #guru-component .uk-button-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #0c7cd5;
+    border-color: #0b75c9; }
+    .com_guru #guru-component .uk-button-primary:not(:disabled):not(.disabled):active:focus, .com_guru #guru-component .uk-button-primary:not(:disabled):not(.disabled).active:focus,
+    .show > .com_guru #guru-component .uk-button-primary.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(66, 166, 245, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(66, 166, 245, 0.5); }
+
+.com_guru #guru-component .uk-button-secondary {
+  color: #212529;
+  background-color: #9E9E9E;
+  border-color: #9E9E9E; }
+  .com_guru #guru-component .uk-button-secondary:hover {
+    color: #fff;
+    background-color: #8b8b8b;
+    border-color: #858585; }
+  .com_guru #guru-component .uk-button-secondary:focus, .com_guru #guru-component .uk-button-secondary.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(139, 140, 140, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(139, 140, 140, 0.5); }
+  .com_guru #guru-component .uk-button-secondary.disabled, .com_guru #guru-component .uk-button-secondary:disabled {
+    color: #212529;
+    background-color: #9E9E9E;
+    border-color: #9E9E9E; }
+  .com_guru #guru-component .uk-button-secondary:not(:disabled):not(.disabled):active, .com_guru #guru-component .uk-button-secondary:not(:disabled):not(.disabled).active,
+  .show > .com_guru #guru-component .uk-button-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #858585;
+    border-color: #7e7e7e; }
+    .com_guru #guru-component .uk-button-secondary:not(:disabled):not(.disabled):active:focus, .com_guru #guru-component .uk-button-secondary:not(:disabled):not(.disabled).active:focus,
+    .show > .com_guru #guru-component .uk-button-secondary.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(139, 140, 140, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(139, 140, 140, 0.5); }
+
+.com_guru #guru-component .uk-button-success {
+  color: #fff;
+  background-color: #4CAF50;
+  border-color: #4CAF50; }
+  .com_guru #guru-component .uk-button-success:hover {
+    color: #fff;
+    background-color: #409444;
+    border-color: #3d8b40; }
+  .com_guru #guru-component .uk-button-success:focus, .com_guru #guru-component .uk-button-success.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(103, 187, 106, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(103, 187, 106, 0.5); }
+  .com_guru #guru-component .uk-button-success.disabled, .com_guru #guru-component .uk-button-success:disabled {
+    color: #fff;
+    background-color: #4CAF50;
+    border-color: #4CAF50; }
+  .com_guru #guru-component .uk-button-success:not(:disabled):not(.disabled):active, .com_guru #guru-component .uk-button-success:not(:disabled):not(.disabled).active,
+  .show > .com_guru #guru-component .uk-button-success.dropdown-toggle {
+    color: #fff;
+    background-color: #3d8b40;
+    border-color: #39833c; }
+    .com_guru #guru-component .uk-button-success:not(:disabled):not(.disabled):active:focus, .com_guru #guru-component .uk-button-success:not(:disabled):not(.disabled).active:focus,
+    .show > .com_guru #guru-component .uk-button-success.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(103, 187, 106, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(103, 187, 106, 0.5); }
+
+.com_guru #guru-component .uk-button-info {
+  color: #fff;
+  background-color: #00BCD4;
+  border-color: #00BCD4; }
+  .com_guru #guru-component .uk-button-info:hover {
+    color: #fff;
+    background-color: #009aae;
+    border-color: #008fa1; }
+  .com_guru #guru-component .uk-button-info:focus, .com_guru #guru-component .uk-button-info.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 198, 218, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(38, 198, 218, 0.5); }
+  .com_guru #guru-component .uk-button-info.disabled, .com_guru #guru-component .uk-button-info:disabled {
+    color: #fff;
+    background-color: #00BCD4;
+    border-color: #00BCD4; }
+  .com_guru #guru-component .uk-button-info:not(:disabled):not(.disabled):active, .com_guru #guru-component .uk-button-info:not(:disabled):not(.disabled).active,
+  .show > .com_guru #guru-component .uk-button-info.dropdown-toggle {
+    color: #fff;
+    background-color: #008fa1;
+    border-color: #008394; }
+    .com_guru #guru-component .uk-button-info:not(:disabled):not(.disabled):active:focus, .com_guru #guru-component .uk-button-info:not(:disabled):not(.disabled).active:focus,
+    .show > .com_guru #guru-component .uk-button-info.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 198, 218, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(38, 198, 218, 0.5); }
+
+.com_guru #guru-component .uk-button-warning {
+  color: #212529;
+  background-color: #FDD835;
+  border-color: #FDD835; }
+  .com_guru #guru-component .uk-button-warning:hover {
+    color: #212529;
+    background-color: #fdd10f;
+    border-color: #fdce03; }
+  .com_guru #guru-component .uk-button-warning:focus, .com_guru #guru-component .uk-button-warning.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 189, 51, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(220, 189, 51, 0.5); }
+  .com_guru #guru-component .uk-button-warning.disabled, .com_guru #guru-component .uk-button-warning:disabled {
+    color: #212529;
+    background-color: #FDD835;
+    border-color: #FDD835; }
+  .com_guru #guru-component .uk-button-warning:not(:disabled):not(.disabled):active, .com_guru #guru-component .uk-button-warning:not(:disabled):not(.disabled).active,
+  .show > .com_guru #guru-component .uk-button-warning.dropdown-toggle {
+    color: #212529;
+    background-color: #fdce03;
+    border-color: #f0c402; }
+    .com_guru #guru-component .uk-button-warning:not(:disabled):not(.disabled):active:focus, .com_guru #guru-component .uk-button-warning:not(:disabled):not(.disabled).active:focus,
+    .show > .com_guru #guru-component .uk-button-warning.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 189, 51, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(220, 189, 51, 0.5); }
+
+.com_guru #guru-component .uk-button-danger {
+  color: #fff;
+  background-color: #F44336;
+  border-color: #F44336; }
+  .com_guru #guru-component .uk-button-danger:hover {
+    color: #fff;
+    background-color: #f22112;
+    border-color: #ea1c0d; }
+  .com_guru #guru-component .uk-button-danger:focus, .com_guru #guru-component .uk-button-danger.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(246, 95, 84, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(246, 95, 84, 0.5); }
+  .com_guru #guru-component .uk-button-danger.disabled, .com_guru #guru-component .uk-button-danger:disabled {
+    color: #fff;
+    background-color: #F44336;
+    border-color: #F44336; }
+  .com_guru #guru-component .uk-button-danger:not(:disabled):not(.disabled):active, .com_guru #guru-component .uk-button-danger:not(:disabled):not(.disabled).active,
+  .show > .com_guru #guru-component .uk-button-danger.dropdown-toggle {
+    color: #fff;
+    background-color: #ea1c0d;
+    border-color: #de1b0c; }
+    .com_guru #guru-component .uk-button-danger:not(:disabled):not(.disabled):active:focus, .com_guru #guru-component .uk-button-danger:not(:disabled):not(.disabled).active:focus,
+    .show > .com_guru #guru-component .uk-button-danger.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(246, 95, 84, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(246, 95, 84, 0.5); }
+
+.com_guru #guru-component .uk-button-light {
+  color: #212529;
+  background-color: #e9ecef;
+  border-color: #e9ecef; }
+  .com_guru #guru-component .uk-button-light:hover {
+    color: #212529;
+    background-color: #d3d9df;
+    border-color: #cbd3da; }
+  .com_guru #guru-component .uk-button-light:focus, .com_guru #guru-component .uk-button-light.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(203, 206, 209, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(203, 206, 209, 0.5); }
+  .com_guru #guru-component .uk-button-light.disabled, .com_guru #guru-component .uk-button-light:disabled {
+    color: #212529;
+    background-color: #e9ecef;
+    border-color: #e9ecef; }
+  .com_guru #guru-component .uk-button-light:not(:disabled):not(.disabled):active, .com_guru #guru-component .uk-button-light:not(:disabled):not(.disabled).active,
+  .show > .com_guru #guru-component .uk-button-light.dropdown-toggle {
+    color: #212529;
+    background-color: #cbd3da;
+    border-color: #c4ccd4; }
+    .com_guru #guru-component .uk-button-light:not(:disabled):not(.disabled):active:focus, .com_guru #guru-component .uk-button-light:not(:disabled):not(.disabled).active:focus,
+    .show > .com_guru #guru-component .uk-button-light.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(203, 206, 209, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(203, 206, 209, 0.5); }
+
+.com_guru #guru-component .uk-button-dark {
+  color: #fff;
+  background-color: #333;
+  border-color: #333; }
+  .com_guru #guru-component .uk-button-dark:hover {
+    color: #fff;
+    background-color: #202020;
+    border-color: #1a1a1a; }
+  .com_guru #guru-component .uk-button-dark:focus, .com_guru #guru-component .uk-button-dark.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(82, 82, 82, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(82, 82, 82, 0.5); }
+  .com_guru #guru-component .uk-button-dark.disabled, .com_guru #guru-component .uk-button-dark:disabled {
+    color: #fff;
+    background-color: #333;
+    border-color: #333; }
+  .com_guru #guru-component .uk-button-dark:not(:disabled):not(.disabled):active, .com_guru #guru-component .uk-button-dark:not(:disabled):not(.disabled).active,
+  .show > .com_guru #guru-component .uk-button-dark.dropdown-toggle {
+    color: #fff;
+    background-color: #1a1a1a;
+    border-color: #131313; }
+    .com_guru #guru-component .uk-button-dark:not(:disabled):not(.disabled):active:focus, .com_guru #guru-component .uk-button-dark:not(:disabled):not(.disabled).active:focus,
+    .show > .com_guru #guru-component .uk-button-dark.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(82, 82, 82, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(82, 82, 82, 0.5); }
+
+.com_guru #guru-component .uk-button-white {
+  color: #212529;
+  background-color: #fff;
+  border-color: #fff; }
+  .com_guru #guru-component .uk-button-white:hover {
+    color: #212529;
+    background-color: #ececec;
+    border-color: #e6e6e6; }
+  .com_guru #guru-component .uk-button-white:focus, .com_guru #guru-component .uk-button-white.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(222, 222, 223, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(222, 222, 223, 0.5); }
+  .com_guru #guru-component .uk-button-white.disabled, .com_guru #guru-component .uk-button-white:disabled {
+    color: #212529;
+    background-color: #fff;
+    border-color: #fff; }
+  .com_guru #guru-component .uk-button-white:not(:disabled):not(.disabled):active, .com_guru #guru-component .uk-button-white:not(:disabled):not(.disabled).active,
+  .show > .com_guru #guru-component .uk-button-white.dropdown-toggle {
+    color: #212529;
+    background-color: #e6e6e6;
+    border-color: #dfdfdf; }
+    .com_guru #guru-component .uk-button-white:not(:disabled):not(.disabled):active:focus, .com_guru #guru-component .uk-button-white:not(:disabled):not(.disabled).active:focus,
+    .show > .com_guru #guru-component .uk-button-white.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(222, 222, 223, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(222, 222, 223, 0.5); }
+
+.com_guru #guru-component .uk-button-black {
+  color: #fff;
+  background-color: #000;
+  border-color: #000; }
+  .com_guru #guru-component .uk-button-black:hover {
+    color: #fff;
+    background-color: black;
+    border-color: black; }
+  .com_guru #guru-component .uk-button-black:focus, .com_guru #guru-component .uk-button-black.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5); }
+  .com_guru #guru-component .uk-button-black.disabled, .com_guru #guru-component .uk-button-black:disabled {
+    color: #fff;
+    background-color: #000;
+    border-color: #000; }
+  .com_guru #guru-component .uk-button-black:not(:disabled):not(.disabled):active, .com_guru #guru-component .uk-button-black:not(:disabled):not(.disabled).active,
+  .show > .com_guru #guru-component .uk-button-black.dropdown-toggle {
+    color: #fff;
+    background-color: black;
+    border-color: black; }
+    .com_guru #guru-component .uk-button-black:not(:disabled):not(.disabled):active:focus, .com_guru #guru-component .uk-button-black:not(:disabled):not(.disabled).active:focus,
+    .show > .com_guru #guru-component .uk-button-black.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5); }
+
+.com_guru #guru-component .gru-filter-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.41667rem;
+  margin-bottom: 0.41667rem; }
+  .com_guru #guru-component .gru-filter-item .uk-button {
+    margin-left: -5px !important;
+    height: calc(2.9rem + 2px); }
+  .com_guru #guru-component .gru-filter-item .form-control {
+    width: 200px !important; }
+
+.com_guru #guru-component .uk-table-striped {
+  border: 1px solid #F4F4F4;
+  border-radius: 4px; }
+  .com_guru #guru-component .uk-table-striped th, .com_guru #guru-component .uk-table-striped td {
+    padding: 18px; }
+    @media (max-width: 767.98px) {
+      .com_guru #guru-component .uk-table-striped th, .com_guru #guru-component .uk-table-striped td {
+        padding: 0.41667rem; } }
+  .com_guru #guru-component .uk-table-striped th {
+    color: #333333; }
+  .com_guru #guru-component .uk-table-striped td > ul > li {
+    list-style: none; }
+  @media (max-width: 767.98px) {
+    .com_guru #guru-component .uk-table-striped td > select {
+      padding: 0.41667rem; } }
+  .com_guru #guru-component .uk-table-striped tbody tr:nth-of-type(odd) {
+    background: #212529; }
+  .com_guru #guru-component .uk-table-striped a {
+    color: #333;
+    font-weight: 500; }
+    .com_guru #guru-component .uk-table-striped a:hover, .com_guru #guru-component .uk-table-striped a:focus, .com_guru #guru-component .uk-table-striped a:active {
+      color: #2196F3; }
+  .com_guru #guru-component .uk-table-striped img {
+    border-radius: 0; }
+
+.com_guru #guru-component .uk-panel-box {
+  background: #fff;
+  border: 1px solid #F4F4F4;
+  border-radius: 4px;
+  color: #333;
+  padding: 36px; }
+  @media (max-width: 767.98px) {
+    .com_guru #guru-component .uk-panel-box:last-child {
+      margin-bottom: 18px; } }
+  .com_guru #guru-component .uk-panel-box > .uk-panel-teaser {
+    border-radius: 4px 4px 0 0;
+    margin: -74px -1px; }
+  .com_guru #guru-component .uk-panel-box .uk-panel-badge {
+    background: #2196F3;
+    top: 18px;
+    right: 18px; }
+  .com_guru #guru-component .uk-panel-box .uk-panel-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 18px; }
+    .com_guru #guru-component .uk-panel-box .uk-panel-title a {
+      color: #333333; }
+      .com_guru #guru-component .uk-panel-box .uk-panel-title a:hover, .com_guru #guru-component .uk-panel-box .uk-panel-title a:focus, .com_guru #guru-component .uk-panel-box .uk-panel-title a:active {
+        color: #2196F3; }
+  .com_guru #guru-component .uk-panel-box.uk-panel-header .uk-panel-title {
+    border-color: #F4F4F4; }
+  .com_guru #guru-component .uk-panel-box .author {
+    color: #9E9E9E;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 1.25rem; }
+    .com_guru #guru-component .uk-panel-box .author a {
+      color: #007bff; }
+      .com_guru #guru-component .uk-panel-box .author a:hover, .com_guru #guru-component .uk-panel-box .author a:focus, .com_guru #guru-component .uk-panel-box .author a:active {
+        color: #0056b3; }
+  .com_guru #guru-component .uk-panel-box .student-info {
+    color: #9E9E9E;
+    font-size: 12px;
+    margin-top: 1.25rem; }
+    .com_guru #guru-component .uk-panel-box .student-info .icon {
+      background: #2196F3;
+      border-radius: 50%;
+      color: #fff;
+      display: inline-block;
+      line-height: 1.25rem;
+      margin-right: 6px;
+      font-size: 12px;
+      text-align: center;
+      height: 1.25rem;
+      width: 1.25rem; }
+      .com_guru #guru-component .uk-panel-box .student-info .icon:before {
+        line-height: 1.25rem; }
+  .com_guru #guru-component .uk-panel-box .course-footer {
+    border-top: 1px solid #F4F4F4;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    padding: 1.25rem 36px;
+    width: 100%; }
+    .com_guru #guru-component .uk-panel-box .course-footer .price {
+      color: #F44336;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -1px; }
+    .com_guru #guru-component .uk-panel-box .course-footer .readmore a {
+      color: #007bff;
+      font-weight: 600;
+      font-size: 12px;
+      margin-top: 5px; }
+      .com_guru #guru-component .uk-panel-box .course-footer .readmore a:hover, .com_guru #guru-component .uk-panel-box .course-footer .readmore a:focus, .com_guru #guru-component .uk-panel-box .course-footer .readmore a:active {
+        color: #0056b3; }
+      .com_guru #guru-component .uk-panel-box .course-footer .readmore a:after {
+        content: "\f119";
+        font-family: "Ionicons";
+        margin-left: 4px;
+        position: relative;
+        top: 1px; }
+
+.com_guru #guru-component #guru_cart .uk-panel-box {
+  border: 0;
+  padding: 0; }
+
+@media (max-width: 767.98px) {
+  .com_guru #guru-component #guru_cart #adminForm > .uk-panel {
+    border: 2px solid #F4F4F4; }
+    .com_guru #guru-component #guru_cart #adminForm > .uk-panel table {
+      border: none; } }
+
+.com_guru #guru-component .uk-overlay-panel {
+  padding: 1.25rem 36px; }
+
+.com_guru #guru-component .gru-page-filters {
+  margin-bottom: 36px; }
+
+.com_guru #guru-component #g_cath_detail_top > .uk-panel-box {
+  margin-bottom: 36px; }
+
+.com_guru #guru-component #g_cath_detail_top .uk-category-view {
+  padding-bottom: 108px;
+  -webkit-transition: 500ms all;
+  -o-transition: 500ms all;
+  transition: 500ms all; }
+  .com_guru #guru-component #g_cath_detail_top .uk-category-view:hover {
+    -webkit-box-shadow: 0 0 36px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 36px rgba(0, 0, 0, 0.1);
+    -ms-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-transform: translateY(-12px); }
+    @media (max-width: 1199.98px) {
+      .com_guru #guru-component #g_cath_detail_top .uk-category-view:hover {
+        -ms-transform: unset;
+        transform: unset;
+        -webkit-transform: unset;
+        -webkit-box-shadow: none;
+        box-shadow: none; } }
+
+.com_guru #guru-component .view-course-detail .uk-alert {
+  background: #212529;
+  border-radius: 4px;
+  padding: 1.25rem;
+  margin: 36px 0; }
+  .com_guru #guru-component .view-course-detail .uk-alert:first-child {
+    margin-top: 0; }
+  .com_guru #guru-component .view-course-detail .uk-alert a {
+    color: #333; }
+  .com_guru #guru-component .view-course-detail .uk-alert .uk-icon-bullhorn:before {
+    background: #4CAF50;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    content: "\f133";
+    font-family: "Ionicons";
+    line-height: 1.25rem;
+    margin-right: 5px;
+    text-align: center;
+    height: 1.25rem;
+    width: 1.25rem; }
+
+.com_guru #guru-component .view-course-detail .course-sidebar {
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 36px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 36px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 36px;
+  margin-top: -396px;
+  max-width: 396px; }
+  .com_guru #guru-component .view-course-detail .course-sidebar.affix {
+    position: fixed !important;
+    margin-top: 0;
+    top: 36px; }
+    @media (max-width: 1199.98px) {
+      .com_guru #guru-component .view-course-detail .course-sidebar.affix {
+        position: static !important;
+        top: 0; } }
+  @media (max-width: 1199.98px) {
+    .com_guru #guru-component .view-course-detail .course-sidebar {
+      margin-top: 0;
+      max-width: 100%;
+      margin-bottom: 36px; } }
+  .com_guru #guru-component .view-course-detail .course-sidebar .uk-cover-background {
+    height: 216px; }
+  .com_guru #guru-component .view-course-detail .course-sidebar .uk-overlay-panel {
+    background: transparent;
+    position: relative;
+    padding: 0; }
+    .com_guru #guru-component .view-course-detail .course-sidebar .uk-overlay-panel .gru-cover-details {
+      color: #333;
+      text-shadow: none; }
+    .com_guru #guru-component .view-course-detail .course-sidebar .uk-overlay-panel.uk-overlay-top {
+      margin-top: 1.25rem; }
+      .com_guru #guru-component .view-course-detail .course-sidebar .uk-overlay-panel.uk-overlay-top .gru-cover-title {
+        color: #333333;
+        text-shadow: none;
+        font-size: 18px; }
+    .com_guru #guru-component .view-course-detail .course-sidebar .uk-overlay-panel.uk-overlay-bottom {
+      margin-top: 1.25rem; }
+      .com_guru #guru-component .view-course-detail .course-sidebar .uk-overlay-panel.uk-overlay-bottom .uk-course-info li {
+        margin-bottom: 0.625rem; }
+        .com_guru #guru-component .view-course-detail .course-sidebar .uk-overlay-panel.uk-overlay-bottom .uk-course-info li .icon,
+        .com_guru #guru-component .view-course-detail .course-sidebar .uk-overlay-panel.uk-overlay-bottom .uk-course-info li i {
+          background: #212529;
+          border-radius: 50%;
+          display: inline-block;
+          line-height: 1.25rem;
+          font-size: 14px;
+          text-align: center;
+          margin-right: 0.3125rem;
+          height: 1.25rem;
+          width: 1.25rem; }
+      .com_guru #guru-component .view-course-detail .course-sidebar .uk-overlay-panel.uk-overlay-bottom .uk-course-action > .icon,
+      .com_guru #guru-component .view-course-detail .course-sidebar .uk-overlay-panel.uk-overlay-bottom .uk-course-action > i {
+        background: #212529;
+        border-radius: 50%;
+        display: inline-block;
+        line-height: 1.25rem;
+        font-size: 11px;
+        text-align: center;
+        margin-right: 0.3125rem;
+        height: 1.25rem;
+        width: 1.25rem; }
+      .com_guru #guru-component .view-course-detail .course-sidebar .uk-overlay-panel.uk-overlay-bottom .gru-cover-purchase-btn {
+        margin-top: 36px; }
+        .com_guru #guru-component .view-course-detail .course-sidebar .uk-overlay-panel.uk-overlay-bottom .gru-cover-purchase-btn .btn {
+          height: auto; }
+          .com_guru #guru-component .view-course-detail .course-sidebar .uk-overlay-panel.uk-overlay-bottom .gru-cover-purchase-btn .btn .icon {
+            position: relative;
+            top: 1px;
+            margin-left: 0.3125rem; }
+
+.com_guru #guru-component .view-course-detail .guru-course-view {
+  margin-top: 0; }
+  .com_guru #guru-component .view-course-detail .guru-course-view .tab-content {
+    border: 1px solid #F4F4F4;
+    border-radius: 4px;
+    padding: 36px; }
+    .com_guru #guru-component .view-course-detail .guru-course-view .tab-content .uk-button-primary {
+      background: #2196F3;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 13px;
+      padding: 4px 8px; }
+    .com_guru #guru-component .view-course-detail .guru-course-view .tab-content .guru-tab-title {
+      background: #212529;
+      color: #333;
+      padding: 0.625rem 1.25rem;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px; }
+    .com_guru #guru-component .view-course-detail .guru-course-view .tab-content .lessons_wrap .uk-grid > * {
+      padding: 18px 0; }
+    .com_guru #guru-component .view-course-detail .guru-course-view .tab-content .lessons_wrap img {
+      border-radius: 0; }
+    .com_guru #guru-component .view-course-detail .guru-course-view .tab-content .lessons_wrap ul > li {
+      border-bottom: 1px dashed #F4F4F4; }
+      .com_guru #guru-component .view-course-detail .guru-course-view .tab-content .lessons_wrap ul > li:last-child {
+        border-bottom: 0; }
+    .com_guru #guru-component .view-course-detail .guru-course-view .tab-content .lessons_wrap .lesson_name {
+      padding-left: 0; }
+      .com_guru #guru-component .view-course-detail .guru-course-view .tab-content .lessons_wrap .lesson_name a {
+        color: #333;
+        font-weight: 500; }
+    .com_guru #guru-component .view-course-detail .guru-course-view .tab-content .course_view_description {
+      padding: 0; }
+      .com_guru #guru-component .view-course-detail .guru-course-view .tab-content .course_view_description img {
+        margin: 0; }
+    .com_guru #guru-component .view-course-detail .guru-course-view .tab-content .teacher_info {
+      padding: 0;
+      margin-top: 36px; }
+
+.com_guru #guru-component .gru-register .uk-form {
+  border: 1px solid #F4F4F4;
+  border-radius: 4px;
+  padding: 72px; }
+  @media (max-width: 767.98px) {
+    .com_guru #guru-component .gru-register .uk-form {
+      padding: 1.25rem; } }
+  .com_guru #guru-component .gru-register .uk-form legend {
+    color: #333333;
+    font-size: 21px;
+    font-weight: 600; }
+    .com_guru #guru-component .gru-register .uk-form legend:after {
+      margin-top: 0.625rem;
+      border-color: #F4F4F4; }
+
+.com_guru #guru-component #teacherList .guru-teacher-box {
+  background: #fff !important;
+  border: 1px solid #F4F4F4 !important;
+  padding-bottom: 108px !important; }
+  .com_guru #guru-component #teacherList .guru-teacher-box .uk-clearfix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .com_guru #guru-component #teacherList .guru-teacher-box .uk-clearfix .name_guru {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2; }
+      .com_guru #guru-component #teacherList .guru-teacher-box .uk-clearfix .name_guru a h4:hover, .com_guru #guru-component #teacherList .guru-teacher-box .uk-clearfix .name_guru a h4:focus, .com_guru #guru-component #teacherList .guru-teacher-box .uk-clearfix .name_guru a h4:active {
+        color: #2196F3; }
+    .com_guru #guru-component #teacherList .guru-teacher-box .uk-clearfix .image_guru {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1; }
+      .com_guru #guru-component #teacherList .guru-teacher-box .uk-clearfix .image_guru .thumbnail {
+        border: 0;
+        padding: 0;
+        margin-bottom: 1.25rem;
+        width: 100%; }
+        .com_guru #guru-component #teacherList .guru-teacher-box .uk-clearfix .image_guru .thumbnail img {
+          width: 100%; }
+    .com_guru #guru-component #teacherList .guru-teacher-box .uk-clearfix .description_guru {
+      -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+      order: 3; }
+      .com_guru #guru-component #teacherList .guru-teacher-box .uk-clearfix .description_guru .uk-button-primary {
+        background: transparent;
+        border: 0;
+        color: #007bff !important;
+        padding: 0;
+        font-weight: 500; }
+        .com_guru #guru-component #teacherList .guru-teacher-box .uk-clearfix .description_guru .uk-button-primary:hover {
+          color: #0c7cd5 !important; }
+        .com_guru #guru-component #teacherList .guru-teacher-box .uk-clearfix .description_guru .uk-button-primary:after {
+          content: "\f119";
+          font-family: "Ionicons";
+          margin-left: 4px;
+          position: relative;
+          top: 1px; }
+    .com_guru #guru-component #teacherList .guru-teacher-box .uk-clearfix .guru-teacher-box-footer {
+      bottom: 0;
+      color: #333;
+      padding: 18px 36px;
+      font-weight: 600; }
+      .com_guru #guru-component #teacherList .guru-teacher-box .uk-clearfix .guru-teacher-box-footer i {
+        background: #2196F3;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 13px;
+        text-align: center;
+        line-height: 1.25rem;
+        margin-right: 4px;
+        height: 1.25rem;
+        width: 1.25rem; }
+        .com_guru #guru-component #teacherList .guru-teacher-box .uk-clearfix .guru-teacher-box-footer i:before {
+          content: "\f21c";
+          font-family: "Ionicons"; }
+
+.guru-mod--courses-wrap {
+  overflow: hidden;
+  padding-top: 36px;
+  margin-top: -36px; }
+
+.category-action {
+  position: absolute;
+  text-align: right;
+  margin-top: -72px;
+  width: 100%; }
+  .category-action a {
+    font-weight: 700; }
+
+.courses-slide a, .courses-slide #guru-component .uk-link {
+  color: #007bff; }
+  .courses-slide a:hover, .courses-slide a:focus, .courses-slide a:active, .courses-slide #guru-component .uk-link:hover, .courses-slide #guru-component .uk-link:focus, .courses-slide #guru-component .uk-link:active {
+    color: #0056b3; }
+
+.courses-slide .owl-carousel .owl-stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.courses-slide .owl-carousel .owl-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  opacity: 0.5; }
+  .courses-slide .owl-carousel .owl-item.active {
+    opacity: 1; }
+
+.courses-slide .owl-carousel .owl-stage-outer {
+  overflow: visible; }
+
+.courses-slide .owl-carousel .owl-dots {
+  max-width: 960px; }
+
+.courses-slide .guru-mod--courses__item.guru-mod--courses__item {
+  border: 1px solid #F4F4F4;
+  border-radius: 4px;
+  padding: 36px !important;
+  padding-bottom: 72px !important;
+  -webkit-transition: 500ms all;
+  -o-transition: 500ms all;
+  transition: 500ms all; }
+  .courses-slide .guru-mod--courses__item.guru-mod--courses__item:hover {
+    -webkit-box-shadow: 0 0 36px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 36px rgba(0, 0, 0, 0.1);
+    -ms-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-transform: translateY(-12px); }
+    @media (max-width: 1199.98px) {
+      .courses-slide .guru-mod--courses__item.guru-mod--courses__item:hover {
+        -ms-transform: unset;
+        transform: unset;
+        -webkit-transform: unset; } }
+  .courses-slide .guru-mod--courses__item.guru-mod--courses__item .guru-mod--courses__item-thumb {
+    margin: -74px -1px; }
+    .courses-slide .guru-mod--courses__item.guru-mod--courses__item .guru-mod--courses__item-thumb img {
+      border-radius: 4px 4px 0 0; }
+  .courses-slide .guru-mod--courses__item.guru-mod--courses__item .guru-mod--courses__item-title {
+    color: #333333; }
+    .courses-slide .guru-mod--courses__item.guru-mod--courses__item .guru-mod--courses__item-title:focus, .courses-slide .guru-mod--courses__item.guru-mod--courses__item .guru-mod--courses__item-title:active, .courses-slide .guru-mod--courses__item.guru-mod--courses__item .guru-mod--courses__item-title:hover {
+      color: #2196F3; }
+  .courses-slide .guru-mod--courses__item.guru-mod--courses__item .category a {
+    background: #2196F3;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -50px;
+    padding: 0 12px; }
+  .courses-slide .guru-mod--courses__item.guru-mod--courses__item .guru-mod--courses__item-details {
+    color: #9E9E9E;
+    margin-top: 1.25rem;
+    font-size: 12px; }
+    .courses-slide .guru-mod--courses__item.guru-mod--courses__item .guru-mod--courses__item-details span {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+      .courses-slide .guru-mod--courses__item.guru-mod--courses__item .guru-mod--courses__item-details span img {
+        border-radius: 50%;
+        margin-right: 10px;
+        height: 24px;
+        width: 24px; }
+    .courses-slide .guru-mod--courses__item.guru-mod--courses__item .guru-mod--courses__item-details a {
+      font-weight: 600; }
+  .courses-slide .guru-mod--courses__item.guru-mod--courses__item .student-info {
+    bottom: 36px;
+    color: #9E9E9E;
+    font-size: 12px;
+    margin-top: 1.25rem;
+    position: absolute;
+    left: 36px; }
+    .courses-slide .guru-mod--courses__item.guru-mod--courses__item .student-info .icon {
+      background: #4CAF50;
+      border-radius: 50%;
+      color: #fff;
+      display: inline-block;
+      line-height: 1.25rem;
+      margin-right: 0.3125rem;
+      font-size: 14px;
+      text-align: center;
+      height: 1.25rem;
+      width: 1.25rem; }
+  .courses-slide .guru-mod--courses__item.guru-mod--courses__item .guru-mod--courses__item-desc > p {
+    color: #333;
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem; }
+
+.gru-list-categories .uk-panel-box,
+.gru-listofteachers .uk-panel-box {
+  -webkit-transition: 500ms all;
+  -o-transition: 500ms all;
+  transition: 500ms all; }
+  .gru-list-categories .uk-panel-box:hover,
+  .gru-listofteachers .uk-panel-box:hover {
+    -webkit-box-shadow: 0 0 36px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 36px rgba(0, 0, 0, 0.1);
+    -ms-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-transform: translateY(-12px); }
+    @media (max-width: 1199.98px) {
+      .gru-list-categories .uk-panel-box:hover,
+      .gru-listofteachers .uk-panel-box:hover {
+        -ms-transform: unset;
+        transform: unset;
+        -webkit-transform: unset;
+        -webkit-box-shadow: none;
+        box-shadow: none; } }
+
+#guru-component .gru-list-categories .description_guru {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  #guru-component .gru-list-categories .description_guru .uk-button {
+    color: #007bff;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 5px;
+    background: transparent;
+    padding: 0;
+    text-align: left;
+    margin-top: 0.625rem; }
+    #guru-component .gru-list-categories .description_guru .uk-button:hover, #guru-component .gru-list-categories .description_guru .uk-button:focus, #guru-component .gru-list-categories .description_guru .uk-button:active {
+      color: #0056b3; }
+    #guru-component .gru-list-categories .description_guru .uk-button:after {
+      content: "\f119";
+      font-family: "Ionicons";
+      margin-left: 4px;
+      position: relative;
+      top: 1px; }
+
+#guru-component ul.uk-list li.guru-mod-search_item {
+  padding: 1.25rem 0 !important; }
+  #guru-component ul.uk-list li.guru-mod-search_item .guru-mod-search_item-thumb {
+    width: 20%;
+    float: left;
+    margin: 0 1.25rem 0.625rem 0; }
+    @media (max-width: 767.98px) {
+      #guru-component ul.uk-list li.guru-mod-search_item .guru-mod-search_item-thumb {
+        width: 100%;
+        margin-right: 0; } }
+  #guru-component ul.uk-list li.guru-mod-search_item .guru-mod-search_item-title {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 1.25rem; }
+    #guru-component ul.uk-list li.guru-mod-search_item .guru-mod-search_item-title:hover {
+      color: #2196F3; }
+  #guru-component ul.uk-list li.guru-mod-search_item .guru-mod-search_item-desc p, #guru-component ul.uk-list li.guru-mod-search_item .guru-mod-search_item-desc i, #guru-component ul.uk-list li.guru-mod-search_item .guru-mod-search_item-desc span,
+  #guru-component ul.uk-list li.guru-mod-search_item .guru-mod-search_item-details p,
+  #guru-component ul.uk-list li.guru-mod-search_item .guru-mod-search_item-details i,
+  #guru-component ul.uk-list li.guru-mod-search_item .guru-mod-search_item-details span {
+    font-size: 15px; }
+
+#adminForm #accordion .accordionItem .guru-accordion-title {
+  font-size: 15px;
+  padding-left: 0.625rem; }
+
+@media (max-width: 767.98px) {
+  #adminForm #accordion .accordionItem .guru-accordion-content .course_view_description img {
+    margin: 0; } }
+
+#adminForm #accordion .accordionItem .guru-accordion-content .uk-button {
+  padding: 0.20833rem; }
+
+#adminForm #accordion .accordionItem .guru-accordion-content .g_table_wrap table tr td, #adminForm #accordion .accordionItem .guru-accordion-content .g_table_wrap table tr th {
+  padding: 0.41667rem;
+  font-size: 12px; }
+
+@media (max-width: 575.98px) {
+  .cat_list_wrap .gru-filter-item .uk-margin-remove {
+    width: 190px !important; } }
+
+.cat_list_wrap > .uk-grid > .uk-grid {
+  width: 100%;
+  float: left; }
+
+@media (max-width: 575.98px) {
+  .gru-login .uk-grid .uk-form .gru-login-box {
+    margin-bottom: 1.25rem; } }
+
+@media (max-width: 575.98px) {
+  .gru-login .uk-grid .uk-panel-box {
+    padding: 1.25rem !important; } }
+
+@media (max-width: 767.98px) {
+  .gru-authorlayout .teacher_courses_heading_guru {
+    font-size: 18px; } }
+
+@media (max-width: 767.98px) {
+  #guru-component #teacherList .uk-grid {
+    display: unset;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+    #guru-component #teacherList .uk-grid:before, #guru-component #teacherList .uk-grid:after {
+      display: none; } }
+
+@media (max-width: 767.98px) {
+  #guru-component #teacherList .uk-grid .uk-width-large-1-3 {
+    margin-bottom: 1.25rem; } }
+
+#guru-component #teacherList .image_guru {
+  margin: -74px -37px; }
+  #guru-component #teacherList .image_guru .thumbnail {
+    margin-right: 0; }
+    #guru-component #teacherList .image_guru .thumbnail img {
+      border-radius: 4px 4px 0 0; }
+
+.gru-register #adminForm #tab-content .uk-form-controls .input-small {
+  margin-top: 0.41667rem;
+  width: auto; }
+
+@media (max-width: 767.98px) {
+  .gru-register #adminForm .uk-button {
+    margin-top: 0.3125rem !important; } }
+
+.com_guru #guru-component#guru-component .uk-tab,
+.com_guru #guru-component#guru-component .uk-navbar-nav {
+  border: 0; }
+  .com_guru #guru-component#guru-component .uk-tab:before,
+  .com_guru #guru-component#guru-component .uk-navbar-nav:before {
+    display: none; }
+  .com_guru #guru-component#guru-component .uk-tab > li,
+  .com_guru #guru-component#guru-component .uk-navbar-nav > li {
+    background: #212529;
+    border-radius: 4px;
+    margin-bottom: 0.3125rem;
+    margin-right: 0.41667rem;
+    padding: 0.41667rem 0.625rem;
+    text-align: center;
+    -webkit-transition: 300ms all;
+    -o-transition: 300ms all;
+    transition: 300ms all; }
+    .com_guru #guru-component#guru-component .uk-tab > li:hover, .com_guru #guru-component#guru-component .uk-tab > li:focus, .com_guru #guru-component#guru-component .uk-tab > li:active,
+    .com_guru #guru-component#guru-component .uk-navbar-nav > li:hover,
+    .com_guru #guru-component#guru-component .uk-navbar-nav > li:focus,
+    .com_guru #guru-component#guru-component .uk-navbar-nav > li:active {
+      background: #919191; }
+    .com_guru #guru-component#guru-component .uk-tab > li > a,
+    .com_guru #guru-component#guru-component .uk-navbar-nav > li > a {
+      background: transparent;
+      border: 0;
+      color: #333;
+      font-size: 12px;
+      font-weight: 600;
+      margin: 0;
+      padding: 0 !important; }
+      .com_guru #guru-component#guru-component .uk-tab > li > a i,
+      .com_guru #guru-component#guru-component .uk-navbar-nav > li > a i {
+        margin-right: 4px; }
+    .com_guru #guru-component#guru-component .uk-tab > li.uk-active,
+    .com_guru #guru-component#guru-component .uk-navbar-nav > li.uk-active {
+      background: #4CAF50; }
+      .com_guru #guru-component#guru-component .uk-tab > li.uk-active:hover, .com_guru #guru-component#guru-component .uk-tab > li.uk-active:focus, .com_guru #guru-component#guru-component .uk-tab > li.uk-active:active,
+      .com_guru #guru-component#guru-component .uk-navbar-nav > li.uk-active:hover,
+      .com_guru #guru-component#guru-component .uk-navbar-nav > li.uk-active:focus,
+      .com_guru #guru-component#guru-component .uk-navbar-nav > li.uk-active:active {
+        background: #3d8b40; }
+      .com_guru #guru-component#guru-component .uk-tab > li.uk-active > a,
+      .com_guru #guru-component#guru-component .uk-navbar-nav > li.uk-active > a {
+        color: #fff;
+        background: transparent;
+        border: 0; }
+      .com_guru #guru-component#guru-component .uk-tab > li.uk-active.uk-tab-responsive,
+      .com_guru #guru-component#guru-component .uk-navbar-nav > li.uk-active.uk-tab-responsive {
+        width: 100%; }
+        .com_guru #guru-component#guru-component .uk-tab > li.uk-active.uk-tab-responsive > a,
+        .com_guru #guru-component#guru-component .uk-navbar-nav > li.uk-active.uk-tab-responsive > a {
+          text-align: left; }
+        .com_guru #guru-component#guru-component .uk-tab > li.uk-active.uk-tab-responsive .uk-dropdown,
+        .com_guru #guru-component#guru-component .uk-navbar-nav > li.uk-active.uk-tab-responsive .uk-dropdown {
+          border: 1px solid #F4F4F4;
+          margin: 0;
+          padding-bottom: 0;
+          padding-top: 0;
+          width: 100%; }
+          .com_guru #guru-component#guru-component .uk-tab > li.uk-active.uk-tab-responsive .uk-dropdown li,
+          .com_guru #guru-component#guru-component .uk-navbar-nav > li.uk-active.uk-tab-responsive .uk-dropdown li {
+            width: 100%;
+            text-align: left; }
+            .com_guru #guru-component#guru-component .uk-tab > li.uk-active.uk-tab-responsive .uk-dropdown li a:hover,
+            .com_guru #guru-component#guru-component .uk-navbar-nav > li.uk-active.uk-tab-responsive .uk-dropdown li a:hover {
+              background: #9E9E9E; }
+
+.com_guru #guru-component#guru-component .uk-tab {
+  margin-bottom: 1.25rem;
+  margin-left: 0 !important; }
+  .com_guru #guru-component#guru-component .uk-tab > li {
+    width: auto; }
+
+.com_guru #guru-component#guru-component .uk-navbar {
+  background: transparent; }
+  .com_guru #guru-component#guru-component .uk-navbar .uk-navbar-nav {
+    margin-bottom: 0.625rem; }
+    .com_guru #guru-component#guru-component .uk-navbar .uk-navbar-nav a {
+      line-height: 1.6;
+      height: auto;
+      font-weight: 500; }
+
+.teacher_row_guru .teacher_cell_guru .thumbnail {
+  margin-right: 1.25rem;
+  border: none;
+  padding: 0; }
+
+#guru-component .pagetitle-cartbutton a u {
+  text-decoration: none;
+  padding-left: 18px; }
+
+#guru-component .pagetitle-cartbutton .uk-button {
+  position: relative;
+  padding: 0.41667rem 18px; }
+  #guru-component .pagetitle-cartbutton .uk-button img {
+    display: none; }
+  #guru-component .pagetitle-cartbutton .uk-button:before {
+    color: #fff;
+    content: "\f3f8";
+    font-family: Ionicons;
+    font-size: 18px;
+    left: 0.625rem;
+    position: absolute;
+    top: 0.41667rem; }
+
+#guru_cart #g_myCart_payment .guru-plugin-filter {
+  background: transparent;
+  padding: 0;
+  color: #333; }
+  #guru_cart #g_myCart_payment .guru-plugin-filter #processor {
+    margin-top: 0.3125rem; }
+
+#guru_cart .uk-grid .uk-button {
+  background: #212529;
+  -webkit-transition: 500ms all;
+  -o-transition: 500ms all;
+  transition: 500ms all; }
+  #guru_cart .uk-grid .uk-button.uk-button-primary {
+    background: #4CAF50; }
+    #guru_cart .uk-grid .uk-button.uk-button-primary:hover {
+      background: #3d8b40; }
+
+#guru_cart .uk-grid .uk-form label {
+  display: block; }
+
+#guru_cart .uk-grid .uk-form .uk-form-width-small {
+  width: 100%;
+  margin-bottom: 0.41667rem;
+  height: 44px;
+  padding: 0.41667rem 18px; }
+
+#guru_cart .uk-grid .guru_cart_total.uk-text-bold {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background: #212529;
+  padding: 0 18px;
+  margin-top: 0.20833rem;
+  border-radius: 4px; }
+
+#guru_cart #g_myCart_payment #processor,
+#guru_cart #g_myCart_payment .uk-button {
+  padding: 0.41667rem 18px; }
+
+#guru_cart #g_table_cart tr td #plan_id4 {
+  padding: 0.41667rem 18px; }
+
+#guru-component .uk-form .uk-button,
+#guru-component .uk-form .btn-primary {
+  padding: 0.41667rem 18px; }
+
+@media (max-width: 575.98px) {
+  #guru-component .pagetitle-cartbutton .uk-float-left {
+    width: 100%;
+    text-align: left !important; } }
+
+@media (max-width: 575.98px) {
+  #guru-component .pagetitle-cartbutton .uk-float-left .uk-button {
+    margin-bottom: 0.625rem; } }
+
+.table-of-contents .guru-tabs .lessons_wrap ul li a:hover {
+  color: #2196F3 !important; }
+
+.table-of-contents .uk-width-1-4 {
+  padding: 0 0.41667rem; }
+
+@media (max-width: 767.98px) {
+  #guru-component .gru-myquizzes,
+  #guru-component .gru-mycertificates,
+  #guru-component .g_table_wrap {
+    overflow: auto; } }
+
+@media (max-width: 767.98px) {
+  #guru-component .gru-myquizzes .uk-table tr td, #guru-component .gru-myquizzes .uk-table tr th,
+  #guru-component .gru-mycertificates .uk-table tr td,
+  #guru-component .gru-mycertificates .uk-table tr th,
+  #guru-component .g_table_wrap .uk-table tr td,
+  #guru-component .g_table_wrap .uk-table tr th {
+    font-size: 12px;
+    padding: 0.41667rem; } }
+
+@media (max-width: 767.98px) {
+  .course_view_teacher #teacherdetail .description_guru {
+    margin: 0; } }
+
+@media (max-width: 767.98px) {
+  .course_view_teacher #teacherdetail .description_guru .uk-width-2-10,
+  .course_view_teacher #teacherdetail .description_guru .uk-width-8-10 {
+    width: 100%;
+    padding: 0 10px; } }
+
+@media (max-width: 767.98px) {
+  .gru-mycoursesauthor .uk-grid > .uk-width-1-1 {
+    width: 100% !important; }
+    .gru-mycoursesauthor .uk-grid > .uk-width-1-1 h2 {
+      margin-bottom: 36px !important; } }
+
+.gru-mycoursesauthor .uk-grid .uk-visible-small .uk-button {
+  margin-bottom: 0.41667rem !important; }
+
+.gru-commissions .uk-form-label input {
+  margin-top: 0.41667rem !important; }
+
+.gru-commissions .uk-form-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .gru-commissions .uk-form-controls .editlinktip {
+    margin-left: 0.625rem; }
+  @media (max-width: 767.98px) {
+    .gru-commissions .uk-form-controls #paypal_email {
+      max-width: 90% !important; } }
+
+#g_mycoursesauthorcontent #limit,
+#g_mystudentsauthor #limit,
+.g_table_wrap #limit,
+.gru-mymediaauthorcontent #limit {
+  width: 100px;
+  float: right; }
+
+.gru-page-filters .gru-filter-item select {
+  min-height: calc(2.9rem + 2px) !important;
+  height: calc(2.9rem + 2px) !important;
+  padding: 0px 0.41667rem !important; }
+
+.gru-mycoursesauthor + .uk-grid br {
+  display: none; }
+
+#guru-component .gru-mycoursesauthor .gru-page-title,
+#guru-component .g_inline_child .gru-page-title {
+  margin-bottom: 0.41667rem !important; }
+
+@media (max-width: 767.98px) {
+  #guru-component .gru-mycoursesauthor .uk-button-group,
+  #guru-component .g_inline_child .uk-button-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    #guru-component .gru-mycoursesauthor .uk-button-group .uk-button,
+    #guru-component .g_inline_child .uk-button-group .uk-button {
+      padding: 0.41667rem 0.625rem;
+      margin-right: 0.3125rem; } }
+
+#guru-component .g_inline_child .uk-button-group .uk-button-dropdow {
+  text-align: left;
+  width: auto; }

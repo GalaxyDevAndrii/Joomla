@@ -1,0 +1,33 @@
+<div class="question-hint-container">
+    <div class="hint-button-container">
+        <div class="hint-button" ng-click="question.hint.isDisplayed ? question.hint.hide(false) : question.hint.show()" ng-class="{'hint-displayed': question.hint.isDisplayed}">
+            <i class="hint-button-icon icon education"></i>
+            <span class="hint-button-caption">{{ question.hint.isDisplayed ? '[hide hint]' : '[show hint]' | translate }}</span>
+            <i class="hint-button-expand-icon icon arrow-down"></i>
+        </div>
+    </div>
+    <div class="question-hint" slide-toggle="question.hint.isDisplayed" slide-toggle-scroll-to="question.hint.scrollToQuestion ? '.question': ''">
+        <div class="hint-content-container" ng-class="{loaded: question.hint.isLoaded}">
+            <div ng-if="!question.hint.isLoaded" class="loader-container image-loader-icon">
+                <div class="color-ball red">&nbsp;</div>
+                <div class="color-ball green">&nbsp;</div>
+                <div class="color-ball blue">&nbsp;</div>
+                <div class="color-ball yellow">&nbsp;</div>
+            </div>
+            <div class="hint-content" ng-if="question.hint.isLoaded" ng-repeat="contentItem in question.hint.learningContents" show-toggle="question.hint.isLoaded && question.hint.isDisplayed">
+                <div ng-if="contentItem.children.length===0"  html-compile="contentItem.content" styled-content></div>
+                <div class="expandable-block-wrapper" ng-if="contentItem.children.length!==0" ng-include="'app/views/expandableBlock.html'"></div>
+            </div>
+        </div>
+        <div class="hint-footer">
+            <div class="button primary hint-hide-button" ng-click="question.hint.hide(true)">
+                <div class="arrow-wrapper">
+                    <div class="arrow icon arrow-up"></div>
+                </div>
+                <div class="arrow-wrapper">
+                    <div class="arrow icon arrow-up"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

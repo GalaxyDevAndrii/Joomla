@@ -1,0 +1,15 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* Reset textbox */
+  .t4-pane .sub-group input[type="text"],
+  .t4-modal-content input[type="text"] {
+    line-height: 1 !important;
+  }
+
+  /* Reset checkbox */
+  .t4-input[type="checkbox"],
+  .t4-input[type="checkbox"][readonly] {
+    background: transparent !important;
+    border-radius: 0 !important;
+    width: auto !important;
+  }
+}

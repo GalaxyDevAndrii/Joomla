@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="t4layout" addfieldpath="/plugins/system/t4/admin/field">
+		<fieldset name="general" label="T4_LAYOUT_TAB_GENERAL" description="T4_LAYOUT_SECTION_GENERAL_DESC">
+			<!-- site info -->
+			<field name="name" class="" class_field="col-6" type="t4text" default="" label="T4_LAYOUT_SECTION_TITLE" 
+			group="general" description="T4_LAYOUT_SECTION_TITLE_DESC" />
+			<field name="container" class="" class_field="containerField container_setting col-6" type="T4MultiRadio" default="" group="general" label="T4_LAYOUT_ROW_FULL_WIDTH" description="T4_LAYOUT_ROW_FULL_WIDTH_DESC" />
+			<field name="cols" class="" class_field="col-12" type="t4section" default="" group="general" label="T4_COLS_NUMBER" description="T4_COLS_NUMBER_DESC" />
+			<field name="padding" class="" class_field="col-6 t4_padding" type="t4text" default="" group="general" label="T4_LAYOUT_PADDING" description="T4_COLS_NUMBER_DESC" hint='0px 0px 0px 0px' />
+			<field name="margin" class="" class_field="col-6 t4_margin" type="t4text" default="" group="general" label="T4_LAYOUT_MARGIN" description="T4_LAYOUT_MARGIN_DESC" hint='0px 0px 0px 0px' />
+			<field name="extra_class" class="" class_field="col-6 t4_extra_class" type="t4text" default="" group="general" label="T4_LAYOUT_CUSTOM_CLASS" description="T4_LAYOUT_CUSTOM_CLASS_DESC" hint='extra class' />
+			<field name="sticky" class="" class_field="col-6 t4_layout_sticky" type="t4list" default="" group="general" label="T4_LAYOUT_STICKY" description="T4_LAYOUT_CUSTOM_CLASS_DESC" >
+				<option value="">T4_LAYOUT_STICKY_NONE</option>
+				<option value="top">T4_LAYOUT_STICKY_TOP</option>
+				<option value="bottom">T4_LAYOUT_STICKY_BOTTOM</option>
+			</field>
+		</fieldset>
+		<fieldset name="palettes" label="T4_LAYOUT_TAB_PATTERN" description="T4_LAYOUT_SECTION_TITLE">
+			<field name="styles_palettes" class="color_pattern_group" class_field="col-12" type="palettes" icon="swatchbook" group="palettes" label="T4_COLOR_PATTERN_GROUP" description="T4_COLOR_PATTERN_DESC" />
+		</fieldset>
+		<fieldset name="overlay" label="T4_LAYOUT_TAB_OVERLAY" description="T4_LAYOUT_TAB_OVERLAY_DESC">
+			<!-- site info -->
+			<field name="overlay_type" class="" class_field="col-12 overlay_type" type="t4list" label="T4_LAYOUT_SECTION_OVERLAY_TYPE" group="overlay" description="T4_LAYOUT_SECTION_OVERLAY_TYPE_DESC">
+				<option value="">None</option>
+				<option value="image">Image</option>
+				<option value="video">Video</option>
+			</field>
+			<field name="background_image" class="" class_field="col-12 image_type" type="t4media" default="" group="overlay" label="T4_LAYOUT_SECTION_BACKGROUND_IMAGE" description="T4_LAYOUT_SECTION_BACKGROUND_IMAGE" />
+			<field name="background_repeat" class="" class_field="col-6 image_type" type="t4list" default="" group="overlay" label="T4_LAYOUT_BACKGROUND_REPEAT" description="T4_COLS_NUMBER_DESC" >
+				<option value="inherit">T4_LAYOUT_BACKGROUND_REPEAT_INHERIT</option>
+				<option value="no-repeat">T4_LAYOUT_BACKGROUND_REPEAT_NO</option>
+				<option value="repeat">T4_LAYOUT_BACKGROUND_REPEAT_ALL</option>
+				<option value="repeat-x">T4_LAYOUT_BACKGROUND_REPEAT_HORIZ</option>
+				<option value="repeat-y">T4_LAYOUT_BACKGROUND_REPEAT_VERTI</option>
+			</field>
+			<field name="background_size" class="" class_field="col-6 image_type" type="t4list" default="" group="overlay" label="T4_LAYOUT_BACKGROUND_SIZE" description="T4_LAYOUT_BACKGROUND_SIZE_DESC" >
+				<option value="inherit">T4_LAYOUT_BACKGROUND_INHERIT</option>
+				<option value="auto">T4_LAYOUT_BACKGROUND_AUTO</option>
+				<option value="cover">T4_LAYOUT_BACKGROUND_COVER</option>
+				<option value="contain">T4_LAYOUT_BACKGROUND_CONTAIN</option>
+			</field>
+			<field name="background_attachment" class="" class_field="col-6 image_type" type="t4list" default="" group="overlay" label="T4_LAYOUT_BACKGROUND_ATTACHMENT" description="T4_LAYOUT_BACKGROUND_ATTACHMENT" >
+				<option value="inherit">T4_LAYOUT_BACKGROUND_INHERIT</option>
+				<option value="fixed">T4_LAYOUT_BACKGROUND_ATTACHMENT_FIXED</option>
+				<option value="scroll">T4_LAYOUT_BACKGROUND_ATTACHMENT_SCROLL</option>
+			</field>
+			<field name="background_position" class="" class_field="col-6 image_type" type="t4list" default="" group="overlay" label="T4_LAYOUT_BACKGROUND_POSITION" description="T4_LAYOUT_BACKGROUND_POSITION" >
+				<option value="0 0">T4_LAYOUT_BACKGROUND_POSITION_LEFT_TOP</option>
+				<option value="0 50%">T4_LAYOUT_BACKGROUND_POSITION_LEFT_CENTER</option>
+				<option value="0 100%">T4_LAYOUT_BACKGROUND_POSITION_LEFT_BOTTOM</option>
+				<option value="50% 0">T4_LAYOUT_BACKGROUND_POSITION_CENTER_TOP</option>
+				<option value="50% 50%">T4_LAYOUT_BACKGROUND_POSITION_CENTER_CENTER</option>
+				<option value="50% 100%">T4_LAYOUT_BACKGROUND_POSITION_CENTER_BOTTOM</option>
+				<option value="100% 0">T4_LAYOUT_BACKGROUND_POSITION_RIGHT_TOP</option>
+				<option value="100% 50%">T4_LAYOUT_BACKGROUND_POSITION_RIGHT_CENTER</option>
+				<option value="100% 100%">T4_LAYOUT_BACKGROUND_POSITION_RIGHT_BOTTOM</option>
+			</field>
+			<field name="video_type" class="" class_field="col-12 video_type" type="t4list" label="T4_LAYOUT_VIDEO_TYPE" group="overlay" description="T4_LAYOUT_VIDEO_TYPE_DESC">
+				<option value="youtube">Youtube</option>
+				<option value="vimeo">Vimeo</option>
+			</field>
+			<field name="video_id" class="" class_field="col-12 video_type" type="t4text" default="" group="overlay" label="T4_LAYOUT_VIDEO_ID" description="T4_LAYOUT_VIDEO_ID_DESC" hint="123456" />
+			<field name="file_cover" class="" class_field="col-12 file_type" type="t4text" default="" group="overlay" label="T4_LAYOUT_FILE_COVER" description="T4_LAYOUT_FILE_COVER_DESC" hint="123456" />
+			<field name="file_mp4" class="" class_field="col-12 file_type" type="t4text" default="" group="overlay" label="T4_LAYOUT_FILE_MP4" description="T4_LAYOUT_FILE_MP4_DESC" hint="123456" />
+			<field name="file_webm" class="" class_field="col-12 file_type" type="t4text" default="" group="overlay" label="T4_LAYOUT_FILE_WEBM" description="T4_LAYOUT_FILE_WEBM_DESC" hint="123456" />
+			<field name="file_ogg" class="" class_field="col-12 file_type" type="t4text" default="" group="overlay" label="T4_LAYOUT_FILE_OGG" description="T4_LAYOUT_FILE_OGG_DESC" hint="123456" />
+			<field name="opacity" type="t4range" label="T4_LAYOUT_OPACITY" class="t4-layout" class_field="col-6 opacity" default="0" value="" description="T4_LAYOUT_OPACITY_DESC" group="overlay" />
+		</fieldset>
+	</fields>
+</form>

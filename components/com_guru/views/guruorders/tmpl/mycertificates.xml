@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="My certificates">
+		<message>My certificates layout</message>
+    </layout>
+    <state>
+		<name>My certificates</name>
+        <description>My certificates layout</description>
+    </state>
+</metadata>

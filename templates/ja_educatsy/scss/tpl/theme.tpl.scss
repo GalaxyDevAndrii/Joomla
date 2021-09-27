@@ -1,0 +1,555 @@
+// Function, variables
+@import "../vars";
+
+// Theme Customize
+@import "../../../../plugins/system/t4/themes/base/scss/theme.tpl";
+
+
+
+.navbar-nav .nav-link.fa {
+	font-family: __body_font_family;
+}
+
+// Border Color
+.play-icon a:before,
+.contact-info .icon:before {
+	border-color: __color_primary;
+}
+
+// Color
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	border-bottom-color: __color_primary;
+	color: __color_primary;
+}
+
+.features-list li:before {
+	color: __color_primary;
+}
+
+.link-highlight {
+	color: __color_primary;
+	border-bottom: 1px solid __color_primary;
+
+	&:hover,&:focus,&:active {
+		opacity: 0.8;
+	}
+}
+
+a.text-primary {
+	&:hover,&:focus,&:active {
+		color: var(--body-link-hover-color)!important;
+	}
+}
+
+#guru-component .uk-link {
+	color: __color_primary;
+
+	&:hover,&:focus,&:active {
+		color: var(--body-link-hover-color);
+	}
+}
+
+.heading-link {
+	color: #1D1D1D!important;
+
+	&:hover,&:focus,&:active {
+		color: __color_primary!important;
+	}
+}
+
+.bg-light-primary {
+	background: var(--primary_light);
+	color: __color_primary;
+}
+
+.btn-default {
+	&:hover,&:focus,&:active {
+		background: __color_primary;
+		border-color: __color_primary;
+		color: #fff;
+	}
+}
+
+.view-courses .content-bottom .readmore .btn {
+	&:hover,&:focus,&:active {
+		background: __color_primary;
+		color: #fff;
+	}
+}
+
+// Section Title
+.section-title {
+	span {
+		background: var(--primary_light);
+		color: __color_primary;
+	}
+}
+
+.teams-item:hover::before,
+.owl-carousel .owl-dots .owl-dot.active span,
+.acym_module {
+	background-color: __color_primary;
+}
+
+.t4-footnav,
+.t4-copyright {
+	background-color: __color_secondary;
+}
+
+.subbutton.btn-primary {
+	background-color: __color_secondary!important;
+	border-color: __color_secondary!important;
+}
+
+.t4-offcanvas .t4-off-canvas-header {
+	background: __color_primary;
+}
+
+
+.t4-off-canvas-body {
+	.navbar-nav {
+		> li {
+			> a,
+			> span {
+				&:hover,&:focus,&:active {
+					color: __color_primary!important;
+				}
+			}
+
+			&.active {
+				> a,
+				> span {
+					color: __color_primary!important;
+				}
+			}
+		}
+	}
+}
+
+.dropdown-menu {
+	li {
+		&.show,
+		&.active {
+			> a,
+			> span {
+				color: __color_primary!important;
+			}
+		}
+
+		> a,
+		> span {
+			&:hover,&:focus,&:active {
+				color: __color_primary!important;
+			}
+		}
+	}
+}
+
+// ACM
+.acm-features.style-3 {
+	.owl-carousel {
+		.owl-nav > button {
+			&:hover,&:focus,&:active {
+				background: __color_primary;
+				border-color: __color_primary;
+				color: #fff;
+			}
+		}
+
+		.owl-dots > .owl-dot {
+			&.active,&:hover,&:focus,&:active {
+				background: __color_primary;
+				outline: none;
+			}
+		}
+	}
+
+	.features-item {
+		&:hover {
+			border-color: __color_primary;
+		}
+	}
+}
+
+.acm-container-tabs {
+	.nav-tabs {
+		.nav-link {
+			&.active,&:hover,&:focus,&:active {
+				background: __color_primary;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.acm-testimonial.style-1 .owl-nav button {
+	&:hover,&:focus,&:active {
+		background: __color_primary;
+		border-color: __color_primary;
+		color: #fff;
+	}
+}
+
+// Articles Category
+.categories-module li {
+	a {
+		&:hover,&:focus,&:active {
+			color: __color_primary;
+		}
+	}
+
+	&.active {
+		a {
+			color: __color_primary;
+		}
+	}
+}
+
+// Page User
+// ------------------------
+.registration,
+.profile-edit,
+.profile{
+	legend {
+	    font-family: __heading_font_family; 
+	}
+}
+
+//
+// Login
+// -------------------------
+.login-wrap {
+	// Other Link
+	.other-links {
+
+		ul {
+
+			li {
+
+				a {
+					&:hover {
+			          	color: __color_primary;
+			        }
+				}
+	        }
+	    }
+    }
+}
+
+// Seach
+.search {
+	.btn-toolbar {
+		.btn-group {
+			button {
+				background: __color_primary;
+			}
+		}
+	}
+
+	legend,
+	.searchintro,
+	.result-title {
+	    font-family: __heading_font_family; 
+	}
+}
+
+.com-finder,
+.search {
+	#search-results,
+	.search-results {
+		.result-title {
+			a {
+				&:hover {
+					color: __color_primary;
+				}
+			}
+		}
+	}
+}
+
+// Pagination
+.pagination {
+	.page-item {
+
+		a {
+			font-family: __heading_font_family; 
+		}
+		
+		&.active {
+			a {
+				background: __color_primary;
+
+				&:hover,
+				&:focus,
+				&:active {
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+}
+
+// Read more
+// -----------
+.readmore {
+	.btn {
+		background: __color_primary;
+	}
+}
+
+// Article Page
+// -------------------------
+.item-page {
+	.list-info {
+		ul {
+
+			li {
+
+				&:before {
+					color: __color_primary;
+				}
+			}
+		}
+	}
+}
+
+// Module login
+#login-form {
+	ul.list-unstyled {
+		li {
+
+			a {
+				&:hover {
+					color: __color_primary;
+				}
+			}
+		}
+	}
+}
+
+// Last Article
+ul.latestnews {
+	li {
+		a {
+			&:hover {
+				color: __color_primary;
+			}
+		}
+	}
+}
+
+// Blog Layout
+// -----------
+.blog,
+.blog-featured {
+	.item-content {
+	    // Title
+	    .page-header {
+	    	h2 {
+	    		a {
+	    			&:hover {
+						color: __color_primary;
+					}
+	    		}
+	    	}
+	    }
+	}
+}
+
+// Items More
+// -----------
+.items-more {
+	.nav-tabs {
+		> li > a {
+			&:hover {
+				color: __color_primary;
+			}
+		}
+	}
+}
+
+//
+// Contacts
+// -------------------------
+.contact {
+
+  	// Address and Position
+	.contact-address,
+	.contact-position {
+		.fa {
+	      background: __color_primary;
+	    }
+	}
+
+	#myTabTabs {
+		a {
+			&:hover {
+				color: __color_primary;
+			}
+		}
+
+		li {
+			a.active {
+				color: __color_primary;
+			}
+		}
+    }
+
+    .contact-articles {
+    	ul {
+    		li {
+    			a {
+    				&:hover {
+    					color: __color_primary;
+    				}
+    			}
+    		}
+    	}
+    }
+}
+
+// Article Index
+// -----------
+.article-index {
+	ul {
+		li {
+			a {
+				&:hover {
+					color: __color_primary;
+				}
+			}
+
+			&.active {
+				a {
+					color: __color_primary;
+				}
+			}
+		}
+	}
+}
+
+.tag-category {
+	ul.list-group {
+		li {
+
+			h3 {
+
+				a {
+					&:hover {
+						color: __color_primary;
+					}
+				}
+			}
+		}
+	}
+}
+
+// GURU
+// -----------
+html {
+	// font-size: __body_font_size!important;
+}
+
+.com_guru #guru-component {
+	// Global Style
+	.uk-panel-box .author a {
+		color: __color_primary;
+
+		&:hover,&:focus,&:active {
+			color: var(--body-link-hover-color);
+		}
+	}
+
+	.uk-panel-box .uk-panel-title a,
+	.gru-list-categories .description_guru .uk-button {
+		&:hover,&:focus,&:active {
+			color: var(--body-link-hover-color);
+		}
+	}
+
+	// Heading
+	h1, h2, h3, h4, h5, h6 {
+		font-family: __heading_font_family;
+	}
+
+	// Button
+	.uk-button-primary {
+		background: __color_primary;
+		color: #fff;
+
+		&:hover,&:focus,&:active {
+			background: __color_primary;
+			opacity: 0.8;
+		}
+	}
+
+	// Tab
+	.uk-tab,
+	.uk-navbar-nav {
+		> li {
+			> a {
+				font-family: __heading_font_family;
+
+				&:hover,&:focus,&:active {
+					background: __color_primary;
+				}
+			}
+
+			&.uk-active {
+				> a {
+					background: __color_primary;
+				}
+			}
+		}
+	}
+
+	// View Search
+	.uk-search-default .uk-search-icon {
+		background: __color_primary;
+	}
+
+	// View Course Detail
+  .view-course-detail {
+  	// Nav Tab
+    .uk-tab {
+      > li {
+      	> a {
+      		&:hover,&:focus,&:active {
+      			background: transparent;
+      			color: __color_primary;
+      		}
+      	}
+
+      	&.uk-active {
+					> a {
+						background: transparent;
+						color: __color_primary;
+					}
+				}
+      }
+    }
+
+    .guru-course-view .tab-content .lessons_wrap .lesson_name a {
+    	&:hover,&:focus,&:active {
+  			color: __color_primary;
+  		}
+    }
+  }
+
+  // Search
+  ul.uk-list li.guru-mod-search_item .guru-mod-search_item-title {
+  	&:hover,&:focus,&:active {
+  		color: __color_primary;
+  	}
+  }
+}
+
+#guru-component .course-footer .readmore a,
+.courses-grid .readmore-info a {
+	&:hover,&:focus,&:active {
+		background: __color_primary!important;
+		border-color: __color_primary!important;
+		color: #fff!important;
+	}
+}

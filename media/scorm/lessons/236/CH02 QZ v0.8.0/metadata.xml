@@ -1,0 +1,170 @@
+<?xml version="1.0" ?>
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM lomLoose.xsd">
+    <general>
+        <identifier>
+            <catalog>-</catalog>
+            <entry>-</entry>
+        </identifier>
+        <title>
+            <string language="en-US">Pre-licensing Course (copy)</string>
+        </title>
+        <language>en-US</language>
+        <description>
+            <string language="en-US">-</string>
+        </description>
+        <structure>
+            <source>LOMv1.0</source>
+            <value>collection</value>
+        </structure>
+        <aggregationLevel>
+            <source>LOMv1.0</source>
+            <value>1</value>
+        </aggregationLevel>
+    </general>
+    <classification>
+        <purpose>
+            <source>LOMv1.0</source>
+            <value>educational objective</value>
+        </purpose>
+        <description>
+            <string language="en-US">-</string>
+        </description>
+        <keyword>
+            <string language="en-US">-</string>
+        </keyword>
+    </classification>
+    <annotation>
+        <entity>-</entity>
+        <date>
+            <dateTime>2021-07-20</dateTime>
+            <description>
+                <string language="en-US">-</string>
+            </description>
+        </date>
+        <description>
+            <string language="en-US">-</string>
+        </description>
+    </annotation>
+    <lifeCycle>
+        <version>
+            <string language="en-US">1.0</string>
+        </version>
+        <status>
+            <source>LOMv1.0</source>
+            <value>draft</value>
+        </status>
+        <contribute>
+            <role>
+                <source>LOMv1.0</source>
+                <value>content provider</value>
+            </role>
+            <entity>-</entity>
+        </contribute>
+    </lifeCycle>
+    <technical>
+        <format>text/xml</format>
+        <size>0</size>
+        <location>-</location>
+        <requirement>
+            <orComposite>
+                <type>
+                    <source>LOMv1.0</source>
+                    <value>browser</value>
+                </type>
+                <name>
+                    <source>LOMv1.0</source>
+                    <value>any</value>
+                </name>
+                <minimumVersion>0</minimumVersion>
+                <maximumVersion>0</maximumVersion>
+            </orComposite>
+        </requirement>
+        <installationRemarks>
+            <string language="en-US">-</string>
+        </installationRemarks>
+        <otherPlatformRequirements>
+            <string language="en-US">-</string>
+        </otherPlatformRequirements>
+    </technical>
+    <metaMetadata>
+        <identifier>
+            <catalog>-</catalog>
+            <entry>-</entry>
+        </identifier>
+        <contribute>
+            <role>
+                <source>LOMv1.0</source>
+                <value>creator</value>
+            </role>
+            <entity>-</entity>
+        </contribute>
+        <metadataSchema>-</metadataSchema>
+        <language>en</language>
+    </metaMetadata>
+    <educational>
+        <interactivityType>
+            <source>LOMv1.0</source>
+            <value>undefined</value>
+        </interactivityType>
+        <learningResourceType>
+            <source>LOMv1.0</source>
+            <value>exercise</value>
+        </learningResourceType>
+        <interactivityLevel>
+            <source>LOMv1.0</source>
+            <value>medium</value>
+        </interactivityLevel>
+        <semanticDensity>
+            <source>LOMv1.0</source>
+            <value>medium</value>
+        </semanticDensity>
+        <intendedEndUserRole>
+            <source>LOMv1.0</source>
+            <value>teacher</value>
+        </intendedEndUserRole>
+        <context>
+            <source>LOMv1.0</source>
+            <value>primary education</value>
+        </context>
+        <typicalAgeRange>
+            <string language="en-US">-</string>
+        </typicalAgeRange>
+        <difficulty>
+            <source>LOMv1.0</source>
+            <value>medium</value>
+        </difficulty>
+        <description>
+            <string language="en-US">-</string>
+        </description>
+        <language>en</language>
+    </educational>
+    <relation>
+        <kind>
+            <source>LOMv1.0</source>
+            <value>isbasedon</value>
+        </kind>
+        <resource>
+            <description>
+                <string language="en-US">-</string>
+            </description>
+            <identifier>
+                <catalog>-</catalog>
+                <entry>-</entry>
+            </identifier>
+        </resource>
+    </relation>
+    <rights>
+        <cost>
+            <source>LOMv1.0</source>
+            <value>no</value>
+        </cost>
+        <copyrightAndOtherRestrictions>
+            <source>LOMv1.0</source>
+            <value>no</value>
+        </copyrightAndOtherRestrictions>
+        <description>
+            <string language="en-US">-</string>
+        </description>
+    </rights>
+</lom>

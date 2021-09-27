@@ -1,0 +1,32 @@
+<div class="error-page-container">
+    <main-background class="main-background">
+        <div class="main-background-image"></div>
+        <div class="main-background-overlay"></div>
+    </main-background>
+    <div class="error-page-overlay"></div>
+    <header class="app-header">
+        <img class="main-logo" ng-src="{{ notFoundError.logoUrl }}">
+        <span class="vertical-align-helper"></span>
+    </header>
+    <div class="error-container" ng-init="scrollToTop()" entire-height>
+        <div class="error-content-container not-found-error">
+            <div class="error-code-container">
+                404
+            </div>
+            <span class="error-title-container">
+                {{ '[page not found title]' | translate }}
+            </span>
+            <div class="error-message-container">
+                {{ '[page not found message]' | translate }}
+            </div>
+            <div class="error-button-container">
+                <button ng-click="notFoundError.goHome()" class="button primary">
+                    <i class="icon home"></i>
+                    <span class="text-wrapper">
+                        {{ '[page not found home button]' | translate }}
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

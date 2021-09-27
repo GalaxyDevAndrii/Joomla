@@ -1,0 +1,16 @@
+<div class="expandable-block" ng-class="{ collapsed: !contentItem.isDisplayed }" ng-click="contentItem.toggle()">
+    <div class="expandable-block-content" ng-click="contentLoaded()">
+        <div class="expandable-block-content-title">
+            <div html-compile="contentItem.content" styled-content></div>
+        </div>
+        <button class="expand-button">
+            <span class="material-icons expand-button-icon" ng-class="{ visible: contentItem.isDisplayed }">remove</span>
+            <span class="material-icons expand-button-icon" ng-class="{ visible: !contentItem.isDisplayed }">add</span>
+        </button>
+    </div>
+    <div class="expandable-block-children-items" slide-toggle="contentItem.isDisplayed">
+        <div class="expandable-block-children" ng-repeat="children in contentItem.children">
+            <div html-compile="children.content" styled-content></div>
+        </div>
+    </div>
+</div>

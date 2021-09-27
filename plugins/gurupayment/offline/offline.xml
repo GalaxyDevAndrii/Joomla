@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="gurupayment" method="upgrade">
+	<name>PLG_GURUPAYMENT_OFFLINE</name>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@ijoomla.com</authorEmail>
+	<authorUrl>www.ijoomla.com</authorUrl>
+	<creationDate>August 07, 2014</creationDate>
+	<copyright>OSDCS.COM</copyright>
+	<version>1.0.0</version>
+	<description>You can use this variable - [ORDER_ID] - for Payment instructions to display for student his order id value</description>
+	<files>
+		<filename plugin="offline">offline.php</filename>
+	</files>	
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_gurupayment_offline.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_gurupayment_offline.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="offline_label"
+					type="text"
+					label="PLG_GURUPAYMENT_OFFLINE_LABEL"
+					description="PLG_GURUPAYMENT_OFFLINE_DESC"
+					default="offline payment"
+					size="50"/>
+					
+				<field
+					name="instructions"
+					type="textarea"
+					label="PLG_GURUPAYMENT_OFFLINE_LABEL_INSTRUCTIONS"
+					description="PLG_GURUPAYMENT_OFFLINE_INST_DESC"
+					class="input-xxlarge"
+					default="Put instructions here on how users should proceed with the payment. How long it'll take to validate it etc." rows="15" cols="70"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

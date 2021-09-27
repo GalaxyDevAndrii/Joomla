@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+    addrulepath="/administrator/components/com_helloworld/models/rules"
+    >
+    <fieldset
+				name="details"
+				label="COM_HELLOWORLD_HELLOWORLD_DETAILS"
+	>
+		<fields name="imageinfo1" label="COM_HELLOWORLD_HELLOWORLD_IMAGE1_LABEL">
+			<field
+				name="image1"
+				type="file"
+				label="COM_HELLOWORLD_HELLOWORLD_PICTURE1_LABEL"
+				description="COM_HELLOWORLD_HELLOWORLD_PICTURE_DESC" 
+				required="true"
+				accept="image/*"
+				>
+			</field>
+		</fields>
+		<fields name="imageinfo2" label="COM_HELLOWORLD_HELLOWORLD_IMAGE2_LABEL">
+			<field
+				name="image2"
+				type="file"
+				label="COM_HELLOWORLD_HELLOWORLD_PICTURE2_LABEL"
+				description="COM_HELLOWORLD_HELLOWORLD_PICTURE_DESC" 
+				required="true"
+				accept="image/*"
+				>
+			</field>
+		</fields>
+    </fieldset>
+</form>

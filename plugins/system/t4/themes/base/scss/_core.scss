@@ -1,0 +1,60 @@
+// Joomla messages
+// ------------------------------
+.alert {
+  .alert-message {
+    background-color: transparent;
+    padding: 0;
+    color: inherit;
+  }
+}
+
+// Alert notice
+// ------------------------------
+.alert-notice {
+  text-align: left;
+  @extend .alert-warning;
+}
+
+// Alert message
+// ------------------------------
+.alert-message {
+  text-align: left;
+  @extend .alert-success;
+}
+
+// Alert warning
+// ------------------------------
+.alert-warning {
+  text-align: left;
+}
+
+a[name="top-anchor"] {
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 0px;
+    visibility: hidden;
+}
+
+// Back to top
+// ------------------------------
+#back-to-top {
+    background: rgba($black, .5);
+    border-radius: 5px;
+    display: none;
+}
+
+.top-away #back-to-top {
+    display: block;
+}
+
+// Fix modal scroll on IOS
+// -----------------------------
+.modal-open {
+  html, body {
+    -webkit-overflow-scrolling: auto;
+  }
+  .modal-body {
+    -webkit-overflow-scrolling: touch;
+  }
+}

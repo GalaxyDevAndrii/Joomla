@@ -1,0 +1,166 @@
+dl.tabs {
+	float: left;
+	margin: 10px 0 -1px 0;
+	z-index: 50;
+}
+
+dl.tabs dt {
+	float: left;
+	padding: 4px 10px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin-left: 3px;
+	background: #f0f0f0;
+	color: #666;
+}
+
+dl.tabs dt.open {
+	background: #F9F9F9;
+	border-bottom: 1px solid #F9F9F9;
+	z-index: 100;
+	color: #000;
+}
+
+div.current {
+	clear: both;
+	border: 1px solid #ccc;
+	padding: 10px 10px;
+	background:#F7F7F7;
+	min-height: 500px;
+}
+
+div.current dd {
+	padding: 0;
+	margin: 0;
+}
+
+.white_bg {
+	background: #FFFFFF;
+}
+
+.teacher_name {
+	color: #FF0000;
+	font-weight:bold;
+	font-size:14px;
+}
+
+.teacher_title {
+	color: #666666;
+	font-weight: bold;
+}
+
+.teacher_img {
+	margin-top:7px;
+	float:left;
+}
+.teacher_links{
+	width: 100%;
+	text-align:left;
+	margin-bottom:10px;
+	background-color: #e1f5fe;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.teacher_links-item {
+	float: left;
+	width: 50%;
+	border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.teacher_links-item:nth-child(2n+1) {
+	border-right: 1px solid rgba(0,0,0,.05);
+}
+.teacher_links-item a {
+	display: block;
+	padding: 8px 14px;
+	background-color: transparent;
+	text-decoration: none;
+}
+.teacher_links-item a:hover {
+	text-decoration: none;
+}
+.teacher_links span {
+	font-size:14px;
+	line-height:16px;
+}
+.teacher_links i {
+	width: 18px;
+	color: #4fc3f7;
+}
+.teacher_links-item:hover {
+	background-color: #b3e5fc;
+}
+.teacher_links-item:hover i {
+	color: #29b6f6;
+}
+@media (min-width: 769px) {
+	.teacher_links {
+		display: table;
+	}
+	.teacher_links-item {
+		display: table-cell;
+		float: none;
+		width: auto;
+		border-right: 1px solid rgba(0,0,0,.05);
+		border-bottom: none !important;
+	}
+	.teacher_links-item:last-child {
+		border-right: none;
+	}
+}
+.teacher_links2{
+	text-align:center;
+	background-color:#F4F4F4;
+}
+.teacher_links2 span {
+	background-image:url("../images/icons.png");
+	background-repeat:no-repeat;
+	display:inline-block;
+	font-size:12px;
+	height:16px;
+	line-height:16px;
+	padding:0 20px;
+}
+
+.guru_teacher_email {
+	background-position:0 0;
+}
+.guru_teacher_site {
+	background-position:0 -16px;
+}
+.guru_teacher_blog {
+	background-position:0 -32px;
+}
+.guru_teacher_twitter {
+	background-position:0 -48px;
+}
+.guru_teacher_facebook {
+	background-position:0 -64px;
+}
+.s_underline{
+	text-decoration:underline;
+}
+a .s_no_underline:hover{
+	text-decoration:none !important;
+}
+a .s_no_underline:visited{
+	color:red;
+}
+a.modal:visited{
+	color:#666666;
+}
+
+hr{
+	margin:0px !important;
+}
+
+.guru_buy_button{
+	background-color: #F7F7F7;
+    border: 1px solid #CCCCCC;
+    color: #666666;
+    padding: 2px;
+	text-decoration: none !important;
+}
+.guruleftmarg{
+ 	margin-left:20px;
+}

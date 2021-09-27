@@ -1,0 +1,146 @@
+<?php
+/**
+* @package RSForm! Pro
+* @copyright (C) 2007-2019 www.rsjoomla.com
+* @license GPL, http://www.gnu.org/copyleft/gpl.html
+*/
+
+defined('_JEXEC') or die('Restricted access');
+
+class RsformViewSubmissions extends JViewLegacy
+{
+	/* @var $params Joomla\Registry\Registry */
+	protected $params;
+
+	protected $app;
+
+	public function display($tpl = null)
+    {
+        $this->app      = JFactory::getApplication();
+		$this->params 	= $this->app->getParams('com_rsform');
+		$this->template = $this->get('detailTemplate');
+		
+		parent::display($tpl);
+
+        // Build the PDF Document string from the document buffer
+        $contents = ob_get_contents();
+        ob_end_clean();
+
+        $filename = $this->params->get('export_filename', 'export.pdf');
+
+        // We're using placeholders, load and replace them
+        if (strpos($filename, '{') !== false)
+		{
+			list($replace, $with) = RSFormProHelper::getReplacements($this->app->input->getInt('cid'));
+
+			$filename = str_replace($replace, $with, $filename);
+		}
+
+        if (strtolower(substr($filename, -4)) !== '.pdf')
+		{
+			$filename .= '.pdf';
+		}
+
+        // Allow plugins to use their own PDF library
+        $this->app->triggerEvent('onRsformPdfView', array($contents, $filename));
+
+        /*
+         * Setup external configuration options
+         */
+        define('K_TCPDF_EXTERNAL_CONFIG', true);
+
+        /*
+         * Path options
+         */
+
+        // Installation path
+        define("K_PATH_MAIN", JPATH_ADMINISTRATOR . '/components/com_rsform/helpers/tcpdf');
+
+        // URL path
+        define("K_PATH_URL", JPATH_BASE);
+
+        // Fonts path
+        define("K_PATH_FONTS", K_PATH_MAIN . '/fonts/');
+
+        // Cache directory path
+        define("K_PATH_CACHE", K_PATH_MAIN . "/cache");
+
+        // Cache URL path
+        define("K_PATH_URL_CACHE", K_PATH_URL . "/cache");
+
+        // Images path
+        define("K_PATH_IMAGES", K_PATH_MAIN . "/images");
+
+        // Blank image path
+        define("K_BLANK_IMAGE", K_PATH_IMAGES . "/_blank.png");
+
+        /*
+         * Format options
+         */
+
+        // Cell height ratio
+        define("K_CELL_HEIGHT_RATIO", 1.25);
+
+        // Magnification scale for titles
+        define("K_TITLE_MAGNIFICATION", 1.3);
+
+        // Reduction scale for small font
+        define("K_SMALL_RATIO", 2 / 3);
+
+        // Magnication scale for head
+        define("HEAD_MAGNIFICATION", 1.1);
+
+        /*
+         * Create the pdf document
+         */
+
+		if (!class_exists('TCPDF'))
+		{
+			require_once JPATH_ADMINISTRATOR . '/components/com_rsform/helpers/tcpdf/tcpdf.php';
+		}
+
+        $pdf = new TCPDF();
+        $pdf->SetMargins(15, 27, 15);
+        $pdf->SetAutoPageBreak(true, 25);
+        $pdf->SetHeaderMargin(5);
+        $pdf->SetFooterMargin(10);
+        $pdf->setImageScale(4);
+
+        $document = JFactory::getDocument();
+
+        // Set PDF Metadata
+        $pdf->SetCreator($document->getGenerator());
+        $pdf->SetTitle($document->getTitle());
+        $pdf->SetSubject($document->getDescription());
+        $pdf->SetKeywords($document->getMetaData('keywords'));
+
+        // Set PDF Header data
+        $pdf->setHeaderData('', 0, $document->getTitle(), null);
+
+        // Set RTL
+        $lang = JFactory::getLanguage();
+        $pdf->setRTL($lang->isRTL());
+
+        // Set Font
+        $font = 'freesans';
+        $pdf->setHeaderFont(array($font, '', 10));
+        $pdf->setFooterFont(array($font, '', 8));
+
+        // Initialize PDF Document
+        if (is_callable(array($pdf, 'AliasNbPages'))) {
+            $pdf->AliasNbPages();
+        }
+        $pdf->AddPage();
+
+        $pdf->WriteHTML($contents, true);
+        $data = $pdf->Output('', 'S');
+
+        // Build the PDF Document string from the document buffer
+        header('Content-Type: application/pdf; charset=utf-8');
+        header('Content-disposition: inline; filename="' . $filename . '"', true);
+
+        echo $data;
+
+        $this->app->close();
+	}
+}

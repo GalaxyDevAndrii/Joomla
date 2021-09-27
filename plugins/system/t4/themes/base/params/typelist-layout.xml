@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fields name="typelist-layout" addfieldpath="/plugins/system/t4/admin/field">
+    <!-- Layout builder -->
+    <fieldset name="group_layout" class="body_group has-icon" label="Layout Builder" icon="columns">
+      <field name="layout" type="t4layout" class="t4-layput-builder" default="" label="T4_LAYOUT_BUILDER" description="T4_LAYOUT_BUILDER_DESC" />
+    </fieldset>
+  </fields>
+</form>

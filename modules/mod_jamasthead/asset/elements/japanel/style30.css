@@ -1,0 +1,27 @@
+/*spacer*/
+.spacer label {
+	border-bottom: 1px solid #EEEEEE;
+    display: block;
+    width:100%;
+    max-width:100% !important;
+    margin-top:15px;
+    color:#AAA;
+}
+.spacer hr { border: medium none; border-bottom:1px solid #EEE; }
+
+.plg-desc li,
+.mod-desc li{
+	background: url("images/arrow-level1.png") no-repeat left 10px;
+	margin-left:10px;
+	padding-left:12px;
+}
+.plg-desc p,
+.mod-desc p{
+	margin:15px 0;
+}
+.moor-box{
+z-index:9;
+}
+
+input.ulist { clear: left; }
+label.ulist { }

@@ -1,0 +1,9 @@
+<div class="statements">
+    <tooltip>{{ '[statement question hint]' | translate }}</tooltip>
+    <tooltip ng-if="question.isSurveyMode">{{ '[survey mode caption]' | translate }}</tooltip>
+    <div class="answers statements-list">
+        <div class="answer-container" ng-repeat="statement in question.statements">
+            <div class="statement-answer-wrapper" statement-item statement="statement" question="question"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system">
+	<name>iJoomla Teachers Events</name>
+	<author>iJoomla</author>
+    <creationDate>July 15, 2014</creationDate>
+    <copyright>(C) 2014 iJoomla.com</copyright>
+   	<license>GPL V2</license>
+	<authorUrl>www.ijoomla.com</authorUrl>
+	<authorEmail>webmaster2@ijoomla.com</authorEmail>
+    <version>1.0.0</version>
+    <description>When a teacher registers and confirms his account, super user gets a notification that there's a teacher waiting to be approved</description>
+	<files>
+		<filename plugin="guruteacheractions">guruteacheractions.php</filename>
+	</files>
+</extension>

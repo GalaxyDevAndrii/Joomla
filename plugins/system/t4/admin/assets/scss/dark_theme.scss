@@ -1,0 +1,617 @@
+// DARK THEME VARIABLES
+// -------------------------
+$primary-color:      #424242;
+$secondary-color:    #e0e0e0;
+$tertiary-color:     #01579b;
+$quaternary-color:   #81d4fa;
+$font-color: $secondary-color;
+$font-color-active: #2196F3;
+
+$label-color: $font-color;
+$border-color: lighten($primary-color, 3%);
+
+$blue:         #2196F3;
+$red:          #F44336;
+$yellow:         #FFEB3B;
+$orange:       #FF9800;
+$green:        #4CAF50;
+$white:        #fff;
+$black:        #000;
+
+body #attrib-themeConfig.dark,
+body .t4-pane.dark #custom-style-preview {
+  background: $primary-color;
+
+  iframe {
+    border: 1px dashed rgba($white, .25);
+  }
+}
+
+.t4-pane.dark {
+  .t4-pn-views-container {
+
+    // Form elementssea
+    // -------------------------
+    // T4 Label
+    label,
+    .t4-label {
+      color: $label-color;
+    }
+
+    // Text box
+    input[type="text"] {
+      background-color: rgba($black, 0.2);
+      color: $font-color;
+
+      &:focus, &:active {
+        background-color: darken($primary-color, 3%);
+        border: 1px solid rgba($white, .25);
+      }
+    }
+
+    // Media field
+    .input-append {
+      background-color: darken($primary-color, 3%);
+
+      input.field-media-input[type="text"] {
+        background-color: rgba($white, .1);
+        color: $font-color;
+      }
+
+      .popover {
+        background-color: $primary-color;
+
+        .arrow:after {
+          border-right-color: $primary-color;
+        }
+
+        .popover-title {
+          background-color: darken($primary-color, 2%);
+          border-bottom: 1px solid $border-color;
+        }   
+      }
+    }
+
+    // Select field
+    .chzn-container {
+      .chzn-single {
+        background-color: darken($primary-color, 3%);
+
+        span {
+          color: $font-color;
+        }
+      }
+
+      &.chzn-container-active {
+        .chzn-single {
+          border: 0;
+        }
+
+        .chzn-drop {
+          border: 0;
+
+          .chzn-search {
+            background-color: darken($primary-color, 3%);
+          }
+
+          .chzn-results {
+            .no-results {
+              background: transparent;
+            }
+          }
+        }
+      }
+
+      ul.chzn-results {
+        background-color: darken($primary-color, 3%);
+        border: 1px solid darken($primary-color, 3%);
+        border-top: 0;
+
+        li {
+          color: $font-color;
+
+          &:hover {
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+
+    // Text area
+    textarea {
+      background-color: rgba($black, .15);
+      color: $font-color;
+    }
+
+    // T4 Input
+    .t4-input[type="checkbox"] {
+      background-color: rgba($black, 0.3);
+
+      &:before {
+        background-color: rgba($white, .75);
+      }
+
+      &:checked {
+        background-color: rgba($black, 0.3);
+      }
+
+      &:checked:before {
+        background-color: $font-color-active;
+      }
+    }
+
+    // Label
+    .control-label label {
+      color: $font-color !important;
+    }
+
+    // Text box
+    .t4-textbox-field,
+    .form-horizontal .sub-group input[type="text"] {
+      background: rgba($white, .5);
+    }
+
+    .control-helper {
+      color: darken($font-color, 25%);
+      margin-top: 8px;
+    }
+
+    // Font Select
+    .t4-font-family,
+    .heading-font-family {
+      button {
+        background-color: $primary-color;
+      }
+    }
+
+    // Button
+    .t4-button, .t4-btn {
+      background-color: rgba($black, 0.2);
+
+      &:hover, &:focus, &:active {
+        background-color: rgba($black, 0.5);
+      }
+
+      &.active {
+        background: $font-color-active;
+      }
+    }
+
+    // Primary button
+    .btn-primary {
+      background-color: $blue;
+      color: $white;
+
+      &:hover, &:focus, &:active {
+        background-color: darken($blue, 3%);
+      }
+    }
+
+    // Success button
+    .btn-success {
+      background-color: $green;
+      color: $white;
+
+      &:hover, &:focus, &:active {
+        background-color: darken($green, 3%);
+      }
+    }
+  }
+
+  // Top Preview Bar
+  // ---------------
+  .t4-sidebar-preview {
+    background-color: $primary-color;
+
+    // Current style
+    .t4-current-style {
+      h1 {
+        color: $font-color;
+      }
+
+      .dropdown-toggle {
+        background-color: rgba($black, .025);
+        border-color: rgba($white, .075);
+        color: $font-color;
+      }
+
+      .dropdown-title {
+        background-color: darken($primary-color, 7%);
+        border-bottom: 1px solid $primary-color;
+        color: $font-color;
+      }
+
+      .dropdown-menu {
+        background-color: darken($primary-color, 3%);
+        border: 1px solid lighten($primary-color, 3%);
+
+        ul li {
+          border-bottom: 1px solid $primary-color;
+
+          &:hover {
+            background-color: rgba($black, .1);
+          }
+
+          a, span {
+            color: $font-color;
+
+            &:hover, &:focus, &:active {
+              background: transparent;
+            }
+          }
+        }
+      }
+
+      // Open status
+      &.open {
+        .dropdown-toggle {
+          background-color: darken($primary-color, 7%);
+          border: 1px solid lighten($primary-color, 3%);
+          border-radius: 3px 3px 0 0;
+          border-bottom: 1px solid darken($primary-color, 7%);
+        }
+      }
+    }
+
+    // Toolbar save
+    .toolbar-save {
+      .btn {
+        background-color: rgba($black, .3);
+        color: $font-color;
+
+        &:hover, &:focus, &:active {
+          color: $white;
+        }
+
+        &.btn-save,
+        &.dropdown-toggle{
+          background-color: $green;
+          color: $white;
+
+          &:hover, &:focus, &:active {
+            background-color: darken($green, 3%);
+          }
+        }
+      }
+    }
+
+    // Toolbar devices
+    .toolbar-devices {
+      .btn {
+        color: darken($font-color, 15%);
+      }
+      .default{
+        color: $white;
+      }
+      .active {
+        color: $blue;
+
+        span {
+          color: $blue;
+        }
+      }
+    }
+  }
+
+  // Sidebar
+  // -------
+  .t4-sidebar {
+    background-color: $primary-color;
+
+    .t4-switch-theme {
+      background-color: darken($primary-color, 2%);
+      border-color: rgba($white, .075);
+    }
+
+    .clone-layout {
+      background-color: rgba($black, 0.2);
+    }
+  }
+
+  .t4-pn-views {
+    border-right: 1px solid rgba($black, .075);
+
+    .t4-switch-theme {
+      ul li span {
+        color: $font-color;
+      }
+
+      img {
+        opacity: 0.2;
+      }
+    }
+  }
+
+  .t4-sidebar-nav {
+    .legend {
+      color: $font-color;
+    }
+
+    .active .legend {
+      background: rgba(0,0,0,0.1);
+      color: $font-color-active;
+    }
+  }
+
+  // Pane container
+  // --------------
+  .t4-pn-views-container {
+    background-color: $primary-color;
+    color: $font-color;
+
+    .t4-block-header {
+      border-color: rgba($black, .2);
+    }
+
+    .t4-block-header h4 {
+      color: $font-color;
+    }
+  }
+
+  .t4-group-theme {
+    .sub-group.sub-group-direct {
+      background: transparent !important;
+    }
+
+    .t4-block-header {
+      background-color: transparent;
+      border: 0;
+    }
+  }
+
+  .sub-group {
+    &.sub-group-direct,
+    &.sub-group-open {
+      background: rgba($white, .05);
+    }
+
+    .sub-legend {
+      .item-title {
+        color: $font-color;
+      }
+
+      &.has-icon .fal {
+        color: $font-color;
+      }
+
+      &.active-group {
+        .item-title  {
+          color: $font-color-active;
+        }
+
+        &.has-icon .fal {
+          color: $font-color-active;
+        }
+      }
+
+      .item-content:after{
+        color: $font-color;
+      }
+    }
+  }
+
+  .t4-sidebar {
+    .t4-layout-builder,
+    .t4-navigation {
+      .sub-group-direct {
+        background-color: transparent;
+      }
+    }
+  }
+
+  // Template overview
+  .t4-pn-views-container {
+    .t4-template-more-info {
+      background-color: rgba($black, 0.15);
+
+      ul li {
+        border-bottom: 1px dashed $border-color;
+
+        span {
+          color: $font-color;
+        }
+      }
+    }
+
+    .t4-admin-overview-features li a {
+      background-color: darken($primary-color, 3%);
+      color: $font-color;
+
+      &:hover, &:focus, &:active {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+  }
+
+  // Site Settings
+  .t4-site-settings {
+    .sub-group-direct {
+      background-color: transparent !important;
+    }
+  }
+
+  // Navigation
+  .t4-megamenu-builder {
+    .menu_items {
+      background-color: darken($primary-color, 3%);
+
+      ul li {
+        &:after {
+          border-bottom-color: #4C4C4C;
+        }
+
+        a {
+          color: $font-color;
+
+          &:hover, &:focus, &:active {
+            color: $font-color-active;
+          }
+        }
+
+        &.item-active {
+          a:hover, a:focus, a:active {
+            color: $white;
+          }
+        }
+
+      }
+    }
+
+    .item-config {
+      border-color: darken($primary-color, 3%);
+    }
+
+    .t4-megamenu {
+      background-color: $primary-color;
+    }
+
+    .t4-menu-items {
+      .item-mega-align {
+        .btn-group {
+          background-color: darken($primary-color, 3%);
+        }
+      }
+    }
+
+    .t4-mega-section {
+      background-color: rgba($black, .2);
+
+      .col-inner {
+        background-color: darken($primary-color, 2%);
+
+        .t4-column-title {
+          color: $font-color;
+        }
+      }
+    }
+
+    .t4-menu-add-row a {
+      background-color: rgba($black, .2);
+      &:hover, &:focus, &:active {
+        background-color: $font-color-active;
+      }
+    }
+  }
+
+  // Layout selection
+  .t4-layout-builder {
+    .t4-section-title {
+      color: $font-color;
+    }
+
+    .t4-layout-section {
+      background-color: $primary-color;
+    }
+
+    .t4-row-container .col-inner {
+      background-color: lighten($primary-color, 7%);
+
+      .t4-column-title {
+        color: $font-color;
+      }
+    }
+  }
+
+  // Pattern colors
+  .t4-pn-views-container {
+    .pattern-inner {
+      background-color: rgba($black, .25);
+
+      .color-list li span {
+        box-shadow: 0 0 0 1px rgba($white, .15);
+      }
+    }
+  }
+
+  // Theme configure
+  .group_brand_colors {
+    .t4-spacer-heading {
+      .t4-spacer {
+        background-color: #4C4C4C;
+      }
+
+      .control-label::after {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+
+  .t4-group-theme {
+  }
+
+  // Menu assignment
+  #assignment.t4-assignment {
+    .btn {
+      background-color: darken($primary-color, 3%);
+      border-color: $border-color;
+      color: $font-color;
+    }
+
+    .menu-links-block {
+      background-color: darken($primary-color, 3%);
+      border-color: $border-color;
+
+      .btn {
+        background-color: $primary-color;
+        color: $font-color;
+      }
+
+      label {
+        color: $font-color;
+      }
+    }
+  }
+
+
+  // Addons
+  .addons-list {
+    li {
+      background-color: rgba($black, 0.075);
+      border: 1px solid rgba($white, 0);
+
+      &.addon-local {
+        background-color: transparent;
+        border: 1px solid rgba($white, 0.1);
+      }
+
+      &:hover {
+        border-color: $blue;
+      }
+    }
+  }
+
+  .addons-form {
+    border-color: #616161;
+
+    &:before {
+      border-bottom-color: #616161; 
+    }
+
+    &:after {
+      border-bottom-color: #4C4C4C;
+    }
+  }
+
+  // Tools
+  .tool-export,
+  .tool-import,
+  .tool-css {
+    border: 1px dashed rgba($white, .1);
+
+    .description {
+      color: $font-color;
+    }
+
+    h4 {
+      color: $white;
+    }
+
+    .t4-btn,
+    label {
+      &:hover, &:focus, &:active {
+      }
+    }
+  }
+
+}

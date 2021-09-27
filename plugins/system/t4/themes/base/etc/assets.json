@@ -1,0 +1,60 @@
+{
+  "name": "t4-base",
+  "version": "1.0.0",
+  "description": "Assets builtin T4 Base",
+  "license": "GPL-2.0+",
+  "assets": {
+    "t4.base": {
+      "name": "t4.base",
+      "required": 1,
+      "js": [
+        "js/template.js"
+      ],
+      "css": [
+        "css/template.css"
+      ]
+    },
+    "t4.bootstrap.js": {
+      "name": "t4.bootstrap.js",
+      "required": 1,
+      "dependencies": [
+        "jquery"
+      ],
+      "js": [
+        "vendors/bootstrap/js/bootstrap.bundle.js"
+      ]
+    },
+    "font.awesome5": {
+      "name": "font.awesome5",
+      "css": [
+        "vendors/font-awesome5/css/all.min.css"
+      ]
+    },
+    "font.awesome4": {
+      "name": "font.awesome4",
+      "css": [
+        "vendors/font-awesome/css/font-awesome.min.css"
+      ]
+    },
+    "font.iconmoon": {
+      "name": "font.iconmoon",
+      "css": [
+        "vendors/icomoon/css/icomoon.css"
+      ]
+    },
+
+    "fronend.edit": {
+      "name": "fronend.edit",
+      "required": 1,
+      "dependencies": [
+        "jquery"
+      ],
+      "js": [
+        "js/frontend-edit.js"
+      ],
+      "css": [
+        "css/frontend-edit.css"
+      ]
+    }
+  }
+}

@@ -1,0 +1,108 @@
+<div class="main-container" ng-class="{'without-intro': !assessment.hasIntroductionContent}" assessment-scroll-control>    
+    <main-background class="main-background" ng-show="assessment.hasIntroductionContent">
+        <div class="main-background-image"></div>
+        <div class="main-background-overlay"></div>
+    </main-background>
+    <introduction class="introduction-container at-top-position" ng-show="assessment.hasIntroductionContent">
+        <div class="introduction-wrapper">
+            <header class="app-header header">
+                <div class="app-header-content">
+                    <span class="logo-wrapper">
+                        <img class="main-logo" ng-src="{{ assessment.logoUrl }}" />
+                    </span>
+                    <timer class="timer" ng-show="timerEnabled" time-in-seconds="timerRemainingTime"></timer>
+                </div>
+            </header>
+            <div class="content-container">
+                <div class="content-wrapper" content>
+                    <div class="header-title-container">
+                        <div class="header-title-wrapper">
+                            <div class="header-assessment-label">{{ '[assessment]' | translate }}</div>
+                            <div class="header-assessment-title" course-title>{{ assessment.title }}</div>
+                            <div class="header-questions-label">{{ assessment.questions.length }} {{ '[questions]' | translate }}</div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div ng-repeat="contentItem in assessment.introductions" styled-content>
+                            <div ng-if="contentItem.children.length===0" html-compile="contentItem.content" styled-content ng-init="contentLoaded()"></div>
+                            <div class="expandable-block-wrapper" ng-if="contentItem.children.length!==0" ng-include="'app/views/expandableBlock.html'"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls" ng-click="scrollToQuestions()">
+                <div class="buttons-container">
+                    <button class="button large emphasize primary">
+                        <span class="text-wrapper">
+                            {{ '[start assessment]' | translate }}
+                        </span>
+                    </button>
+                </div>
+                <div class="scroll-hint-container">
+                    <span class="text">{{ '[or scroll to start]' | translate }}</span>
+                    <div class="icon-wrapper">
+                        <span class="icon up-arrow"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </introduction>
+    <header class="app-header main-header">
+        <main-background class="main-background">
+            <div class="main-background-image"></div>
+            <div class="main-background-overlay"></div>
+        </main-background>
+        <div class="app-header-content">
+            <span class="logo-wrapper">
+                <img class="main-logo" ng-src="{{ assessment.logoUrl }}" />
+            </span>
+            <div class="button-container" ng-click="scrollToQuestions()">
+                <span class="vertical-align-helper"></span>
+                <button class="button small primary">
+                    <span class="text-wrapper">
+                        {{ '[start assessment]' | translate }}
+                    </span>
+                </button>
+            </div>
+            <timer class="timer" ng-show="timerEnabled" time-in-seconds="timerRemainingTime"></timer>
+        </div>
+    </header>
+    <questions class="questions-container">
+        <secondary-background class="secondary-background">
+            <div class="secondary-background-image"></div>
+            <div class="secondary-background-overlay"></div>
+        </secondary-background>
+        <div class="questions-wrapper">
+            <ul class="unstyled">
+                <li class="question" ng-repeat="question in assessment.questions">
+                    <article>
+                        <div class="question-container">
+                            <h2 class="question-title">
+                                <span class="index">{{ $index + 1 | leadingZeros: 2 }}</span>
+                                {{ question.title }}
+                            </h2>
+                            <div class="question-instructions">
+                                <div class="question-instruction-content" ng-repeat="contentItem in question.instructions">
+                                    <div ng-if="contentItem.children.length===0" html-compile="contentItem.content" styled-content></div>
+                                    <div class="expandable-block-wrapper" ng-if="contentItem.children.length!==0" ng-include="'app/views/expandableBlock.html'"></div>
+                                </div>
+                            </div>
+                            <div class="question-body" ng-include="'app/views/' + question.getType() + '.html'"></div>
+                        </div>
+                        <div class="hint-container" ng-if="assessment.mode == 'quiz'">
+                            <div ng-if="question.hint.exists" ng-include="'app/views/hint.html'"></div>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+
+            <div class="submit-wrapper">
+                <button class="button large primary emphasize" ng-click="assessment.submit()">
+                    <span class="text-wrapper">
+                        {{ '[next]' | translate }}
+                    </span>
+                </button>
+            </div>
+        </div>
+    </questions>
+</div>

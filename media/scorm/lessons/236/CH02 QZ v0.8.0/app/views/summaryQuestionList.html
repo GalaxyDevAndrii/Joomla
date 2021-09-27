@@ -1,0 +1,34 @@
+
+<div class="summary-question-header-wrapper" ng-class="{ collapsed: !summary.questionList.isExpanded, passed: summary.questionList.isPassed }">
+    <span class="questions-numbers">{{summary.questionList.overallAnsweredQuestionsStatusText}}</span>
+    <button class="questions-expand-button unstyled" ng-click="summary.questionList.toggle()">
+        <span ng-if="!summary.questionList.isExpanded">{{ '[show detailed results]' | translate }}</span>
+        <span ng-if="summary.questionList.isExpanded">{{ '[hide detailed results]' | translate }}</span>
+    </button>
+</div>
+<div class="question-expandable-container" show-toggle="summary.questionList.isExpanded">
+    <div class="container-arrow-wrapper">
+        <span class="arrow-wrapper"></span>
+    </div>
+    <ul class="questions unstyled">
+        <li class="question-item" ng-repeat="question in summary.questionList.questions" ng-class="{ correct: question.isCorrect, survey: question.isSurvey }">
+            <div class="question-number-cell">
+                <div class="question-number-container">
+                    <i class="question-icon"></i>
+                    <span class="question-number">{{ $index + 1 | leadingZeros: 2 }}</span>
+                </div>
+            </div>
+            <div class="question-title-cell">{{ question.title }}</div>
+        </li>
+    </ul>
+    <div class="summary-question-footer">
+        <div class="button primary summary-question-hide-button" ng-click="summary.questionList.toggle()">
+            <div class="arrow-wrapper">
+                <div class="arrow icon arrow-up"></div>
+            </div>
+            <div class="arrow-wrapper">
+                <div class="arrow icon arrow-up"></div>
+            </div>
+        </div>
+    </div>
+</div>

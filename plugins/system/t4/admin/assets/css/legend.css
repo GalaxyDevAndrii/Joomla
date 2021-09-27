@@ -1,0 +1,455 @@
+/* T4 Fonts Manager */
+.t4-fonts-manager.modal {
+	background: none;
+	box-shadow: none;
+	left: 0;
+	margin: 0;
+	top: 0;
+	width: 100%;
+}
+
+.t4-fonts-manager.modal .modal-dialog {
+	background: #fff;
+	max-width: 80%;
+	margin: 1.75rem auto;
+}
+
+/* T4 Modal Header */
+.t4-fonts-manager .modal-header {
+  box-shadow: 0 5px 10px -5px #e1e1e1;
+	position: relative;
+	padding: 8px 24px;
+  z-index: 60;
+}
+
+.t4-fonts-manager .modal-title {
+  color: #424242;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.t4-fonts-manager .modal-title i {
+  margin-right: 8px;
+}
+
+.t4-fonts-manager .modal-header .close {
+	border: none;
+	font-size: 18px;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/* T4 Modal Body */
+.t4-fonts-manager .modal-body {
+	max-height: 550px;
+	overflow: auto;
+	padding: 0;
+  min-height: 550px;
+}
+
+/* T4 Fonts Filter */
+.t4-font .t4-font-filter-message {
+	padding: 16px 16px 0;
+	width: 100%;
+}
+
+.t4-font .t4-font-filter-message .alert-success {
+	display: block;
+}
+
+/* T4 Fonts Tabs */
+.t4-fonts-manager .t4-font .t4-fonts-filter {
+  z-index: 50;
+}
+
+.t4-fonts-manager .t4-font .tab-content {
+  position: absolute;
+  height: calc(100% - 54px);
+  width: 100%;
+  z-index: 30;
+}
+
+.t4-fonts-manager .t4-font .tab-content > .active {
+	opacity: 1;
+}
+
+.t4-fonts-manager .t4-font .tab-content > .tab-pane {
+	padding: 20px 0;
+	border: none;
+	margin: 0;
+}
+
+.t4-fonts-manager .t4-font .tab-content > #custom-google-content {
+  padding: 0 0 231px 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.t4-fonts-manager .t4-font .tab-content > #custom-google-content .tab-content-wrap {
+  height: 100%;
+  padding: 16px 0;
+  overflow-y: scroll;
+}
+
+.t4-fonts-manager .custom-font-container,
+.t4-fonts-manager .jub-font-container {
+  background-color: #fff;
+  background-position: 0 calc(-40px * var(--pos));
+  background-repeat: no-repeat;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: #666;
+	cursor: pointer;
+	display: block;
+  height: 45px;
+	margin: 8px 8px 16px 8px;
+  position: relative;
+  line-height: 40px;
+  transition: all 0.25s;
+}
+
+.t4-fonts-manager .custom-font-container {
+  margin-bottom: 8px;
+}
+
+.t4-fonts-manager .jub-font-container:before {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.t4-fonts-manager .jub-font-container:hover:before {
+  opacity: 1;
+}
+
+.t4-fonts-manager .jub-font-container span {
+  background-color: #fff;
+  color: #333;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0 4px;
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  line-height: 1;
+}
+
+.t4-fonts-manager .jub-font-container span.jub-font-styles {
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  color: #999;
+  display: inline-block;
+  font-size: 11px;
+  padding: 3px 4px;
+  position: absolute;
+  left: auto;
+  right: 16px;
+  opacity: 0;
+  text-align: center;
+  top: 12px;
+  width: 60px;
+  vertical-align: middle;
+}
+
+.t4-fonts-manager .jub-font-container:hover span.jub-font-styles,
+.t4-fonts-manager .font-focus .jub-font-container span.jub-font-styles {
+  opacity: 1;
+}
+
+.t4-fonts-manager .font-focus span.jub-font-styles {
+  border-radius: 3px 3px 0 0;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
+  z-index: 2001;
+}
+
+.t4-fonts-manager .font-focus .top span.jub-font-styles {
+  border-radius: 0 0 3px 3px;
+  border: 1px solid #ccc;
+  border-top: 1px solid #fff;
+}
+
+
+.t4-fonts-manager .custom-font-container:hover,
+.t4-fonts-manager .custom-font-container:hover,
+.t4-fonts-manager .font-active .custom-font-container,
+.t4-fonts-manager .font-active .jub-font-container,
+.t4-fonts-manager .jub-font-container:hover,
+.t4-fonts-manager .jub-font-container:focus {
+  border-color: #2196F3;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+
+.t4-fonts-manager .custom-font-container:hover span,
+.t4-fonts-manager .jub-font-container:hover span {
+  color: #2196F3;
+}
+
+.t4-fonts-manager .custom-font-container:hover i.fa-check,
+.t4-fonts-manager .jub-font-container:hover i.fa-check {
+	opacity: 1;
+}
+
+.t4-fonts-manager .custom-font-container i.fa-check.checked,
+.t4-fonts-manager .jub-font-container i.fa-check.checked {
+	color: #2196f3;
+	opacity: 1;
+}
+
+
+/* Custom Fonts */
+.tab-content-wrap {
+  min-height: 120px;
+}
+
+.add-more-custom-font {
+  background-color: #e9ecef;
+  overflow: hidden;
+}
+
+.add-more-custom-font span {
+  float: left;
+  display: block;
+  padding: 8px 0;
+  text-align: center;
+  width: 50%;
+}
+
+.add-more-custom-font span:hover {
+  cursor: pointer;
+}
+
+.add-more-custom-font span.active {
+  background-color: #f8f9fa;
+}
+
+.form-add-custom-font {
+  background-color: #f8f9fa;
+  border-radius: 0 0 5px 5px;
+  border-top: 1px solid #e5e6e7;
+  margin: 0;
+  min-height: 100px;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 301;
+}
+
+.custom-font-form {
+  padding: 8px 24px 24px;
+}
+
+.form-add-custom-font textarea {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+}
+
+.form-add-custom-font input.custom-font-input {
+  border: 1px solid #e5e6e7;
+  border-radius: 25px;
+  height: 28px;
+  line-height: 28px;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.custom-fonts {
+  list-style: none;
+  margin: 0;
+  padding: 0 8px;
+  overflow: hidden;
+}
+
+.custom-fonts li {
+  float: left;
+  padding: 4px;
+}
+
+.custom-fonts li .custom-font-container {
+  margin: 0;
+  padding-right: 24px;
+  position: relative;
+}
+
+.custom-fonts li .t4-btn {
+  display: inline-block;
+  height: 24px;
+  line-height: 1;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+  width: 24px;
+  z-index: 300;
+}
+
+.custom-fonts li:hover .t4-btn {
+  display: inline-block;
+  transition: all 0.25s;
+}
+
+.custom-fonts li:hover .t4-btn:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.custom-fonts li .t4-btn i {
+  line-height: 24px;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* System Fonts */
+.t4-fonts-manager .custom-font-name {
+	color: #333;
+	display: inline-block;
+	font-size: 16px;
+  white-space: nowrap;
+	line-height: 40px;
+	padding: 0 15px;
+}
+
+/* Font weight popup */
+.t4-font-weight-popup {
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.06), 0 2px 2px 0 rgba(0,0,0,.06), 0 1px 5px 0 rgba(0,0,0,.08);
+  font-family: Roboto, Helvetica, sans-serif;
+  padding: 8px;
+  position: absolute;
+  right: 16px;
+  top: 30px;
+  width: 200px;
+  z-index: 2000;
+}
+
+.t4-fonts-manager ul.jub-fonts li .right .t4-font-weight-popup {
+  right: auto;
+  left: 112px;
+}
+
+.top .t4-font-weight-popup {
+  border-radius: 3px 3px 0 3px;
+  top: auto;
+  bottom: 30px;
+}
+
+.t4-fonts-manager ul.jub-fonts li:nth-child(3n+1) .top .t4-font-weight-popup {
+  border-radius: 3px 3px 3px 0;
+}
+
+.font-focus .t4-font-weight-popup {
+  border-radius: 3px 0 3px 3px;
+}
+
+.t4-font-weight-popup ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.t4-fonts-manager ul.jub-fonts .t4-font-weight-popup ul li {
+  padding: 2px 0;
+  float: none;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.t4-font-weight-popup ul li label {
+  background-color: #f6f6f6;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  color: #333;
+  margin: 0;
+  padding: 5px 10px;
+  transition: all 0.25s;
+}
+
+.t4-font-weight-popup ul li label:hover {
+  border-color: #2196F3;
+}
+
+.t4-font-weight-popup ul li input {
+  border: 1px solid #ddd;
+  margin: 0 6px 0 0;
+  vertical-align: middle;
+}
+
+.t4-font-weight-popup .btn-actions {
+  padding-top: 8px;
+  text-align: right;
+}
+
+.t4-font-weight-popup .btn-actions .t4-btn {
+  margin-left: 8px;
+  text-transform: capitalize;
+}
+
+.t4-fonts-manager div[title="Arial"] .custom-font-name {
+	font-family: Arial;
+}
+
+.t4-fonts-manager div[title="Arial Black"] .custom-font-name {
+	font-family: Arial Black;
+}
+
+.t4-fonts-manager div[title="Brush Script MT"] .custom-font-name {
+	font-family: Brush Script MT;
+}
+
+.t4-fonts-manager div[title="Comic Sans MS"] .custom-font-name {
+	font-family: Comic Sans MS;
+}
+
+.t4-fonts-manager div[title="Courier New"] .custom-font-name {
+	font-family: Courier New;
+}
+
+.t4-fonts-manager div[title="Georgia"] .custom-font-name {
+	font-family: Georgia;
+}
+
+.t4-fonts-manager div[title="Helvetica"] .custom-font-name {
+	font-family: Helvetica;
+}
+
+.t4-fonts-manager div[title="Impact"] .custom-font-name {
+	font-family: Impact;
+}
+
+.t4-fonts-manager div[title="Lucida Sans Unicode"] .custom-font-name {
+	font-family: Lucida Sans Unicode;
+}
+
+.t4-fonts-manager div[title="Tahoma"] .custom-font-name {
+	font-family: Tahoma;
+}
+
+.t4-fonts-manager div[title="Times New Roman"] .custom-font-name {
+	font-family: Times New Roman;
+}
+
+.t4-fonts-manager div[title="Trebuchet MS"] .custom-font-name {
+	font-family: Trebuchet MS;
+}
+
+.t4-fonts-manager div[title="Verdana"] .custom-font-name {
+	font-family: Verdana;
+}

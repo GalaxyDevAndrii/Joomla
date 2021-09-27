@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset
+		name="debug"
+		label="CONFIG_DEBUG_SETTINGS_LABEL">
+
+		<field
+			name="devmode"
+			type="radio"
+			label="T4_CONFIG_DEVMODE_SYSTEM_LABEL"
+			description="T4_CONFIG_DEVMODE_SYSTEM_DESC"
+			class="btn-group btn-group-yesno"
+			default="0"
+			filter="integer"
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+	</fieldset>
+</form>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Features Intro Style 4</title>
+	<sampledata></sampledata>
+	<fields name="features-intro">
+		<fieldset name="basic" label="FEATURES_BASIC_LABEL" description="FEATURES_BASIC_DESC">
+			<field name="columns" type="list" label="FEATURES_COLUMNS_LABEL" description="FEATURES_COLUMNS_DESC" >
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</field>
+
+			<field name="block-intro" type="textarea" default="" rows="5" cols="40"  label="FEATURES_INTRO_LABEL" description="FEATURES_INTRO_DESC" />
+		</fieldset>
+
+		<fieldset name="section-features" label="FEATURES_SECTION_LABEL" description="FEATURES_SECTION_DESC">
+			<field name="data" type="jalist" >
+				<item name="intro-img" type="media" default="" size="40" label="FEATURES_INTRO_IMAGE_LABEL" description="FEATURES_INTRO_IMAGE_DESC" />
+				<item name="title" type="text" default="" size="40" label="FEATURES_TITLE_LABEL" description="FEATURES_TITLE_DESC" required="1" />
+				<item name="sub-title" type="text" default="" size="40" label="FEATURES_SUB_TITLE_LABEL" description="FEATURES_SUB_TITLE_DESC" />
+				<item name="description" type="textarea" default="" label="FEATURES_DESCRIPTION_LABEL" description="FEATURES_DESCRIPTION_DESC" rows="5" cols="40" />
+				<item name="link" type="text" default="" label="FEATURES_LINK_LABEL" description="FEATURES_LINK_DESC" />
+			</field>
+
+		</fieldset>
+
+  </fields>
+</form>

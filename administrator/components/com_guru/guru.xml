@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>COM_GURU</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>December 07, 2020</creationDate>
+	<author>iJoomla</author>
+	<authorEmail>webmaster2@ijoomla.com</authorEmail>
+	<authorUrl>www.iJoomla.com</authorUrl>
+	<copyright>C) 2011 iJoomla.com</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>5.2.5</version>
+	<!-- The description is optional and defaults to the name -->
+	<description></description>
+
+	<scriptfile>install.guru.php</scriptfile>
+	
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/update.sql</file>
+		</sql>
+	</update>
+
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>guru.php</filename>
+		<filename>router.php</filename>
+		<folder>controllers</folder>
+		<folder>views</folder>
+		<folder>models</folder>		
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>helpers</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>tables</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.com_guru.ini</language>
+	</languages>	
+	
+	<administration>
+		<menu link="option=com_guru" img="components/com_guru/images/lm/guru_icon.png">COM_GURU</menu>		
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_guru.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_guru.sys.ini</language>
+		</languages>	
+
+
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>guru.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<folder>controllers</folder>
+			<folder>css</folder>
+			<folder>helpers</folder>
+			<folder>elements</folder>
+			<folder>plugins</folder>
+			<folder>images</folder>
+			<folder>js</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>			
+		</files>
+	</administration>
+
+	<updateservers>
+		<server type="extension" priority="1" name="COM_GURU"><![CDATA[https://www.jomsocial.com/guru_update.xml]]></server>
+	</updateservers>
+
+</extension>

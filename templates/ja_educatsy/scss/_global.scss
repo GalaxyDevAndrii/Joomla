@@ -1,0 +1,144 @@
+// ------------------------------------
+// Core Styles
+// ------------------------------------
+
+// Body
+// -------------------------
+html {
+  font-size: $font-size-root;
+  //-webkit-font-smoothing: antialiased;
+}
+
+
+body {
+  font-weight: $font-weight-base;
+}
+
+
+// Links
+// -------------------------
+a {
+  color: $link-color;
+
+  @include hover {
+    color: $link-hover-color;
+  }
+}
+
+
+// Images
+// -------------------------
+img {
+  @include img-fluid;
+}
+
+
+// Forms
+// -------------------------
+
+// Legacy Joomla! Form Elements
+.control-group {
+  @extend .form-group;
+}
+
+.inputbox {
+  @extend .form-control;
+}
+
+input[type=radio],
+input[type=checkbox] {
+
+  &.inputbox,
+  &.form-control {
+    width: auto;
+  }
+}
+
+.radio,
+.checkbox {
+  @extend .form-check;
+  input[type=radio],
+  input[type=checkbox] {
+    margin-right: $spacer-xs;
+  }
+}
+
+label.radio,
+label.checkbox {
+  @extend .form-check-inline;
+}
+
+
+//
+// MISC.
+// --------------------------------------------------
+
+hr {
+}
+
+/* IcoMoon Conversion */
+[class^="icon-"].input-group-text,
+[class*=" icon-"].input-group-text {
+  width: auto;
+  height: auto;
+}
+
+[class^="icon-"].fa::before,
+[class*=" icon-"].fa::before {
+  font-family: FontAwesome;
+}
+
+// Reset sticky on mobile
+.t4-sticky {
+  @include media-breakpoint-down(xs) {
+    position: relative !important;
+    top: auto !important;
+  }
+}
+
+// Pattern Decor
+.t4-palette-gray,
+.t4-palette-purple {
+  overflow: hidden;
+
+  &:before {
+    background: #681FDF;
+    border-radius: 50%;
+    bottom: -140px;
+    left: -135px;
+    content: "";
+    position: absolute;
+    height: 366px;
+    width: 366px;
+    opacity: 0.05;
+  }
+
+  &:after {
+    border-radius: 50%;
+    content: "";
+    border: 140px solid #681FDF;
+    height: 650px;
+    width: 650px;
+    position: absolute;
+    top: -250px;
+    right: -350px;
+    opacity: 0.05;
+  }
+
+  > div {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.t4-palette-purple {
+  &:before {
+    background: $white;
+    opacity: 0.1;
+  }
+
+  &:after {
+    border-color: $white;
+    opacity: 0.1;
+  }
+}

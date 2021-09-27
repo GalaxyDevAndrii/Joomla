@@ -1,0 +1,69 @@
+{
+  "name": "t4-base",
+  "version": "1.0.0",
+  "description": "Assets builtin T4 Base",
+  "license": "GPL-2.0+",
+  "assets": [
+      {
+      "name": "t4.base",
+      "type": "style",
+       "uri":  "css/template.css"
+      
+      },
+      {
+        "name": "t4.base",
+        "type": "script",
+         "uri":  "js/template.js"
+      },{
+      "name": "t4.base",
+      "type": "style",
+       "uri":  "css/template.css"
+      
+      },
+      {
+        "name": "t4.bootstrap.js",
+        "type": "script",
+         "uri":   "plugins/system/t4/themes/base/vendors/bootstrap/js/bootstrap.bundle.js",
+        "dependencies": [
+          "jquery"
+        ]
+      },
+      {
+        "name": "t4.bootstrap.css",
+        "type": "style",
+         "uri":   "plugins/system/t4/themes/base/vendors/bootstrap/css/bootstrap.css"
+      },
+    {
+      "name": "font.awesome5",
+      "type": "style",
+       "uri":   "plugins/system/t4/themes/base/vendors/font-awesome5/css/all.min.css"
+    },
+    {
+      "name": "font.awesome4",
+      "type": "style",
+       "uri":   "plugins/system/t4/themes/base/vendors/font-awesome/css/font-awesome.min.css"
+    },
+    {
+
+      "name": "font.iconmoon",
+      "type": "style",
+       "uri":   "plugins/system/t4/themes/base/vendors/icomoon/css/icomoon.css"
+    }, {
+      "name": "fronend.edit",
+      "dependencies": [
+        "jquery"
+      ],
+      "type": "style",
+       "uri":  "css/frontend-edit.css"
+      
+      },
+      {
+        "name": "fronend.edit",
+        "dependencies": [
+          "jquery"
+        ],
+        "type": "script",
+         "uri":  "js/frontend-edit.js"
+      }
+  ]
+}

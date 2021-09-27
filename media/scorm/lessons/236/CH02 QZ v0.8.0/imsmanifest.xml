@@ -1,0 +1,129 @@
+<?xml version="1.0" standalone="no" ?>
+<manifest identifier="EGa056631b-0524-45a4-addc-19a79b386d2a" version="1.1.1"
+          xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+                                                      http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd">
+    <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>2004 4th Edition</schemaversion>
+    </metadata>
+
+    <organizations default="easygenerator">
+        <organization identifier="easygenerator">
+            <title>Pre-licensing Course (copy)</title>
+            <item identifier="eg1" identifierref="REFSCO1" isvisible="true">
+                <title>Pre-licensing Course (copy)</title>
+            </item>
+        </organization>
+    </organizations>
+    <resources>
+        <resource identifier="REFSCO1" type="webcontent" adlcp:scormType="sco" href="index.html">
+            <metadata>
+                <adlcp:location>metadata.xml</adlcp:location>
+            </metadata>
+            <dependency identifierref="resources" />
+        </resource>
+        <resource identifier="resources" type="webcontent" adlcp:scormType="asset">
+                <file href="adlcp_v1p3.xsd" />
+                <file href="app%2Fapp.js" />
+                <file href="app%2Fmodules%2FxApi%2Fviews%2FxApiError.html" />
+                <file href="app%2Fvendor.js" />
+                <file href="app%2Fviews%2FdragAndDropText.html" />
+                <file href="app%2Fviews%2FexpandableBlock.html" />
+                <file href="app%2Fviews%2FfillInTheBlanks.html" />
+                <file href="app%2Fviews%2Fhint.html" />
+                <file href="app%2Fviews%2Fhotspot.html" />
+                <file href="app%2Fviews%2Flogin.html" />
+                <file href="app%2Fviews%2Fmain.html" />
+                <file href="app%2Fviews%2Fmodals%2FresendResults.html" />
+                <file href="app%2Fviews%2FmultipleSelectText.html" />
+                <file href="app%2Fviews%2Fnoaccess.html" />
+                <file href="app%2Fviews%2FnotFoundError.html" />
+                <file href="app%2Fviews%2FopenQuestion.html" />
+                <file href="app%2Fviews%2FrankingText.html" />
+                <file href="app%2Fviews%2FscenarioQuestion.html" />
+                <file href="app%2Fviews%2FsingleSelectImage.html" />
+                <file href="app%2Fviews%2FsingleSelectText.html" />
+                <file href="app%2Fviews%2Fstatement.html" />
+                <file href="app%2Fviews%2FstatementItem.html" />
+                <file href="app%2Fviews%2Fsummary.html" />
+                <file href="app%2Fviews%2FsummaryQuestionList.html" />
+                <file href="app%2Fviews%2FtextMatching.html" />
+                <file href="app%2Fviews%2Ftimer.html" />
+                <file href="app%2Fviews%2Fwidgets%2FimageLoader.html" />
+                <file href="app%2Fviews%2Fwidgets%2Ftooltip.html" />
+                <file href="content%2Fdata.js" />
+                <file href="css%2Fcolors.css" />
+                <file href="css%2Fcustom-styles.css" />
+                <file href="css%2Ffont%2FCustom-Icons.woff" />
+                <file href="css%2Ffont%2FMaterialIcons-Regular.woff" />
+                <file href="css%2Ffont%2Frabiohead.woff" />
+                <file href="css%2Ffont%2Frobotocondensed-regular.woff" />
+                <file href="css%2Ffonts.css" />
+                <file href="css%2Fimg%2Fbrowsers%2Fandroid.png" />
+                <file href="css%2Fimg%2Fbrowsers%2Fchrome.png" />
+                <file href="css%2Fimg%2Fbrowsers%2Fedge.png" />
+                <file href="css%2Fimg%2Fbrowsers%2Ffirefox.png" />
+                <file href="css%2Fimg%2Fbrowsers%2Fie.png" />
+                <file href="css%2Fimg%2Fbrowsers%2Fsafari.png" />
+                <file href="css%2Fimg%2Feasy-supported-browser-browser-bg.png" />
+                <file href="css%2Fimg%2Feasy-supported-browser-logo.png" />
+                <file href="css%2Fimg%2Feasy-supported-browser-top-part-bg.png" />
+                <file href="css%2Fimg%2FlinkArrow.png" />
+                <file href="css%2Fimg%2Freview-sprites.png" />
+                <file href="css%2Fimg%2Ftooth.png" />
+                <file href="css%2Fstyles.css" />
+                <file href="css%2Fvendor.css" />
+                <file href="customisations.json" />
+                <file href="fonts%2Fopensans-400.ttf" />
+                <file href="imscp_v1p1.xsd" />
+                <file href="includedModules%2Flms.js" />
+                <file href="index.html" />
+                <file href="lang%2Far.json" />
+                <file href="lang%2Fca.json" />
+                <file href="lang%2Fcs.json" />
+                <file href="lang%2Fde.json" />
+                <file href="lang%2Fel.json" />
+                <file href="lang%2Fen.json" />
+                <file href="lang%2Fes.json" />
+                <file href="lang%2Ffi.json" />
+                <file href="lang%2Ffr.json" />
+                <file href="lang%2Fhu.json" />
+                <file href="lang%2Fit.json" />
+                <file href="lang%2Fkin.json" />
+                <file href="lang%2Flv.json" />
+                <file href="lang%2Fnb-no.json" />
+                <file href="lang%2Fnl-inf.json" />
+                <file href="lang%2Fnl.json" />
+                <file href="lang%2Fnn-no.json" />
+                <file href="lang%2Fpt-br.json" />
+                <file href="lang%2Fru.json" />
+                <file href="lang%2Fsv.json" />
+                <file href="lang%2Fua.json" />
+                <file href="lang%2Fzh-cn.json" />
+                <file href="lomLoose.xsd" />
+                <file href="manifest.json" />
+                <file href="media%2F185ddf6c-77f9-46f2-ad73-b7601c5195f7.png" />
+                <file href="media%2F42f0680a-d9dc-467c-baee-10eeb6d74ee5.png" />
+                <file href="media%2Ff147b431-505d-4470-9209-faa76322b787.jpg" />
+                <file href="preview%2Fimages%2Fpreview.jpg" />
+                <file href="preview%2Fthumbnail.png" />
+                <file href="publishSettings.js" />
+                <file href="settings.js" />
+                <file href="settings%2Fapi.js" />
+                <file href="settings%2Fconfigure%2Fconfigure.html" />
+                <file href="settings%2Fconfigure%2Fcss%2Fconfigure.css" />
+                <file href="settings%2Fconfigure%2Fcss%2Ffonts%2Fopensans-400.woff" />
+                <file href="settings%2Fconfigure%2Fcss%2Ffonts%2Fopensans-600.woff" />
+                <file href="settings%2Fconfigure%2Fcss%2Ffonts%2Fopensans-bold.woff" />
+                <file href="settings%2Fconfigure%2Fcss%2Ffonts%2Fopensans-italic-400.woff" />
+                <file href="settings%2Fconfigure%2Fimg%2Flanguage.png" />
+                <file href="settings%2Fconfigure%2Fimg%2Fsprites_16.png" />
+                <file href="settings%2Fconfigure%2Fjs%2Fconfigure.min.js" />
+                <file href="settings%2Fconfigure%2Fjs%2Fvendor.min.js" />
+                <file href="themeSettings.js" />
+        </resource>
+    </resources>
+</manifest>

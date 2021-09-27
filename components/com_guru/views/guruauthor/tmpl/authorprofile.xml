@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Guru Teacher Profile">
+		<message>Guru Teacher Profile layout</message>
+    </layout>
+    <state>
+		<name>Guru Teacher Profile</name>
+        <description>Guru Teacher Profile layout</description>
+    </state>
+</metadata>

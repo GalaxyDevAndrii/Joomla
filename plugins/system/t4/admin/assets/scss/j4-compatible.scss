@@ -1,0 +1,313 @@
+$font-size-base: 13px;
+$font-size-s: 12px;
+
+.pull-left { float: left; }
+.pull-right { float: right; }
+
+.j4 {
+  .hide {
+    display: none;
+  }
+
+  // Form elements
+  // ---------------------------
+  .btn,
+  button,
+  label,
+  input,
+  select,  
+  input[type="text"] {
+    box-shadow: none;
+    font-size: 12px;
+    outline: none;
+  }
+
+  // Field media
+  .field-media-wrapper {
+    background-color: $gray-100;
+    border-radius: 5px;
+    display: block;
+    padding: $base-padding;
+
+    .field-media-preview {
+      border-radius: 0;
+      border: 0;
+      max-width: none;
+    }
+
+    .input-group {
+      background-color: rgba(0,0,0,0.1);
+      border: 1px solid $border-color;
+      border-radius: $input-border-radius;
+      padding: 2px 98px 2px 2px;
+      position: relative;
+
+      .field-media-input {
+        background-color: rgba($white, 0.5);
+        border: 0;
+        box-shadow: none;
+        width: 100%;
+        max-width: none;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        z-index: 30;
+      }
+
+      .input-group-append {
+        background-color: transparent;
+        position: absolute;
+        right: 3px;
+        top: 2px;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        z-index: 40;
+
+        .btn {
+          position: relative;
+          top: auto;
+          left: auto;
+          right: auto;
+          margin: 0;
+        }
+
+        .button-clear {
+          margin-left: $base-margin/2;
+          width: 28px;
+        }
+      }
+    }
+  }
+
+
+   // Fix chosen dropdown
+  .chosen-container.chosen-container-single {
+    font-size: $font-size-base;
+    max-width: none;
+    width: 100% !important;
+
+    .chosen-single {
+      border-radius: $input-border-radius;
+      border: 1px solid $border-color;
+      display: block;
+      height: auto;
+      padding: $base-padding/2 $base-padding*2;
+      width: 100% !important;
+    }
+
+    &.chosen-container-active {
+      .chosen-single {
+        border-radius: 5px 5px 0 0;
+      }
+
+      .chosen-drop {
+        border: 1px solid $border-color;
+        border-radius: 0 0 5px 5px;
+
+        .chosen-results {
+          .highlighted {
+            background-color: $blue !important;
+          }
+        }
+      }
+    }
+  }
+
+  .select-menu-type {
+    .chosen-container.chosen-container-single {
+      max-width: 220px !important;
+    }
+  }
+
+  #typelist_navigation_mega_duration {
+    max-width: none;
+  }
+
+
+  #attrib-themeConfig {
+    font-size: $font-size-base;
+  }
+
+  // Topbar preview
+  // --------------------------
+  .t4-sidebar-preview {
+
+    .t4-admin-save {
+      .t4-btn.dropdown-toggle {
+        float: right;
+      }
+    }
+  }
+
+  #wrapper {
+    .content {
+      .row > .col-md-12 {
+        position: static;
+      }
+    }
+  }
+
+  // Pane view
+  // --------------------------
+  .t4-pn-views {
+    .t4-sidebar-nav {
+      .legend {
+        margin-bottom: 0;
+      }
+
+      .item-content {
+        font-size: $font-size-s;
+      }
+    }
+  }
+
+  // Fix current style
+  // --------------------------
+  .t4-current-style {
+    h1.temp_title {
+      font-weight: 600;
+      line-height: 1.7;
+    }
+
+    .dropdown-menu {
+      left: auto !important;
+      right: 0 !important;
+      top: 39px !important;
+      transform: none !important;
+    }
+  }
+
+  .t4-admin-save {
+    .dropdown-toggle {
+      .caret {
+        border-top: 4px solid $white;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        display: block;
+        margin-right: $base-padding/2;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+
+    .dropdown-menu {
+      left: auto !important;
+      right: 0 !important;
+      transform: none !important;
+      top: 38px !important;
+
+      li {
+        a {
+          color: $gray-700;
+          display: block;
+          line-height: 1;
+          padding: $base-padding $base-padding*2;
+
+          &:hover, &:focus, &:active {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Fix preview postion
+  // --------------------------
+  .control-group {
+    .controls {
+      margin-left: 0;
+    }
+  }
+
+  // T4 Modal
+  // --------------------------
+  .t4-modal {
+    font-size: $font-size-base;
+
+    // Fix chosen dropdown
+    .chosen-container.chosen-container-single {
+      font-size: $font-size-base;
+      max-width: none;
+      width: 100% !important;
+
+      .chosen-single {
+        border-radius: $input-border-radius;
+        border: 1px solid $border-color;
+        display: block;
+        height: auto;
+        padding: $base-padding/2 $base-padding*2;
+        width: 100% !important;
+      }
+
+      &.chosen-container-active {
+        .chosen-single {
+          border-radius: 5px 5px 0 0;
+        }
+
+        .chosen-drop {
+          border: 1px solid $border-color;
+          border-radius: 0 0 5px 5px;
+
+          .chosen-results {
+            .highlighted {
+              background-color: $blue !important;
+            }
+          }
+        }
+      }
+    }
+
+    .t4-input[type="range"] {
+      margin-top: 3px;
+    }
+
+    .btn, input[type="text"] {
+      font-size: $font-size-base;
+      font-weight: 400;
+    }
+
+    .nav.nav-tabs {
+      background-color: transparent;
+      display: block;
+      @include clearfix();
+
+      li,
+      li.nav-item {
+        float: left;
+        padding-left: 0;
+        padding-right: 0;
+        width: auto;
+      }
+
+      a,
+      a.nav-link {
+        background-color: transparent;
+        box-shadow: none;
+        color: $gray-600;
+        float: none;
+        outline: none;
+        width: auto;
+
+        &.active {
+          color: $link-color;
+
+          &:after {
+            background: $link-color;
+          }
+        }
+      }
+    }
+  }
+
+  // Tab general
+  .t4-modal-content {
+    .control-group-inner > .control-label {
+      float: none;
+      width: auto;
+    }
+  }
+}

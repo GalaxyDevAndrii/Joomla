@@ -1,0 +1,140 @@
+//
+// OFF-CANVAS CONTENT STYLES
+// -------------------------------------
+// Extend style in base
+// --------------------
+@import "../../../plugins/system/t4/themes/base/scss/_offcanvas";
+
+// Offcanvas toggle
+// -----------------------------------
+.t4-offcanvas-toggle {
+  border: 0;
+  color: $white;
+  display: block;
+  float: right;
+  height: 52px;
+  line-height: 52px;
+  margin-left: $spacer;
+  padding: 0;
+  transition: all 0.35s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    color: $gray-100;
+  }
+
+  > span {
+    vertical-align: middle;
+  }
+
+  i {
+    font-size: 22px;
+    position: relative;
+  }
+}
+
+
+.t4-offcanvas {
+  // Off Canvas Header
+  // -----------------------------------
+  .t4-off-canvas-header {
+    height: 50px;
+    padding: 0 $grid-gutter-width;
+    
+    h3 {
+      color: $t4-off-canvas-header-text-color;
+      text-transform: uppercase;
+      font-size: $h5-font-size;
+      font-weight: 600;
+      line-height: 50px;
+    }
+
+    .close {
+      background: transparent;
+      color: $t4-off-canvas-header-text-color;
+      margin-top: 12px;
+      width: auto;
+      height: auto;
+
+      &:hover,&:focus,&:active {
+        background: transparent;
+      }
+    }
+  }
+
+  // Off Canvas Body
+  // -----------------------------------  
+  .t4-off-canvas-body {
+    width: 100%;
+
+    // Nav bar
+    .navbar-nav {
+      > li {
+        > a,
+        > span {
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+      }
+    }
+    .navbar {
+      .nav-link,
+      .separator {
+        background: none;
+        color: $t4-off-canvas-link-color;
+
+        &:hover, &:focus, &:active {
+          background: none;
+          color: $t4-off-canvas-link-hover-color;
+        }
+      }
+
+      .active > a,
+      .active > span,
+      .show > a,
+      .show > span {
+        color: $t4-off-canvas-link-hover-color;
+      }
+
+      // Dropdown menu
+      .dropdown-menu {
+        background: transparent;
+        min-width: 0;
+        padding-left: $grid-gutter-width / 2;
+
+        li > a,
+        li > span {
+          background: none!important;
+          color: $t4-off-canvas-link-color;
+
+          &:hover,&:focus,&:active {
+            background: none;
+            color: $t4-off-canvas-link-hover-color;
+          }
+        }
+
+        .active > a,
+        .active > span,
+        .show > a,
+        .show > span {
+          background: none;
+          color: $t4-off-canvas-link-hover-color;
+        }
+        
+        .dropdown-item,
+        .nav-link {
+        }
+      }
+    }
+  }
+
+  // Off Canvas Module
+  // ---------------------------------
+  .t4-module {
+    .module-ct,
+    .module-inner {
+      border: 0;
+      padding: 0;
+    }
+  }
+}

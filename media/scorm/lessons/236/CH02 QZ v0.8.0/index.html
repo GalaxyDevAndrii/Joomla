@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ng="http://angularjs.org">
+<head>
+    <title ng-bind="$root.title"></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0">
+
+    <link href="css/colors.css?v=1625059020152" type="text/css" rel="stylesheet/less" />
+
+    <link rel="stylesheet" href="css/vendor.css?v=1625059020152">
+    <link href="css/styles.css?v=1625059020152" rel="stylesheet" />
+    <link href="css/custom-styles.css?v=1625059020152" rel="stylesheet" />
+</head>
+<body>
+    <div id="main-app">
+        <div class="container" ng-view autoscroll="true"></div>
+        <div ng-hide="$root.isVisible" class="loader-container image-loader-icon">
+            <div class="color-ball red">&nbsp;</div>
+            <div class="color-ball green">&nbsp;</div>
+            <div class="color-ball blue">&nbsp;</div>
+            <div class="color-ball yellow">&nbsp;</div>
+        </div>
+        <div class="image-preview-container" ng-controller="ImagePreviewController as preview">
+            <div class="overlay-container"  ng-class="{'visible': preview.visible}">
+                <div class="overlay" ng-click="preview.hide()">
+                </div>
+                <div class="center-containter">
+                    <div class="center">
+                        <div class="center-content">
+                            <div class="image-container">
+                                <div class="image-wrapper" image-fullscreen-preview ng-transclude>
+                                    <image-loader url="preview.imageUrl" width="preview.width" height="preview.height"></image-loader>
+                                </div>
+                                <div class="overlay-close-button" ng-click="preview.hide()">
+                                    <span class="overlay-close-button-icon material-icons">clear</span>
+                                    <span class="overlay-close-button-title">esc</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+    <script type="text/javascript">
+        less = {
+            env: 'production',
+            fileAsync: true,
+            async: true
+        };
+    </script>
+    <script src="app/vendor.js?v=1625059020152"></script>
+    <script type="text/javascript">
+        supportedBrowser.configure({
+            browsers: {
+                win: {
+                    chrome: {},
+                    firefox: {},
+                    msie: {},
+                    edge: {}
+                },
+                mac: {
+                    safari: {},
+                    chrome: {},
+                    firefox: {}
+                },
+                android: {
+                    native: {
+                        title: 'Android Browser',
+                        image: 'css/img/browsers/android.png?v=1625059020152'
+                    },
+                    chrome: {
+                        version: 39
+                    }
+                },
+                ios: {
+                    safari: {},
+                    chrome: {}
+                },
+                cros: {
+                    chrome: {}
+                }
+            },
+            mainAppContainerId: 'main-app',
+            globalBrowsersInfo: {
+                chrome: {
+                    title: 'Google Chrome',
+                    link: 'http://www.google.com/chrome',
+                    image: 'css/img/browsers/chrome.png?v=1625059020152',
+                    version: 43
+                },
+                firefox: {
+                    title: 'Mozilla Firefox',
+                    link: 'http://www.mozilla.com/firefox',
+                    image: 'css/img/browsers/firefox.png?v=1625059020152',
+                    version: 33
+                },
+                msie: {
+                    title: 'Internet Explorer',
+                    link: 'http://windows.microsoft.com/en-US/internet-explorer/download-ie',
+                    image: 'css/img/browsers/ie.png?v=1625059020152',
+                    version: 11
+                },
+                edge: {
+                    title: 'Microsoft Edge',
+                    link: 'https://www.microsoft.com/en-us/windows/microsoft-edge',
+                    image: 'css/img/browsers/edge.png?v=1625059020152'
+                },
+                safari: {
+                    title: 'Apple Safari',
+                    link: 'http://www.apple.com/safari',
+                    image: 'css/img/browsers/safari.png?v=1625059020152'
+                }
+            }
+        }).init();
+    </script>
+    <script src="app/app.js?v=1625059020152"></script>
+</body>
+</html>

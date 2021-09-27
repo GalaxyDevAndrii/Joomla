@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@import "../../../themes/base/vendors/bootstrap/scss/functions";
+@import "../../../themes/base/vendors/bootstrap/scss/variables";
+
+@import "../../../themes/base/vendors/bootstrap/scss/mixins/breakpoints";
+@import "../../../themes/base/vendors/bootstrap/scss/mixins/grid-framework";
+@import "../../../themes/base/vendors/bootstrap/scss/mixins/grid";
+
+@import "../../../themes/base/vendors/bootstrap/scss/grid";
+@import "../../../themes/base/vendors/bootstrap/scss/utilities/display";
+@import "../../../themes/base/vendors/bootstrap/scss/utilities/flex";
+
+.pos-hidden-xl,
+.pos-hidden-lg,
+.pos-hidden-md,
+.pos-hidden-sm,
+.pos-hidden-xs {
+  display: none;
+}
+
+.xs .t4-layout-col:not(.pos-hidden-xs) {
+  display: block;
+}
+
+.sm .t4-layout-col:not(.pos-hidden-sm) {
+  display: block;
+}
+
+.md .t4-layout-col:not(.pos-hidden-md) {
+  display: block;
+}
+
+.lg .t4-layout-col:not(.pos-hidden-lg) {
+  display: block;
+}
+
+.xl .t4-layout-col:not(.pos-hidden-xl) {
+  display: block;
+}
+
+.def .t4-layout-col {
+  display: block;
+}

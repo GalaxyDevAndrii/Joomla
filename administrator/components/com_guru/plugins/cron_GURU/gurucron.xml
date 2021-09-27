@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - Guru Cron</name>
+	<version>5.2.5</version>
+	<creationDate>December 07, 2020</creationDate>
+    <author>iJoomla.com</author>
+    <authorEmail>support@osdcs.com</authorEmail>
+    <authorUrl>http://www.ijoomla.com</authorUrl>
+    <copyright>2010 iJoomla.com</copyright>
+    <license>GNU General Public License</license>
+	<description>This is the GuruCron plugin for running cronjobs, you need to keep this enabled.</description>
+	<files>
+		<filename plugin="gurucron">gurucron.php</filename>
+	</files>
+	<params/>
+</install>

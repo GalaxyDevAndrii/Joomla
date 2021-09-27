@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="typelist-navigation" addfieldpath="/plugins/system/t4/admin/field">
+
+        <!-- Megamenu -->
+        <fieldset name="nav_mega_group" class="has-icon" type="legend" subgroup="1"
+                label="T4_NAV_MEGA_GROUP_LABEL" icon="bars"
+                description="T4_NAV_MEGA_GROUP_DESC">
+            <field name="mega_settings" class="navigation" type="navigation" />
+            <field name="mega_sep" class="navigation" type="spacer" label="" />
+            <field name="mega_effect" type="list" value="1" label="T4_NAV_MEGA_EFFECT_LABEL" description="T4_NAV_MEGA_EFFECT_DESC">
+                <option value="">T4_NAV_MEGA_EFFECT_NONE</option>
+                <option value="fading">T4_NAV_MEGA_EFFECT_FADING</option>
+                <option value="slide">T4_NAV_MEGA_EFFECT_SLIDE</option>
+                <option value="zoom">T4_NAV_MEGA_EFFECT_ZOOM</option>
+                <option value="elastic">T4_NAV_MEGA_EFFECT_ELASTIC</option>
+                <option value="flipping">T4_NAV_MEGA_EFFECT_FLIPPING</option>
+            </field>
+            <field name="mega_duration" type="text" value="" label="T4_NAV_MEGA_DURATION_LABEL" description="T4_NAV_MEGA_DURATION_DESC" hint="400"/>
+            <field name="mega_showsm" type="t4radio" value="1" label="T4_NAV_MEGA_SHOWSM_LABEL" description="T4_NAV_MEGA_SHOWSM_DESC" />
+        </fieldset>
+
+        <!-- Off Canvas -->
+        <fieldset name="nav_offcanvas_group" class="has-icon" type="legend" subgroup="1"
+            label="T4_NAV_OFFCANVAS_GROUP_LABEL" icon="arrow-from-left"
+            description="T4_NAV_OFFCANVAS_GROUP_DESC">
+            <field name="oc_enabled" type="t4radio" value="1" label="T4_NAV_OFFCANVAS_ENABLED_LABEL" description="T4_NAV_OFFCANVAS_ENABLED_DESC" />
+            <field name="oc_pos_name" type="t4list" functions="getPositions" value="1" label="T4_NAV_OFFCANVAS_POSITION_LABEL" description="T4_NAV_OFFCANVAS_POSITION_DESC" />
+            <field name="oc_pos_style" type="t4list" functions="getModuleStyles" value="1" label="T4_NAV_OFFCANVAS_STYLE_LABEL" description="T4_NAV_OFFCANVAS_STYLE_DESC">
+            </field>
+
+            <field name="oc_effect" type="list" value="1" label="T4_NAV_OFFCANVAS_EFFECT_LABEL" description="T4_NAV_OFFCANVAS_EFFECT_DESC">
+                <option value="left">T4_NAV_OFFCANVAS_EFFECT_OVERLAY</option>
+                <option value="left-reveal">T4_NAV_OFFCANVAS_EFFECT_REVEAL</option>
+                <option value="left-push">T4_NAV_OFFCANVAS_EFFECT_PUSH</option>
+            </field>
+            <field name="oc_menu_effect" type="list" value="1" label="T4_NAV_OFFCANVAS_SUB_MENU_EFFECT_LABEL" description="T4_NAV_OFFCANVAS_SUB_MENU_EFFECT_DESC">
+                <option value="def">T4_NAV_OFFCANVAS_MENU_EFFECT_DEFAULT</option>
+                <option value="drill">T4_NAV_OFFCANVAS_MENU_EFFECT_DRILLDOWN</option>
+            </field>
+            <field name="oc_rightside" type="t4radio" value="1" label="T4_NAV_OFFCANVAS_RIGHTSIDE_LABEL" description="T4_NAV_OFFCANVAS_RIGHTSIDE_DESC" />
+            <field name="oc_showlg" type="t4radio" value="1" label="T4_NAV_OFFCANVAS_SHOWLG_LABEL" description="T4_NAV_OFFCANVAS_SHOWLG_DESC" />
+        </fieldset>
+
+        <!-- Navigation Options -->
+        <fieldset name="nav_option_group" class="has-icon" type="legend" subgroup="1"
+            label="T4_NAV_OPTION_GROUP_LABEL" icon="abacus"
+            description="T4_NAV_OPTION_GROUP_DESC">
+            <field name="option_breakpoint" type="list" default="lg" label="T4_NAV_OPTION_BREAKPOINT_LABEL" description="T4_NAV_OPTION_BREAKPOINT_DESC">
+                <option value="sm">Small Screen (SM)</option>
+                <option value="md">Medium Screen (MD)</option>
+                <option value="lg">Larger Screen (LG)</option>
+                <option value="xl">Extra Screen (XL)</option>
+            </field>
+
+		</fieldset>
+
+	</fields>
+</form>

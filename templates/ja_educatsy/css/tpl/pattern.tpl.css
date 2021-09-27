@@ -1,0 +1,58 @@
+	.__class .bg-pattern {
+	background-color: __background_color;
+}
+
+/*PATTERN*/
+.__class {
+	background-color: __background_color;
+	color: __text_color;
+}
+
+.__class  .module-title {
+	color: __text_color;
+}
+
+.__class {
+	color: __text_color;
+}
+
+.__class a:not(.btn) {
+	color: __link_color;
+}
+
+.__class a:not(.btn):hover,
+.__class a:not(.btn):focus,
+.__class a:not(.btn):active {
+	color: __link_hover_color;
+}
+
+.t4-palette-primary .section-title span {
+	color: __text_color;
+}
+
+/*Pattern nav*/
+.__class .t4-navbar .navbar-nav > li > a {
+	color: __link_color!important;
+}
+
+.__class .t4-navbar .navbar-nav > li.active > a,
+.__class .t4-navbar .navbar-nav > li.show > a,
+.__class .t4-navbar .navbar-nav > li > a:hover,
+.__class .t4-navbar .navbar-nav > li > a:focus,
+.__class .t4-navbar .navbar-nav > li > a:active {
+	color: __link_hover_color!important;
+}
+
+.__class .t4-navbar .navbar-nav > li > a .item-caret {
+	border-top-color: __link_color!important;
+}
+
+.__class .t4-navbar .navbar-nav > li.active > a .item-caret,
+.__class .t4-navbar .navbar-nav > li.show > a .item-caret,
+.__class .t4-navbar .navbar-nav > li > a:hover .item-caret,
+.__class .t4-navbar .navbar-nav > li > a:focus .item-caret,
+.__class .t4-navbar .navbar-nav > li > a:active .item-caret {
+	border-top-color: __link_hover_color!important;
+}
+
+/*PATTERN*/

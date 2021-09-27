@@ -1,0 +1,288 @@
+//
+// OFF-CANVAS CONTENT STYLES
+// -------------------------------------
+.t4-offcanvas {
+  background: $t4-off-canvas-background;
+
+  // Off Canvas Header
+  // -----------------------------------
+  .t4-off-canvas-header {
+    background-color: $t4-off-canvas-header-background;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem $spacer*1.5;
+    @include clearfix();
+
+    // Title
+    h3 {
+      font-size: $font-size-lg;
+      float: left;
+      margin: 0;
+      line-height: $spacer*2;
+      padding: 0;
+    }
+
+    a {
+      outline: none;
+
+      img {
+        max-height: $spacer*2;
+        outline: none;
+      }
+    }
+
+    // Close button
+    .close {
+      background-color: $white;
+      border: 0;
+      border-radius: 50%;
+      height: 32px;
+      outline: none;
+      margin-left: auto;
+      padding: 0;
+      transition: $transition-base;
+      text-shadow: none;
+      width: 32px;
+
+      &:hover, &:focus, &:active {
+        background-color: rgba(0,0,0,0.05);
+
+        span {
+          transform: rotate(180deg);
+        }
+      }
+
+      span {
+        color: #666;
+        display: block;
+        height: 32px;
+        font-size: 24px;
+        line-height: 28px;
+        transition: all 0.35s ease;
+        width: 32px;
+      }
+    }
+  }
+
+  // Off Canvas Body
+  // -----------------------------------
+  .t4-off-canvas-body {
+    padding: $spacer 0;
+    height: calc(100% - 56px);
+    overflow-y: auto;
+
+    .t4-module {
+      margin-bottom: ($spacer * 2);
+
+      .module-inner {
+        padding: 0 $spacer*1.5;
+      }
+
+      &.no-padding .module-inner {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    // Nav bar
+    .navbar {
+      display: block;
+      padding: 0;
+
+      .dropdown-toggle::after {
+        display: none;
+      }
+
+      .nav-item {
+        padding: 0;
+
+        .dropdown-menu .nav-item {
+          border-bottom: 0;
+          padding-right: 0;
+
+          .btn-toggle {
+            right: 0;
+          }
+        }
+      }
+
+      .nav-link,
+      .separator {
+        color: var(--body-text-color);
+        padding: 0.75rem 0;
+
+        &:hover, &:focus, &:active {
+          background-color: transparent;
+          color: var(--body-link-hover-color);
+        }
+      }
+
+      .nav-item.active {
+        > .nav-link,
+        > .separator {
+          color: var(--body-link-hover-color);
+        }
+      }
+
+      // Hidden parent menu title
+      .sub-menu-back {
+        display: none;
+      }
+
+      .btn-toggle {
+        background-color: darken($gray-100, 2%);
+        border-radius: 50%;
+        color: $gray-500;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 8px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+        padding: 0;
+        text-align: center;
+        width: 30px;
+
+        &:hover, &:focus, &:active {
+          background-color: $gray-300;
+          color: $gray-800;
+          cursor: pointer;
+        }
+
+        &::after {
+          content: "\f078";
+          display: inline-block;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          font-size: 12px;
+          color: $gray-500;
+          transition: $transition-base;
+        }
+
+        &.is-active::after{
+          color: $primary;
+          transform: rotate(180deg);
+        }
+      }
+
+      // Dropdown menu
+      .dropdown-menu {
+        border-radius: 0;
+        border: 0;
+        min-width: auto;
+        padding: 0 0 0 $spacer;
+
+        .dropdown-item,
+        .nav-link {
+          color: var(--body-text-color);
+          padding: 0.75rem 0;
+          width: auto;
+
+          &:hover, &:focus, &:active {
+            background: transparent;
+            color: var(--body-link-hover-color);
+          }
+
+          &:before {
+            display: none;
+          }
+        }
+      }
+
+
+      // Drilldown effect
+      // ----------------
+      &.drilldown-effect {
+        overflow: hidden;
+
+        .sub-menu-back {
+          background-color: $gray-100;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          font-weight: 600;
+          font-size: 0.9rem;
+          padding: 0.5rem $spacer;
+          text-transform: uppercase;
+
+          &:hover, &:focus, &:active {
+            background-color: darken($gray-100, 2%);
+            cursor: pointer;
+          }
+
+          i {
+            color: $gray-500;
+            margin-right: $spacer/2;
+            font-size: 12px;
+          }
+        }
+
+        .navbar-nav {
+          position: relative;
+          width: 100%;
+
+          .nav-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            position: static;
+
+            .dropdown-menu .nav-item {
+              .btn-toggle { right: auto; }
+            }
+          }
+
+          .btn-toggle {
+            color: $gray-500;
+            display: block;
+            margin-top: 8px;
+            padding: 0;
+            position: relative;
+            top: auto;
+            right: auto;
+            text-align: center;  
+            
+            &::after {
+              content: "\f054";
+            }
+
+            &.is-active::after {
+              color: $gray-500;
+              transform: rotate(0deg);
+            }
+          }
+  
+          .dropdown-menu {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            padding-left: 0;
+            width: 100%;
+          }
+        }
+      }
+
+    }
+  }
+
+  .navbar-nav,
+  .oc-level-0 .drilldown-effect .navbar-nav {
+    transform: translateX(0);
+    transition: all 0.35s ease-in-out;
+  }
+
+  &.oc-level-1 .drilldown-effect {
+    .navbar-nav {
+      transform: translateX(-100%);
+    }
+  }
+
+  &.oc-level-2 .drilldown-effect {
+    .navbar-nav {
+      transform: translateX(-200%);
+    }
+  }
+}

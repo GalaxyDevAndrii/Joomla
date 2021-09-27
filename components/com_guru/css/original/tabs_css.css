@@ -1,0 +1,128 @@
+dl.tabs {
+	float: left;
+	margin: 10px 0 -1px 0;
+	z-index: 50;
+}
+
+dl.tabs dt {
+	float: left;
+	padding: 4px 10px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin-left: 3px;
+	background: #f0f0f0;
+	color: #666;
+}
+
+dl.tabs dt.open {
+	background: #F9F9F9;
+	border-bottom: 1px solid #F9F9F9;
+	z-index: 100;
+	color: #000;
+}
+
+div.current {
+	clear: both;
+	border: 1px solid #ccc;
+	padding: 10px 10px;
+	background:#F7F7F7;
+	min-height: 500px;
+}
+
+div.current dd {
+	padding: 0;
+	margin: 0;
+}
+
+.white_bg {
+	background: #FFFFFF;
+}
+
+.teacher_name {
+	color: #FF0000;
+	font-weight:bold;
+	font-size:14px;
+}
+
+.teacher_title {
+	color: #666666;
+	font-weight: bold;
+}
+
+.teacher_img {
+	margin-top:7px;
+	float:left;
+}
+.teacher_links{
+	text-align:left;
+	background-color:#F4F4F4;
+	padding:15px;
+	margin-bottom:10px;
+}
+.teacher_links2{
+	text-align:center;
+	background-color:#F4F4F4;
+}
+.teacher_links span {
+	background-image:url("../images/icons.png");
+	background-repeat:no-repeat;
+	display:inline-block;
+	font-size:12px;
+	height:16px;
+	line-height:16px;
+	padding:0 20px;
+	margin-left:10px;
+}
+.teacher_links2 span {
+	background-image:url("../images/icons.png");
+	background-repeat:no-repeat;
+	display:inline-block;
+	font-size:12px;
+	height:16px;
+	line-height:16px;
+	padding:0 20px;
+}
+
+.guru_teacher_email {
+	background-position:0 0;
+}
+.guru_teacher_site {
+	background-position:0 -16px;
+}
+.guru_teacher_blog {
+	background-position:0 -32px;
+}
+.guru_teacher_twitter {
+	background-position:0 -48px;
+}
+.guru_teacher_facebook {
+	background-position:0 -64px;
+}
+.s_underline{
+	text-decoration:underline;
+}
+a .s_no_underline:hover{
+	text-decoration:none !important;
+}
+a .s_no_underline:visited{
+	color:red;
+}
+a.modal:visited{
+	color:#666666;
+}
+
+hr{
+	margin:0px !important;
+}
+
+.guru_buy_button{
+	background-color: #F7F7F7;
+    border: 1px solid #CCCCCC;
+    color: #666666;
+    padding: 2px;
+	text-decoration: none !important;
+}
+.guruleftmarg{
+ 	margin-left:20px;
+}

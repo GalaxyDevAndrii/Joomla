@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="user">
+	<name>plg_user_guru_user_update</name>
+	<author>iJoomla</author>
+    <creationDate>February 12, 2014</creationDate>
+    <copyright>(C) 2014 iJoomla.com</copyright>
+   	<license>GPL V2</license>
+	<authorUrl>www.ijoomla.com</authorUrl>
+	<authorEmail>webmaster2@ijoomla.com</authorEmail>
+    <version>1.0.0</version>
+    <description></description>
+    <files>
+        <filename plugin="guru_user_update">guru_user_update.php</filename>
+    </files>
+</extension>
